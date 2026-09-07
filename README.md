@@ -1,6 +1,8 @@
 # ORB — A direction for your curiosity
 
-The public introduction and project directory for Nathan Wilson's ORB work.
+By Informational Dimensions.
+
+The public introduction and project directory for ORB.
 
 GitHub Pages publishes `main` from the repository root. The existing Quinault record and its available narration metadata are preserved in `orbs.json`. The page links to the existing basic prompt, full directional skill, and Orb Studio repository.
 
