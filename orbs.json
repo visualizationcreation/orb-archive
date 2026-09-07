@@ -20,7 +20,13 @@
       ],
       "firstPublished": "2026-09-07",
       "updated": "2026-09-07",
-      "revision": "312395fa572085d161809dfd47f52a3f7d7a9469"
+      "revision": "72dd6d6e7302521b1a85affb8834ba6df49d49c3",
+      "filmStudy": {
+        "title": "A forest grows through decay",
+        "url": "https://visualizationcreation.github.io/Quinault-orb/forest-sample.html",
+        "durationSeconds": 68.904,
+        "personalPhotoCount": 2
+      }
     }
   ]
 }
