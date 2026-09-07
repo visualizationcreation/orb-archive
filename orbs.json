@@ -26,7 +26,44 @@
         "url": "https://visualizationcreation.github.io/Quinault-orb/forest-sample.html",
         "durationSeconds": 68.904,
         "personalPhotoCount": 2
-      }
+      },
+      "category": "Nature",
+      "format": "Narrated journey",
+      "displayMeta": "8 stops · 12:37 recorded · First encounter pilot"
+    },
+    {
+      "id": "cirs",
+      "title": "CIRS / biotoxin illness",
+      "description": "A map of the proposed illness framework, its evidence, and the debates around it.",
+      "url": "https://visualizationcreation.github.io/CIRS/",
+      "repository": "https://github.com/visualizationcreation/CIRS",
+      "tags": [
+        "CIRS",
+        "health",
+        "evidence",
+        "biotoxin illness"
+      ],
+      "category": "Health",
+      "format": "Research exploration",
+      "displayMeta": "118 positions · Authored readings · Browser read-aloud",
+      "verified": "2026-09-07"
+    },
+    {
+      "id": "masad-spanish",
+      "title": "Reputation & public perception",
+      "description": "An exploration of status, vulnerability, cross-cultural perception, and how public images take shape.",
+      "url": "https://visualizationcreation.github.io/masad-spanish/",
+      "repository": "https://github.com/visualizationcreation/masad-spanish",
+      "tags": [
+        "culture",
+        "reputation",
+        "status",
+        "vulnerability"
+      ],
+      "category": "Culture",
+      "format": "Guided exploration",
+      "displayMeta": "79 positions · 26-lesson route · English / Spanish controls",
+      "verified": "2026-09-07"
     }
   ]
 }
