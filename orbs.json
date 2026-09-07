@@ -1,0 +1,26 @@
+{
+  "orbs": [
+    {
+      "id": "quinault",
+      "title": "Quinault",
+      "description": "Rain, forest, water, and the Quinault people in an eight-point narrated spiral.",
+      "url": "https://visualizationcreation.github.io/Quinault-orb/",
+      "repository": "https://github.com/visualizationcreation/Quinault-orb",
+      "tags": [
+        "Quinault",
+        "ecology",
+        "watershed"
+      ],
+      "availableJourneys": [
+        {
+          "name": "First encounter pilot",
+          "durationSeconds": 756.98,
+          "narrationReady": true
+        }
+      ],
+      "firstPublished": "2026-09-07",
+      "updated": "2026-09-07",
+      "revision": "312395fa572085d161809dfd47f52a3f7d7a9469"
+    }
+  ]
+}
