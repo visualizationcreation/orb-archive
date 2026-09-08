@@ -28,7 +28,7 @@
       const actions = add(row,'div',null,'community-actions'); link(actions,'Explore ↗',o.url); link(actions,'Reviewed source ↗',o.repository+'/tree/'+o.revision);
     }
     root.replaceChildren(fragment);
-    status.textContent = data.orbs.length ? `${data.orbs.length} approved community ${data.orbs.length === 1 ? 'ORB' : 'ORBs'}. Hosted by their creators; source links identify reviewed editions.` : 'No community ORBs have been featured yet. Submit yours for owner review.';
+    status.textContent = data.orbs.length ? `${data.orbs.length} approved community ${data.orbs.length === 1 ? 'ORB' : 'ORBs'}. Original contributions; source links identify reviewed editions.` : 'No community ORBs have been featured yet. Submit yours for owner review.';
   } catch {
     root.replaceChildren(); status.textContent = 'The community catalogue could not be loaded. View the approved listings on GitHub or try again later.';
   }
