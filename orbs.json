@@ -109,12 +109,12 @@
           "style": "rest",
           "durationSeconds": 2417.656,
           "narrationReady": true,
-          "url": "https://visualizationcreation.github.io/olympic-national-park/rest.html"
+          "url": "https://visualizationcreation.github.io/olympic-national-park/rest.html?start=beginning"
         }
       ],
       "firstPublished": "2026-09-07",
       "updated": "2026-09-07",
-      "revision": "77bb1365dfe0eb581c22a7a070998074e1cdeba8",
+      "revision": "3f2950a7ac35349705db9e728ada695ae1f09f53",
       "category": "Nature",
       "format": "Interactive field guide",
       "displayMeta": "30 points · 30 unique visuals · Rest Journey 40:17",
@@ -132,14 +132,14 @@
           "orbSkillVersion": null,
           "interface": "Rotating spiral and six-direction compass",
           "displayMeta": "30 points · 30 unique visuals · Rest Journey available: 40:17",
-          "sourceUrl": "https://github.com/visualizationcreation/olympic-national-park/tree/77bb1365dfe0eb581c22a7a070998074e1cdeba8",
+          "sourceUrl": "https://github.com/visualizationcreation/olympic-national-park/tree/3f2950a7ac35349705db9e728ada695ae1f09f53",
           "note": "Browse the original source readings, six-direction compass and six knowledge-floor investigations. Each point has an exclusive visual. The separate narrated Rest Journey follows the same 30 points.",
           "verified": "2026-09-07"
         },
         {
           "id": "olympic-national-park-rest-v1",
           "label": "Rest Journey",
-          "url": "https://visualizationcreation.github.io/olympic-national-park/rest.html",
+          "url": "https://visualizationcreation.github.io/olympic-national-park/rest.html?start=beginning",
           "authored": "2026-09-07",
           "published": "2026-09-07",
           "generation": "narrated",
@@ -148,14 +148,14 @@
           "orbSkillVersion": null,
           "interface": "Narration, animated spiral and synchronized reading",
           "displayMeta": "30 points · 40:17 narration · Microsoft Aria",
-          "sourceUrl": "https://github.com/visualizationcreation/olympic-national-park/tree/77bb1365dfe0eb581c22a7a070998074e1cdeba8",
+          "sourceUrl": "https://github.com/visualizationcreation/olympic-national-park/tree/3f2950a7ac35349705db9e728ada695ae1f09f53",
           "basedOn": "olympic-national-park-field-guide-v1",
-          "note": "A continuous first-person Rest Journey with 91 reading passages, exclusive point imagery, print, saved listening places, MP3 download and captions. Full listening review remains pending.",
+          "note": "A continuous first-person Rest Journey with 91 reading passages, exclusive point imagery, print, saved listening places, MP3 download and captions. Full listening review remains pending. Playback starts at the opening; resuming a saved place is an explicit choice.",
           "verified": "2026-09-07"
         }
       ],
       "restJourney": {
-        "url": "https://visualizationcreation.github.io/olympic-national-park/rest.html",
+        "url": "https://visualizationcreation.github.io/olympic-national-park/rest.html?start=beginning",
         "durationLabel": "40:17"
       }
     }
