@@ -104,10 +104,10 @@
       "availableJourneys": [],
       "firstPublished": "2026-09-07",
       "updated": "2026-09-07",
-      "revision": "2023943c7b44dac5c7e6b5e40fa1e3a51ff616e4",
+      "revision": "fb4ad1523b302c44113cd77238e16f2c61b4642a",
       "category": "Nature",
       "format": "Interactive field guide",
-      "displayMeta": "30 points · 34 sources · 6 open investigations · Reading edition",
+      "displayMeta": "30 points · 30 unique visuals · 6 open investigations · Reading edition",
       "featuredEdition": "olympic-national-park-field-guide-v1",
       "editions": [
         {
@@ -121,9 +121,9 @@
           "modelId": null,
           "orbSkillVersion": null,
           "interface": "Rotating spiral and six-direction compass",
-          "displayMeta": "30 points · Credited images, checkpoints and print · No narration",
-          "sourceUrl": "https://github.com/visualizationcreation/olympic-national-park/tree/2023943c7b44dac5c7e6b5e40fa1e3a51ff616e4",
-          "note": "A reading-first Olympic National Park ORB with a connected spiral, eight credited images and six knowledge-floor investigations. Includes personal Quinault photographs. Audio and video are not part of this edition.",
+          "displayMeta": "30 points · 30 unique visuals · Checkpoints and print · No narration",
+          "sourceUrl": "https://github.com/visualizationcreation/olympic-national-park/tree/fb4ad1523b302c44113cd77238e16f2c61b4642a",
+          "note": "A reading-first Olympic National Park ORB with a connected spiral and six knowledge-floor investigations. Every point has its own visual: 17 credited photographs and 13 original explanatory illustrations. Includes personal Quinault photographs. Audio and video are not part of this edition.",
           "verified": "2026-09-07"
         }
       ]
