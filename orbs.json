@@ -88,6 +88,45 @@
           "verified": "2026-09-07"
         }
       ]
+    },
+    {
+      "id": "olympic-national-park",
+      "title": "Olympic National Park",
+      "description": "Ocean-born mountains, living homelands, rainforests and returning salmon in a 30-point spiral, ending with six evidence-based open investigations.",
+      "url": "https://visualizationcreation.github.io/olympic-national-park/",
+      "repository": "https://github.com/visualizationcreation/olympic-national-park",
+      "tags": [
+        "Olympic National Park",
+        "ecology",
+        "restoration",
+        "knowledge floor"
+      ],
+      "availableJourneys": [],
+      "firstPublished": "2026-09-07",
+      "updated": "2026-09-07",
+      "revision": "2023943c7b44dac5c7e6b5e40fa1e3a51ff616e4",
+      "category": "Nature",
+      "format": "Interactive field guide",
+      "displayMeta": "30 points · 34 sources · 6 open investigations · Reading edition",
+      "featuredEdition": "olympic-national-park-field-guide-v1",
+      "editions": [
+        {
+          "id": "olympic-national-park-field-guide-v1",
+          "label": "In-depth field guide",
+          "url": "https://visualizationcreation.github.io/olympic-national-park/",
+          "authored": "2026-09-07",
+          "published": "2026-09-07",
+          "generation": "unrecorded",
+          "modelLabel": "Model not recorded",
+          "modelId": null,
+          "orbSkillVersion": null,
+          "interface": "Rotating spiral and six-direction compass",
+          "displayMeta": "30 points · Credited images, checkpoints and print · No narration",
+          "sourceUrl": "https://github.com/visualizationcreation/olympic-national-park/tree/2023943c7b44dac5c7e6b5e40fa1e3a51ff616e4",
+          "note": "A reading-first Olympic National Park ORB with a connected spiral, eight credited images and six knowledge-floor investigations. Includes personal Quinault photographs. Audio and video are not part of this edition.",
+          "verified": "2026-09-07"
+        }
+      ]
     }
   ],
   "schemaVersion": 2
