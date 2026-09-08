@@ -49,6 +49,45 @@
           "verified": "2026-09-07"
         }
       ]
+    },
+    {
+      "id": "the-orb-skill",
+      "title": "The ORB Skill",
+      "description": "Learn to use ORB for education and self-improvement through a navigable field guide, practical exercises and portable notes.",
+      "url": "https://visualizationcreation.github.io/the-orb-skill/",
+      "repository": "https://github.com/visualizationcreation/the-orb-skill",
+      "tags": [
+        "education",
+        "self-improvement",
+        "learning",
+        "ORB"
+      ],
+      "availableJourneys": [],
+      "firstPublished": "2026-09-07",
+      "updated": "2026-09-07",
+      "revision": "f62550b3ad84cde002c674b382d4d55f363e9a06",
+      "category": "Education",
+      "format": "Interactive field guide",
+      "displayMeta": "20 stops · Practical exercises · Readings & field notes",
+      "featuredEdition": "the-orb-skill-field-guide-v1",
+      "editions": [
+        {
+          "id": "the-orb-skill-field-guide-v1",
+          "label": "Learning field guide",
+          "url": "https://visualizationcreation.github.io/the-orb-skill/",
+          "authored": "2026-09-07",
+          "published": "2026-09-07",
+          "generation": "unrecorded",
+          "modelLabel": "Model not recorded",
+          "modelId": null,
+          "orbSkillVersion": null,
+          "interface": "Rotating ORB map and six-direction compass",
+          "displayMeta": "20 stops · Readings, exercises, checkpoints · No narration",
+          "sourceUrl": "https://github.com/visualizationcreation/the-orb-skill/tree/f62550b3ad84cde002c674b382d4d55f363e9a06",
+          "note": "An original field guide to education and self-improvement with ORB. Includes Active/Rest Journey and video-workflow guidance; no generated audio or video.",
+          "verified": "2026-09-07"
+        }
+      ]
     }
   ],
   "schemaVersion": 2
