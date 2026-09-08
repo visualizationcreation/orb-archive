@@ -92,19 +92,21 @@
     {
       "id": "olympic-national-park",
       "title": "Olympic National Park",
-      "description": "Ocean-born mountains, living homelands, rainforests and returning salmon in a 30-point spiral, ending with six evidence-based open investigations.",
+      "description": "A journey across mountain meadows, Lake Crescent, Hoh and Queets rainforests, Staircase, Sol Duc and the Pacific shore, with focused Quinault and Elwha stories and six open investigations.",
       "url": "https://visualizationcreation.github.io/olympic-national-park/",
       "repository": "https://github.com/visualizationcreation/olympic-national-park",
       "tags": [
         "Olympic National Park",
-        "ecology",
-        "restoration",
+        "mountains",
+        "rainforests",
+        "lakes",
+        "coast",
         "knowledge floor"
       ],
       "availableJourneys": [],
       "firstPublished": "2026-09-07",
       "updated": "2026-09-07",
-      "revision": "fb4ad1523b302c44113cd77238e16f2c61b4642a",
+      "revision": "f8b86d1119c9cb5d12be4b8a02dc2eb46084cbb4",
       "category": "Nature",
       "format": "Interactive field guide",
       "displayMeta": "30 points · 30 unique visuals · 6 open investigations · Reading edition",
@@ -112,7 +114,7 @@
       "editions": [
         {
           "id": "olympic-national-park-field-guide-v1",
-          "label": "In-depth field guide",
+          "label": "A journey across the park",
           "url": "https://visualizationcreation.github.io/olympic-national-park/",
           "authored": "2026-09-07",
           "published": "2026-09-07",
@@ -122,8 +124,8 @@
           "orbSkillVersion": null,
           "interface": "Rotating spiral and six-direction compass",
           "displayMeta": "30 points · 30 unique visuals · Checkpoints and print · No narration",
-          "sourceUrl": "https://github.com/visualizationcreation/olympic-national-park/tree/fb4ad1523b302c44113cd77238e16f2c61b4642a",
-          "note": "A reading-first Olympic National Park ORB with a connected spiral and six knowledge-floor investigations. Every point has its own visual: 17 credited photographs and 13 original explanatory illustrations. Includes personal Quinault photographs. Audio and video are not part of this edition.",
+          "sourceUrl": "https://github.com/visualizationcreation/olympic-national-park/tree/f8b86d1119c9cb5d12be4b8a02dc2eb46084cbb4",
+          "note": "Rebalanced across the park with 30 connected points and six knowledge-floor investigations. Each point has an exclusive visual: 18 credited photographs and 12 original explanatory illustrations. The connected reading source is ready for later journey adaptation; audio and video are not part of this edition.",
           "verified": "2026-09-07"
         }
       ]
