@@ -92,7 +92,7 @@
     {
       "id": "olympic-national-park",
       "title": "Olympic National Park",
-      "description": "A journey across mountain meadows, Lake Crescent, Hoh and Queets rainforests, Staircase, Sol Duc and the Pacific shore, with focused Quinault and Elwha stories and six open investigations.",
+      "description": "Explore Olympic in 72 connected readings: living homelands, mountain geology, glacier water, rainforest ecology, salmon restoration and the Pacific coast. A rotating word map leads into 42 deeper readings and six open investigations.",
       "url": "https://visualizationcreation.github.io/olympic-national-park/",
       "repository": "https://github.com/visualizationcreation/olympic-national-park",
       "tags": [
@@ -105,7 +105,7 @@
       ],
       "availableJourneys": [
         {
-          "name": "Rest Journey",
+          "name": "Earlier 30-point Rest Journey",
           "style": "rest",
           "durationSeconds": 2913.64,
           "narrationReady": true,
@@ -113,33 +113,43 @@
         }
       ],
       "firstPublished": "2026-09-07",
-      "updated": "2026-09-07",
-      "revision": "fdfe396ed0f9b8cef749dcfcddc4451e4bac4bea",
+      "updated": "2026-09-08",
+      "revision": "2a9d0a90ee51ee73f5a3fd700e5e9beea7bb8232",
       "category": "Nature",
       "format": "Interactive field guide",
-      "displayMeta": "30 points · 30 unique visuals · Rest Journey 48:33",
+      "displayMeta": "72 points · 42 deeper readings · 59 sources · Rotating word map",
       "featuredEdition": "olympic-national-park-field-guide-v1",
       "editions": [
         {
           "id": "olympic-national-park-field-guide-v1",
-          "label": "A journey across the park",
+          "label": "Expanded Olympic field guide",
           "url": "https://visualizationcreation.github.io/olympic-national-park/",
-          "authored": "2026-09-07",
+          "authored": "2026-09-08",
           "published": "2026-09-07",
           "generation": "unrecorded",
           "modelLabel": "Model not recorded",
           "modelId": null,
           "orbSkillVersion": null,
-          "interface": "Rotating spiral and six-direction compass",
-          "displayMeta": "30 points · 30 unique visuals · Rest Journey available: 48:33",
-          "sourceUrl": "https://github.com/visualizationcreation/olympic-national-park/tree/fdfe396ed0f9b8cef749dcfcddc4451e4bac4bea",
-          "note": "Browse the original source readings, six-direction compass and six knowledge-floor investigations. Each point has an exclusive visual. The separate narrated Rest Journey follows the same 30 points.",
-          "verified": "2026-09-07",
-          "revision": "fdfe396ed0f9b8cef749dcfcddc4451e4bac4bea"
+          "interface": "Clickable rotating word map, six-direction compass and deeper reading links",
+          "displayMeta": "72 readings · 59 sources · Six open investigations · New media planned",
+          "sourceUrl": "https://github.com/visualizationcreation/olympic-national-park/tree/2a9d0a90ee51ee73f5a3fd700e5e9beea7bb8232",
+          "note": "Expanded replacement of the existing reading ORB. Retains all 30 earlier point IDs and adds 42 detail readings. Existing photographs and illustrations remain; the new readings are text-first. The separate earlier 30-point Rest recording does not narrate this expanded edition.",
+          "verified": "2026-09-08",
+          "revision": "2a9d0a90ee51ee73f5a3fd700e5e9beea7bb8232",
+          "previousRevisions": [
+            {
+              "revision": "fdfe396ed0f9b8cef749dcfcddc4451e4bac4bea",
+              "contentRevision": "2026-09-07-v2-park-wide",
+              "points": 30,
+              "sourceUrl": "https://github.com/visualizationcreation/olympic-national-park/tree/fdfe396ed0f9b8cef749dcfcddc4451e4bac4bea"
+            }
+          ],
+          "updated": "2026-09-08",
+          "contentRevision": "2026-09-08-expanded-72"
         },
         {
           "id": "olympic-national-park-rest-v1",
-          "label": "Rest Journey",
+          "label": "Earlier 30-point Rest Journey",
           "url": "https://visualizationcreation.github.io/olympic-national-park/rest.html?start=beginning",
           "authored": "2026-09-07",
           "published": "2026-09-07",
@@ -151,10 +161,11 @@
           "displayMeta": "30 points · 48:33 narration · Microsoft Aria",
           "sourceUrl": "https://github.com/visualizationcreation/olympic-national-park/tree/fdfe396ed0f9b8cef749dcfcddc4451e4bac4bea",
           "basedOn": "olympic-national-park-field-guide-v1",
-          "note": "Complete guided imagery revision 2: 180 new Microsoft Aria passages, 63 intentional pauses, 30 exclusive visuals, synchronized reading and captions. Playback starts at the opening; saved places require an explicit resume choice. Full listening review remains pending.",
+          "note": "Complete guided imagery revision 2: 180 new Microsoft Aria passages, 63 intentional pauses, 30 exclusive visuals, synchronized reading and captions. Playback starts at the opening; saved places require an explicit resume choice. Full listening review remains pending. This earlier recording is separate from the expanded September 8 reading edition.",
           "verified": "2026-09-07",
           "revision": "fdfe396ed0f9b8cef749dcfcddc4451e4bac4bea",
-          "scriptRevision": "cb3b1de30d927cff"
+          "scriptRevision": "cb3b1de30d927cff",
+          "basedOnRevision": "2026-09-07-v2-park-wide"
         }
       ],
       "restJourney": {
