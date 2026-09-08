@@ -1,31 +1,29 @@
-# ORB — A direction for your curiosity
+# ORB Archive
 
 By Informational Dimensions.
 
-The public introduction and active project directory for ORB. GitHub Pages publishes main from the repository root. The page links to the basic prompt, full directional skill, and Orb Studio repository.
+A functional library of active ORBs. The site opens on search, topic and format filters, sorting, and compact collection rows. Introductory material and a small compass example live in about.html.
 
-## Active collection
+## Maintain the catalog
 
-The root `orbs.json` contains only active editions. The current collection features the narrated Quinault pilot and its forest film. The older original Quinault, CIRS, and Reputation & Public Perception readers are preserved in [Archived Orbs (Inactive)](Archived%20Orbs%20%28Inactive%29/README.md). They are excluded from the main website, its search, and its static fallback.
+The canonical data is orbs.json (schemaVersion 2). Fetch the latest repository state before updating. Upsert by stable ORB and edition ID; preserve unrelated metadata and entries. Only catalog published, verified reader URLs. Inactive editions remain in Archived Orbs (Inactive), excluded from the root catalog, search, and static fallback.
 
-The inactive folder contains complete HTML snapshots, edition metadata, SHA-256 checksums, and the catalog as it stood before archiving. Original source repositories are preserved. Inactive means excluded from the active directory; this folder is still public source material.
+Run `node build-directory.cjs` after editing the manifest or shared renderer. Commit orbs.json, index.html and directory.js together. The dependency-free build regenerates the static list, embedded fallback catalog, topic options, and browser renderer. library.js handles search and URL-preserved filters; library.css styles both pages.
 
-## Add a published orb
+Each record retains its title, description, category, tags, firstPublished/updated dates, repository, featuredEdition, and editions. Each edition retains its label, direct HTTPS URL, original point lineage, authored/published dates, source revision and model/skill provenance. Unknown model and skill versions stay null. A presentation edit does not create a model generation or rewrite authorship.
 
-Add an object to the root orbs array with a stable ID, title, concise description, verified HTTPS URL, repository, tags, category, format, and display metadata. Describe only journeys and narration that are available. The current interface uses search; topic and edition filters can be reintroduced when the active collection needs them.
+## Availability fields
 
-Run `node build-directory.cjs` after editing the manifest, then commit the manifest and generated index.html together. The dependency-free build refreshes static entries, the embedded fallback catalog, and the browser renderer. It validates unique project and edition IDs, featured editions, HTTPS links, inactive status, and JavaScript syntax. The live site does not require Node.js.
+- Reading uses the selected featured edition's verified URL.
+- Optional pointCount is an integer. Existing records fall back to the explicitly recorded count in displayMeta.
+- availableJourneys entries with narrationReady true make Listen available. Set a verified url for a journey with a separate destination; otherwise the ORB reader is used. durationSeconds is measured recording time, not a plan.
+- filmStudy.url and durationSeconds describe a published companion film; optional videoUrl can identify another published video. Watch appears only with a valid HTTPS destination.
+- edition.journeyMode can be active or rest when that script mode is confirmed. The journey-mode filter appears only when the catalog contains confirmed modes. Do not infer a mode from generation, a mention in explanatory text, or a voice provider.
 
-## Track editions and origin
+Search matches words in title, description, category, and tags. Topic and format filters intersect. Recent updates and newest additions sort descending by their recorded dates, with title as a stable tie-breaker; Title A–Z uses title ordering. Dates remain at their recorded precision.
 
-Manifest schema version 2 records editions and featuredEdition for each project. Each edition keeps its stable ID, label, direct URL, authored or publication date, interface, model-generation label, and pinned source snapshot. The basedOn field preserves a known lineage by edition ID, including when the earlier edition is inactive.
+## Publication and verification
 
-Use **older model version** for the archived works. Keep modelId and orbSkillVersion null unless documented. Never infer them from a current plugin version, upload date, or model name. Authored dates and publication dates have distinct meanings. A new visual theme retains the edition ID and model generation; its source commit can be recorded as presentationRevision.
+GitHub Pages publishes main from the root. Preserve .nojekyll and Archived Orbs (Inactive). Publish index.html, about.html, library.css, library.js, directory.js, directory-renderer.cjs, build-directory.cjs, README.md and the current orbs.json when changed. Keep local review fixtures out of uploads.
 
-For a substantive new edition, create a new edition record and explicitly select the featured edition. Preserve its predecessor's files and version information. To retire an edition, put a complete copy and its metadata in Archived Orbs (Inactive), mark its archival record inactive, and remove it from the root catalog. Remove a project only when it has no active editions left. Rebuild the static fallback to remove obsolete links too. Restoration to the active directory should be an explicit editorial decision, never automatic discovery of archived files.
-
-## Local preview and accessibility
-
-Serve this folder with a local static server to exercise manifest loading. Opening index.html directly also provides the embedded catalog and static fallback. The compass is a labeled authored example. Basic ORB uses numbered branches; the full skill uses six directions.
-
-The site includes native links and buttons, labeled search, a live result count, keyboard focus styles, a skip link, responsive layout, and reduced-motion support. Motion can be paused manually.
+Check the deployment's revision and live page. Verify search, intersecting filters, reset, sorting, edition details, About navigation, and responsive layout. The static list and embedded catalog must contain the same active ORBs; a failed manifest refresh uses the saved catalog with a visible message. Actual reader, narration, and film links must remain available. No background repository monitor or paid backend is required.
