@@ -2,38 +2,30 @@
 
 By Informational Dimensions.
 
-The public introduction and project directory for ORB.
+The public introduction and active project directory for ORB. GitHub Pages publishes main from the repository root. The page links to the basic prompt, full directional skill, and Orb Studio repository.
 
-GitHub Pages publishes `main` from the repository root. The existing Quinault record and its available narration metadata are preserved in `orbs.json`. The page links to the existing basic prompt, full directional skill, and Orb Studio repository.
+## Active collection
+
+The root `orbs.json` contains only active editions. The current collection features the narrated Quinault pilot and its forest film. The older original Quinault, CIRS, and Reputation & Public Perception readers are preserved in [Archived Orbs (Inactive)](Archived%20Orbs%20%28Inactive%29/README.md). They are excluded from the main website, its search, and its static fallback.
+
+The inactive folder contains complete HTML snapshots, edition metadata, SHA-256 checksums, and the catalog as it stood before archiving. Original source repositories are preserved. Inactive means excluded from the active directory; this folder is still public source material.
 
 ## Add a published orb
 
-Add an object to the `orbs` array in `orbs.json`. Use a stable `id`, `title`, concise `description`, verified HTTPS `url`, `repository`, `tags`, `category`, `format`, and `displayMeta`. Preserve existing entries and metadata. Only describe narration, routes, or editions that are actually available. Use one of the current category filters (Nature, Health, Culture), or add a matching filter button to `index.html` for a new category.
+Add an object to the root orbs array with a stable ID, title, concise description, verified HTTPS URL, repository, tags, category, format, and display metadata. Describe only journeys and narration that are available. The current interface uses search; topic and edition filters can be reintroduced when the active collection needs them.
 
-The website reads the manifest at runtime. Three static entries and all four edition links remain available if JavaScript or the manifest cannot load. The static fallback is generated from the same edition renderer as the live directory; regenerate it when changing the collection. This avoids a blank directory and supports local preview.
+Run `node build-directory.cjs` after editing the manifest, then commit the manifest and generated index.html together. The dependency-free build refreshes static entries, the embedded fallback catalog, and the browser renderer. It validates unique project and edition IDs, featured editions, HTTPS links, inactive status, and JavaScript syntax. The live site does not require Node.js.
 
 ## Track editions and origin
 
-Manifest `schemaVersion: 2` adds an `editions` array and `featuredEdition` to each orb, retaining the original stable project ID, links, narration metadata, and historical revision fields. Each edition has its own stable `id`, label, direct URL, authored or publication date, interface description, model-generation label, and immutable GitHub source snapshot. `basedOn` links an adaptation to its earlier edition when known.
+Manifest schema version 2 records editions and featuredEdition for each project. Each edition keeps its stable ID, label, direct URL, authored or publication date, interface, model-generation label, and pinned source snapshot. The basedOn field preserves a known lineage by edition ID, including when the earlier edition is inactive.
 
-Use **older model version** for the earlier works, as requested. This is a broad generation label, not the name or version of a specific AI model. Keep `modelId` and `orbSkillVersion` null unless documented. Record the actual skill version separately when it is known; never derive it from a plugin's current version, a repository upload date, or a model's name. Authored dates come from the artifacts; publication dates describe release and are not substituted for authorship.
+Use **older model version** for the archived works. Keep modelId and orbSkillVersion null unless documented. Never infer them from a current plugin version, upload date, or model name. Authored dates and publication dates have distinct meanings. A new visual theme retains the edition ID and model generation; its source commit can be recorded as presentationRevision.
 
-Current groups are `older-model` and `narrated`. These are directory filters, not numerical ORB versions or quality ratings. The default view includes all editions. The older-model filter makes Quinault's entry link open the original 143-position reader rather than the narrated adaptation.
+For a substantive new edition, create a new edition record and explicitly select the featured edition. Preserve its predecessor's files and version information. To retire an edition, put a complete copy and its metadata in Archived Orbs (Inactive), mark its archival record inactive, and remove it from the root catalog. Remove a project only when it has no active editions left. Rebuild the static fallback to remove obsolete links too. Restoration to the active directory should be an explicit editorial decision, never automatic discovery of archived files.
 
-When a new model or substantive ORB generation produces a new edition, **append a new edition record**. Preserve the previous reader at a stable browsable URL (for example an edition subfolder with its needed assets), keep its edition ID, and link the new record with `basedOn`. Set `featuredEdition` explicitly; do not overwrite an older edition merely to feature the new one. Freeze the relevant source revision too. A GitHub source snapshot is an immutable source record, not a replacement for a browsable edition link.
+## Local preview and accessibility
 
-Presentation-only edits retain the same edition ID and authorship/model generation. Track their commit in `presentationRevision` when needed. A new theme is not a new ORB or model version. Record changes in this manifest when publishing an edition; there is no background repository monitor.
+Serve this folder with a local static server to exercise manifest loading. Opening index.html directly also provides the embedded catalog and static fallback. The compass is a labeled authored example. Basic ORB uses numbered branches; the full skill uses six directions.
 
-For future entries, add the edition ID, label, verified HTTPS `url`, `generation`, `modelLabel`, nullable `modelId`, nullable `orbSkillVersion`, `interface`, `displayMeta`, date, and pinned `sourceUrl`. Unknown information stays explicitly unrecorded.
-
-After editing `orbs.json`, run `node build-directory.cjs` from this repository. This uses `directory-renderer.cjs` to refresh the static fallback, embedded fallback catalog, and browser renderer together. It checks unique project/edition IDs, valid featured editions, HTTPS edition URLs, and JavaScript syntax. Commit the updated `orbs.json` and generated `index.html` together. Both scripts are included in this repository and need no dependencies. The live site is static and does not require Node.js.
-
-## Local preview
-
-Serve this folder with a local static server to exercise manifest loading. Opening `index.html` directly shows the static fallback directory, compass example, and search.
-
-The compass is an explicitly labeled authored example, not an AI backend. Basic ORB currently uses numbered branches; the full directional skill uses the six-direction compass. The directory intentionally explains the distinction.
-
-## Accessibility
-
-Native links and buttons, labeled search, live filter count, keyboard focus styles, skip link, responsive layout, and reduced-motion support. Motion can be paused manually.
+The site includes native links and buttons, labeled search, a live result count, keyboard focus styles, a skip link, responsive layout, and reduced-motion support. Motion can be paused manually.

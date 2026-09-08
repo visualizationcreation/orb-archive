@@ -45,99 +45,10 @@
           "displayMeta": "8 stops · 12:37 recorded · First encounter pilot",
           "basedOn": "quinault-original-2026-08-22",
           "sourceUrl": "https://github.com/visualizationcreation/Quinault-orb/tree/72dd6d6e7302521b1a85affb8834ba6df49d49c3",
-          "note": "An eight-stop narrated adaptation. The original, wider exploration remains available below.",
-          "verified": "2026-09-07"
-        },
-        {
-          "id": "quinault-original-2026-08-22",
-          "label": "Original rainforest orb",
-          "url": "https://visualizationcreation.github.io/Quinault-orb/original.html",
-          "authored": "2026-08-22",
-          "generation": "older-model",
-          "modelLabel": "older model version",
-          "modelId": null,
-          "modelClassificationSource": "owner",
-          "orbSkillVersion": null,
-          "interface": "Six-direction reader",
-          "displayMeta": "143 positions · 3 worlds · 10-module guided route",
-          "sourceUrl": "https://github.com/visualizationcreation/Quinault-orb/blob/312395fa572085d161809dfd47f52a3f7d7a9469/original.html",
-          "format": "Original exploration",
-          "description": "Explore the rainforest across 143 positions and three connected worlds, with a ten-module guided route.",
+          "note": "An eight-stop narrated adaptation.",
           "verified": "2026-09-07"
         }
       ]
-    },
-    {
-      "id": "cirs",
-      "title": "CIRS / biotoxin illness",
-      "description": "A map of the proposed illness framework, its evidence, and the debates around it.",
-      "url": "https://visualizationcreation.github.io/CIRS/",
-      "repository": "https://github.com/visualizationcreation/CIRS",
-      "tags": [
-        "CIRS",
-        "health",
-        "evidence",
-        "biotoxin illness"
-      ],
-      "category": "Health",
-      "format": "Research exploration",
-      "displayMeta": "118 positions · Authored readings · Browser read-aloud",
-      "verified": "2026-09-07",
-      "featuredEdition": "cirs-2026-08-23",
-      "editions": [
-        {
-          "id": "cirs-2026-08-23",
-          "label": "Research reader",
-          "url": "https://visualizationcreation.github.io/CIRS/",
-          "authored": "2026-08-23",
-          "generation": "older-model",
-          "modelLabel": "older model version",
-          "modelId": null,
-          "modelClassificationSource": "owner",
-          "orbSkillVersion": null,
-          "interface": "Six-direction reader",
-          "displayMeta": "118 positions · Authored readings · Browser read-aloud",
-          "sourceUrl": "https://github.com/visualizationcreation/CIRS/blob/5ceb4f431c86d3c8e3729353d200f1a2d89043d4/index.html",
-          "verified": "2026-09-07"
-        }
-      ],
-      "presentationRevision": "67e508c63f13f3c5a2d93ab0b54f071b8708e5ea"
-    },
-    {
-      "id": "masad-spanish",
-      "title": "Reputation & public perception",
-      "description": "An exploration of status, vulnerability, cross-cultural perception, and how public images take shape.",
-      "url": "https://visualizationcreation.github.io/masad-spanish/",
-      "repository": "https://github.com/visualizationcreation/masad-spanish",
-      "tags": [
-        "culture",
-        "reputation",
-        "status",
-        "vulnerability"
-      ],
-      "category": "Culture",
-      "format": "Guided exploration",
-      "displayMeta": "79 positions · 26-lesson route · English / Spanish controls",
-      "verified": "2026-09-07",
-      "featuredEdition": "reputation-2026-08-16",
-      "editions": [
-        {
-          "id": "reputation-2026-08-16",
-          "label": "Bilingual guided reader",
-          "url": "https://visualizationcreation.github.io/masad-spanish/",
-          "authored": "2026-08-16",
-          "generation": "older-model",
-          "modelLabel": "older model version",
-          "modelId": null,
-          "modelClassificationSource": "owner",
-          "orbSkillVersion": null,
-          "interface": "Six-direction reader",
-          "displayMeta": "79 positions · 26-lesson route · English / Spanish controls",
-          "sourceUrl": "https://github.com/visualizationcreation/masad-spanish/blob/c0b6d56d04a3ddfbfeba18e11d045685c5f117a4/index.html",
-          "verified": "2026-09-07"
-        }
-      ],
-      "presentationRevision": "788fa7751603842d91b87dfbae40767972da05d8"
     }
   ],
   "schemaVersion": 2
