@@ -27,3 +27,11 @@ Search matches words in title, description, category, and tags. Topic and format
 GitHub Pages publishes main from the root. Preserve .nojekyll and Archived Orbs (Inactive). Publish index.html, about.html, library.css, library.js, directory.js, directory-renderer.cjs, build-directory.cjs, README.md and the current orbs.json when changed. Keep local review fixtures out of uploads.
 
 Check the deployment's revision and live page. Verify search, intersecting filters, reset, sorting, edition details, About navigation, and responsive layout. The static list and embedded catalog must contain the same active ORBs; a failed manifest refresh uses the saved catalog with a visible message. Actual reader, narration, and film links must remain available. No background repository monitor or paid backend is required.
+
+## ORB Share community submissions
+
+The main page includes a separate ORB Share walkthrough and Community ORBs section at `#share`. The public guide and submission repository are https://visualizationcreation.github.io/orb-share/ and https://github.com/visualizationcreation/orb-share. Creators publish their own ORB repositories and propose listings by fork pull request. Only @visualizationcreation reviews, approves and merges accepted submissions.
+
+`community.js` reads only the published `orb-share/orbs.json` from the upstream main deployment. It does not read open PRs, forks or issues, and it creates text and safe HTTPS links without injecting submitted HTML. `community.css` styles this section. The existing search and filters apply to the curated collection above it; community listings are shown separately. Empty and unavailable catalogues have explicit states. Approved community updates appear after the ORB Share Pages deployment without another archive commit. Review provenance uses each listing's immutable source revision; creator-hosted live content may change.
+
+Preserve the Share navigation link, `#share` section and the community script/style references during future archive updates. The existing build-directory.cjs preserves this section. Keep the community catalogue separate from the curated schemaVersion 2 catalogue. Do not copy pending PR entries into the archive. See orb-share/REVIEWING.md for the owner workflow, branch protection and removal process.
