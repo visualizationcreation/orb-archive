@@ -103,13 +103,21 @@
         "coast",
         "knowledge floor"
       ],
-      "availableJourneys": [],
+      "availableJourneys": [
+        {
+          "name": "Rest Journey",
+          "style": "rest",
+          "durationSeconds": 2417.656,
+          "narrationReady": true,
+          "url": "https://visualizationcreation.github.io/olympic-national-park/rest.html"
+        }
+      ],
       "firstPublished": "2026-09-07",
       "updated": "2026-09-07",
-      "revision": "f8b86d1119c9cb5d12be4b8a02dc2eb46084cbb4",
+      "revision": "77bb1365dfe0eb581c22a7a070998074e1cdeba8",
       "category": "Nature",
       "format": "Interactive field guide",
-      "displayMeta": "30 points · 30 unique visuals · 6 open investigations · Reading edition",
+      "displayMeta": "30 points · 30 unique visuals · Rest Journey 40:17",
       "featuredEdition": "olympic-national-park-field-guide-v1",
       "editions": [
         {
@@ -123,12 +131,33 @@
           "modelId": null,
           "orbSkillVersion": null,
           "interface": "Rotating spiral and six-direction compass",
-          "displayMeta": "30 points · 30 unique visuals · Checkpoints and print · No narration",
-          "sourceUrl": "https://github.com/visualizationcreation/olympic-national-park/tree/f8b86d1119c9cb5d12be4b8a02dc2eb46084cbb4",
-          "note": "Rebalanced across the park with 30 connected points and six knowledge-floor investigations. Each point has an exclusive visual: 18 credited photographs and 12 original explanatory illustrations. The connected reading source is ready for later journey adaptation; audio and video are not part of this edition.",
+          "displayMeta": "30 points · 30 unique visuals · Rest Journey available: 40:17",
+          "sourceUrl": "https://github.com/visualizationcreation/olympic-national-park/tree/77bb1365dfe0eb581c22a7a070998074e1cdeba8",
+          "note": "Browse the original source readings, six-direction compass and six knowledge-floor investigations. Each point has an exclusive visual. The separate narrated Rest Journey follows the same 30 points.",
+          "verified": "2026-09-07"
+        },
+        {
+          "id": "olympic-national-park-rest-v1",
+          "label": "Rest Journey",
+          "url": "https://visualizationcreation.github.io/olympic-national-park/rest.html",
+          "authored": "2026-09-07",
+          "published": "2026-09-07",
+          "generation": "narrated",
+          "modelLabel": "Model not recorded",
+          "modelId": null,
+          "orbSkillVersion": null,
+          "interface": "Narration, animated spiral and synchronized reading",
+          "displayMeta": "30 points · 40:17 narration · Microsoft Aria",
+          "sourceUrl": "https://github.com/visualizationcreation/olympic-national-park/tree/77bb1365dfe0eb581c22a7a070998074e1cdeba8",
+          "basedOn": "olympic-national-park-field-guide-v1",
+          "note": "A continuous first-person Rest Journey with 91 reading passages, exclusive point imagery, print, saved listening places, MP3 download and captions. Full listening review remains pending.",
           "verified": "2026-09-07"
         }
-      ]
+      ],
+      "restJourney": {
+        "url": "https://visualizationcreation.github.io/olympic-national-park/rest.html",
+        "durationLabel": "40:17"
+      }
     }
   ],
   "schemaVersion": 2
