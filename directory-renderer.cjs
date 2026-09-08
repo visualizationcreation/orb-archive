@@ -1,0 +1,21 @@
+// Shared by the static fallback build and the browser. Treat all manifest values as text.
+function escapeHtml(value){return String(value??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+function safeLink(value){try{const u=new URL(value);return u.protocol==='https:'?u.href:null}catch{return null}}
+function editionList(orb){return Array.isArray(orb.editions)&&orb.editions.length?orb.editions:[{id:orb.id+'-unrecorded',label:'Published edition',url:orb.url,displayMeta:orb.displayMeta,modelLabel:'Not recorded',generation:'unrecorded',orbSkillVersion:null}];}
+function visibleEditions(orb,generation){return editionList(orb).filter(e=>safeLink(e.url)&&(generation==='all'||e.generation===generation));}
+function formatEditionDate(edition){const date=edition.authored||edition.published;if(!date)return 'Date not recorded';if(!/^\d{4}-\d{2}-\d{2}$/.test(date))return 'Date not recorded';const d=new Date(date+'T12:00:00Z');return (edition.authored?'Authored ':'Published ')+d.toLocaleDateString('en-US',{year:'numeric',month:'short',day:'numeric',timeZone:'UTC'});}
+function renderEdition(edition){
+ const href=safeLink(edition.url),source=safeLink(edition.sourceUrl);if(!href)return '';
+ return '<li class="edition" id="edition-'+escapeHtml(edition.id)+'"><div class="edition-heading"><a href="'+escapeHtml(href)+'">'+escapeHtml(edition.label)+' ↗</a><span class="edition-generation">'+escapeHtml(edition.modelLabel||'Model not recorded')+'</span></div><p class="edition-date">'+escapeHtml(formatEditionDate(edition))+' · '+escapeHtml(edition.interface||'Interface not recorded')+'</p><p class="edition-meta">'+escapeHtml(edition.displayMeta||'')+'</p><p class="edition-version">ORB skill version: '+escapeHtml(edition.orbSkillVersion||'not recorded')+(source?' · <a href="'+escapeHtml(source)+'">Source snapshot</a>':'')+'</p>'+(edition.note?'<p class="edition-note">'+escapeHtml(edition.note)+'</p>':'')+'</li>';
+}
+function renderOrbEntry(orb,index,generation='all'){
+ const editions=visibleEditions(orb,generation);if(!editions.length)return '';
+ const selected=editions.find(e=>e.id===orb.featuredEdition)||editions[0],href=safeLink(selected.url),repository=safeLink(orb.repository);
+ const old=selected.generation==='older-model',title=escapeHtml(orb.title);
+ const info=old?'older model version':selected.label;
+ const film=generation==='all'&&orb.filmStudy&&safeLink(orb.filmStudy.url);
+ return '<article class="orb-row" data-orb-id="'+escapeHtml(orb.id)+'"><div class="index">'+String(index+1).padStart(2,'0')+'</div><div class="entry-body"><p class="eyebrow">'+escapeHtml(orb.category||'Exploration')+' · '+escapeHtml(selected.format||orb.format||'Published orb')+'</p><h3><a class="orb-title-link" href="'+escapeHtml(href)+'">'+title+'</a></h3><p class="description">'+escapeHtml(selected.description||orb.description)+'</p><p class="meta">'+escapeHtml(selected.displayMeta||orb.displayMeta||'Authored exploration')+'</p><p class="origin-label">'+escapeHtml(info)+' <span>· '+escapeHtml(formatEditionDate(selected))+'</span></p></div><div class="entry-links"><a class="enter" href="'+escapeHtml(href)+'">'+(generation==='older-model'?'Open older edition':'Enter the orb')+' ↗</a>'+(film?'<a class="repo" href="'+escapeHtml(film)+'">Forest film · '+Math.round(orb.filmStudy.durationSeconds)+' sec ↗</a>':'')+(repository?'<a class="repo" href="'+escapeHtml(repository)+'">View source</a>':'')+'</div><details class="edition-history"'+(generation!=='all'?' open':'')+'><summary>Editions &amp; origin <span>'+editions.length+' '+(editions.length===1?'edition':'editions')+'</span></summary><ul>'+editions.map(renderEdition).join('')+'</ul></details></article>';
+}
+function orbMatches(orb,query,category,generation){const editions=visibleEditions(orb,generation);if(!editions.length||(category!=='all'&&orb.category!==category))return false;const searchable=[orb.title,orb.description,orb.category,...(orb.tags||[]),...editions.flatMap(e=>[e.label,e.modelLabel,e.orbSkillVersion,e.authored,e.published,e.interface])].join(' ').toLowerCase();return searchable.includes(query.trim().toLowerCase());}
+if(typeof module!=='undefined')module.exports={escapeHtml,safeLink,editionList,visibleEditions,renderOrbEntry,orbMatches};
+
