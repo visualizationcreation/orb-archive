@@ -171,7 +171,8 @@
       "restJourney": {
         "url": "https://visualizationcreation.github.io/olympic-national-park/rest.html?start=beginning",
         "durationLabel": "48:33"
-      }
+      },
+      "pointCount": 72
     }
   ],
   "schemaVersion": 2
