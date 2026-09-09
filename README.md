@@ -37,3 +37,11 @@ The owner asks the assistant to review intake, considers its file/format/evidenc
 community.js reads only the published approved orb-share manifest, never pending issues or attachments. It renders safe text and links, with empty/error states. Keep the Share navigation, section, community.js and community.css during future updates. The curated catalogue and its search/filters remain separate; preserve existing editions, media links and inactive snapshots. The existing directory builder preserves the community section.
 
 Public terminology: Spiral Courses includes ORB Learn — Spiral Audio Course and ORB Feel & Experience — Guided Audio Journey. Retain active/rest identifiers and existing URLs for compatibility; use courseModeLabel for display. Read & explore describes the interactive format, not a third course mode. A label update does not regenerate earlier recordings.
+
+## Site languages and beginner guide
+
+`start.html` introduces free AI chat on a phone with official ChatGPT and Claude links. Vendor links and free-plan availability were checked September 8, 2026 against their download pages, ChatGPT Free FAQ, and Claude pricing. It does not promise free autonomous agent features or automatic ORB video production.
+
+`languages.js`, `spanish.js` and `languages.css` localize the archive interface, About page, and beginner guide. Use `?lang=en` / `?lang=es`; language preference is stored under `orb-site-language`. Interface translation requires JavaScript. Linked ORBs, recordings, community submissions and historical version/source records retain their original language. Add new interface strings to `spanish.js` when extending the site; never translate IDs or URLs. Search accepts English catalog fields and their Spanish translations.
+
+The canonical catalog and all source records remain in `orbs.json`. `build-directory.cjs` preserves the language controls while rebuilding the saved catalog. Local tests cover desktop/mobile layouts, Spanish search, filters, compass, language switching, reload, and starter-message clipboard copying.
