@@ -136,7 +136,7 @@
       ],
       "firstPublished": "2026-09-07",
       "updated": "2026-09-08",
-      "revision": "b6f8ee97e8c867585be9156212a190b7d5bd879f",
+      "revision": "e3739da06f55264a53f0260b401abbd05ba580df",
       "category": "Nature",
       "format": "Field guide & Spiral Courses",
       "displayMeta": "72 illustrated points · Two local Bella courses · 59 sources",
@@ -230,12 +230,18 @@
           "interface": "Narrated word spiral with timed passages, images and independent Resume",
           "displayMeta": "72 illustrated points · 50:09 recorded · Twelve audio chapters",
           "durationSeconds": 3009.765125,
-          "revision": "b6f8ee97e8c867585be9156212a190b7d5bd879f",
+          "revision": "e3739da06f55264a53f0260b401abbd05ba580df",
           "scriptRevision": "guided-dream-df047ae4b1f6c909",
           "basedOn": "olympic-national-park-field-guide-v1",
           "basedOnRevision": "2026-09-08-expanded-72",
-          "sourceUrl": "https://github.com/visualizationcreation/olympic-national-park/tree/b6f8ee97e8c867585be9156212a190b7d5bd879f",
-          "note": "Dreaming Olympic: a second-person guided dream written directly by the primary assistant, with no local writing model. Local Bella narration follows the exact script with measured paragraph cues. Live playback and audio files technically verified; full listening review pending."
+          "sourceUrl": "https://github.com/visualizationcreation/olympic-national-park/tree/e3739da06f55264a53f0260b401abbd05ba580df",
+          "note": "Dreaming Olympic: a second-person guided dream written directly by the primary assistant, with no local writing model. Local Bella narration follows the exact script with measured paragraph cues. Live playback and audio files technically verified; full listening review pending. Includes a quiet Olympic-inspired forest drone with independent mute and volume, generated locally with ACE-Step and authored sound synthesis.",
+          "soundscape": {
+            "title": "Olympic Forest — Mist, Canopy, Water",
+            "available": true,
+            "independentVolume": true,
+            "creditsUrl": "https://visualizationcreation.github.io/olympic-national-park/forest-soundscape.json"
+          }
         }
       ],
       "restJourney": {
