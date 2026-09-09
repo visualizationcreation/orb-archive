@@ -273,7 +273,7 @@
     {
       "id": "crystal-ball-orb",
       "title": "Crystal Ball ORB",
-      "description": "Ten forecasts about technology, culture, sport, spaceflight, prices and weather in one crystal ball, plus ten World Watch readings and a six-chapter ORB Learn reading course.",
+      "description": "Fifteen forecasts in one crystal ball, including sci-fi reveals, robot learning, drone production and cooperating AI agents, with ten World Watch readings and nine unrecorded learning chapters.",
       "url": "https://visualizationcreation.github.io/crystal-ball-orb/",
       "repository": "https://github.com/visualizationcreation/crystal-ball-orb",
       "tags": [
@@ -285,11 +285,11 @@
       ],
       "category": "World & ideas",
       "format": "Prediction orb & course",
-      "pointCount": 36,
-      "displayMeta": "36 points · 10 forecasts · 10 watch stories · reading course",
+      "pointCount": 53,
+      "displayMeta": "53 points · 15 forecasts · 9 reading chapters",
       "availableJourneys": [
         {
-          "id": "crystal-ball-learn-v3",
+          "id": "crystal-ball-learn-v4",
           "name": "Thinking in Probabilities · ORB Learn",
           "url": "https://visualizationcreation.github.io/crystal-ball-orb/#learn",
           "narrationReady": false,
@@ -298,8 +298,8 @@
       ],
       "firstPublished": "2026-09-08",
       "updated": "2026-09-08",
-      "revision": "767584acc2559d1a9664287eb0bdab9f72f7395c",
-      "featuredEdition": "crystal-ball-2026-09-08-v3",
+      "revision": "b7b2ef60fd428ab2addd955afbf8c6efd32bf742",
+      "featuredEdition": "crystal-ball-2026-09-08-v4",
       "editions": [
         {
           "id": "crystal-ball-2026-09-08-v1",
@@ -318,11 +318,29 @@
           "durationSeconds": 1164.1535,
           "revision": "2878e8aaf6e7c90015dec13e580f08ac191289c6",
           "sourceUrl": "https://github.com/visualizationcreation/crystal-ball-orb/tree/2878e8aaf6e7c90015dec13e580f08ac191289c6",
-          "note": "Historical source snapshot of the earlier edition. The current live reader uses Edition 03. Its revised reading course is unrecorded; the original matching recording and transcript are preserved."
+          "note": "Historical repository snapshot. The current live reader uses Edition 04. Old recordings were removed from the live branch and local project at the owner’s request; ordinary Git history retains prior revisions."
         },
         {
           "id": "crystal-ball-2026-09-08-v3",
           "label": "Beyond the Headlines · Edition 03",
+          "url": "https://github.com/visualizationcreation/crystal-ball-orb/tree/767584acc2559d1a9664287eb0bdab9f72f7395c",
+          "authored": "2026-09-08",
+          "published": "2026-09-08",
+          "verified": "2026-09-08",
+          "generation": "reading",
+          "journeyMode": "historical source record",
+          "modelLabel": "Primary assistant authored · unrecorded reading course",
+          "modelId": null,
+          "orbSkillVersion": null,
+          "interface": "One sphere: themes, predictions and evidence",
+          "displayMeta": "36 points · 10 nonpolitical forecasts · 6 reading chapters",
+          "revision": "767584acc2559d1a9664287eb0bdab9f72f7395c",
+          "sourceUrl": "https://github.com/visualizationcreation/crystal-ball-orb/tree/767584acc2559d1a9664287eb0bdab9f72f7395c",
+          "note": "Historical repository snapshot. The current live reader uses Edition 04. Old recordings were removed from the live branch and local project at the owner’s request; ordinary Git history retains prior revisions."
+        },
+        {
+          "id": "crystal-ball-2026-09-08-v4",
+          "label": "Signals of Tomorrow · Edition 04",
           "url": "https://visualizationcreation.github.io/crystal-ball-orb/",
           "authored": "2026-09-08",
           "published": "2026-09-08",
@@ -333,10 +351,10 @@
           "modelId": null,
           "orbSkillVersion": null,
           "interface": "One sphere: themes, predictions and evidence",
-          "displayMeta": "36 points · 10 nonpolitical forecasts · 6 reading chapters",
-          "revision": "767584acc2559d1a9664287eb0bdab9f72f7395c",
-          "sourceUrl": "https://github.com/visualizationcreation/crystal-ball-orb/tree/767584acc2559d1a9664287eb0bdab9f72f7395c",
-          "note": "Owner-requested scope revision before scoring. Five new predictions replace political branches. Earlier probabilities for retained calls remain unchanged."
+          "displayMeta": "53 points · 15 forecasts · 9 reading chapters",
+          "revision": "b7b2ef60fd428ab2addd955afbf8c6efd32bf742",
+          "sourceUrl": "https://github.com/visualizationcreation/crystal-ball-orb/tree/b7b2ef60fd428ab2addd955afbf8c6efd32bf742",
+          "note": "Five new headline possibilities; ten earlier forecasts preserve their original probabilities and cutoffs. Old audio retired at the owner’s request."
         }
       ]
     }
