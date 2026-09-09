@@ -241,14 +241,34 @@
             "available": true,
             "independentVolume": true,
             "creditsUrl": "https://visualizationcreation.github.io/olympic-national-park/forest-soundscape.json"
-          }
+          },
+          "showcaseUrl": "https://www.facebook.com/reel/1611318427287347"
         }
       ],
       "restJourney": {
         "url": "https://visualizationcreation.github.io/olympic-national-park/rest.html?start=beginning",
         "durationLabel": "48:33"
       },
-      "pointCount": 72
+      "pointCount": 72,
+      "videoUrl": "https://www.facebook.com/reel/1611318427287347",
+      "showcase": {
+        "title": "Dreaming Olympic — ORB Feel & Experience",
+        "url": "https://www.facebook.com/reel/1611318427287347",
+        "durationSeconds": 281.2157916666667,
+        "format": "1080 × 1350 native Facebook video",
+        "page": "Orb Informational Dimensions Browser",
+        "scriptRevision": "d5798c8c786c9e09",
+        "pointIds": [
+          "one-peninsula",
+          "rainforest-layers",
+          "fallen-wood",
+          "salmon-life",
+          "rocky-edge"
+        ],
+        "voice": "Kokoro Bella",
+        "soundscape": "Olympic Forest — Mist, Canopy, Water",
+        "authorship": "Written directly by the primary assistant for this short showcase, adapted from the sourced Olympic ORB. Speech is synthesized locally with Kokoro Bella."
+      }
     },
     {
       "id": "crystal-ball-orb",
