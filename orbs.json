@@ -273,7 +273,7 @@
     {
       "id": "crystal-ball-orb",
       "title": "Crystal Ball ORB",
-      "description": "Fifteen forecasts in one crystal ball, including sci-fi reveals, robot learning, drone production and cooperating AI agents, with ten World Watch readings and nine unrecorded learning chapters.",
+      "description": "Fifteen forecasts in one illustrated crystal ball: 53 distinct images with web sources and local AI provenance, ten World Watch readings and nine unrecorded learning chapters.",
       "url": "https://visualizationcreation.github.io/crystal-ball-orb/",
       "repository": "https://github.com/visualizationcreation/crystal-ball-orb",
       "tags": [
@@ -286,7 +286,7 @@
       "category": "World & ideas",
       "format": "Prediction orb & course",
       "pointCount": 53,
-      "displayMeta": "53 points · 15 forecasts · 9 reading chapters",
+      "displayMeta": "53 illustrated points · 15 forecasts · 9 reading chapters",
       "availableJourneys": [
         {
           "id": "crystal-ball-learn-v4",
@@ -298,7 +298,7 @@
       ],
       "firstPublished": "2026-09-08",
       "updated": "2026-09-08",
-      "revision": "b7b2ef60fd428ab2addd955afbf8c6efd32bf742",
+      "revision": "f9e005bc15cdfb8bdd21eca776827eef29e8e65f",
       "featuredEdition": "crystal-ball-2026-09-08-v4",
       "editions": [
         {
@@ -340,7 +340,7 @@
         },
         {
           "id": "crystal-ball-2026-09-08-v4",
-          "label": "Signals of Tomorrow · Edition 04",
+          "label": "Signals of Tomorrow · Illustrated Edition 04",
           "url": "https://visualizationcreation.github.io/crystal-ball-orb/",
           "authored": "2026-09-08",
           "published": "2026-09-08",
@@ -351,12 +351,19 @@
           "modelId": null,
           "orbSkillVersion": null,
           "interface": "One sphere: themes, predictions and evidence",
-          "displayMeta": "53 points · 15 forecasts · 9 reading chapters",
-          "revision": "b7b2ef60fd428ab2addd955afbf8c6efd32bf742",
-          "sourceUrl": "https://github.com/visualizationcreation/crystal-ball-orb/tree/b7b2ef60fd428ab2addd955afbf8c6efd32bf742",
-          "note": "Five new headline possibilities; ten earlier forecasts preserve their original probabilities and cutoffs. Old audio retired at the owner’s request."
+          "displayMeta": "53 illustrated points · 15 forecasts · 9 reading chapters",
+          "revision": "f9e005bc15cdfb8bdd21eca776827eef29e8e65f",
+          "sourceUrl": "https://github.com/visualizationcreation/crystal-ball-orb/tree/f9e005bc15cdfb8bdd21eca776827eef29e8e65f",
+          "note": "Photo revision: 21 credited web images and 32 labeled local FLUX.2 Klein illustrations. All Edition 04 forecasts, probabilities, cutoffs and scoring rules preserved. Nine reading chapters remain unrecorded; old audio retired at owner request.",
+          "forecastRevision": "b7b2ef60fd428ab2addd955afbf8c6efd32bf742",
+          "forecastSourceUrl": "https://github.com/visualizationcreation/crystal-ball-orb/tree/b7b2ef60fd428ab2addd955afbf8c6efd32bf742",
+          "imageCount": 53
         }
-      ]
+      ],
+      "imageCount": 53,
+      "webImageCount": 21,
+      "generatedImageCount": 32,
+      "imageCredits": "https://visualizationcreation.github.io/crystal-ball-orb/image-credits.html"
     },
     {
       "id": "south-sound-salmon-watching-guide",
