@@ -12,3 +12,4 @@ Object.assign(window.ORB_SPANISH,{
 });
 Object.assign(window.ORB_SPANISH,{"Try another keyword or reset the filters.":"Prueba otra palabra clave o restablece los filtros."});
 Object.assign(window.ORB_SPANISH,{"Plan an autumn salmon outing at 11 locations around Olympia, the South Sound and farther afield. Explore 20 locally illustrated points, with seasonal dates, maps and an educational course written by Astra and voiced locally by Michael.":"Planifica una salida otoñal para observar salmones en 11 lugares de Olympia, South Sound y otros destinos. Explora 20 puntos ilustrados localmente, con fechas de temporada, mapas y un curso educativo escrito por Astra y narrado localmente por Michael."});
+Object.assign(window.ORB_SPANISH,{"1 edition":"1 edición","Salmon field guide & ORB Learn":"Guía del salmón y ORB Learn","First encounter pilot":"Primer encuentro: piloto"});
