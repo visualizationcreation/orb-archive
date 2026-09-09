@@ -432,11 +432,34 @@
               "note": "Initial illustrated edition, before real photographs were added."
             }
           ],
-          "updated": "2026-09-08"
+          "updated": "2026-09-08",
+          "showcaseUrl": "https://www.youtube.com/watch?v=xGZt80vYokI"
         }
       ],
       "photoCount": 20,
-      "illustrationCount": 20
+      "illustrationCount": 20,
+      "videoUrl": "https://www.youtube.com/watch?v=xGZt80vYokI",
+      "showcase": {
+        "title": "Where to Watch Salmon Near Olympia — South Sound ORB Guide",
+        "url": "https://www.youtube.com/watch?v=xGZt80vYokI",
+        "facebookUrl": "https://www.facebook.com/reel/1692063461895524",
+        "durationSeconds": 93.583333,
+        "mode": "ORB Learn",
+        "format": "1920 × 1080 YouTube; 1080 × 1350 Facebook Reel",
+        "scriptRevision": "8456261e3339ede3",
+        "voice": "Kokoro Michael (local)",
+        "authorship": "Written directly by Astra, primary assistant; no local writing model.",
+        "pointIds": [
+          "the-leap",
+          "tumwater-falls",
+          "sol-duc",
+          "kennedy-creek",
+          "mclane-creek",
+          "read-the-water",
+          "season-calendar",
+          "choose-your-outing"
+        ]
+      }
     }
   ],
   "schemaVersion": 2
