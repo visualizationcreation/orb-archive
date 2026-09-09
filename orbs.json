@@ -361,7 +361,7 @@
     {
       "id": "south-sound-salmon-watching-guide",
       "title": "South Sound Salmon Watching Guide",
-      "description": "Plan an autumn salmon outing at 11 locations around Olympia, the South Sound and farther afield. Explore 20 locally illustrated points, with seasonal dates, maps and an educational course written by Astra and voiced locally by Michael.",
+      "description": "Plan an autumn salmon outing at 11 locations around Olympia, the South Sound and farther afield. Explore 20 points with real photographs first, optional local AI illustrations, seasonal dates, maps and an educational course written by Astra and voiced locally by Michael.",
       "url": "https://visualizationcreation.github.io/south-sound-salmon-watching-guide/",
       "repository": "https://github.com/visualizationcreation/south-sound-salmon-watching-guide",
       "tags": [
@@ -376,8 +376,8 @@
       "format": "Salmon field guide & ORB Learn",
       "pointCount": 20,
       "locationCount": 11,
-      "imageCount": 20,
-      "displayMeta": "11 viewing locations · 20 illustrated points · 13:04 local male narration",
+      "imageCount": 40,
+      "displayMeta": "11 viewing locations · 20 real photos + 20 optional illustrations · 13:04 local male narration",
       "availableJourneys": [
         {
           "name": "ORB Learn — Spiral Audio Course",
@@ -393,7 +393,7 @@
       ],
       "firstPublished": "2026-09-08",
       "updated": "2026-09-08",
-      "revision": "d74d68df2170eb3b647d346f8d31e7d6c80b7dd9",
+      "revision": "2c151347d8bbf338948b2ddea238e3e806408f48",
       "featuredEdition": "south-sound-salmon-watching-guide-learn-v1",
       "authorship": {
         "writer": "Astra · primary assistant",
@@ -414,13 +414,22 @@
           "modelId": null,
           "orbSkillVersion": null,
           "interface": "Rotating word map, six-direction compass, seasonal planner and synchronized educational narration",
-          "displayMeta": "20 illustrated points · 11 locations · 13:04 recorded · Local Kokoro Michael",
+          "displayMeta": "20 points · Real photo / AI illustration switch · 11 locations · 13:04 recorded · Local Kokoro Michael",
           "durationSeconds": 784.9267916666666,
-          "revision": "d74d68df2170eb3b647d346f8d31e7d6c80b7dd9",
-          "sourceUrl": "https://github.com/visualizationcreation/south-sound-salmon-watching-guide/tree/d74d68df2170eb3b647d346f8d31e7d6c80b7dd9",
-          "note": "Prose and narration written directly by Astra, the primary assistant. Voice generated locally with Kokoro Michael; 20 FLUX.2 Klein photo-style illustrations are labeled as generated scenes, not actual site photographs or current sightings. Confirmed event hours are distinguished from suggested seasonal dates. Live assets and playback technically verified; full listening review pending."
+          "revision": "2c151347d8bbf338948b2ddea238e3e806408f48",
+          "sourceUrl": "https://github.com/visualizationcreation/south-sound-salmon-watching-guide/tree/2c151347d8bbf338948b2ddea238e3e806408f48",
+          "note": "Prose and narration written directly by Astra, the primary assistant. Voice generated locally with Kokoro Michael. Twenty credited real photographs are the default; the original twenty local FLUX.2 Klein illustrations remain available through an image switch. Captions distinguish exact locations from wider town or watershed views. Photo switching preserves course playback. Dates remain seasonal recommendations except specifically confirmed event and access hours. Full listening review pending.",
+          "previousRevisions": [
+            {
+              "revision": "d74d68df2170eb3b647d346f8d31e7d6c80b7dd9",
+              "note": "Initial illustrated edition, before real photographs were added."
+            }
+          ],
+          "updated": "2026-09-08"
         }
-      ]
+      ],
+      "photoCount": 20,
+      "illustrationCount": 20
     }
   ],
   "schemaVersion": 2
