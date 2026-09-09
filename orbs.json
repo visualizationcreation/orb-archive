@@ -92,7 +92,7 @@
     {
       "id": "olympic-national-park",
       "title": "Olympic National Park",
-      "description": "Explore Olympic in 72 connected readings: living homelands, mountain geology, glacier water, rainforest ecology, salmon restoration and the Pacific coast. A rotating word map leads into 42 deeper readings and six open investigations.",
+      "description": "Explore 72 illustrated points across Olympic’s living homelands, mountains, rainforests, rivers and coast. Listen in two complete modes: ORB Learn and ORB Feel & Experience, recorded locally with Bella.",
       "url": "https://visualizationcreation.github.io/olympic-national-park/",
       "repository": "https://github.com/visualizationcreation/olympic-national-park",
       "tags": [
@@ -105,6 +105,28 @@
       ],
       "availableJourneys": [
         {
+          "name": "ORB Learn — Spiral Audio Course",
+          "style": "active",
+          "courseMode": "learn",
+          "durationSeconds": 3110.85125,
+          "durationLabel": "51:50",
+          "narrationReady": true,
+          "url": "https://visualizationcreation.github.io/olympic-national-park/courses.html?mode=learn",
+          "voice": "Kokoro Bella",
+          "pointCount": 72
+        },
+        {
+          "name": "ORB Feel & Experience — Guided Audio Journey",
+          "style": "rest",
+          "courseMode": "feel",
+          "durationSeconds": 2736.9415,
+          "durationLabel": "45:36",
+          "narrationReady": true,
+          "url": "https://visualizationcreation.github.io/olympic-national-park/courses.html?mode=feel",
+          "voice": "Kokoro Bella",
+          "pointCount": 72
+        },
+        {
           "name": "Earlier 30-point Rest Journey",
           "style": "rest",
           "durationSeconds": 2913.64,
@@ -114,10 +136,10 @@
       ],
       "firstPublished": "2026-09-07",
       "updated": "2026-09-08",
-      "revision": "2a9d0a90ee51ee73f5a3fd700e5e9beea7bb8232",
+      "revision": "cd6795250f71ae929a6ac411fb6dbfd7c7dc606a",
       "category": "Nature",
-      "format": "Interactive field guide",
-      "displayMeta": "72 points · 42 deeper readings · 59 sources · Rotating word map",
+      "format": "Field guide & Spiral Courses",
+      "displayMeta": "72 illustrated points · Two local Bella courses · 59 sources",
       "featuredEdition": "olympic-national-park-field-guide-v1",
       "editions": [
         {
@@ -131,11 +153,11 @@
           "modelId": null,
           "orbSkillVersion": null,
           "interface": "Clickable rotating word map, six-direction compass and deeper reading links",
-          "displayMeta": "72 readings · 59 sources · Six open investigations · New media planned",
-          "sourceUrl": "https://github.com/visualizationcreation/olympic-national-park/tree/2a9d0a90ee51ee73f5a3fd700e5e9beea7bb8232",
-          "note": "Expanded replacement of the existing reading ORB. Retains all 30 earlier point IDs and adds 42 detail readings. Existing photographs and illustrations remain; the new readings are text-first. The separate earlier 30-point Rest recording does not narrate this expanded edition.",
+          "displayMeta": "72 illustrated readings · 59 sources · Six open investigations",
+          "sourceUrl": "https://github.com/visualizationcreation/olympic-national-park/tree/cd6795250f71ae929a6ac411fb6dbfd7c7dc606a",
+          "note": "Expanded replacement of the existing reading ORB with all 72 points illustrated. Preserves the earlier point IDs, evidence and compass. Includes links to both complete 72-point Spiral Courses; the earlier 30-point Aria recording remains a historical edition.",
           "verified": "2026-09-08",
-          "revision": "2a9d0a90ee51ee73f5a3fd700e5e9beea7bb8232",
+          "revision": "cd6795250f71ae929a6ac411fb6dbfd7c7dc606a",
           "previousRevisions": [
             {
               "revision": "fdfe396ed0f9b8cef749dcfcddc4451e4bac4bea",
@@ -166,6 +188,54 @@
           "revision": "fdfe396ed0f9b8cef749dcfcddc4451e4bac4bea",
           "scriptRevision": "cb3b1de30d927cff",
           "basedOnRevision": "2026-09-07-v2-park-wide"
+        },
+        {
+          "id": "olympic-national-park-learn-v1",
+          "label": "ORB Learn — Spiral Audio Course",
+          "url": "https://visualizationcreation.github.io/olympic-national-park/courses.html?mode=learn",
+          "authored": "2026-09-08",
+          "published": "2026-09-08",
+          "updated": "2026-09-08",
+          "verified": "2026-09-08",
+          "generation": "narrated",
+          "journeyMode": "active",
+          "courseMode": "learn",
+          "modelLabel": "Local Kokoro Bella · FLUX.2 Klein",
+          "modelId": "kokoro-v1.0/af_bella",
+          "orbSkillVersion": null,
+          "interface": "Narrated word spiral with timed passages, images and independent Resume",
+          "displayMeta": "72 illustrated points · 51:50 recorded · Twelve audio chapters",
+          "durationSeconds": 3110.85125,
+          "revision": "cd6795250f71ae929a6ac411fb6dbfd7c7dc606a",
+          "scriptRevision": "2026-09-08-learn-64ec2fa8de35",
+          "basedOn": "olympic-national-park-field-guide-v1",
+          "basedOnRevision": "2026-09-08-expanded-72",
+          "sourceUrl": "https://github.com/visualizationcreation/olympic-national-park/tree/cd6795250f71ae929a6ac411fb6dbfd7c7dc606a",
+          "note": "Locally drafted and substantially rewritten against the sourced ORB. Local Bella narration with measured paragraph cues; credited photos and labeled illustrations. Playback, images and audio files technically verified. Full listening review pending."
+        },
+        {
+          "id": "olympic-national-park-feel-v1",
+          "label": "ORB Feel & Experience — Guided Audio Journey",
+          "url": "https://visualizationcreation.github.io/olympic-national-park/courses.html?mode=feel",
+          "authored": "2026-09-08",
+          "published": "2026-09-08",
+          "updated": "2026-09-08",
+          "verified": "2026-09-08",
+          "generation": "narrated",
+          "journeyMode": "rest",
+          "courseMode": "feel",
+          "modelLabel": "Local Kokoro Bella · FLUX.2 Klein",
+          "modelId": "kokoro-v1.0/af_bella",
+          "orbSkillVersion": null,
+          "interface": "Narrated word spiral with timed passages, images and independent Resume",
+          "displayMeta": "72 illustrated points · 45:36 recorded · Twelve audio chapters",
+          "durationSeconds": 2736.9415,
+          "revision": "cd6795250f71ae929a6ac411fb6dbfd7c7dc606a",
+          "scriptRevision": "2026-09-08-feel-88ac29f19321",
+          "basedOn": "olympic-national-park-field-guide-v1",
+          "basedOnRevision": "2026-09-08-expanded-72",
+          "sourceUrl": "https://github.com/visualizationcreation/olympic-national-park/tree/cd6795250f71ae929a6ac411fb6dbfd7c7dc606a",
+          "note": "Locally drafted and substantially rewritten against the sourced ORB. Local Bella narration with measured paragraph cues; credited photos and labeled illustrations. Playback, images and audio files technically verified. Full listening review pending."
         }
       ],
       "restJourney": {
