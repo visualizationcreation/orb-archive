@@ -11,3 +11,38 @@
 @media(min-width:761px){.orb-row{padding-top:15px}.description{margin:6px 0 9px}.version-details{margin-top:8px}.version-details summary{padding:6px 0 8px}.workspace{padding-top:23px}.toolbar{padding-top:15px;padding-bottom:15px}.list-status{margin-top:16px}}
 @media(max-width:760px){.mobile-label{position:static;width:auto;height:auto;overflow:visible;clip-path:none;white-space:normal}}
 @media print{.site-header,.toolbar,.row-actions,.footer,.version-details,.list-status a{display:none}body,.workspace{background:white;padding:0}.orb-row{break-inside:avoid}.catalog{border:0}.description{color:#222}}
+
+/* Shared archive branding. The image is decorative; headings remain live text. */
+:root{--background:#f3f5f7;--ink:#1c2935;--muted:#5b6977;--line:#dbe2e9;--green:#315d7b;--moss:#c1dded;--tool:#131e29;--soft:#eaf1f6}
+.site-header{color:#e7eef4;border-bottom:1px solid #2a3947}
+.brand svg{display:none}
+.brand::before{content:"";width:32px;height:32px;flex:none;border-radius:50%;background:#111c28 url('orb-silver.jpg') center/155% no-repeat}
+.nav a,.attribution{color:#bfccd7}
+.workspace-heading{position:relative;isolation:isolate;overflow:hidden;min-height:180px;padding:35px 32px;display:flex;flex-direction:column;justify-content:center;align-items:flex-start;gap:9px;margin-bottom:22px;border:1px solid #2b3d4d;border-radius:6px;background:#14202c;color:#f5f8fb}
+.workspace-heading::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(105deg,#111b26,transparent 75%),linear-gradient(0deg,#253b4e66,transparent 65%)}
+.workspace-heading::after{content:"";position:absolute;z-index:-1;right:0;top:-22px;width:600px;height:231px;background:url('orb-clouds.jpg') center/100% 100% no-repeat;mask-image:linear-gradient(90deg,transparent 46%,#000 62%)}
+.workspace-heading h1{font-size:30px;font-weight:550;letter-spacing:-.025em;max-width:65%}
+.workspace-heading p{color:#c8d5df;max-width:60%;font-size:13px}
+.toolbar{background:#e7edf2;color:var(--ink);border:1px solid #d1dce5}
+.field label{color:#4e6172}
+.search-wrap svg{color:#637c90}
+.toolbar input,.toolbar select{background:#fff;color:var(--ink);border-color:#bacad6}
+.toolbar input::placeholder{color:#667887}
+.clear{color:#315d7b}
+.clear:hover{background:#d9e4ed}
+.column-head{background:#edf2f6;color:#566879}
+.orb-row:hover{background:#fafcfe}
+.row-actions .explore{color:#315d7b;border-color:#cbdce8}
+.version-details summary span{color:#66798a}
+.demo-reading{border-left-color:#88adca}
+.share-steps li{border-left-color:#b7ccdc}
+.empty button{border-color:#b7ccdc}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,summary:focus-visible{outline-color:#548db4}
+@media(max-width:760px){
+  .workspace-heading{min-height:166px;padding:23px 20px;gap:8px}
+  .workspace-heading::after{width:440px;height:170px;top:0;right:-85px;mask-image:linear-gradient(90deg,transparent 48%,#000 65%)}
+  .workspace-heading h1{font-size:25px;max-width:65%}
+  .workspace-heading p{font-size:12px;max-width:57%;margin:0}
+  .brand::before{width:27px;height:27px}
+}
+@media print{.workspace-heading{min-height:0;padding:0;color:#111;background:white;border:0}.workspace-heading::before,.workspace-heading::after{display:none}.workspace-heading p{color:#333}}
