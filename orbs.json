@@ -357,6 +357,70 @@
           "note": "Five new headline possibilities; ten earlier forecasts preserve their original probabilities and cutoffs. Old audio retired at the owner’s request."
         }
       ]
+    },
+    {
+      "id": "south-sound-salmon-watching-guide",
+      "title": "South Sound Salmon Watching Guide",
+      "description": "Plan an autumn salmon outing at 11 locations around Olympia, the South Sound and farther afield. Explore 20 locally illustrated points, with seasonal dates, maps and an educational course written by Astra and voiced locally by Michael.",
+      "url": "https://visualizationcreation.github.io/south-sound-salmon-watching-guide/",
+      "repository": "https://github.com/visualizationcreation/south-sound-salmon-watching-guide",
+      "tags": [
+        "salmon",
+        "Olympia",
+        "South Sound",
+        "Washington",
+        "wildlife",
+        "autumn"
+      ],
+      "category": "Nature",
+      "format": "Salmon field guide & ORB Learn",
+      "pointCount": 20,
+      "locationCount": 11,
+      "imageCount": 20,
+      "displayMeta": "11 viewing locations · 20 illustrated points · 13:04 local male narration",
+      "availableJourneys": [
+        {
+          "name": "ORB Learn — Spiral Audio Course",
+          "style": "active",
+          "courseMode": "learn",
+          "durationSeconds": 784.9267916666666,
+          "durationLabel": "13:04",
+          "narrationReady": true,
+          "url": "https://visualizationcreation.github.io/south-sound-salmon-watching-guide/#the-return",
+          "voice": "Kokoro Michael",
+          "pointCount": 20
+        }
+      ],
+      "firstPublished": "2026-09-08",
+      "updated": "2026-09-08",
+      "revision": "d74d68df2170eb3b647d346f8d31e7d6c80b7dd9",
+      "featuredEdition": "south-sound-salmon-watching-guide-learn-v1",
+      "authorship": {
+        "writer": "Astra · primary assistant",
+        "localLLMUsedForWriting": false
+      },
+      "editions": [
+        {
+          "id": "south-sound-salmon-watching-guide-learn-v1",
+          "label": "Autumn 2026 · ORB Learn",
+          "url": "https://visualizationcreation.github.io/south-sound-salmon-watching-guide/",
+          "authored": "2026-09-08",
+          "published": "2026-09-08",
+          "verified": "2026-09-08",
+          "generation": "narrated",
+          "journeyMode": "active",
+          "courseMode": "learn",
+          "modelLabel": "Astra",
+          "modelId": null,
+          "orbSkillVersion": null,
+          "interface": "Rotating word map, six-direction compass, seasonal planner and synchronized educational narration",
+          "displayMeta": "20 illustrated points · 11 locations · 13:04 recorded · Local Kokoro Michael",
+          "durationSeconds": 784.9267916666666,
+          "revision": "d74d68df2170eb3b647d346f8d31e7d6c80b7dd9",
+          "sourceUrl": "https://github.com/visualizationcreation/south-sound-salmon-watching-guide/tree/d74d68df2170eb3b647d346f8d31e7d6c80b7dd9",
+          "note": "Prose and narration written directly by Astra, the primary assistant. Voice generated locally with Kokoro Michael; 20 FLUX.2 Klein photo-style illustrations are labeled as generated scenes, not actual site photographs or current sightings. Confirmed event hours are distinguished from suggested seasonal dates. Live assets and playback technically verified; full listening review pending."
+        }
+      ]
     }
   ],
   "schemaVersion": 2
