@@ -249,6 +249,59 @@
         "durationLabel": "48:33"
       },
       "pointCount": 72
+    },
+    {
+      "id": "crystal-ball-orb",
+      "title": "Crystal Ball ORB",
+      "description": "Explore eight dated predictions for September 9–22 through themes and evidence, plus 21 World Watch stories and Thinking in Probabilities, a male-narrated course.",
+      "url": "https://visualizationcreation.github.io/crystal-ball-orb/",
+      "repository": "https://github.com/visualizationcreation/crystal-ball-orb",
+      "tags": [
+        "CrystalBallOrb",
+        "forecasting",
+        "world events",
+        "education",
+        "AI"
+      ],
+      "category": "World & ideas",
+      "format": "Prediction orb & course",
+      "pointCount": 28,
+      "displayMeta": "28 points · 8 forecasts · 21 watch stories · 19:24 recorded",
+      "availableJourneys": [
+        {
+          "id": "crystal-ball-learn-v1",
+          "name": "Thinking in Probabilities · ORB Learn",
+          "url": "https://visualizationcreation.github.io/crystal-ball-orb/#spiral-course",
+          "durationSeconds": 1164.1535,
+          "voice": "Kokoro Michael",
+          "narrationReady": true
+        }
+      ],
+      "firstPublished": "2026-09-08",
+      "updated": "2026-09-08",
+      "revision": "2878e8aaf6e7c90015dec13e580f08ac191289c6",
+      "featuredEdition": "crystal-ball-2026-09-08-v1",
+      "editions": [
+        {
+          "id": "crystal-ball-2026-09-08-v1",
+          "label": "Crystal Ball ORB · September 9–22, 2026",
+          "url": "https://visualizationcreation.github.io/crystal-ball-orb/",
+          "authored": "2026-09-08",
+          "published": "2026-09-08",
+          "verified": "2026-09-08",
+          "generation": "narrated",
+          "journeyMode": "active",
+          "modelLabel": "Primary assistant authored · Kokoro Michael narration",
+          "modelId": null,
+          "orbSkillVersion": null,
+          "interface": "One rotating sphere, three conceptual layers and a narrated learning spiral",
+          "displayMeta": "28 points · 10 course chapters · 19:24 recorded · 21 World Watch stories",
+          "durationSeconds": 1164.1535,
+          "revision": "2878e8aaf6e7c90015dec13e580f08ac191289c6",
+          "sourceUrl": "https://github.com/visualizationcreation/crystal-ball-orb/tree/2878e8aaf6e7c90015dec13e580f08ac191289c6",
+          "note": "An exploratory forecasting experiment inspired by AGI claims. Original percentages and resolution rules retained. World Watch is a separate reading companion. Playback technically verified; full listening review pending."
+        }
+      ]
     }
   ],
   "schemaVersion": 2
