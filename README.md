@@ -18,7 +18,7 @@ Each record retains its title, description, category, tags, firstPublished/updat
 - Optional pointCount is an integer. Existing records fall back to the explicitly recorded count in displayMeta.
 - availableJourneys entries with narrationReady true make Listen available. Set a verified url for a journey with a separate destination; otherwise the ORB reader is used. durationSeconds is measured recording time, not a plan.
 - filmStudy.url and durationSeconds describe a published companion film; optional videoUrl can identify another published video. Watch appears only with a valid HTTPS destination.
-- edition.journeyMode can be active or rest when that script mode is confirmed. The journey-mode filter appears only when the catalog contains confirmed modes. Do not infer a mode from generation, a mention in explanatory text, or a voice provider.
+- edition.journeyMode can be active or rest when that script mode is confirmed. The course-mode filter appears only when the catalog contains confirmed modes. Do not infer a mode from generation, a mention in explanatory text, or a voice provider.
 
 Search matches words in title, description, category, and tags. Topic and format filters intersect. Recent updates and newest additions sort descending by their recorded dates, with title as a stable tie-breaker; Title A–Z uses title ordering. Dates remain at their recorded precision.
 
@@ -35,3 +35,5 @@ The #share section links to https://visualizationcreation.github.io/orb-share/. 
 The owner asks the assistant to review intake, considers its file/format/evidence checks and preview, then explicitly approves a named version. Only then does the assistant manage hosting, creator attribution and the approved catalogue in orb-share/orbs.json. Follow orb-share/REVIEWING.md. Review is on request, not a background monitor.
 
 community.js reads only the published approved orb-share manifest, never pending issues or attachments. It renders safe text and links, with empty/error states. Keep the Share navigation, section, community.js and community.css during future updates. The curated catalogue and its search/filters remain separate; preserve existing editions, media links and inactive snapshots. The existing directory builder preserves the community section.
+
+Public terminology: Spiral Courses includes ORB Learn — Spiral Audio Course and ORB Feel & Experience — Guided Audio Journey. Retain active/rest identifiers and existing URLs for compatibility; use courseModeLabel for display. Read & explore describes the interactive format, not a third course mode. A label update does not regenerate earlier recordings.

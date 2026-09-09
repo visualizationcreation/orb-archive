@@ -84,7 +84,7 @@
           "interface": "Rotating ORB map and six-direction compass",
           "displayMeta": "20 stops · Readings, exercises, checkpoints · No narration",
           "sourceUrl": "https://github.com/visualizationcreation/the-orb-skill/tree/f62550b3ad84cde002c674b382d4d55f363e9a06",
-          "note": "An original field guide to education and self-improvement with ORB. Includes Active/Rest Journey and video-workflow guidance; no generated audio or video.",
+          "note": "An original field guide to education and self-improvement with ORB. Includes course-script and video-workflow guidance; no generated audio or video.",
           "verified": "2026-09-07"
         }
       ]
@@ -127,7 +127,7 @@
           "pointCount": 72
         },
         {
-          "name": "Earlier 30-point Rest Journey",
+          "name": "ORB Feel & Experience · Earlier 30-point recording",
           "style": "rest",
           "durationSeconds": 2913.64,
           "narrationReady": true,
@@ -171,7 +171,7 @@
         },
         {
           "id": "olympic-national-park-rest-v1",
-          "label": "Earlier 30-point Rest Journey",
+          "label": "ORB Feel & Experience · Earlier 30-point recording",
           "url": "https://visualizationcreation.github.io/olympic-national-park/rest.html?start=beginning",
           "authored": "2026-09-07",
           "published": "2026-09-07",
