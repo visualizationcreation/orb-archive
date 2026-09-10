@@ -4,3 +4,5 @@ Object.assign(window.ORB_SPANISH,{
 Object.assign(window.ORB_SPANISH,{
 'Navigate the ORB':'Navegar el ORB','ORB control pad':'Panel de control ORB','◎ Home':'◎ Inicio','Return to the subject':'Volver al tema','Thread':'Hilo','Read this point ↓':'Leer este punto ↓','↑ Back to ORB controls':'↑ Volver a los controles ORB','Media for this point':'Medios de este punto','Point resources':'Recursos del punto'
 });
+
+Object.assign(window.ORB_SPANISH,{"Display options":"Opciones de vista"});
