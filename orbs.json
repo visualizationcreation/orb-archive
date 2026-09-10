@@ -576,6 +576,50 @@
           "note": "All six poems use public-domain texts with edition notes. Images generated locally with FLUX.2 Klein and explicitly labeled illustrations. Commentary and continuous second-person guided script authored by the primary assistant; no local writing model or generated audio."
         }
       ]
+    },
+    {
+      "id": "core-belief",
+      "title": "Core Belief ORB",
+      "description": "Explore 25 illustrative belief patterns across convention, conditional belonging, stress, trauma, and coercive influence, with protective rules, flexible possibilities, and evidence boundaries.",
+      "url": "https://visualizationcreation.github.io/core-belief/",
+      "repository": "https://github.com/visualizationcreation/core-belief",
+      "tags": [
+        "core beliefs",
+        "psychology",
+        "social norms",
+        "stress",
+        "trauma",
+        "coercive influence"
+      ],
+      "category": "Mind & experience",
+      "format": "Interactive reading orb",
+      "pointCount": 41,
+      "displayMeta": "41 points · 25 belief patterns · 5 contexts · Text edition",
+      "availableJourneys": [],
+      "narrationReady": false,
+      "firstPublished": "2026-09-09",
+      "updated": "2026-09-09",
+      "revision": "76cb73f47a745d99f0ca4eb956cd4969d0c396d7",
+      "featuredEdition": "core-belief-2026-09-v1",
+      "editions": [
+        {
+          "id": "core-belief-2026-09-v1",
+          "label": "Core Belief ORB · Reading edition",
+          "url": "https://visualizationcreation.github.io/core-belief/",
+          "authored": "2026-09-09",
+          "published": "2026-09-09",
+          "verified": "2026-09-09",
+          "generation": "text",
+          "modelLabel": "Primary assistant authored",
+          "modelId": null,
+          "orbSkillVersion": null,
+          "interface": "Rotating map, six-direction compass, searchable belief index, printable readings and continuation",
+          "displayMeta": "41 points · 25 hypothetical examples · 14 sources · No narration",
+          "revision": "76cb73f47a745d99f0ca4eb956cd4969d0c396d7",
+          "sourceUrl": "https://github.com/visualizationcreation/core-belief/tree/76cb73f47a745d99f0ca4eb956cd4969d0c396d7",
+          "note": "Original educational framework; contexts overlap and are not a severity scale. Does not assess or diagnose a person. Browser, mobile, print styles and reduced motion verified."
+        }
+      ]
     }
   ],
   "schemaVersion": 2
