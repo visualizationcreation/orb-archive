@@ -8,3 +8,4 @@ Object.assign(window.ORB_SPANISH,{
 Object.assign(window.ORB_SPANISH,{"Display options":"Opciones de vista"});
 
 Object.assign(window.ORB_SPANISH,{"Compass points":"Puntos de la brújula"});
+Object.assign(window.ORB_SPANISH,{"Left column width":"Ancho de la columna izquierda"});

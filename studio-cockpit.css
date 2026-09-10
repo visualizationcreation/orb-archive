@@ -62,3 +62,17 @@
  .compass-point-grid{max-height:min(270px,45svh);gap:12px}.studio-page .compass-point-grid button{font-size:12px;min-height:40px}
 }
 @media print{.compass-directory{display:none!important}}
+/* An adjustable seam keeps the reader generous and gives the compass room. */
+.workspace-divider{display:none}
+@media(min-width:761px){
+ .studio-workspace{grid-template-columns:var(--studio-column-width,300px) 22px minmax(0,1fr);gap:8px}
+ .workspace-divider{display:flex;align-items:flex-start;justify-content:center;position:sticky;top:12px;height:calc(100svh - 24px);max-height:720px;min-width:0;cursor:col-resize;touch-action:none;border-radius:8px;outline-offset:1px;background:linear-gradient(#a7c9dd00,#91b7cf44 18%,#91b7cf44 82%,#a7c9dd00);background-size:1px 100%;background-position:center;background-repeat:no-repeat}
+ .workspace-divider span{display:grid;place-items:center;margin-top:28px;width:22px;height:54px;border:1px solid #66859a;border-radius:10px;color:#cde9f6;background:linear-gradient(90deg,#213747,#476274,#213747);font-size:16px;box-shadow:0 2px 8px #0003;pointer-events:none;transition:color .15s,border-color .15s}
+ .workspace-divider:hover span,.workspace-divider:focus-visible span,.studio-resizing .workspace-divider span{color:white;border-color:#d2f0ff;background:#42667e}
+ .workspace-divider:focus-visible{outline:2px solid #c5eaff}
+ .studio-resizing,.studio-resizing *{cursor:col-resize!important;user-select:none!important}
+ .orb-stage{min-width:0}.stage-caption h2,.stage-caption p{overflow-wrap:anywhere}
+}
+@media(min-width:761px) and (max-width:1050px){.studio-workspace{grid-template-columns:var(--studio-column-width,240px) 22px minmax(0,1fr)}}
+@media(prefers-reduced-motion:reduce){.workspace-divider span{transition:none}}
+@media print{.workspace-divider{display:none!important}}
