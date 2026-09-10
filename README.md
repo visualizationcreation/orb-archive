@@ -64,3 +64,8 @@ Public terminology: Spiral Courses includes ORB Learn — Spiral Audio Course an
 
 The canonical catalog and all source records remain in `orbs.json`. `build-directory.cjs` preserves the language controls while rebuilding the saved catalog. Local tests cover desktop/mobile layouts, Spanish search, filters, compass, language switching, reload, and starter-message clipboard copying.
 
+
+
+## Star Navigator visitor archive
+
+The `#star-navigator` section uses `star-navigator.js` to display orbs explicitly published through Star Navigator. Netlify Blobs stores these public records; GitHub Pages displays the live feed. Publishing does not create a GitHub account, repository, or commit per visitor orb. The selected ORB content, sources, generation metadata and publication date are public; private inquiry context and journey history are excluded. Each record has a stable content ID and a reusable reader URL. Existing curated and approved Community ORBs retain their own workflows. Preserve this section and script during directory builds.
