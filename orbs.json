@@ -464,7 +464,7 @@
     {
       "id": "dia-de-muertos",
       "title": "Día de Muertos",
-      "description": "A gentle bilingual journey through remembrance, offerings, craft, and regional traditions, with a rotating ORB, 52 real photographs, and Heart / Dora narration.",
+      "description": "A gentle bilingual journey through remembrance, offerings, craft, and regional traditions, with a rotating ORB, 52 real photographs, Heart / Dora narration, and optional music with Mexican street ambience.",
       "url": "https://visualizationcreation.github.io/dia-de-muertos/",
       "repository": "https://github.com/visualizationcreation/dia-de-muertos",
       "tags": [
@@ -508,7 +508,7 @@
       ],
       "firstPublished": "2026-09-09",
       "updated": "2026-09-09",
-      "revision": "4526c169e12257b8bf69e71dee55cfa16a70b9ca",
+      "revision": "9d205578d29c329ded168cc865d38be8738a609b",
       "featuredEdition": "dia-de-muertos-bilingual-feel-v1",
       "authorship": {
         "writer": "Primary assistant",
@@ -530,9 +530,9 @@
           "orbSkillVersion": null,
           "interface": "Rotating sphere, six-direction compass, media embedded at points, bilingual guided listening",
           "displayMeta": "37 points · English 25:16 / Español 24:40 at the default gentle pace",
-          "revision": "4526c169e12257b8bf69e71dee55cfa16a70b9ca",
-          "sourceUrl": "https://github.com/visualizationcreation/dia-de-muertos/tree/4526c169e12257b8bf69e71dee55cfa16a70b9ca",
-          "note": "Heart English and Dora Spanish; complete point readings and guided journeys. Real photographs retain individual credits and licenses. Imagined scenes remain distinct from documented cultural accounts. Full human listening review pending."
+          "revision": "9d205578d29c329ded168cc865d38be8738a609b",
+          "sourceUrl": "https://github.com/visualizationcreation/dia-de-muertos/tree/9d205578d29c329ded168cc865d38be8738a609b",
+          "note": "Heart English and Dora Spanish; complete point readings and guided journeys. Real photographs retain individual credits and licenses. Imagined scenes remain distinct from documented cultural accounts. Full human listening review pending. Optional music and real Mexican street ambience have independent volume and follow narration playback; sound credits are included."
         }
       ]
     },
