@@ -538,8 +538,8 @@
     },
     {
       "id": "autumn-in-two-orbits",
-      "title": "Autumn, in Two Orbits",
-      "description": "Six complete public-domain autumn poems and six credited photographs alternate along a luminous spiral. Explore historical readings or enter Where the light goes, a revised second-person Feel & Experience journey from orchard light to evening warmth.",
+      "title": "Autumn in the Pacific Northwest",
+      "description": "Six complete public-domain autumn poems meet documented leaf photographs from Seattle and Portland. Follow the spherical spiral, read a gentle Feel & Experience journey, and choose optional relaxing piano.",
       "url": "https://visualizationcreation.github.io/autumn-in-two-orbits/",
       "repository": "https://github.com/visualizationcreation/autumn-in-two-orbits",
       "tags": [
@@ -547,22 +547,25 @@
         "poetry",
         "literature",
         "seasonal",
-        "art"
+        "art",
+        "Pacific Northwest",
+        "autumn leaves",
+        "piano"
       ],
       "category": "Arts & Culture",
-      "format": "Double poetry ORB · guided text",
+      "format": "Poetry ORB · optional piano",
       "pointCount": 12,
       "imageCount": 6,
-      "displayMeta": "6 poets · 6 credited photographs · Guided text, unrecorded",
+      "displayMeta": "6 poets · Seattle & Portland leaves · Quiet piano",
       "availableJourneys": [],
       "firstPublished": "2026-09-09",
       "updated": "2026-09-10",
-      "revision": "cbc16aa4b414974b9820edb978f198e34ffe2e4a",
+      "revision": "b61742a5d8ffb9fd803767a850dafd522e7e4f05",
       "featuredEdition": "autumn-in-two-orbits-v1",
       "editions": [
         {
           "id": "autumn-in-two-orbits-v1",
-          "label": "Autumn anthology · Double ORB",
+          "label": "Pacific Northwest autumn · Double ORB",
           "url": "https://visualizationcreation.github.io/autumn-in-two-orbits/",
           "authored": "2026-09-09",
           "published": "2026-09-09",
@@ -570,13 +573,13 @@
           "generation": "text",
           "modelLabel": "Primary assistant",
           "interface": "Continuous spherical spiral with alternating poem and photo points, six-direction compass, historical readings and original guided prose",
-          "displayMeta": "12 stops · 6 licensed photographs · Guided text unrecorded",
-          "revision": "cbc16aa4b414974b9820edb978f198e34ffe2e4a",
-          "sourceUrl": "https://github.com/visualizationcreation/autumn-in-two-orbits/tree/cbc16aa4b414974b9820edb978f198e34ffe2e4a",
-          "note": "The revised original Feel & Experience script, Where the light goes, connects all twelve stops with sensory detail, flowing transitions and a gradual return. Text only, unrecorded. Six public-domain poems, historical readings, licensed photographs, credits and spiral layout are preserved. Guided prose authored directly by the primary assistant.",
+          "displayMeta": "12 stops · 6 real regional photos · Optional piano",
+          "revision": "b61742a5d8ffb9fd803767a850dafd522e7e4f05",
+          "sourceUrl": "https://github.com/visualizationcreation/autumn-in-two-orbits/tree/b61742a5d8ffb9fd803767a850dafd522e7e4f05",
+          "note": "Bright Pacific Northwest autumn edition: six documented Seattle and Portland leaf photographs (1983–2020), source credits and individual Creative Commons licenses, and optional Satie piano recorded by Kevin MacLeod under CC BY 4.0. Preserve all six poems, historical readings, point IDs and alternating spherical spiral. Revised original photo pauses connect the unrecorded guided text. Music is instrumental accompaniment, not narration.",
           "previousVisualRevision": "67f9ef68b47df1267e3eeca2f273f8f369d3bb89",
-          "guidedRevision": "feel-v2",
-          "previousGuidedRevision": "feel-v1"
+          "guidedRevision": "feel-pnw-v3",
+          "previousGuidedRevision": "feel-v2"
         }
       ]
     },
