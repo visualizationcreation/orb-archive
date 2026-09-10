@@ -535,6 +535,47 @@
           "note": "Heart English and Dora Spanish; complete point readings and guided journeys. Real photographs retain individual credits and licenses. Imagined scenes remain distinct from documented cultural accounts. Full human listening review pending."
         }
       ]
+    },
+    {
+      "id": "autumn-in-two-orbits",
+      "title": "Autumn, in Two Orbits",
+      "description": "Six complete public-domain autumn poems by Keats, Dickinson, Dunbar, Jackson, Stevenson and Blake. Alternate poems with six original illustrated pauses, explore historical readings, or follow an original Feel & Experience text journey.",
+      "url": "https://visualizationcreation.github.io/autumn-in-two-orbits/",
+      "repository": "https://github.com/visualizationcreation/autumn-in-two-orbits",
+      "tags": [
+        "autumn",
+        "poetry",
+        "literature",
+        "seasonal",
+        "art"
+      ],
+      "category": "Arts & Culture",
+      "format": "Double poetry ORB · guided text",
+      "pointCount": 12,
+      "imageCount": 6,
+      "displayMeta": "6 poets · 6 illustrated pauses · Guided text, unrecorded",
+      "availableJourneys": [],
+      "firstPublished": "2026-09-09",
+      "updated": "2026-09-09",
+      "revision": "67f9ef68b47df1267e3eeca2f273f8f369d3bb89",
+      "featuredEdition": "autumn-in-two-orbits-v1",
+      "editions": [
+        {
+          "id": "autumn-in-two-orbits-v1",
+          "label": "Autumn anthology · Double ORB",
+          "url": "https://visualizationcreation.github.io/autumn-in-two-orbits/",
+          "authored": "2026-09-09",
+          "published": "2026-09-09",
+          "verified": "2026-09-09",
+          "generation": "text",
+          "modelLabel": "Primary assistant",
+          "interface": "Two interleaved orbits, six-direction compass, complete poems, historical readings and original guided prose",
+          "displayMeta": "12 stops · 6 original AI illustrations · Guided text unrecorded",
+          "revision": "67f9ef68b47df1267e3eeca2f273f8f369d3bb89",
+          "sourceUrl": "https://github.com/visualizationcreation/autumn-in-two-orbits/tree/67f9ef68b47df1267e3eeca2f273f8f369d3bb89",
+          "note": "All six poems use public-domain texts with edition notes. Images generated locally with FLUX.2 Klein and explicitly labeled illustrations. Commentary and continuous second-person guided script authored by the primary assistant; no local writing model or generated audio."
+        }
+      ]
     }
   ],
   "schemaVersion": 2
