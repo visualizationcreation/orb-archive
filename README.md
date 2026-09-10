@@ -1,5 +1,13 @@
 # ORB Archive
 
+## Orb Studio and ORB Fill
+
+`studio.html` is a reusable local-file receiver for the ORB Fill generic tagged reading profile. `studio-parser.js` contains the recovered Studio parser, its validators, and stricter generic-profile checks. Imported text is rendered with textContent; source URLs must be HTTP(S). File selection and drag/drop read locally, with a 10 MB per-file limit, and never publish or upload visitor content. Unsupported legacy blocks are rejected with an explanation. No account, generation API, or local model is needed to browse a completed file.
+
+The viewer offers knowledge-terrain and visual spiral layouts, silver and Neptune-blue finishes, rotation and point focus, authored compass links, full-text point search, source links, print, and a copyable continuation prompt. The spiral is a display route, not invented conceptual links or a narrated course. Imported content retains its language while English/Spanish controls follow the existing language preference. The 40-point `computer-task-videos.orb.txt` is the built-in example; `orbfill-skill.zip` supplies the renamed authoring skill. Parser acceptance does not prove factual accuracy or all geometric quality; review notes remain visible.
+
+Maintain the Studio links on index, about and start pages when changing navigation. `studio-entry.css` styles its archive entry; `studio.css`, `studio.js` and `studio-spanish.js` belong to the viewer. Preserve `orbs.json` and its generated catalog when changing the Studio. Test file import, malformed input, inert HTML text, every example reading, responsive layout, both visual views, languages, reduced motion and print before deployment.
+
 By Informational Dimensions.
 
 A functional library of active ORBs. The site opens on search, topic and format filters, sorting, and compact collection rows. Introductory material and a small compass example live in about.html.

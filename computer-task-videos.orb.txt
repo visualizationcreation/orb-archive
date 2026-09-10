@@ -1,0 +1,1142 @@
+# ORB Fill; template: generic; contract: studio-tagged-v2
+
+[ORB]
+subject_id: outcome
+subject_label: A useful task video makes a result reproducible
+kind: reading
+density: dense
+authored: 2026-09-10
+note: 40 points · Five connected strands · Five knowledge-floor questions. Product documentation checked 2026-09-10; practical recommendations are authorial guidance.
+positions: 40
+[/ORB]
+[THREAD]
+id: planning
+label: Plan a reproducible demonstration
+entry: outcome
+gloss: Follow planning from framing through practical decisions to its limits.
+[/THREAD]
+[THREAD]
+id: capture
+label: Capture the computer task
+entry: capture-boundary
+gloss: Follow capture from framing through practical decisions to its limits.
+[/THREAD]
+[THREAD]
+id: narration
+label: Explain the task in sound
+entry: voice-purpose
+gloss: Follow narration from framing through practical decisions to its limits.
+[/THREAD]
+[THREAD]
+id: editing
+label: Edit for clarity and trust
+entry: editing-trust
+gloss: Follow editing from framing through practical decisions to its limits.
+[/THREAD]
+[THREAD]
+id: sharing
+label: Deliver and maintain the recording
+entry: sharing-contract
+gloss: Follow sharing from framing through practical decisions to its limits.
+[/THREAD]
+[POINT]
+world: planning
+id: outcome
+label: A useful task video makes a result reproducible
+level: 7
+lon: 0
+view: |
+  A computer-task video is a bridge between someone who knows what to do and someone who needs to do it. Its central promise is a visible change: a file becomes organized, a setting becomes correct, or a failure becomes understandable. Begin with that change, then show enough of the path for another person to follow it. A beautiful recording can still fail if the starting conditions are missing.
+  
+  This ORB develops five connected strands: planning, capture, narration, editing, and sharing. Its practical recommendations are authorial guidance; linked product documentation supports specific software capabilities. The goal is a repeatable recording practice, not a requirement to make every small explanation into a polished film. Sometimes a short clip and a written command are the complete solution.
+parent: null
+ab: 0
+refs: sharing-contract, action-proof
+tags: strand:planning, role:framing, basis:author-guidance
+[/POINT]
+[ANGLE]
+point: outcome
+label: Define success
+claim: What visible result would prove that the viewer completed this task?
+[/ANGLE]
+[ANGLE]
+point: outcome
+label: Choose the medium
+claim: Which part needs motion, and which part would be clearer as text?
+[/ANGLE]
+[POINT]
+world: capture
+id: capture-boundary
+label: The capture boundary decides what enters the story
+level: 7
+lon: 61
+view: |
+  A recorder turns a selected visual surface into footage. That surface may be a whole display, a window, or a rectangular region. OBS documents window capture as a way to record a particular window even when other windows overlap it. The choice controls both context and exposure: recording everything makes application switching visible, but also invites unrelated activity into the frame.
+  
+  Choose the smallest boundary that still explains the task. For a spreadsheet formula, the sheet and formula bar may suffice; for moving a file between applications, more context may be necessary. Rehearse the transitions before trusting the boundary. A pop-up, menu, or secondary dialog can sit outside the expected area. Narrow capture reduces distractions, but it does not make the selected content inherently safe to share.
+parent: null
+ab: 0
+refs: privacy-review, snipping
+tags: strand:capture, role:framing, basis:documented
+[/POINT]
+[ANGLE]
+point: capture-boundary
+label: Locate the boundary
+claim: Which dialog must remain visible for the task to make sense?
+[/ANGLE]
+[ANGLE]
+point: capture-boundary
+label: Compare surfaces
+claim: What context would be lost by capturing only the active window?
+[/ANGLE]
+[POINT]
+world: narration
+id: voice-purpose
+label: Narration explains the decisions that pixels cannot show
+level: 7
+lon: 128
+view: |
+  A pointer can reveal which button was clicked without explaining why that button mattered. Narration supplies intent, alternatives, and the meaning of the resulting state. Instead of describing every motion, explain the decisions that help a viewer perform the task on a slightly different screen. For example, identify the export format and its purpose before opening the menu that selects it.
+  
+  Leave room for the application to demonstrate simple actions. Constant commentary can bury the important explanation under obvious details. A useful drafting exercise is to imagine listening with the screen hidden: can you identify the task, the current decision, and the result? Then watch without sound: are important states still visually identifiable? These two reviews reveal different gaps; neither alone establishes accessibility.
+parent: null
+ab: 0
+refs: readable-frame, accessibility
+tags: strand:narration, role:framing, basis:author-guidance
+[/POINT]
+[ANGLE]
+point: voice-purpose
+label: Expose the reasoning
+claim: Which choice would be mysterious if the pointer were the only guide?
+[/ANGLE]
+[ANGLE]
+point: voice-purpose
+label: Remove repetition
+claim: Which spoken sentence merely repeats an obvious screen action?
+[/ANGLE]
+[POINT]
+world: editing
+id: editing-trust
+label: Editing should clarify the route while preserving its truth
+level: 7
+lon: 303
+view: |
+  A finished tutorial is usually a designed account of a task, not a complete record of every hesitation. Removing an irrelevant pause can make the route easier to follow. Removing a required restart can make the same route misleading. The useful distinction is whether a cut changes what the viewer believes happened or must happen.
+  
+  Preserve prerequisites, consequential decisions, and the visible result. Label a substantial wait when its duration affects expectations. If several attempts were necessary, decide whether the video teaches the successful procedure or documents the investigation, and say which. A tutorial may use a clean second take; a bug report often needs the failure intact. Keep the original capture so later questions can be checked against the unedited sequence.
+parent: null
+ab: 0
+refs: bug-repro, privacy-review
+tags: strand:editing, role:framing, basis:author-guidance
+[/POINT]
+[ANGLE]
+point: editing-trust
+label: Audit a cut
+claim: Would removing this interval hide work the viewer must still perform?
+[/ANGLE]
+[ANGLE]
+point: editing-trust
+label: Choose the record
+claim: Is this a teaching reconstruction or evidence of a particular attempt?
+[/ANGLE]
+[POINT]
+world: sharing
+id: sharing-contract
+label: Sharing succeeds when the right person can use the recording
+level: 7
+lon: 220
+view: |
+  The exported file is only one part of delivery. A useful handoff identifies the audience, purpose, applicable software, and action expected after watching. A colleague investigating a defect needs different context from a public viewer learning a first skill. Decide those needs before choosing where the video will live.
+  
+  Treat the sharing destination as part of the design. A private workplace repository may suit internal instructions; a public video page may suit broad discovery. Neither choice removes the need to test access. The recipient should know which version is current and where to find accompanying text or example files. This is the outer edge of the recording task: the work becomes useful only when someone else can reach it and understand how to use it.
+parent: null
+ab: 0
+refs: outcome, visibility
+tags: strand:sharing, role:framing, basis:author-guidance
+[/POINT]
+[ANGLE]
+point: sharing-contract
+label: Name the recipient
+claim: Who should be able to open this recording, and who should not?
+[/ANGLE]
+[ANGLE]
+point: sharing-contract
+label: Define the handoff
+claim: What must accompany the video for a viewer to act independently?
+[/ANGLE]
+[POINT]
+world: planning
+id: audience
+label: The viewer starting state determines what must be explained
+level: 6
+lon: 0
+view: |
+  Two people can watch the same procedure and experience entirely different lessons. One recognizes the application and wants a missing shortcut; another has never found its settings. Define the starting state explicitly: application version when relevant, necessary account access, a sample file, and the knowledge assumed. These are production decisions, not judgments about a viewer's intelligence.
+  
+  For a first tutorial, write a sentence such as: the viewer has the application open and a practice document available. Check each subsequent instruction against that sentence. If the procedure suddenly needs an administrator account or an installed extension, introduce that dependency before the action. Keep optional background in a companion note. A precise starting state lets the main recording remain concise without silently excluding beginners.
+parent: outcome
+ab: 0
+refs: release-package, learning-transfer
+tags: strand:planning, role:practice, basis:author-guidance
+[/POINT]
+[ANGLE]
+point: audience
+label: Find a prerequisite
+claim: What must already exist before the first click can work?
+[/ANGLE]
+[ANGLE]
+point: audience
+label: Adjust the entry
+claim: How would the opening differ for an experienced colleague?
+[/ANGLE]
+[POINT]
+world: capture
+id: tool-choice
+label: The simplest sufficient recorder keeps setup proportional
+level: 6
+lon: 61
+view: |
+  Choose the recorder by the job rather than by the longest feature list. Microsoft's Windows 11 Snipping Tool documentation includes recording a selected screen region, making it a reasonable starting option for a brief demonstration. OBS provides scenes and multiple source types, which become useful when a demonstration needs a repeatable layout, different visual inputs, or controlled audio routing.
+  
+  A practical selection test is to record the hardest thirty seconds of the intended task. Include an application transition, spoken explanation, and any sound the viewer needs. Replay the actual file. If the simple recorder captures the necessary context cleanly, extra configuration may not help. Move to a richer setup when a concrete requirement appears. Record the tool and version used so the workflow can be reproduced later.
+parent: capture-boundary
+ab: 0
+refs: snipping, obs-scenes
+tags: strand:capture, role:practice, basis:documented
+[/POINT]
+[ANGLE]
+point: tool-choice
+label: Test the hard part
+claim: Which thirty seconds would reveal whether this recorder is sufficient?
+[/ANGLE]
+[ANGLE]
+point: tool-choice
+label: Justify complexity
+claim: What specific requirement needs scenes or separate audio control?
+[/ANGLE]
+[POINT]
+world: narration
+id: narration-style
+label: Live and later narration solve different recording problems
+level: 6
+lon: 128
+view: |
+  Live narration captures the relationship between thinking and acting. It can be effective for explaining an investigation, but speaking while operating software adds another task for the presenter. Later narration allows tighter phrasing and corrections, provided the words are carefully aligned with the recorded actions. Neither approach is automatically more authentic or more engaging.
+  
+  Try both on the same short procedure. For the live take, keep a small outline near the capture rather than reading a full essay. For the later take, mark decision points in the edit before writing the voiceover. Compare whether the explanation arrives before the action it prepares. If synthetic narration is chosen later, review pronunciation of filenames and commands; a pleasant voice does not establish that the instructions are correct.
+parent: voice-purpose
+ab: 0
+refs: sync, voice-trust
+tags: strand:narration, role:practice, basis:author-guidance
+[/POINT]
+[ANGLE]
+point: narration-style
+label: Compare approaches
+claim: Where does speaking during the task cause you to lose your place?
+[/ANGLE]
+[ANGLE]
+point: narration-style
+label: Align the explanation
+claim: Which sentence needs to arrive before its corresponding click?
+[/ANGLE]
+[POINT]
+world: editing
+id: task-chunks
+label: Each recording segment should complete a meaningful change
+level: 6
+lon: 303
+view: |
+  A useful segment begins in an identifiable state and ends with a result that can be checked. Opening a document, changing one setting, and confirming its effect may form a coherent unit. Dividing that sequence every few seconds merely because the timeline allows it creates more edit points without improving the explanation.
+  
+  Plan segments around decisions and state changes. Leave a little quiet space before and after each take so corrections can be joined cleanly. When resuming after a mistake, restore the screen to a known state instead of hoping the viewer will infer what changed off camera. These small production habits reduce continuity problems and make later updates easier: a changed menu can often be replaced as one complete unit rather than forcing a full rerecording.
+parent: editing-trust
+ab: 0
+refs: storyboard, versioning
+tags: strand:editing, role:practice, basis:author-guidance
+[/POINT]
+[ANGLE]
+point: task-chunks
+label: Choose a boundary
+claim: Where can the viewer verify one useful result before continuing?
+[/ANGLE]
+[ANGLE]
+point: task-chunks
+label: Repair continuity
+claim: What screen state must be restored before recording this segment again?
+[/ANGLE]
+[POINT]
+world: sharing
+id: destination
+label: Public tutorials and internal handoffs need different packaging
+level: 6
+lon: 220
+view: |
+  A public tutorial must establish its promise for someone arriving without background. An internal handoff can assume shared context, but usually needs precise ownership and follow-up. A bug report needs the triggering sequence and supporting details more than a decorative introduction. Choose the destination after naming which of these purposes the recording serves.
+  
+  For public material, prepare a clear title and a short description of the outcome. For an internal clip, lead with the task, relevant environment, and requested response. Avoid treating a cloud link as a finished communication: an unexplained file can leave the recipient unsure whether to watch, approve, reproduce, or archive it. The destination should support the intended access and lifetime, while the accompanying message explains why this particular recording matters now.
+parent: sharing-contract
+ab: 0
+refs: visibility, chapters-links
+tags: strand:sharing, role:practice, basis:author-guidance
+[/POINT]
+[ANGLE]
+point: destination
+label: Match the package
+claim: Is the recipient learning a skill, approving work, or reproducing a failure?
+[/ANGLE]
+[ANGLE]
+point: destination
+label: Clarify the response
+claim: What should the recipient do after watching?
+[/ANGLE]
+[POINT]
+world: planning
+id: storyboard
+label: A small storyboard connects the promise to visible proof
+level: 5
+lon: 0
+view: |
+  For a computer task, a storyboard can be a short list of screen states instead of drawings. Describe the opening result, the starting conditions, the key decisions, and the final verification. Beside each state, note the explanation that the viewer needs and anything that must remain readable. This plan reveals missing transitions before recording consumes time.
+  
+  Imagine demonstrating a folder cleanup. Show what a well-organized result looks like, return to a prepared messy example, explain the grouping rule, make the changes, and confirm where an item can now be found. Use practice files when the original workspace contains personal information. The storyboard is not a rigid script; it is a test that the promised outcome has an observable path and an observable ending.
+parent: audience
+ab: 0
+refs: task-chunks, action-proof
+tags: strand:planning, role:practice, basis:author-guidance
+[/POINT]
+[ANGLE]
+point: storyboard
+label: Expose a gap
+claim: Which transition currently happens only in your imagination?
+[/ANGLE]
+[ANGLE]
+point: storyboard
+label: Prove the promise
+claim: What final screen state would demonstrate the opening claim?
+[/ANGLE]
+[POINT]
+world: capture
+id: obs-scenes
+label: A reusable scene keeps the recording frame predictable
+level: 5
+lon: 61
+view: |
+  OBS organizes visual inputs as sources within scenes. Its quick-start guide describes adding desktop, window, webcam, image, and other sources to an initially empty scene. A task demonstration can use this structure to keep the application in a consistent position and reserve a separate space for a presenter or explanatory label when those additions are useful.
+  
+  Build one clean scene before adding alternatives. Give sources descriptive names and check their stacking order in the preview. An unnecessary decorative layer can obscure the very control being taught. Reuse the scene for another take, but verify the selected window again; a saved layout is not proof that the current application is the one being captured. This is a workflow recommendation, not a claim that every tutorial needs OBS.
+parent: tool-choice
+ab: 0
+refs: readable-frame, encoding
+tags: strand:capture, role:practice, basis:documented
+[/POINT]
+[ANGLE]
+point: obs-scenes
+label: Inspect the layers
+claim: Which source would hide a menu if it were stacked above the application?
+[/ANGLE]
+[ANGLE]
+point: obs-scenes
+label: Reuse carefully
+claim: What must be rechecked when this scene is opened for a different task?
+[/ANGLE]
+[POINT]
+world: narration
+id: track-routing
+label: Separate tracks preserve choices that a single mix removes
+level: 5
+lon: 128
+view: |
+  OBS can record audio sources to different tracks. Its documentation recommends a complete mix on track one when the recording may be watched directly, because ordinary players generally play one track at a time. Additional tracks can preserve the microphone and application sound separately for an editor. Routing and enabling the intended recording tracks are both necessary.
+  
+  For a tutorial, this separation can allow an application alert to be reduced without reducing the explanation beside it. Test the result in the editor, not just in the recorder's mixer. A moving meter proves a signal exists at that stage, not that the desired exported mix exists. Keep a brief spoken and application-sound test at the start of a rehearsal, then verify which track contains each sound.
+parent: narration-style
+ab: 0
+refs: sync, export-check
+tags: strand:narration, role:practice, basis:documented
+[/POINT]
+[ANGLE]
+point: track-routing
+label: Inspect the mix
+claim: Does the default playback track contain every sound the viewer needs?
+[/ANGLE]
+[ANGLE]
+point: track-routing
+label: Preserve an option
+claim: Which sound might need independent adjustment during editing?
+[/ANGLE]
+[POINT]
+world: editing
+id: readable-frame
+label: Readable controls matter more than capturing unused pixels
+level: 5
+lon: 303
+view: |
+  A desktop that feels comfortable on a large monitor may become unreadable inside a phone-sized player. Before recording, reduce unnecessary workspace and enlarge the application content where possible. Then inspect the proposed composition at roughly the size the intended viewer will use. The criterion is whether the relevant labels and values can be distinguished, not whether the whole desktop fits.
+  
+  Reserve space for captions if they will be displayed over the image. A zoom can guide attention, but repeated jumps between distant regions can make orientation harder. Prefer a stable useful frame and occasional purposeful closer views. These are practical design judgments to test with representative viewers; there is no universal zoom percentage that guarantees readability across software, displays, eyesight, and viewing distance.
+parent: task-chunks
+ab: 0
+refs: captions, accessibility
+tags: strand:editing, role:practice, basis:author-guidance
+[/POINT]
+[ANGLE]
+point: readable-frame
+label: Test the smallest view
+claim: Which essential label disappears when the player is made phone-sized?
+[/ANGLE]
+[ANGLE]
+point: readable-frame
+label: Protect orientation
+claim: Can a close-up retain enough context to show where the control belongs?
+[/ANGLE]
+[POINT]
+world: sharing
+id: release-package
+label: A companion note carries details that video handles poorly
+level: 5
+lon: 220
+view: |
+  Video is useful for showing change over time, but awkward for copying a long command or checking a filename character by character. Pair the recording with a concise text note containing prerequisites, exact commands when appropriate, links to example files, and the expected result. Keep those materials consistent with what the recording actually shows.
+  
+  Use one clearly identified release folder for the finished video, caption file, descriptive transcript if prepared, and supporting examples. The folder is an authoring convention, not a required platform format. Make sample data safe to distribute and remove unrelated originals. A viewer should not need to transcribe syntax from a paused frame or guess which of several similarly named files belongs to the current demonstration.
+parent: destination
+ab: 0
+refs: captions, versioning
+tags: strand:sharing, role:practice, basis:author-guidance
+[/POINT]
+[ANGLE]
+point: release-package
+label: Choose text companions
+claim: What would be frustrating or risky to copy from the screen?
+[/ANGLE]
+[ANGLE]
+point: release-package
+label: Check consistency
+claim: Do the downloadable example and the recorded procedure produce the same result?
+[/ANGLE]
+[POINT]
+world: planning
+id: rehearsal
+label: A short rehearsal catches failures before a long take
+level: 4
+lon: 0
+view: |
+  A rehearsal should exercise the recording system, not merely confirm that its red light turns on. OBS explicitly recommends a test recording before relying on a setup. Include the quietest explanation, the busiest screen change, and a transition between the applications you expect to use. Save and replay the file with the intended playback software.
+  
+  Listen for missing sound, echo, or a delayed voice; inspect text and menus at the planned delivery size. Confirm that the saved file is where you expect it to be. For a time-consuming task, also check that the test used the same capture source and output configuration as the real take. A successful rehearsal reduces preventable failures, while a later configuration change creates a reason to test again.
+parent: storyboard
+ab: 0
+refs: mic-technique, export-check
+tags: strand:planning, role:practice, basis:documented
+[/POINT]
+[ANGLE]
+point: rehearsal
+label: Stress the setup
+claim: What is the most demanding combination of movement and sound in this task?
+[/ANGLE]
+[ANGLE]
+point: rehearsal
+label: Verify the artifact
+claim: What does playback reveal that the recorder preview cannot?
+[/ANGLE]
+[POINT]
+world: capture
+id: snipping
+label: A selected-region recording can answer a small question quickly
+level: 4
+lon: 61
+view: |
+  On Windows 11, Microsoft's Snipping Tool documentation describes video recording through the Record control, followed by selecting a screen region. It also documents the Windows–Shift–R shortcut. This makes a small visual explanation possible without first constructing a multi-source production layout. Availability and appearance should be checked in the installed version rather than assumed from an older screenshot.
+  
+  For example, capture one application's relevant area while reproducing a confusing menu behavior. Start from a recognizable state, perform the action once, and pause on the result. Inspect the saved clip before sending it. If the task moves beyond the selected region or requires more controlled sound routing, revisit the recorder choice instead of forcing the entire explanation into an unsuitable frame.
+parent: tool-choice
+ab: 0
+refs: capture-boundary, tool-choice
+tags: strand:capture, role:practice, basis:documented
+[/POINT]
+[ANGLE]
+point: snipping
+label: Keep it small
+claim: Can one selected region show both the trigger and the result?
+[/ANGLE]
+[ANGLE]
+point: snipping
+label: Recognize the limit
+claim: Which requirement would justify moving this recording to OBS?
+[/ANGLE]
+[POINT]
+world: narration
+id: mic-technique
+label: A consistent microphone position makes later editing easier
+level: 4
+lon: 128
+view: |
+  Begin with the source of the sound. Choose a quiet practical location, position the microphone where ordinary speech is clear, and keep that distance reasonably consistent. Speak a few representative sentences while watching the input meter and then listen to the recording. A meter is useful for detecting activity, but it cannot tell you whether the room sounds hollow or a word is understandable.
+  
+  Leave room for louder words rather than setting gain from a whisper. Avoid changing several controls while evaluating a problem: move or adjust one thing, make another short sample, and compare. The goal is a stable intelligible voice that does not depend on aggressive repair. Specific microphone settings depend on the device, room, speaker, and recording path, so this ORB offers a comparison method rather than a universal preset.
+parent: track-routing
+ab: 0
+refs: audio-processing, rehearsal
+tags: strand:narration, role:practice, basis:author-guidance
+[/POINT]
+[ANGLE]
+point: mic-technique
+label: Compare the room
+claim: Does moving the microphone improve clarity more than changing a filter?
+[/ANGLE]
+[ANGLE]
+point: mic-technique
+label: Check consistency
+claim: Which phrases become difficult to hear when your position changes?
+[/ANGLE]
+[POINT]
+world: editing
+id: pace-cuts
+label: Remove waiting without removing the viewer opportunity to understand
+level: 4
+lon: 303
+view: |
+  A presenter already knows what is about to happen; a first-time viewer does not. Editing should remove irrelevant delay while retaining enough time to recognize a control, hear the reason for selecting it, and observe the change. Rapid clicking followed by an explanatory paragraph can leave the viewer trying to reconstruct an action that has already vanished.
+  
+  Pause deliberately before important choices and after meaningful results. If a download takes several minutes, shorten the wait and label the elapsed interval when timing matters. Preserve a real-time segment if progress behavior is part of the lesson or bug evidence. There is no requirement to make every video slow: test whether the target viewer can follow and reproduce the sequence without repeatedly hunting backward for a missing step.
+parent: readable-frame
+ab: 0
+refs: sync, storyboard
+tags: strand:editing, role:practice, basis:author-guidance
+[/POINT]
+[ANGLE]
+point: pace-cuts
+label: Inspect a transition
+claim: Does the explanation arrive before the viewer needs to act?
+[/ANGLE]
+[ANGLE]
+point: pace-cuts
+label: Keep useful waiting
+claim: When is the progress interval itself evidence?
+[/ANGLE]
+[POINT]
+world: sharing
+id: visibility
+label: An unlisted video is shareable by anyone who has its link
+level: 4
+lon: 220
+view: |
+  YouTube distinguishes Public, Private, and Unlisted visibility. Public videos can appear on the channel and in discovery surfaces. Private videos are limited to the people chosen by the owner. Unlisted videos can be watched and reshared by anyone with the link; YouTube also notes that they may appear in search when added to a public playlist. Unlisted therefore does not mean confidential.
+  
+  Choose the setting from the intended audience. A review copy of a harmless tutorial may suit an unlisted link. Material intended only for specific people needs access controls appropriate to that requirement. Before sharing, inspect the actual setting and try the viewing route available to the recipient. The name of a local export folder does not control who can view an uploaded recording.
+parent: release-package
+ab: 0
+refs: privacy-review, delivery-test
+tags: strand:sharing, role:practice, basis:documented
+[/POINT]
+[ANGLE]
+point: visibility
+label: Choose access
+claim: Would it be acceptable for a recipient to forward this link?
+[/ANGLE]
+[ANGLE]
+point: visibility
+label: Test the boundary
+claim: Can the intended recipient watch without receiving broader access?
+[/ANGLE]
+[POINT]
+world: planning
+id: action-proof
+label: A verification step turns a click sequence into a demonstrated result
+level: 3
+lon: 0
+view: |
+  A sequence of clicks is not proof that the intended change took effect. A save button may close a dialog while the file goes to an unexpected folder; an enabled option may apply only after reopening the application. Plan a verification action that checks the outcome rather than repeating the command that was supposed to create it.
+  
+  For a file conversion, reopen the exported file in its expected reader. For a settings demonstration, show the behavior affected by the setting. State the scope of the check: one successful example does not establish that every input will work. This modest discipline makes the recording more useful for both teaching and review, because the viewer sees what to inspect when attempting the same task independently.
+parent: storyboard
+ab: 0
+refs: bug-repro, ai-demo
+tags: strand:planning, role:practice, basis:author-guidance
+[/POINT]
+[ANGLE]
+point: action-proof
+label: Check the result
+claim: What independent observation would reveal that the action failed?
+[/ANGLE]
+[ANGLE]
+point: action-proof
+label: Bound the claim
+claim: What does this successful example leave untested?
+[/ANGLE]
+[POINT]
+world: capture
+id: encoding
+label: Output settings should preserve the detail the viewer needs
+level: 3
+lon: 61
+view: |
+  Recording resolution, frame rate, and compression solve different problems. Resolution determines the available spatial detail; frame rate determines how often motion is sampled; compression affects the fidelity and size of the encoded result. YouTube publishes delivery recommendations including MP4, H.264 video, and AAC-LC or other listed audio options. A platform recommendation is a delivery target, not proof that a particular desktop will record smoothly.
+  
+  For an ordinary interface walkthrough, compare a short sample at sensible settings before increasing everything. Fine text may need a closer composition more than a higher frame rate. Rapid animation may benefit from smoother motion. Inspect the encoded file at the intended viewing size, and retain enough hardware headroom for the application being demonstrated to behave normally.
+parent: obs-scenes
+ab: 0
+refs: readable-frame, resource-contention
+tags: strand:capture, role:practice, basis:documented
+[/POINT]
+[ANGLE]
+point: encoding
+label: Identify the bottleneck
+claim: Is the problem unreadable text, choppy motion, or compression damage?
+[/ANGLE]
+[ANGLE]
+point: encoding
+label: Compare a sample
+claim: Which setting change produces a visible improvement for this task?
+[/ANGLE]
+[POINT]
+world: narration
+id: audio-processing
+label: A filter should solve an audible problem without hiding another
+level: 3
+lon: 128
+view: |
+  OBS provides audio filters such as noise suppression, noise gate, gain, compressor, and limiter through its filter system. Their names describe different jobs. A quieter background is not useful if the treatment also removes the beginning of words, and increasing volume cannot restore speech that was never captured clearly. Start with the actual defect you can hear.
+  
+  Record a short untreated reference, change one control, and compare at a similar listening level. Include soft speech, a pause, and an emphatic sentence. Listen for pumping, clipped syllables, harshness, and distracting room noise. Treat the final choice as a tested setting for this speaker and environment. Avoid presenting a copied filter preset as a universal solution, especially when the microphone position or recording room changes.
+parent: mic-technique
+ab: 0
+refs: mic-technique, captions
+tags: strand:narration, role:practice, basis:documented
+[/POINT]
+[ANGLE]
+point: audio-processing
+label: Isolate the problem
+claim: Which specific sound is the filter intended to improve?
+[/ANGLE]
+[ANGLE]
+point: audio-processing
+label: Check the tradeoff
+claim: What new defect appears when the processing becomes stronger?
+[/ANGLE]
+[POINT]
+world: editing
+id: captions
+label: Captions need to match the final words and timing
+level: 3
+lon: 303
+view: |
+  YouTube supports adding subtitles and captions in Studio, including uploading files with timing information. This allows a corrected caption track to accompany the finished recording instead of relying entirely on automatically recognized words. Prepare captions against the final edit: a removed pause or replaced sentence can make an earlier timing file inaccurate.
+  
+  Review technical terms, command names, and short words that change an instruction, such as not. Check where lines appear relative to menus and important values. A spoken filename may need its exact spelling in a companion note as well as a readable caption. Captions are valuable, but they do not describe every meaningful visual change; when an action is essential and unspoken, address that missing information in narration or a descriptive transcript.
+parent: pace-cuts
+ab: 0
+refs: release-package, accessibility
+tags: strand:editing, role:practice, basis:documented
+[/POINT]
+[ANGLE]
+point: captions
+label: Review a risky word
+claim: Which recognition error could reverse the meaning of an instruction?
+[/ANGLE]
+[ANGLE]
+point: captions
+label: Match the edit
+claim: Do caption entrances still align after the latest cut?
+[/ANGLE]
+[POINT]
+world: sharing
+id: chapters-links
+label: Chapters let a viewer return to the step they need
+level: 3
+lon: 220
+view: |
+  A task video often serves two visits: learning the procedure once, then returning later for one detail. YouTube supports manually authored chapters through timestamps and titles in the description. Its documented rules include beginning at 00:00, supplying at least three timestamps in ascending order, and giving each chapter a minimum duration of ten seconds. Check the current platform behavior when publishing.
+  
+  Choose chapter names that describe useful results, such as verify the export, rather than vague labels such as part three. Add accompanying links where they support the task, and make their purpose explicit. A short clip may not need chapters at all. The purpose is retrieval: someone who knows the answer exists should be able to find it without scanning the entire recording again.
+parent: visibility
+ab: 0
+refs: task-chunks, versioning
+tags: strand:sharing, role:practice, basis:documented
+[/POINT]
+[ANGLE]
+point: chapters-links
+label: Name a destination
+claim: Which step is a viewer most likely to revisit a week later?
+[/ANGLE]
+[ANGLE]
+point: chapters-links
+label: Keep navigation useful
+claim: Does each chapter mark a meaningful task boundary?
+[/ANGLE]
+[POINT]
+world: planning
+id: bug-repro
+label: A bug recording must preserve the conditions that produce the failure
+level: 2
+lon: 0
+view: |
+  A helpful bug clip shows the initial state, the triggering action, the observed result, and how that result differs from the expected behavior. Accompany it with the relevant application version and reproducible steps in text. The video makes timing and visual behavior inspectable; the text makes the procedure searchable and repeatable.
+  
+  Avoid cleaning away the event being investigated. An intermittent delay, error message, or unexpected dialog may be the important evidence. If sensitive data must be removed, use a safe reproduction when possible and state that it is a reproduction. A single clip establishes that an outcome was observed in that recorded situation. It does not identify the underlying cause, estimate the frequency of the defect, or show which unrecorded conditions were necessary.
+parent: action-proof
+ab: 0
+refs: hidden-state, ai-demo
+tags: strand:planning, role:practice, basis:author-guidance
+[/POINT]
+[ANGLE]
+point: bug-repro
+label: Preserve the trigger
+claim: Which apparently minor step changes whether the bug appears?
+[/ANGLE]
+[ANGLE]
+point: bug-repro
+label: Separate cause from observation
+claim: What additional test could distinguish two explanations for this failure?
+[/ANGLE]
+[POINT]
+world: capture
+id: resilient-file
+label: A recoverable capture format protects an unfinished take
+level: 2
+lon: 61
+view: |
+  OBS recommends MKV for recording because an unexpected interruption is less likely to corrupt the entire file when the recording does not stop gracefully. Its recording guide also documents remuxing through File and Remux Recordings when an MP4 container is needed for editing or distribution. Remuxing changes the container without being the same operation as a fresh lossy video encode.
+  
+  Test the proposed capture-to-editor path before an important session. Verify that the editor can use the intended video and audio streams after remuxing. Keep the original capture until the converted file has been checked. This is a practical reliability choice, not a promise that any recording is immune to disk failure, missing audio, or a full storage device. A resilient format protects only part of the workflow.
+parent: encoding
+ab: 0
+refs: export-check, versioning
+tags: strand:capture, role:practice, basis:documented
+[/POINT]
+[ANGLE]
+point: resilient-file
+label: Test the handoff
+claim: Can the intended editor read every necessary track after remuxing?
+[/ANGLE]
+[ANGLE]
+point: resilient-file
+label: Locate the remaining risk
+claim: What recording failure would the container choice not prevent?
+[/ANGLE]
+[POINT]
+world: narration
+id: sync
+label: A visible and audible event makes alignment inspectable
+level: 2
+lon: 128
+view: |
+  When voice and screen footage are recorded separately, choose an event that can be identified in both streams. A deliberate visible action with a corresponding spoken marker can provide a useful reference; a camera recording can also capture a clap. Align the relevant event, then check another recognizable moment near the end. One alignment point cannot reveal whether the streams gradually diverge.
+  
+  If synchronization drifts, investigate the capture and editing path rather than sliding every sentence independently. Preserve the original files and document any speed correction. Even when the voice sounds natural, a late explanation can point to a control that has already disappeared. Alignment is therefore both a technical check and an editorial one: the words need to meet the action at the moment they help the viewer.
+parent: audio-processing
+ab: 0
+refs: pace-cuts, export-check
+tags: strand:narration, role:practice, basis:author-guidance
+[/POINT]
+[ANGLE]
+point: sync
+label: Distinguish offset from drift
+claim: Is the delay constant, or does it grow across the recording?
+[/ANGLE]
+[ANGLE]
+point: sync
+label: Check the meaning
+claim: Does the sentence refer to what is actually visible at that moment?
+[/ANGLE]
+[POINT]
+world: editing
+id: export-check
+label: The exported file deserves its own complete review
+level: 2
+lon: 303
+view: |
+  An editor preview is not the delivered recording. Export can reveal a missing track, a cropped edge, an unreadable caption, or a section that was excluded from the selected range. Open the finished file outside the editor and inspect the beginning, every consequential transition, and the ending. For a consequential instructional release, watch it through rather than relying only on spot checks.
+  
+  Compare the final duration with the intended cut and confirm that the result verification is present. Use the expected viewing size and listen through the device a recipient might reasonably use. Keep a small release note identifying what was reviewed and any remaining limitation. A technical pass can establish that the artifact plays correctly; it cannot establish that a novice understood the lesson without a viewer test.
+parent: editing-trust
+ab: 0
+refs: delivery-test, action-proof
+tags: strand:editing, role:practice, basis:author-guidance
+[/POINT]
+[ANGLE]
+point: export-check
+label: Inspect the delivered artifact
+claim: What changed between the editor preview and the exported file?
+[/ANGLE]
+[ANGLE]
+point: export-check
+label: Separate two checks
+claim: Which review establishes playback quality, and which establishes comprehension?
+[/ANGLE]
+[POINT]
+world: sharing
+id: versioning
+label: A dated release makes future corrections traceable
+level: 2
+lon: 220
+view: |
+  Computer interfaces change, and a previously accurate tutorial can become confusing when a menu moves or a workflow gains a new requirement. Identify the application version or recording date when those details affect the instructions. Give the release a stable descriptive name and keep a record of where it was shared. This is a maintenance habit, not a requirement to expose every internal production file.
+  
+  When a correction is needed, decide whether the old recording needs a small note, a replacement segment, or retirement. Update companion text and captions together with the affected footage. Preserve enough provenance to understand what changed. A viewer should be able to distinguish the current instructions from an older demonstration without comparing several nearly identical videos by guesswork.
+parent: chapters-links
+ab: 0
+refs: maintenance-floor, release-package
+tags: strand:sharing, role:practice, basis:author-guidance
+[/POINT]
+[ANGLE]
+point: versioning
+label: Plan a correction
+claim: Which interface change would make this recording misleading?
+[/ANGLE]
+[ANGLE]
+point: versioning
+label: Track distribution
+claim: Where would a replacement or correction need to be announced?
+[/ANGLE]
+[POINT]
+world: planning
+id: ai-demo
+label: An AI task demonstration needs evidence beyond a confident summary
+level: 1
+lon: 0
+view: |
+  A recording of an AI-assisted computer task can show prompts, tool actions, and the resulting artifact. It can also hide important uncertainty if it ends as soon as the assistant announces success. For a useful demonstration, show an independent check of the claimed result: open the saved file, inspect the changed setting, or run the relevant verification in the visible environment.
+  
+  When documenting a failure, keep the prompt and necessary starting conditions with the clip, while removing credentials and unrelated personal material. Label edited waits and reconstructed examples when they affect interpretation. The recording demonstrates one run, not the reliability of the system across tasks or repeated attempts. A polished explanation should not be mistaken for a successful operation merely because it sounds complete.
+parent: action-proof
+ab: 0
+refs: hidden-state, learning-transfer
+tags: strand:planning, role:practice, basis:author-guidance
+[/POINT]
+[ANGLE]
+point: ai-demo
+label: Verify the claim
+claim: What independent action would test the assistant reported completion?
+[/ANGLE]
+[ANGLE]
+point: ai-demo
+label: Repeat the trial
+claim: Which starting conditions must be fixed before comparing another run?
+[/ANGLE]
+[POINT]
+world: capture
+id: resource-contention
+label: The recorder and the task compete for finite machine resources
+level: 1
+lon: 61
+view: |
+  OBS explains that it uses GPU resources to composite and render scenes, and that overloaded resources can produce recording problems even when the foreground application seems acceptable. This matters when demonstrating demanding work such as rendering, local image generation, or a visually complex browser application. A powerful graphics card does not make simultaneous workloads costless.
+  
+  Record the demanding part during a rehearsal. If the result is choppy, compare a simpler scene or less demanding output setting and inspect other workloads you knowingly started. Preserve the demonstrated task's behavior rather than tuning the system so aggressively that the example no longer represents normal use. The practical objective is adequate headroom and a verified output, not a maximum numerical setting in every control.
+parent: encoding
+ab: 0
+refs: rehearsal, export-check
+tags: strand:capture, role:practice, basis:documented
+[/POINT]
+[ANGLE]
+point: resource-contention
+label: Compare competing loads
+claim: Does the recording fail only when another demanding operation is active?
+[/ANGLE]
+[ANGLE]
+point: resource-contention
+label: Preserve a fair demonstration
+claim: Which optimization would materially change the task being shown?
+[/ANGLE]
+[POINT]
+world: narration
+id: accessibility
+label: A complete explanation can travel beyond the visible screen
+level: 1
+lon: 128
+view: |
+  W3C's media guidance distinguishes captions, descriptions of visual information, and transcripts because they meet different needs. Captions carry speech and relevant non-speech audio. Descriptions explain essential visual events. A descriptive transcript can combine the information in a text form. Plan these needs while writing rather than treating them as decorations added after export.
+  
+  For a task video, saying select the blue item is weaker than naming the control and explaining its role. Include the important result in words when it would otherwise exist only as a small visual change. Keep exact syntax available as usable text. This ORB does not certify a recording as accessible; assess the actual media, player, and audience needs using the applicable guidance and direct review.
+parent: voice-purpose
+ab: 0
+refs: audience, captions
+tags: strand:narration, role:practice, basis:documented
+[/POINT]
+[ANGLE]
+point: accessibility
+label: Identify missing information
+claim: Which essential step exists only as an unspoken visual change?
+[/ANGLE]
+[ANGLE]
+point: accessibility
+label: Test a text route
+claim: Could someone follow the descriptive transcript without watching?
+[/ANGLE]
+[POINT]
+world: editing
+id: privacy-review
+label: Review moving footage for disclosures that a thumbnail cannot reveal
+level: 1
+lon: 303
+view: |
+  A clean opening frame does not guarantee a clean recording. Notifications, account menus, autocomplete suggestions, terminal output, and file dialogs can reveal information for only a moment. Plan a demonstration workspace with suitable sample data, then inspect the finished sequence, including transitions and the moments just before and after cuts. Review audio and captions as well as pixels.
+  
+  If a sensitive value appears, consider rerecording the affected segment rather than relying on a quick cosmetic cover. When masking is used, verify the exported frames where the area moves or changes size. This is a practical production review, not a claim that every disclosure can be detected automatically. Include other people's information in the decision about what may be shown, rather than assuming access to a file means permission to publish it.
+parent: editing-trust
+ab: 0
+refs: visibility, redaction-limits
+tags: strand:editing, role:practice, basis:author-guidance
+[/POINT]
+[ANGLE]
+point: privacy-review
+label: Inspect the transition
+claim: Which menu or notification exposes information absent from the main window?
+[/ANGLE]
+[ANGLE]
+point: privacy-review
+label: Choose a repair
+claim: Would a clean replacement take be more reliable than tracking a moving mask?
+[/ANGLE]
+[POINT]
+world: sharing
+id: delivery-test
+label: The recipient view is the final test of sharing
+level: 1
+lon: 220
+view: |
+  A link that opens for its owner may still fail for its recipient. Test the intended viewing route with an appropriate recipient account or a signed-out context when public access is intended. Confirm the media plays, the description is present, and companion files have their own correct permissions. Do not loosen access merely to make a test pass if the audience is meant to remain restricted.
+  
+  Ask a first reviewer to complete the actual task and note where they hesitate. A report that the video looks good is useful but different from evidence that the handoff works. The final check combines access, playback, and action: can the intended person reach the recording, understand its scope, and use it to achieve the promised result?
+parent: versioning
+ab: 0
+refs: audience, learning-transfer
+tags: strand:sharing, role:practice, basis:author-guidance
+[/POINT]
+[ANGLE]
+point: delivery-test
+label: Test another perspective
+claim: Which resource opens for you only because you own it?
+[/ANGLE]
+[ANGLE]
+point: delivery-test
+label: Observe the attempt
+claim: Where does a first viewer need an explanation that the recording omits?
+[/ANGLE]
+[POINT]
+world: planning
+id: learning-transfer
+label: An easy viewing experience does not establish independent learning
+level: 0
+lon: 0
+view: |
+  Knowledge floor: how much does this particular video help its intended audience perform the task later, without replaying every step? The recording and a successful presenter demonstration establish what was shown. They do not establish retention, transfer to a changed interface, or performance by a different viewer. This is an unanswered evaluation question for the production, not a claim that learning research has no answers.
+  
+  One practical investigation is to ask representative viewers to attempt the procedure, then a related variation, and record where assistance is needed. Compare revised explanations while keeping the task reasonably similar. Small informal tests can identify confusing moments, but cannot justify sweeping claims about every audience. The floor connects the visible tutorial to an outcome that exists in the viewer's later actions.
+parent: action-proof
+ab: 1
+refs: audience, delivery-test
+tags: strand:planning, role:knowledge-floor, basis:author-guidance
+frontier: down
+[/POINT]
+[ANGLE]
+point: learning-transfer
+label: Measure the right outcome
+claim: Can the viewer complete a related task without copying the demonstration?
+[/ANGLE]
+[ANGLE]
+point: learning-transfer
+label: Limit the inference
+claim: What can a small informal test tell us, and what can it not establish?
+[/ANGLE]
+[POINT]
+world: capture
+id: hidden-state
+label: A screen recording cannot reveal every cause of an outcome
+level: 0
+lon: 61
+view: |
+  Knowledge floor: which unrecorded conditions explain why a procedure succeeds on one computer and fails on another? Video reveals visible actions and states, but not every permission, cached value, background process, network response, or dependency. Even a continuous recording leaves parts of the system outside its field of view. Treat those possibilities as hypotheses to investigate, not diagnoses inferred from a symptom alone.
+  
+  Useful next evidence may include an application version, a minimal example, relevant logs with sensitive data removed, or a controlled retry that changes one condition. The appropriate evidence depends on the suspected cause. The boundary is causal knowledge: more footage can improve observation, yet observation alone does not identify which hidden difference produced the result.
+parent: resource-contention
+ab: 1
+refs: bug-repro, ai-demo
+tags: strand:capture, role:knowledge-floor, basis:author-guidance
+frontier: down
+[/POINT]
+[ANGLE]
+point: hidden-state
+label: Choose another observation
+claim: Which hidden condition could be checked without repeating the whole recording?
+[/ANGLE]
+[ANGLE]
+point: hidden-state
+label: Design a comparison
+claim: What single change would distinguish two plausible causes?
+[/ANGLE]
+[POINT]
+world: narration
+id: voice-trust
+label: A pleasant voice does not prove that a tutorial is reliable
+level: 0
+lon: 128
+view: |
+  Knowledge floor: how does the chosen voice affect comprehension and justified trust in this specific task video? A listener may prefer a warm natural voice, yet preference, intelligibility, and correctness are separate properties. This ORB has not measured their relationship for the intended audience. A synthetic or human speaker can deliver either sound instructions or an error with equal confidence.
+  
+  Compare short versions using the same script and screen sequence, then ask listeners what action they understood and which terms were unclear. Include verification of the instructions themselves. Avoid concluding that a more expensive voice caused better learning from a few favorable comments. The open question is where voice quality improves the experience while the evidence and explanation still carry the burden of credibility.
+parent: voice-purpose
+ab: 1
+refs: narration-style, learning-transfer
+tags: strand:narration, role:knowledge-floor, basis:author-guidance
+frontier: down
+[/POINT]
+[ANGLE]
+point: voice-trust
+label: Separate preference and learning
+claim: Do listeners understand the same instruction better, or merely like the voice?
+[/ANGLE]
+[ANGLE]
+point: voice-trust
+label: Keep the test comparable
+claim: What must remain unchanged when comparing two narrators?
+[/ANGLE]
+[POINT]
+world: editing
+id: redaction-limits
+label: A clean review cannot prove that every disclosure was found
+level: 0
+lon: 303
+view: |
+  Knowledge floor: how confident can a production team be that a recording contains no unintended disclosure? Human review can catch visible problems, but fleeting frames, spoken details, and contextual clues create blind spots. A blur over one account number does not remove a name in the transcript or a recognizable address elsewhere. This ORB does not provide a guarantee or an audited redaction system.
+  
+  Reduce the problem upstream with a deliberately prepared workspace and sample data. For material requiring stronger assurance, define the information that must be excluded and obtain review suited to that requirement. Keep the remaining uncertainty explicit. This floor is related to privacy review, but extends beyond finding one visible mistake to the harder question of demonstrating that nothing important was missed.
+parent: privacy-review
+ab: 1
+refs: visibility, accessibility
+tags: strand:editing, role:knowledge-floor, basis:author-guidance
+frontier: down
+[/POINT]
+[ANGLE]
+point: redaction-limits
+label: Inspect another channel
+claim: What might still be disclosed through narration or captions?
+[/ANGLE]
+[ANGLE]
+point: redaction-limits
+label: Reduce the search space
+claim: Which preparation step would prevent the sensitive material from entering the capture?
+[/ANGLE]
+[POINT]
+world: sharing
+id: maintenance-floor
+label: A video library needs evidence that its instructions still apply
+level: 0
+lon: 220
+view: |
+  Knowledge floor: when does a recording become stale enough to mislead? A publication date alone cannot answer that question. Some task principles remain useful through many interface changes; others depend on one button, permission model, or service behavior. The unresolved maintenance problem is deciding which changes actually invalidate the promised result.
+  
+  Keep a small inventory of each recording's task, important dependencies, owner, and last practical check. Trigger a review when a relevant dependency changes or viewers report a failure. Choose an update, a visible qualification, or retirement based on the effect on the task. This is a proposed management practice, not an automated monitoring feature supplied by this ORB. A durable library remains accountable to present usefulness rather than merely accumulating more recordings.
+parent: delivery-test
+ab: 1
+refs: versioning, delivery-test
+tags: strand:sharing, role:knowledge-floor, basis:author-guidance
+frontier: down
+[/POINT]
+[ANGLE]
+point: maintenance-floor
+label: Define an invalidating change
+claim: Which dependency change would make this procedure stop producing its promised result?
+[/ANGLE]
+[ANGLE]
+point: maintenance-floor
+label: Choose a review trigger
+claim: What observation should cause the owner to check this video again?
+[/ANGLE]
+[SOURCE]
+id: quick
+title: OBS Quick Start Guide
+url: https://obsproject.com/kb/quick-start-guide
+publisher: OBS Project
+kind: primary documentation
+points: tool-choice, obs-scenes, rehearsal
+[/SOURCE]
+[SOURCE]
+id: window
+title: OBS Window Capture Sources
+url: https://obsproject.com/kb/window-capture-sources
+publisher: OBS Project
+kind: primary documentation
+points: capture-boundary
+[/SOURCE]
+[SOURCE]
+id: snipping
+title: Use Snipping Tool to capture screenshots and video
+url: https://support.microsoft.com/en-us/windows/apps/use-snipping-tool-to-capture-screenshots
+publisher: Microsoft
+kind: primary documentation
+points: tool-choice, snipping
+[/SOURCE]
+[SOURCE]
+id: tracks
+title: OBS Multiple Audio Track Recording Guide
+url: https://obsproject.com/kb/multiple-audio-track-recording-guide
+publisher: OBS Project
+kind: primary documentation
+points: track-routing
+[/SOURCE]
+[SOURCE]
+id: recording
+title: OBS Standard Recording Output Guide
+url: https://obsproject.com/kb/standard-recording-output-guide
+publisher: OBS Project
+kind: primary documentation
+points: resilient-file
+[/SOURCE]
+[SOURCE]
+id: filters
+title: OBS Filters Guide
+url: https://obsproject.com/kb/filters-guide
+publisher: OBS Project
+kind: primary documentation
+points: audio-processing
+[/SOURCE]
+[SOURCE]
+id: performance
+title: OBS Encoding Performance Troubleshooting
+url: https://obsproject.com/kb/encoding-performance-troubleshooting
+publisher: OBS Project
+kind: primary documentation
+points: resource-contention
+[/SOURCE]
+[SOURCE]
+id: visibility
+title: Change video privacy settings
+url: https://support.google.com/youtube/answer/157177?hl=en
+publisher: YouTube Help
+kind: primary documentation
+points: visibility
+[/SOURCE]
+[SOURCE]
+id: captions
+title: Add subtitles and captions
+url: https://support.google.com/youtube/answer/2734796?hl=en
+publisher: YouTube Help
+kind: primary documentation
+points: captions
+[/SOURCE]
+[SOURCE]
+id: chapters
+title: Video Chapters
+url: https://support.google.com/youtube/answer/9884579?hl=en
+publisher: YouTube Help
+kind: primary documentation
+points: chapters-links
+[/SOURCE]
+[SOURCE]
+id: upload
+title: YouTube recommended upload encoding settings
+url: https://support.google.com/youtube/answer/1722171?hl=en
+publisher: YouTube Help
+kind: primary documentation
+points: encoding
+[/SOURCE]
+[SOURCE]
+id: accessibility
+title: Making Audio and Video Media Accessible
+url: https://www.w3.org/WAI/media/av/
+publisher: W3C Web Accessibility Initiative
+kind: primary documentation
+points: accessibility
+[/SOURCE]
