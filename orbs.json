@@ -560,7 +560,7 @@
       "availableJourneys": [],
       "firstPublished": "2026-09-09",
       "updated": "2026-09-10",
-      "revision": "b61742a5d8ffb9fd803767a850dafd522e7e4f05",
+      "revision": "b5d3086a3adc0d879414fbf23aa301ce762dfbf2",
       "featuredEdition": "autumn-in-two-orbits-v1",
       "editions": [
         {
@@ -574,8 +574,8 @@
           "modelLabel": "Primary assistant",
           "interface": "Continuous spherical spiral with alternating poem and photo points, six-direction compass, historical readings and original guided prose",
           "displayMeta": "12 stops · 6 real regional photos · Optional piano",
-          "revision": "b61742a5d8ffb9fd803767a850dafd522e7e4f05",
-          "sourceUrl": "https://github.com/visualizationcreation/autumn-in-two-orbits/tree/b61742a5d8ffb9fd803767a850dafd522e7e4f05",
+          "revision": "b5d3086a3adc0d879414fbf23aa301ce762dfbf2",
+          "sourceUrl": "https://github.com/visualizationcreation/autumn-in-two-orbits/tree/b5d3086a3adc0d879414fbf23aa301ce762dfbf2",
           "note": "Bright Pacific Northwest autumn edition: six documented Seattle and Portland leaf photographs (1983–2020), source credits and individual Creative Commons licenses, and optional Satie piano recorded by Kevin MacLeod under CC BY 4.0. Preserve all six poems, historical readings, point IDs and alternating spherical spiral. Revised original photo pauses connect the unrecorded guided text. Music is instrumental accompaniment, not narration.",
           "previousVisualRevision": "67f9ef68b47df1267e3eeca2f273f8f369d3bb89",
           "guidedRevision": "feel-pnw-v3",
