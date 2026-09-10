@@ -22,6 +22,15 @@ function position(p){const a=basePosition(p,false),b=basePosition(p,true);let v=
 function project(v){const x=v.x*Math.cos(yaw)+v.z*Math.sin(yaw),z=v.z*Math.cos(yaw)-v.x*Math.sin(yaw),y=v.y*Math.cos(pitch)-z*Math.sin(pitch),zz=z*Math.cos(pitch)+v.y*Math.sin(pitch);const radius=Math.min(width*.38,height*.39),cx=width*.5,cy=height*.5;return {x:cx+x*radius,y:cy-y*radius,z:zz,cx,cy,radius};}
 function focusPoint(p){const v=basePosition(p,targetMix===1);targetYaw=-v.lon;while(targetYaw-yaw>Math.PI)targetYaw-=Math.PI*2;while(targetYaw-yaw< -Math.PI)targetYaw+=Math.PI*2;targetPitch=v.lat*.72;if(reduced.matches){yaw=targetYaw;pitch=targetPitch;targetYaw=null}}
 function moves(p){const band=points.filter(q=>q.level===p.level).sort((a,b)=>a.lon-b.lon),i=band.indexOf(p);const children=points.filter(q=>q.parent===p.id).sort((a,b)=>b.level-a.level||a.lon-b.lon);return {up:points.find(q=>q.id===p.parent),down:children[0],left:band.length>1?band[(i-1+band.length)%band.length]:null,right:band.length>1?band[(i+1)%band.length]:null,forward:points.find(q=>q.id===p.forward),back:points.find(q=>q.id===p.back)}}
+function renderCompassPoints(p,navigation){
+ const upIds=[...new Set([p.parent,...(p.upAlt||[])].filter(Boolean))];
+ const destinations={up:upIds.map(id=>points.find(q=>q.id===id)).filter(Boolean),left:[navigation.left].filter(Boolean),right:[navigation.right].filter(Boolean),down:points.filter(q=>q.parent===p.id).sort((a,b)=>b.level-a.level||a.lon-b.lon)};
+ for(const direction of ['up','left','right','down']){
+  const list=$('compass-'+direction);list.replaceChildren();
+  for(const q of destinations[direction]){const li=node('li'),button=node('button',q.label);button.dataset.destination=q.id;button.onclick=()=>{if(innerWidth<=760)$('compass-points').open=false;select(q);const replacement=list.querySelector('button');(innerWidth>760&&replacement?replacement:$('compass-points').querySelector('summary')).focus({preventScroll:true})};li.append(button);list.append(li)}
+  if(!destinations[direction].length)list.append(node('li',tr(direction==='down'&&p.frontier?.includes('down')?'Knowledge floor — no deeper point.':'No linked point in this direction.',direction==='down'&&p.frontier?.includes('down')?'Límite del conocimiento: no hay un punto más profundo.':'No hay un punto vinculado en esta dirección.'),'compass-empty'));
+ }
+}
 function select(p,{focus=true}={}){if(!p)return;const wasSelected=!!selected;selected=p;spinning=false;updateMotion();if(focus)focusPoint(p);renderReading();renderIndex();const offset=innerWidth<=760?document.querySelector('.orb-stage').getBoundingClientRect().height+12:12;if(wasSelected&&$('reader').getBoundingClientRect().top<offset-2)$('reader').scrollIntoView({behavior:reduced.matches?'instant':'smooth',block:'start'});}
 function showReader(){ $('reader').scrollIntoView({behavior:reduced.matches?'instant':'smooth',block:'start'});$('reader').focus({preventScroll:true}); }
 function renderMedia(sources){
@@ -42,6 +51,7 @@ function renderReading(){if(!selected)return;const p=selected,index=route.indexO
  $('reading-tags').replaceChildren(...p.tags.map(tag=>node('span',tag.replace(/^.*?:/,''),tag.includes('knowledge-floor')?'floor':'')));
  $('reading-text').replaceChildren(...p.view.split(/\n\s*\n/).map(text=>node('p',text)));
  const navigation=moves(p);document.querySelectorAll('[data-move]').forEach(button=>{const q=navigation[button.dataset.move];button.disabled=!q;button.title=q?q.label:tr('No authored destination in this direction.','No hay un destino definido en esta dirección.');button.onclick=()=>select(q)});
+ renderCompassPoints(p,navigation);
  $('edge-note').textContent=p.frontier?.includes('down')?tr('Knowledge floor: this point names a limit or an open investigation.','Límite del conocimiento: este punto plantea un límite o una investigación abierta.'):!navigation.down?tr('No deeper child is authored here. Related points offer other routes.','No se ha definido un punto más profundo aquí. Los puntos relacionados ofrecen otras rutas.'):tr('Up / Down follow authored explanations. Left / Right explore neighbors.','Arriba y abajo siguen las explicaciones del archivo. Izquierda y derecha exploran vecinos.');
  $('angle-list').replaceChildren(...p.angles.map(a=>{const e=node('p');e.append(node('strong',a.l+' — '),document.createTextNode(a.f));return e}));
  const sources=doc.SOURCES.filter(s=>s.points.includes(p.id));$('source-list').replaceChildren(...(sources.length?sources.map(s=>safeLink(s.url,s.title+(s.publisher?' · '+s.publisher:''))):[node('p',tr('No source is attached to this point. See the reading for its basis and limitations.','No hay una fuente vinculada a este punto. Consulta el texto para conocer su fundamento y sus límites.'))]));
@@ -101,6 +111,8 @@ $('continue-orb').onclick=()=>{if(!selected)return;const text=`Continue an ORB e
 for(const type of ['dragenter','dragover'])$('orb-stage').addEventListener(type,e=>e.preventDefault());$('orb-stage').addEventListener('drop',e=>{e.preventDefault();loadFile(e.dataTransfer.files[0])});
 reduced.addEventListener('change',()=>{if(reduced.matches)spinning=false;updateMotion()});
 new MutationObserver(()=>{renderReading();renderIndex();updateMotion();if(points.length)$('point-count').textContent=tr(`${points.length} POINTS`,`${points.length} PUNTOS`)}).observe(document.documentElement,{attributes:true,attributeFilter:['lang']});
+if(innerWidth<=760)$('compass-points').open=false;
 requestAnimationFrame(draw);example();
 })();
+
 
