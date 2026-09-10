@@ -539,7 +539,7 @@
     {
       "id": "autumn-in-two-orbits",
       "title": "Autumn in the Pacific Northwest",
-      "description": "Six complete public-domain autumn poems meet documented leaf photographs from Seattle and Portland. Follow the spherical spiral, read a gentle Feel & Experience journey, and choose optional relaxing piano.",
+      "description": "Six complete public-domain autumn poems and real Seattle and Portland leaf photographs. Separate English and Spanish guided film journeys with locally generated narration, measured captions and quiet piano follow the twelve-stop spiral.",
       "url": "https://visualizationcreation.github.io/autumn-in-two-orbits/",
       "repository": "https://github.com/visualizationcreation/autumn-in-two-orbits",
       "tags": [
@@ -553,33 +553,84 @@
         "piano"
       ],
       "category": "Arts & Culture",
-      "format": "Poetry ORB · optional piano",
+      "format": "Bilingual poetry ORB",
       "pointCount": 12,
       "imageCount": 6,
-      "displayMeta": "6 poets · Seattle & Portland leaves · Quiet piano",
-      "availableJourneys": [],
+      "displayMeta": "12 stops · English / Español · Real PNW photos · Quiet piano",
+      "availableJourneys": [
+        {
+          "name": "ORB Feel & Experience — English · Bella",
+          "style": "rest",
+          "courseMode": "feel",
+          "language": "en",
+          "durationSeconds": 370.3383333333333,
+          "durationLabel": "6:10",
+          "narrationReady": true,
+          "url": "https://visualizationcreation.github.io/autumn-in-two-orbits/?lang=en#keats",
+          "voice": "Kokoro Bella",
+          "pointCount": 12,
+          "script": "film-transcript-en.md",
+          "adaptation": "Short film journey; separate from the longer unrecorded guided text."
+        },
+        {
+          "name": "ORB Feel & Experience — Español · Dora",
+          "style": "rest",
+          "courseMode": "feel",
+          "language": "es",
+          "durationSeconds": 391.4759583333333,
+          "durationLabel": "6:31",
+          "narrationReady": true,
+          "url": "https://visualizationcreation.github.io/autumn-in-two-orbits/?lang=es#keats",
+          "voice": "Kokoro Dora",
+          "pointCount": 12,
+          "script": "film-transcript-es.md",
+          "adaptation": "Short film journey; separate from the longer unrecorded guided text."
+        }
+      ],
       "firstPublished": "2026-09-09",
       "updated": "2026-09-10",
-      "revision": "b5d3086a3adc0d879414fbf23aa301ce762dfbf2",
+      "revision": "0c0a58993d9380ad8675be604197a240bc3a7246",
       "featuredEdition": "autumn-in-two-orbits-v1",
       "editions": [
         {
           "id": "autumn-in-two-orbits-v1",
-          "label": "Pacific Northwest autumn · Double ORB",
+          "label": "Pacific Northwest autumn · English / Español",
           "url": "https://visualizationcreation.github.io/autumn-in-two-orbits/",
           "authored": "2026-09-09",
           "published": "2026-09-09",
           "verified": "2026-09-10",
           "generation": "text",
           "modelLabel": "Primary assistant",
-          "interface": "Continuous spherical spiral with alternating poem and photo points, six-direction compass, historical readings and original guided prose",
-          "displayMeta": "12 stops · 6 real regional photos · Optional piano",
-          "revision": "b5d3086a3adc0d879414fbf23aa301ce762dfbf2",
-          "sourceUrl": "https://github.com/visualizationcreation/autumn-in-two-orbits/tree/b5d3086a3adc0d879414fbf23aa301ce762dfbf2",
-          "note": "Bright Pacific Northwest autumn edition: six documented Seattle and Portland leaf photographs (1983–2020), source credits and individual Creative Commons licenses, and optional Satie piano recorded by Kevin MacLeod under CC BY 4.0. Preserve all six poems, historical readings, point IDs and alternating spherical spiral. Revised original photo pauses connect the unrecorded guided text. Music is instrumental accompaniment, not narration.",
+          "interface": "Continuous spherical spiral with alternating poem and photo points, six-direction compass, historical readings, guided text and separate English/Spanish film and audio playback",
+          "displayMeta": "12 stops · English / Español · Real PNW photos · Quiet piano",
+          "revision": "0c0a58993d9380ad8675be604197a240bc3a7246",
+          "sourceUrl": "https://github.com/visualizationcreation/autumn-in-two-orbits/tree/0c0a58993d9380ad8675be604197a240bc3a7246",
+          "note": "Six real Seattle and Portland leaf photographs, complete public-domain poems and original historical readings preserved. Separate short film adaptations use locally generated Bella English and Dora Spanish narration, matching transcripts, measured captions and quiet licensed Satie piano. The longer feel-pnw-v3 guided text remains a separate unrecorded edition. Full photo, poem, music and adaptation licenses accompany both films.",
           "previousVisualRevision": "67f9ef68b47df1267e3eeca2f273f8f369d3bb89",
           "guidedRevision": "feel-pnw-v3",
-          "previousGuidedRevision": "feel-v2"
+          "previousGuidedRevision": "feel-v2",
+          "filmRevision": "films-v1"
+        }
+      ],
+      "videoUrl": "https://youtu.be/WVFtpmpVOJM",
+      "videos": [
+        {
+          "language": "en",
+          "url": "https://youtu.be/WVFtpmpVOJM",
+          "title": "Autumn in the Pacific Northwest — Fall Poetry & Quiet Piano",
+          "durationSeconds": 370.3383333333333,
+          "mode": "ORB Feel & Experience",
+          "voice": "Kokoro Bella",
+          "visibility": "unlisted"
+        },
+        {
+          "language": "es",
+          "url": "https://youtu.be/rbTfYA5qNj8",
+          "title": "Otoño en el Noroeste del Pacífico — Poesía y piano suave",
+          "durationSeconds": 391.4759583333333,
+          "mode": "ORB Feel & Experience",
+          "voice": "Kokoro Dora",
+          "visibility": "unlisted"
         }
       ]
     },
