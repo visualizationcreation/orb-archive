@@ -539,7 +539,7 @@
     {
       "id": "autumn-in-two-orbits",
       "title": "Autumn, in Two Orbits",
-      "description": "Six complete public-domain autumn poems by Keats, Dickinson, Dunbar, Jackson, Stevenson and Blake. Follow a luminous spherical spiral through alternating poems and six real autumn photographs, with historical readings and an original Feel & Experience text journey.",
+      "description": "Six complete public-domain autumn poems and six credited photographs alternate along a luminous spiral. Explore historical readings or enter Where the light goes, a revised second-person Feel & Experience journey from orchard light to evening warmth.",
       "url": "https://visualizationcreation.github.io/autumn-in-two-orbits/",
       "repository": "https://github.com/visualizationcreation/autumn-in-two-orbits",
       "tags": [
@@ -557,7 +557,7 @@
       "availableJourneys": [],
       "firstPublished": "2026-09-09",
       "updated": "2026-09-10",
-      "revision": "c6460db1ab271dd97808beac14df2b7a022f9f7c",
+      "revision": "cbc16aa4b414974b9820edb978f198e34ffe2e4a",
       "featuredEdition": "autumn-in-two-orbits-v1",
       "editions": [
         {
@@ -571,10 +571,12 @@
           "modelLabel": "Primary assistant",
           "interface": "Continuous spherical spiral with alternating poem and photo points, six-direction compass, historical readings and original guided prose",
           "displayMeta": "12 stops · 6 licensed photographs · Guided text unrecorded",
-          "revision": "c6460db1ab271dd97808beac14df2b7a022f9f7c",
-          "sourceUrl": "https://github.com/visualizationcreation/autumn-in-two-orbits/tree/c6460db1ab271dd97808beac14df2b7a022f9f7c",
-          "note": "Six real photographs replace the earlier generated scenes, with photographer credits and Pexels License links. The poems, historical context and original guided script are preserved. No audio has been generated.",
-          "previousVisualRevision": "67f9ef68b47df1267e3eeca2f273f8f369d3bb89"
+          "revision": "cbc16aa4b414974b9820edb978f198e34ffe2e4a",
+          "sourceUrl": "https://github.com/visualizationcreation/autumn-in-two-orbits/tree/cbc16aa4b414974b9820edb978f198e34ffe2e4a",
+          "note": "The revised original Feel & Experience script, Where the light goes, connects all twelve stops with sensory detail, flowing transitions and a gradual return. Text only, unrecorded. Six public-domain poems, historical readings, licensed photographs, credits and spiral layout are preserved. Guided prose authored directly by the primary assistant.",
+          "previousVisualRevision": "67f9ef68b47df1267e3eeca2f273f8f369d3bb89",
+          "guidedRevision": "feel-v2",
+          "previousGuidedRevision": "feel-v1"
         }
       ]
     },
