@@ -1,5 +1,13 @@
 # ORB Archive
 
+## Studio navigation and point media
+
+Studio places the sphere above the reader, with a persistent lower-left control pad inside the sphere stage. The cross follows authored Up/Down and neighboring Left/Right links. Home returns to the subject. Back/Forward retain their authored thread meanings; Previous/Next traverse the display route. Missing directions stay disabled. Canvas arrow keys use the same conceptual directions; Home returns to the subject. Read this point and Back to ORB controls move focus between the two areas. The reading area has no nested scrolling pane.
+
+Optional media uses the existing generic SOURCE contract: set `kind: image`, `kind: audio`, or `kind: video`, attach point IDs with `points`, and supply an absolute HTTP(S) direct media URL. The source `title` becomes the caption and image description, with `publisher` retained as credit. This is a Studio rendering convention, not a new block or a change to generic file validation. Ordinary documentation sources remain links. Images and native audio/video previews load only when the visitor selects Load; switching points stops and removes previous media. Failed previews retain the original link. YouTube page URLs and other hosted-player pages should remain ordinary links, since they are not direct video files. No iframe embeds or HTML from imported files are executed. Reading files remain local; loading a remote preview contacts the named media host. Do not insert private album URLs or unpublished personal media into a publicly shared example.
+
+The 40-point example remains text and documentation links; this layout release does not add generated media or narration. Test with explicit local fixtures, not invented example sources, when verifying media support.
+
 ## Orb Studio and ORB Fill
 
 `studio.html` is a reusable local-file receiver for the ORB Fill generic tagged reading profile. `studio-parser.js` contains the recovered Studio parser, its validators, and stricter generic-profile checks. Imported text is rendered with textContent; source URLs must be HTTP(S). File selection and drag/drop read locally, with a 10 MB per-file limit, and never publish or upload visitor content. Unsupported legacy blocks are rejected with an explanation. No account, generation API, or local model is needed to browse a completed file.
