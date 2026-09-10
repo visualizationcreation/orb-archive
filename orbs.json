@@ -460,6 +460,81 @@
           "choose-your-outing"
         ]
       }
+    },
+    {
+      "id": "dia-de-muertos",
+      "title": "Día de Muertos",
+      "description": "A gentle bilingual journey through remembrance, offerings, craft, and regional traditions, with a rotating ORB, 52 real photographs, and Heart / Dora narration.",
+      "url": "https://visualizationcreation.github.io/dia-de-muertos/",
+      "repository": "https://github.com/visualizationcreation/dia-de-muertos",
+      "tags": [
+        "Mexico",
+        "Día de Muertos",
+        "culture",
+        "remembrance",
+        "Spanish",
+        "bilingual"
+      ],
+      "category": "Culture",
+      "format": "Bilingual guided ORB",
+      "pointCount": 37,
+      "photoCount": 52,
+      "displayMeta": "37 points · English / Español · 52 real photos · Guided audio in both languages",
+      "availableJourneys": [
+        {
+          "name": "ORB Feel & Experience — English · Heart",
+          "style": "rest",
+          "courseMode": "feel",
+          "language": "en",
+          "durationSeconds": 1516.100265957447,
+          "durationLabel": "25:16",
+          "narrationReady": true,
+          "url": "https://visualizationcreation.github.io/dia-de-muertos/#welcome",
+          "voice": "Kokoro Heart (af_heart)",
+          "pointCount": 37
+        },
+        {
+          "name": "ORB Feel & Experience — Español · Dora",
+          "style": "rest",
+          "courseMode": "feel",
+          "language": "es",
+          "durationSeconds": 1480.963076241135,
+          "durationLabel": "24:40",
+          "narrationReady": true,
+          "url": "https://visualizationcreation.github.io/dia-de-muertos/#welcome",
+          "voice": "Kokoro Dora (ef_dora)",
+          "pointCount": 37
+        }
+      ],
+      "firstPublished": "2026-09-09",
+      "updated": "2026-09-09",
+      "revision": "4526c169e12257b8bf69e71dee55cfa16a70b9ca",
+      "featuredEdition": "dia-de-muertos-bilingual-feel-v1",
+      "authorship": {
+        "writer": "Primary assistant",
+        "localLLMUsedForWriting": false
+      },
+      "editions": [
+        {
+          "id": "dia-de-muertos-bilingual-feel-v1",
+          "label": "English / Español · Feel & Experience",
+          "url": "https://visualizationcreation.github.io/dia-de-muertos/",
+          "authored": "2026-09-09",
+          "published": "2026-09-09",
+          "verified": "2026-09-09",
+          "generation": "narrated",
+          "journeyMode": "rest",
+          "courseMode": "feel",
+          "modelLabel": "Primary assistant",
+          "modelId": null,
+          "orbSkillVersion": null,
+          "interface": "Rotating sphere, six-direction compass, media embedded at points, bilingual guided listening",
+          "displayMeta": "37 points · English 25:16 / Español 24:40 at the default gentle pace",
+          "revision": "4526c169e12257b8bf69e71dee55cfa16a70b9ca",
+          "sourceUrl": "https://github.com/visualizationcreation/dia-de-muertos/tree/4526c169e12257b8bf69e71dee55cfa16a70b9ca",
+          "note": "Heart English and Dora Spanish; complete point readings and guided journeys. Real photographs retain individual credits and licenses. Imagined scenes remain distinct from documented cultural accounts. Full human listening review pending."
+        }
+      ]
     }
   ],
   "schemaVersion": 2
