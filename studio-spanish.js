@@ -9,3 +9,5 @@ Object.assign(window.ORB_SPANISH,{"Display options":"Opciones de vista"});
 
 Object.assign(window.ORB_SPANISH,{"Compass points":"Puntos de la brújula"});
 Object.assign(window.ORB_SPANISH,{"Left column width":"Ancho de la columna izquierda"});
+
+Object.assign(window.ORB_SPANISH,{"Want a bigger orb? Drag the silver divider to the right. Double-click it to reset the view.":"¿Quieres un ORB más grande? Arrastra el separador plateado hacia la derecha. Haz doble clic para restablecer la vista."});

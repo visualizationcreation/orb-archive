@@ -5,9 +5,9 @@ const divider=document.getElementById('workspace-divider');
 if(!workspace||!divider)return;
 const desktop=matchMedia('(min-width:761px)'),key='orb-studio-column-width';
 let preferred=null,drag=null,current=0;
-try{const saved=localStorage.getItem(key),value=Number(saved);if(saved!==null&&Number.isFinite(value)&&value>=200&&value<=600)preferred=value}catch{}
+try{const saved=localStorage.getItem(key),value=Number(saved);if(saved!==null&&Number.isFinite(value)&&value>=200&&value<=1000)preferred=value}catch{}
 const es=()=>document.documentElement.lang==='es';
-function bounds(){return{min:200,max:Math.max(200,Math.floor(Math.min(600,workspace.clientWidth*.55,workspace.clientWidth-38-360)))}}
+function bounds(){return{min:200,max:Math.max(200,Math.floor(Math.min(1000,workspace.clientWidth*.75,workspace.clientWidth-38-320)))}}
 function defaultWidth(){return innerWidth<=1050?240:300}
 function update(value=preferred??defaultWidth()){
   if(!desktop.matches)return;

@@ -53,7 +53,7 @@
 .studio-page .compass-point-grid button{display:block;width:100%;border:0;border-radius:3px;padding:5px 2px;text-align:left;font-size:11px;line-height:1.45;color:#e4eef4;background:transparent;overflow-wrap:anywhere;min-height:32px}
 .studio-page .compass-point-grid button:hover{background:#263e50;color:white;text-decoration:underline;text-underline-offset:3px}
 .compass-empty{font-size:10px;line-height:1.5;color:#99aebd}
-@media(min-width:761px){#orb-canvas{height:110px}.orb-controller .edge-note{display:none}.display-options{margin-top:3px}.stage-caption h2{font-size:20px}}
+@media(min-width:761px){#orb-canvas{height:auto;aspect-ratio:1;max-height:70svh}.orb-controller .edge-note{display:none}.display-options{margin-top:3px}.stage-caption h2{font-size:20px}}
 @media(max-width:760px){
  .orb-stage{height:204px}.reading-panel{scroll-margin-top:214px}
  .compass-directory{position:absolute;top:167px;left:8px;right:8px;margin:0;padding:0;border:0;z-index:9;background:#102032}
@@ -63,8 +63,9 @@
 }
 @media print{.compass-directory{display:none!important}}
 /* An adjustable seam keeps the reader generous and gives the compass room. */
-.workspace-divider{display:none}
+.workspace-divider,.orb-resize-hint{display:none}
 @media(min-width:761px){
+ .orb-resize-hint{display:block;max-width:1552px;margin:0 auto 10px;color:#acc7d8;font-size:12px;line-height:1.5}
  .studio-workspace{grid-template-columns:var(--studio-column-width,300px) 22px minmax(0,1fr);gap:8px}
  .workspace-divider{display:flex;align-items:flex-start;justify-content:center;position:sticky;top:12px;height:calc(100svh - 24px);max-height:720px;min-width:0;cursor:col-resize;touch-action:none;border-radius:8px;outline-offset:1px;background:linear-gradient(#a7c9dd00,#91b7cf44 18%,#91b7cf44 82%,#a7c9dd00);background-size:1px 100%;background-position:center;background-repeat:no-repeat}
  .workspace-divider span{display:grid;place-items:center;margin-top:28px;width:22px;height:54px;border:1px solid #66859a;border-radius:10px;color:#cde9f6;background:linear-gradient(90deg,#213747,#476274,#213747);font-size:16px;box-shadow:0 2px 8px #0003;pointer-events:none;transition:color .15s,border-color .15s}
@@ -74,5 +75,6 @@
  .orb-stage{min-width:0}.stage-caption h2,.stage-caption p{overflow-wrap:anywhere}
 }
 @media(min-width:761px) and (max-width:1050px){.studio-workspace{grid-template-columns:var(--studio-column-width,240px) 22px minmax(0,1fr)}}
+@media(min-width:761px) and (max-width:1600px){.orb-resize-hint{margin-left:24px;margin-right:24px}}
 @media(prefers-reduced-motion:reduce){.workspace-divider span{transition:none}}
-@media print{.workspace-divider{display:none!important}}
+@media print{.workspace-divider,.orb-resize-hint{display:none!important}}
