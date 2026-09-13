@@ -1,46 +1,66 @@
 ## Orbiversity domain
 
-The ORB Archive uses orbiversity.com as its GitHub Pages custom domain. Preserve the root CNAME file when publishing. Hostinger manages domain registration and DNS; GitHub Pages continues serving this repository from main, root. Orb Navigator creation and its public saved-orb feed remain on Netlify. The domain connection does not migrate that application or its storage.
+
+The ORB Archive is live at https://orbiversity.com/orb-archive/ and the Orbiversity homepage opens this archive. The shared custom domain and CNAME belong to visualizationcreation/visualizationcreation.github.io, allowing all already-published project sites to inherit orbiversity.com/project-name/. Do not add a CNAME to this archive repository. Continue publishing this repository from main, root; preserve all catalogue entries, assets, and the original project repositories. Hostinger manages registration and DNS. CNSDR retains creativensdr.com. Orb Navigator creation and its public saved-orb feed remain on Netlify.
+
 
 # ORB Archive
 
+
 ## Studio navigation and point media
+
 
 Compass points lists destinations beneath four headings in the navigation column: Up contains the authored parent and alternative parents, Down contains every authored child, and Left/Right contain the same immediate ring neighbors used by the control pad. The lists refresh with each selected point. Empty directions state that no linked point exists; floor points retain their floor explanation. Selecting a title uses the normal selection handler, including sphere focus, reading, sources, and URL updates. The panel is expanded on desktop and starts collapsed on phones, where it closes after selection. Preserve the compact reading-first layout when extending these lists.
 
+
 Studio gives the reading/media window most of the desktop width, beside a compact sticky sphere and control pad. On phones a 204px navigation dock stays above the reading while scrolling within the workspace. Display options are tucked into a disclosure. The cross follows authored Up/Down and neighboring Left/Right links. Home returns to the subject. Back/Forward retain their authored thread meanings; Previous/Next traverse the display route. Missing directions stay disabled. Canvas arrow keys use the same conceptual directions; Home returns to the subject. Selecting a new point brings its reading header back into view when necessary while retaining the navigation controls. The reading area has no nested scrolling pane. `studio-cockpit.css` supplies this reading-first layout after the base Studio stylesheet; preserve both.
+
 
 Optional media uses the existing generic SOURCE contract: set `kind: image`, `kind: audio`, or `kind: video`, attach point IDs with `points`, and supply an absolute HTTP(S) direct media URL. The source `title` becomes the caption and image description, with `publisher` retained as credit. This is a Studio rendering convention, not a new block or a change to generic file validation. Ordinary documentation sources remain links. Images and native audio/video previews load only when the visitor selects Load; switching points stops and removes previous media. Failed previews retain the original link. YouTube page URLs and other hosted-player pages should remain ordinary links, since they are not direct video files. No iframe embeds or HTML from imported files are executed. Reading files remain local; loading a remote preview contacts the named media host. Do not insert private album URLs or unpublished personal media into a publicly shared example.
 
+
 The 40-point example remains text and documentation links; this layout release does not add generated media or narration. Test with explicit local fixtures, not invented example sources, when verifying media support.
+
 
 ## Orb Studio and ORB Fill
 
+
 `studio.html` is a reusable paste-and-file receiver for the ORB Fill generic tagged reading profile. `studio-parser.js` contains the recovered Studio parser, its validators, and stricter generic-profile checks. Imported text is rendered with textContent; source URLs must be HTTP(S). Pasted text, file selection and drag/drop are validated locally, with a 10 MB UTF-8 limit per import, and never publish or upload visitor content. Unsupported legacy blocks are rejected with an explanation. No account, generation API, or local model is needed to browse a completed file.
+
 
 The viewer offers knowledge-terrain and visual spiral layouts, silver and Neptune-blue finishes, rotation and point focus, authored compass links, full-text point search, source links, print, and a copyable continuation prompt. The spiral is a display route, not invented conceptual links or a narrated course. Imported content retains its language while English/Spanish controls follow the existing language preference. The 40-point `computer-task-videos.orb.txt` is the built-in example; `orbfill-skill.zip` supplies the current authoring skill, including its automatic complete-text copy block, Studio link and large-export HTML handoff instructions. Parser acceptance does not prove factual accuracy or all geometric quality; review notes remain visible.
 
+
 The archive, About page, beginner guide and Studio share a copyable ORB Fill request and the Copy → Studio → Paste → Check & open instructions in English and Spanish. `orbfill-handoff.js` handles request copying and clipboard fallback; `orbfill-handoff.css` styles these controls. Studio copies or saves the exact accepted text, including sources, and keeps the current ORB when a new paste fails validation. Clipboard failures expose selectable text without falsely reporting success. ORB Share retains its separate JSON format and submission flow. Refresh `orbfill-skill.zip` from the installed skill when these instructions change. Maintain the Studio links on index, about and start pages when changing navigation. `studio-entry.css` styles its archive entry; `studio.css`, `studio.js` and `studio-spanish.js` belong to the viewer. Preserve `orbs.json` and its generated catalog when changing the Studio. Test file import, malformed input, inert HTML text, every example reading, responsive layout, both visual views, languages, reduced motion and print before deployment.
+
 
 By Informational Dimensions.
 
+
 A functional library of active ORBs. The site opens on search, topic and format filters, sorting, and compact collection rows. Introductory material and a small compass example live in about.html.
+
 
 ## Maintain the catalog
 
+
 The canonical data is orbs.json (schemaVersion 2). Fetch the latest repository state before updating. Upsert by stable ORB and edition ID; preserve unrelated metadata and entries. Only catalog published, verified reader URLs. Inactive editions remain in Archived Orbs (Inactive), excluded from the root catalog, search, and static fallback.
+
 
 Run `node build-directory.cjs` after editing the manifest or shared renderer. Commit orbs.json, index.html and directory.js together. The dependency-free build regenerates the static list, embedded fallback catalog, topic options, and browser renderer. library.js handles search and URL-preserved filters; library.css styles both pages.
 
+
 Each record retains its title, description, category, tags, firstPublished/updated dates, repository, featuredEdition, and editions. Each edition retains its label, direct HTTPS URL, original point lineage, authored/published dates, source revision and model/skill provenance. Unknown model and skill versions stay null. A presentation edit does not create a model generation or rewrite authorship.
 
+
 ## Availability fields
+
 
 - Reading uses the selected featured edition's verified URL.
 - Optional pointCount is an integer. Existing records fall back to the explicitly recorded count in displayMeta.
 - availableJourneys entries with narrationReady true make Listen available. Set a verified url for a journey with a separate destination; otherwise the ORB reader is used. durationSeconds is measured recording time, not a plan.
 - filmStudy.url and durationSeconds describe a published companion film; optional videoUrl can identify another published video. Watch appears only with a valid HTTPS destination.
 - edition.journeyMode can be active or rest when that script mode is confirmed. The course-mode filter appears only when the catalog contains confirmed modes. Do not infer a mode from generation, a mention in explanatory text, or a voice provider.
+
 
 Search matches words in title, description, category, and tags. Topic and format filters intersect. Recent updates and newest additions sort descending by their recorded dates, with title as a stable tie-breaker; Title A–Z uses title ordering. Dates remain at their recorded precision.
 
