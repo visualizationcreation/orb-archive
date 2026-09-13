@@ -1,3 +1,7 @@
+## Orbiversity domain
+
+The ORB Archive uses orbiversity.com as its GitHub Pages custom domain. Preserve the root CNAME file when publishing. Hostinger manages domain registration and DNS; GitHub Pages continues serving this repository from main, root. Orb Navigator creation and its public saved-orb feed remain on Netlify. The domain connection does not migrate that application or its storage.
+
 # ORB Archive
 
 ## Studio navigation and point media
