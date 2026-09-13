@@ -1,3 +1,11 @@
+## Current website direction — September 12, 2026
+
+Orbiversity is the published collection and entry point to the current ORB app at https://star-navigator-informational-dimensions.netlify.app/. The primary navigation is Collection, About, and Open the app. The home, About, and Getting Started pages direct new exploration, listening, saving, and sharing into that app. The `orb-view` preview is not the current production destination.
+
+The eight curated ORBs, 13 editions, their recordings, and all original project sites remain intact. Earlier shared ORBs remain inside a disclosure; `#star-navigator` opens it for existing links. File Studio, ORB Share, the basic prompt, and skills remain available under Earlier tools. The main pages no longer show the former long ORB Fill, AI-chat setup, or submission walkthroughs. Historical workflow descriptions below document the retained tools and should not be used to restore those instructions to the main pages.
+
+`app-first.css` styles these three entry pages. `app-first.js` adds their Spanish strings before `languages.js` and preserves the legacy shared-ORB anchor. Keep these assets when rebuilding the catalog. The old community script is no longer loaded on the homepage; its source and separate submission site remain intact. This change does not add app accounts, credits, or billing.
+
 ## Orbiversity domain
 
 
