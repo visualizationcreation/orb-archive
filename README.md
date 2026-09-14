@@ -1,10 +1,14 @@
+## ORB Astra app entry — September 14, 2026
+
+Public app-entry links now open https://orb-astra--star-navigator-informational-dimensions.netlify.app/connected.html. The earlier saved-ORB feed and its record-specific URLs in star-navigator.js retain their original host so existing shared content remains reachable. Astra help links and the catalogue are unchanged.
+
 ## Five ways to use ORB — September 14, 2026
 
 `ways.html` is the public comparison of ChatGPT (private preview), personal OpenRouter credits (planned), a local LLM (experimental), saved HTML ORBs (available), and ORB Membership (planned). The home, About and Getting Started pages link to it. `ways.css` supplies its layout; `ways.js` supplies English-to-Spanish translations before the shared language script. This page publishes the directions, not new account, payment or provider integrations. Keep the status labels current and preserve the existing production app destination and collection.
 
 ## Current website direction — September 12, 2026
 
-Orbiversity is the published collection and entry point to the current ORB app at https://star-navigator-informational-dimensions.netlify.app/. The primary navigation is Collection, About, and Open the app. The home, About, and Getting Started pages direct new exploration, listening, saving, and sharing into that app. The `orb-view` preview is not the current production destination.
+Orbiversity is the published collection and entry point to the current ORB app at https://orb-astra--star-navigator-informational-dimensions.netlify.app/connected.html. The primary navigation is Collection, About, and Open the app. The home, About, and Getting Started pages direct new exploration, listening, saving, and sharing into that app. The `orb-view` preview is not the current production destination.
 
 The eight curated ORBs, 13 editions, their recordings, and all original project sites remain intact. Earlier shared ORBs remain inside a disclosure; `#star-navigator` opens it for existing links. File Studio, ORB Share, the basic prompt, and skills remain available under Earlier tools. The main pages no longer show the former long ORB Fill, AI-chat setup, or submission walkthroughs. Historical workflow descriptions below document the retained tools and should not be used to restore those instructions to the main pages.
 
