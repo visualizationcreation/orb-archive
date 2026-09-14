@@ -1,3 +1,7 @@
+## Five ways to use ORB — September 14, 2026
+
+`ways.html` is the public comparison of ChatGPT (private preview), personal OpenRouter credits (planned), a local LLM (experimental), saved HTML ORBs (available), and ORB Membership (planned). The home, About and Getting Started pages link to it. `ways.css` supplies its layout; `ways.js` supplies English-to-Spanish translations before the shared language script. This page publishes the directions, not new account, payment or provider integrations. Keep the status labels current and preserve the existing production app destination and collection.
+
 ## Current website direction — September 12, 2026
 
 Orbiversity is the published collection and entry point to the current ORB app at https://star-navigator-informational-dimensions.netlify.app/. The primary navigation is Collection, About, and Open the app. The home, About, and Getting Started pages direct new exploration, listening, saving, and sharing into that app. The `orb-view` preview is not the current production destination.
