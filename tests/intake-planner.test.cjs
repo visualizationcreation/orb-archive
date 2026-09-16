@@ -100,3 +100,72 @@ test('the same dependency-free planner works in a browser sandbox without networ
  const plan=vm.runInContext('window.ORBIntakePlanner.planIntake({title:"An offline topic"},[])',context);
  assert.equal(plan.decision,'new_candidate');assert.equal(plan.bridges.length,0);
 });
+
+test('a submitted Reach retains the authored point and resolves only the catalog target URL',()=>{
+ const submitted={sourcePoint:{id:'p7',title:'The upstream forest'},target:{id:catalog[0].id,url:catalog[0].url+'#unverified-anchor'},relation:'shared_mechanism',reason:'Compare the described watershed processes.',evidence:[{url:'https://example.org/evidence/river',title:'Field notes',note:'Submitted source; not checked by the planner.'}],approved:true};
+ const plan=planIntake({...candidate,reaches:[submitted]},catalog),reach=plan.reaches.find(item=>item.basis==='submitted_reach');
+ assert.equal(plan.reachVersion,1);assert.deepEqual(reach.sourcePoint,submitted.sourcePoint);assert.equal(reach.sourcePointStatus,'supplied_not_checked');
+ assert.equal(reach.target.id,catalog[0].id);assert.equal(reach.target.url,catalog[0].url);assert.equal(reach.target.verification,'catalog_match_only');
+ assert.equal(reach.relation,submitted.relation);assert.equal(reach.reason,submitted.reason);assert.equal(reach.evidence[0].url,submitted.evidence[0].url);assert.equal(reach.evidence[0].verification,'unverified');
+ assert.equal(reach.evidenceStatus,'supplied_unverified');assert.equal(reach.reviewStatus,'needs_review');assert.equal(reach.approved,false);assert.equal(reach.resolution,'catalog_target');
+ assert.equal(plan.reaches.filter(item=>item.target?.id===catalog[0].id).length,1,'explicit Reach replaces the generic suggestion to the same target');
+});
+
+test('Reach identity can resolve an exact edition URL or unique diacritic-normalized catalog title',()=>{
+ const existing=orb('legacy-dia','Día de Muertos');
+ const plan=planIntake({title:'A new subject',reaches:[{target:{url:existing.editions[0].url}},{target:{topic:'DIA DE MUERTOS'}}]},[existing]);
+ assert.equal(plan.reaches[0].target.editionId,existing.editions[0].id);assert.equal(plan.reaches[0].target.url,existing.editions[0].url);
+ assert.equal(plan.reaches[1].target.id,existing.id);assert.equal(plan.reaches[1].target.title,existing.title);assert.equal(plan.reaches[1].target.url,existing.url);
+ assert.ok(plan.reaches.every(item=>item.approved===false&&item.evidenceStatus==='not_supplied'));
+});
+
+test('conflicting or ambiguous Reach identity remains unresolved instead of replacing an author-supplied URL',()=>{
+ for(const target of [
+  {id:catalog[0].id,url:catalog[1].url},
+  {id:catalog[0].id,url:'https://example.org/guessed/'},
+  {id:'invented-id',url:catalog[0].url},
+  {topic:catalog[0].title,url:'https://example.org/guessed/'}
+ ]){
+  const plan=planIntake({title:'A new subject',reaches:[{target}]},catalog),reach=plan.reaches[0];
+  assert.equal(reach.target,null);assert.equal(reach.resolution,'unresolved');assert.ok(reach.issues.includes('target_identity_conflict'));assert.deepEqual(plan.connectorTopics,[]);
+ }
+ const ambiguous=planIntake({title:'A new subject',reaches:[{target:{topic:'Repeated title'}}]},[orb('first','Repeated title'),orb('second','Repeated title')]);
+ assert.equal(ambiguous.reaches[0].target,null);assert.ok(ambiguous.reaches[0].issues.includes('ambiguous_target'));assert.deepEqual(ambiguous.connectorTopics,[]);
+});
+
+test('unknown Reach topics produce at most two unlinked, unauthored connector drafts',()=>{
+ const reaches=['River rituals','Seasonal memory','Watershed sound','River rituals'].map((topic,i)=>({sourcePoint:{id:'p'+i},target:{id:'unknown-'+i,url:'https://example.org/not-cataloged/'+i,topic},relation:'analogy',reason:'An author-proposed comparison for review.'}));
+ const plan=planIntake({title:'A new subject',reaches},catalog);
+ assert.equal(plan.connectorTopics.length,2);assert.deepEqual(plan.bridges,[]);
+ for(const topic of plan.connectorTopics){assert.equal(topic.id,null);assert.equal(topic.url,null);assert.equal(topic.authored,false);assert.equal(topic.publicationStatus,'not_published');assert.equal(topic.status,'needs_review');}
+ assert.ok(plan.reaches.every(reach=>reach.target===null&&reach.approved===false));
+ assert.equal(plan.reaches[0].connectorDraftId,plan.reaches[3].connectorDraftId);assert.equal(plan.reaches[2].resolution,'unresolved');assert.ok(plan.reaches[2].issues.includes('connector_budget_reached'));
+ assert.equal(plan.connectorTopics[0].sourceReachIds.length,2);
+ const withoutTopic=planIntake({title:'A new subject',reaches:[{target:{id:'unknown'}}]},catalog);
+ assert.equal(withoutTopic.reaches[0].target,null);assert.deepEqual(withoutTopic.connectorTopics,[]);
+});
+
+test('Reach connector drafts share the old bridge budget and preserve previous planner results',()=>{
+ const before=planIntake(candidate,catalog),after=planIntake({...candidate,reaches:[{target:{topic:'An unlisted connector'}}]},catalog);
+ for(const field of ['version','decision','duplicates','nearDuplicates','connections','bridges','actionsApplied'])assert.deepEqual(after[field],before[field]);
+ assert.equal(after.bridges.length,2);assert.equal(after.connectorTopics.length,0);assert.equal(after.reaches[0].resolution,'unresolved');
+ for(const reach of before.reaches){assert.equal(reach.basis,'catalog_metadata_only');assert.equal(reach.sourcePoint,null);assert.deepEqual(reach.evidence,[]);assert.equal(reach.relation,'related');assert.ok(catalog.some(item=>item.id===reach.target.id&&item.url===reach.target.url));}
+ assert.equal(planIntake({title:'A new subject',reaches:[{target:{topic:'Unknown'}}]},catalog,{maxBridges:0}).connectorTopics.length,0);
+});
+
+test('near-repeat or URL-less targets require review and never create a pretend published connector',()=>{
+ const near=planIntake({title:'A new subject',reaches:[{target:{topic:'Core Belief'}}]},[orb('belief','Core Belief ORB')]);
+ assert.equal(near.reaches[0].target,null);assert.ok(near.reaches[0].issues.includes('similar_catalog_topic_requires_review'));assert.equal(near.reaches[0].possibleTargets[0].id,'belief');assert.deepEqual(near.connectorTopics,[]);
+ const noURL=planIntake({title:'A new subject',reaches:[{target:{id:'unpublished'}}]},[{id:'unpublished',title:'An unpublished record'}]);
+ assert.equal(noURL.reaches[0].target,null);assert.ok(noURL.reaches[0].issues.includes('catalog_target_has_no_url'));assert.deepEqual(noURL.connectorTopics,[]);
+});
+
+test('Reach fields and evidence are bounded, validated and cannot grant themselves approval',()=>{
+ const target={id:catalog[0].id};
+ for(const reach of [{target:{url:'javascript:alert(1)'}},{target,sourcePoint:{id:'bad/id'}},{target,relation:'x'.repeat(81)},{target,reason:'x'.repeat(1201)},{target,evidence:Array.from({length:9},()=>({url:'https://example.org/source'}))},{target,evidence:[{}]},{target,evidence:[{url:'http://example.org/source'}]}])assert.throws(()=>planIntake({title:'A new subject',reaches:[reach]},catalog),IntakeValidationError);
+ assert.throws(()=>planIntake({title:'A new subject',reaches:Array.from({length:17},()=>({target}))},catalog),IntakeValidationError);
+ const reach={target,approved:true,reviewStatus:'approved',evidence:[{url:'https://example.org/source',verification:'verified'}]};
+ const result=planIntake({title:'A new subject',reaches:[reach,reach,{...reach,reason:'A different authored reason'}]},catalog);
+ assert.equal(result.reaches.length,2);assert.equal(new Set(result.reaches.map(item=>item.reachId)).size,2);
+ for(const item of result.reaches){assert.equal(item.approved,false);assert.equal(item.reviewStatus,'needs_review');assert.equal(item.evidence[0].verification,'unverified');}
+});
