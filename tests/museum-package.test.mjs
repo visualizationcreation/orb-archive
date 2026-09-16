@@ -45,6 +45,82 @@ test('all audio bytes, media, raw record, library and Reach proposals survive wi
   assert.match(decode(files.get('README.txt')),/All 2 selected audio file/);
 });
 
+test('named contribution adds escaped About text and title without changing the authored files',async()=>{
+  const raw='{ "id":"authored", "museum":{"creator":{"displayName":"Original credit"}}, "content":{"readings":[{"id":"point-one","text":"Keep me"}]} }\n';
+  const note=' First line\nA <script>alert("note")</script> & a memory. ',expression='<img src=x onerror="boom()">\nQuiet, with pauses.';
+  const result=await buildMuseumPackage({...base(),attribution:'named',creatorName:'  María <Maker>  ',creatorNote:note,expression,orbJSON:raw});
+  const files=await unzip(result.blob),submission=JSON.parse(decode(files.get('submission.json'))),cover=decode(files.get('cover.html'));
+  assert.equal(result.manifest.title,'A remembered forest');
+  assert.equal(result.manifest.museum.attribution,'named');assert.equal(result.manifest.museum.creator.displayName,'María <Maker>');
+  assert.deepEqual(result.manifest.museum.contribution,{note:note.trim(),expression});assert.deepEqual(submission.museum,result.manifest.museum);
+  assert.match(cover,/<h1>A remembered forest — an orb by María &lt;Maker&gt;<\/h1>/);
+  assert.match(cover,/<section id="about-this-orb"/);assert.match(cover,/>About this orb<\/h2>/);assert.match(cover,/>Personal note<\/h3>/);assert.match(cover,/>Intended expression and presentation<\/h3>/);
+  assert.match(cover,/First line\nA &lt;script&gt;alert\(&quot;note&quot;\)&lt;\/script&gt; &amp; a memory\./);assert.match(cover,/&lt;img src=x onerror=&quot;boom\(\)&quot;&gt;/);assert.doesNotMatch(cover,/<script|<img|<iframe/i);
+  assert.match(cover,/white-space:pre-wrap/);assert.match(decode(files.get('README.txt')),/ABOUT THIS ORB\nSigned by María <Maker>/);
+  assert.equal(decode(files.get('content/forest.html')),html);assert.equal(decode(files.get('orb-record.json')),raw);
+  assert.equal(result.manifest.publicationApproved,false);assert.equal(result.manifest.integrity.identityVerified,false);
+});
+
+test('anonymous projection removes stale creator credit while retaining contribution and exact originals',async()=>{
+  const raw='{"museum":{"creator":{"displayName":"Embedded Author"},"attribution":"named"},"content":{"text":"Embedded Author wrote this."}}\n';
+  const result=await buildMuseumPackage({...base(),attribution:'anonymous',creatorName:'stale-private@example.org',creatorNote:'A personal thought.',expression:'Read slowly.',orbJSON:raw});
+  const files=await unzip(result.blob),submission=decode(files.get('submission.json')),cover=decode(files.get('cover.html')),readme=decode(files.get('README.txt'));
+  assert.equal(result.manifest.museum.attribution,'anonymous');assert.equal(Object.hasOwn(result.manifest.museum,'creator'),false);
+  assert.deepEqual(result.manifest.museum.contribution,{note:'A personal thought.',expression:'Read slowly.'});
+  assert.match(cover,/<h1>A remembered forest — an anonymous orb<\/h1>/);assert.match(cover,/A personal thought\./);assert.match(cover,/Read slowly\./);
+  for(const generated of [submission,cover,readme,JSON.stringify(result.manifest)])assert.doesNotMatch(generated,/stale-private@example\.org|Embedded Author/);
+  assert.match(cover,/does not anonymize the supplied HTML, ORB record or attachments/);assert.ok(result.warnings.some(w=>w.includes('Original content may identify its author.')));
+  assert.equal(decode(files.get('orb-record.json')),raw);assert.equal(decode(files.get('content/forest.html')),html);
+});
+
+test('legacy omitted attribution uses only a submitted name; empty contributions stay optional',async()=>{
+  const unnamed=await buildMuseumPackage({...base(),creatorName:'   ',creatorNote:' \n ',expression:''});
+  assert.equal(unnamed.manifest.museum.attribution,'anonymous');assert.equal(unnamed.manifest.museum.creator,undefined);assert.equal(unnamed.manifest.museum.contribution,undefined);
+  const named=await buildMuseumPackage({...base(),creatorName:'A. Reader',creatorNote:'Only a note'});
+  assert.equal(named.manifest.museum.attribution,'named');assert.equal(named.manifest.museum.creator.displayName,'A. Reader');assert.deepEqual(named.manifest.museum.contribution,{note:'Only a note'});
+  const expressionOnly=await buildMuseumPackage({...base(),attribution:'anonymous',expression:'An open reading.'});
+  assert.deepEqual(expressionOnly.manifest.museum.contribution,{expression:'An open reading.'});
+});
+
+test('attribution and contribution bounds fail clearly without invoking getters',async()=>{
+  await assert.rejects(buildMuseumPackage({...base(),attribution:'named',creatorName:'  '}),invalid('DISPLAY_NAME_REQUIRED','creatorName'));
+  await assert.rejects(buildMuseumPackage({...base(),attribution:'verified',creatorName:'Someone'}),invalid('INVALID_ATTRIBUTION','attribution'));
+  await assert.rejects(buildMuseumPackage({...base(),attribution:null}),invalid('INVALID_ATTRIBUTION','attribution'));
+  for(const field of ['creatorNote','expression']){
+    const limit=PACKAGE_LIMITS[field];assert.equal(limit,2400);
+    const valid=await buildMuseumPackage({...base(),[field]:'a'.repeat(limit)});assert.equal(valid.manifest.museum.contribution[field==='creatorNote'?'note':field].length,limit);
+    await assert.rejects(buildMuseumPackage({...base(),[field]:'a'.repeat(limit+1)}),invalid('INVALID_TEXT',field));
+    await assert.rejects(buildMuseumPackage({...base(),[field]:{text:'wrong'}}),invalid('INVALID_TEXT',field));
+    await assert.rejects(buildMuseumPackage({...base(),[field]:'bad\u0000text'}),invalid('INVALID_TEXT',field));
+  }
+  let ran=0;for(const field of ['attribution','creatorNote','expression']){
+    const input=base();Object.defineProperty(input,field,{get(){ran++;return 'untrusted';}});
+    await assert.rejects(buildMuseumPackage(input),invalid('INVALID_INPUT',field));
+  }assert.equal(ran,0);
+});
+
+test('imported contributor metadata survives omitted inputs while explicit choices clear or replace it',async()=>{
+  const record={museum:{attribution:'named',creator:{displayName:'Original contributor',verified:true},contribution:{note:'Original note',expression:'Original expression'}},content:{id:'stable-id',title:'Original title'}};
+  const raw=JSON.stringify(record,null,4)+'\n';
+  const kept=await buildMuseumPackage({...base(),orbJSON:raw});
+  assert.equal(kept.manifest.museum.attribution,'named');assert.equal(kept.manifest.museum.creator.displayName,'Original contributor');assert.equal(kept.manifest.museum.creator.verified,false);
+  assert.deepEqual(kept.manifest.museum.contribution,record.museum.contribution);
+  const anonymous=await buildMuseumPackage({...base(),orbJSON:raw,attribution:'anonymous'});
+  assert.equal(anonymous.manifest.museum.creator,undefined);assert.equal(anonymous.manifest.museum.attribution,'anonymous');assert.deepEqual(anonymous.manifest.museum.contribution,record.museum.contribution);
+  assert.equal(decode((await unzip(anonymous.blob)).get('orb-record.json')),raw);
+  const cleared=await buildMuseumPackage({...base(),orbJSON:raw,creatorName:'',creatorNote:''});
+  assert.equal(cleared.manifest.museum.creator,undefined);assert.equal(cleared.manifest.museum.attribution,'anonymous');assert.deepEqual(cleared.manifest.museum.contribution,{expression:'Original expression'});
+  const replaced=await buildMuseumPackage({...base(),orbJSON:raw,creatorName:'New contributor',creatorNote:'New note',expression:''});
+  assert.equal(replaced.manifest.museum.creator.displayName,'New contributor');assert.deepEqual(replaced.manifest.museum.contribution,{note:'New note'});
+  const staleAnonymous=await buildMuseumPackage({...base(),orbJSON:{museum:{...record.museum,attribution:'anonymous'}}});
+  assert.equal(staleAnonymous.manifest.museum.attribution,'anonymous');assert.equal(staleAnonymous.manifest.museum.creator,undefined);
+  const legacyCreator=await buildMuseumPackage({...base(),orbJSON:{museum:{creator:{displayName:'Legacy credit'}}}});
+  assert.equal(legacyCreator.manifest.museum.attribution,'named');assert.equal(legacyCreator.manifest.museum.creator.displayName,'Legacy credit');
+  const unknown=await buildMuseumPackage({...base(),orbJSON:{legacy:true,museum:{legacy:true}}});
+  assert.equal(unknown.manifest.museum.creator,undefined);assert.equal(unknown.manifest.museum.contribution,undefined);assert.equal(unknown.manifest.museum.attribution,'anonymous');
+  assert.deepEqual(record.museum.contribution,{note:'Original note',expression:'Original expression'});
+});
+
 test('plain ORB records with a data field remain records; old metadata omissions are valid',async()=>{
   const record={id:'old',name:'Old format',data:{nodes:[{id:'point1'}]}};
   const result=await buildMuseumPackage({...base(),orbJSON:record});const files=await unzip(result.blob);assert.deepEqual(JSON.parse(decode(files.get('orb-record.json'))),record);assert.deepEqual(record,{id:'old',name:'Old format',data:{nodes:[{id:'point1'}]}});assert.deepEqual(result.manifest.museum.library,[]);
