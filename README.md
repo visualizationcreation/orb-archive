@@ -1,3 +1,13 @@
+## Linked collection vault — September 15, 2026
+
+Orbiversity now opens as a saved-ORB browsing window with the approved evening-city scene. The collection is for reading and following published links, without an AI prompt or connection setup. This direction supersedes the app-first and five-route presentation notes retained below as history.
+
+The canonical catalog remains `orbs.json`: eight ORBs and thirteen editions were preserved byte-for-byte for this presentation change. All original reader URLs, credits, historical editions and sources remain. `vault-renderer.cjs` generates the home, About, How to browse, submission page and neutral legacy ways.html route. Run `node build-directory.cjs` after catalog or template edits. The full catalog and real links are included in static HTML; `vault.js` adds filters and hover/focus previews. The visual field shows up to eight featured entries; the catalog includes every approved entry.
+
+`submit.html` currently identifies the existing GitHub route as manual owner review. It does not claim an automated email workflow or the new verified-email submission quota is active. Do not publish private recipient addresses or mail credentials. Incoming proposals and the separate deterministic connection planner never add entries to the approved catalog automatically.
+
+`vault.css` and `vault-i18n.js` provide the new presentation and English/Spanish interface copy. File Studio and its older styling remain intact. Browser verification covered desktop, phone widths, filters and empty/reset behavior, edition anchors, Spanish navigation, no JavaScript, and the preserved 8-ORB / 13-edition totals.
+
 ## Orbforma public website — September 14, 2026
 
 Public app and help links now use https://www.orbforma.com. The Astra plugin endpoint remains unchanged. The saved library is also available at https://www.orbforma.com/library/. Existing published ORBs and legacy feed remain on their original hosts.

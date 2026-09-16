@@ -10,7 +10,7 @@
     root.querySelectorAll('[aria-label],[placeholder]').forEach(el=>{let original=attributes.get(el);if(!original){original={};for(const name of ['aria-label','placeholder'])if(el.hasAttribute(name))original[name]=el.getAttribute(name);attributes.set(el,original)}for(const [name,value]of Object.entries(original))el.setAttribute(name,language==='es'?translate(value):value)});
     if(document.documentElement.lang!==language)document.documentElement.lang=language;document.title=language==='es'?translate(document.querySelector('title').dataset.english):document.querySelector('title').dataset.english;
     document.querySelectorAll('[data-language]').forEach(a=>{a.toggleAttribute('aria-current',a.dataset.language===language);if(a.dataset.language===language)a.setAttribute('aria-current','page')});
-    document.querySelectorAll('a[href]').forEach(a=>{const u=new URL(a.href,location.href);if(u.origin===location.origin&&u.pathname.startsWith(new URL('./',location.href).pathname)&&/\/(?:index\.html|about\.html|start\.html|studio\.html|ways\.html)?$/.test(u.pathname)&&!a.dataset.language){u.searchParams.set('lang',language);a.href=u.href}});
+    document.querySelectorAll('a[href]').forEach(a=>{const u=new URL(a.href,location.href);if(u.origin===location.origin&&u.pathname.startsWith(new URL('./',location.href).pathname)&&/\/(?:index\.html|about\.html|start\.html|studio\.html|ways\.html|submit\.html)?$/.test(u.pathname)&&!a.dataset.language){u.searchParams.set('lang',language);a.href=u.href}});
     document.querySelectorAll('.language-note').forEach(el=>el.hidden=language!=='es');
   }
   document.querySelector('title').dataset.english=document.title;
