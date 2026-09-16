@@ -38,3 +38,38 @@
 .spotlight-editor{margin:24px 0 0;border-block:1px solid #8eacbd24;padding:0 0 12px}.spotlight-editor>summary{cursor:pointer;min-height:52px;display:flex;align-items:center;gap:12px;color:#dfc5ad;font-size:14px;list-style:none}.spotlight-editor>summary::before{content:'+';font-size:18px;color:#91acbb;width:14px}.spotlight-editor[open]>summary::before{content:'−'}.spotlight-editor>summary::-webkit-details-marker{display:none}.spotlight-editor>summary>span{font-size:10px;color:#809aab;margin-left:auto}.spotlight-editor h3{font-weight:400;font-size:14px;color:#c5d7e2;margin:24px 0 0}.spotlight-row{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.2fr);gap:0 15px;padding:5px 0 13px;border-bottom:1px solid #8eacbd1c}.spotlight-row label{min-width:0}.spotlight-row input,.spotlight-row textarea,.spotlight-row select{margin-top:7px}.spotlight-row[data-spotlight-row=items]>label:nth-child(n+3){grid-column:1/-1}.spotlight-row[data-spotlight-row=items]{grid-template-columns:125px minmax(0,1fr)}.spotlight-remove{grid-column:1/-1;justify-self:end;margin:0!important;color:#bba99a!important;font-size:11px!important;padding:8px 0!important}.spotlight-clear{font-size:11px!important;color:#98b0bf!important;margin-top:9px!important}.spotlight-editor .quiet-button:disabled{opacity:.45;cursor:default}.contributor-spotlight{margin:22px 0 0!important;padding:20px 0 0!important;border:0!important;border-top:1px solid #8eacbd24!important}.spotlight-context{font-size:11px!important;line-height:1.7!important;color:#869fac!important;margin:0 0 13px!important}.spotlight-profiles,.spotlight-items{list-style:none;padding:0;margin:0}.spotlight-profiles{display:flex;gap:9px 22px;flex-wrap:wrap;margin-bottom:15px}.spotlight-profiles li{font-size:12px!important;line-height:1.8!important;padding:0!important}.contributor-spotlight a{color:#e7c6a8;overflow-wrap:anywhere}.spotlight-profiles a{display:inline-flex;align-items:center;min-height:35px}.spotlight-items li{padding:15px 0!important;margin:0;border-top:1px solid #8eacbd14;font-size:13px!important;line-height:1.7!important;overflow-wrap:anywhere}.spotlight-items li:first-child{border:0;padding-top:0!important}.spotlight-items small{display:block;font-size:9px;letter-spacing:.09em;text-transform:uppercase;color:#93abba;margin-bottom:5px}.spotlight-items .contributor-copy{margin:8px 0 0!important;font-size:12px!important}.spotlight-items a{display:inline-block;min-height:32px}.spotlight-public-note{color:#bfa994!important}
 @media(max-width:760px){.spotlight-row{display:block}.spotlight-remove{display:block;margin-left:auto!important}.spotlight-profiles a,.spotlight-items a{min-height:44px}.spotlight-editor .quiet-button{min-height:44px}}
 @media print{.contributor-spotlight a,.spotlight-context,.spotlight-items small{color:#222!important}}
+
+/* Approved Museum refinement: retain the Earth scene and give the surrounding
+   catalog, source descriptions and contributor controls a quieter hierarchy. */
+@media screen{
+ :root{--ink:#e5e9ee;--muted:#b8c3cf;--accent:#edc6a3;--museum-panel:#0d1b27;--museum-secondary:#afc1ce}
+ ::selection{background:var(--accent);color:#152431}
+ :is(input,textarea){caret-color:currentColor}
+ :is(button,a,summary,select,input,textarea):focus-visible{outline:2px solid var(--accent);outline-offset:4px}
+ button{font-family:"Segoe UI",system-ui,sans-serif;letter-spacing:0;min-height:44px}
+ .eyebrow{letter-spacing:0;text-transform:none}
+ .vault-header{border-bottom-color:#d0e1ee15}
+ .vault-header .brand small{font-size:11px;letter-spacing:0;color:var(--muted)}
+ .vault-header nav a,.language-menu summary{min-height:44px;display:inline-flex;align-items:center;font-size:13px}
+ .vault-overview{background:#091722b8;border-left:0;padding:34px 28px}
+ .vault-overview .eyebrow,.studio-heading>.eyebrow,.catalog-heading .eyebrow,.submission-intro>.eyebrow,.submission-aside>.eyebrow{display:none}
+ .vault-overview h2{font-size:25px;line-height:1.4}
+ .overview-description{font-size:14px;line-height:1.8;color:#c4d2dd}
+ :is(.overview-meta,.vault-note,.overview-listen li,.overview-listen small,.orb-row .orb-meta){font-size:12px;line-height:1.65;color:var(--museum-secondary)}
+ .vault-overview :is(a,summary){min-height:44px;display:inline-flex;align-items:center}
+ .orb-label{font-size:12px;line-height:1.5}
+ .museum-submit-page .field-help{font-size:13px;line-height:1.75;color:var(--muted)}
+ .museum-submit-page label{font-size:14px}
+ .museum-submit-page legend{font-size:21px}
+ .museum-submit-page :is(input[type=text],input[type=url],textarea,select){font-size:16px;min-height:46px}
+ .museum-submit-page :is(.required-label,.optional-label,.local-note){font-size:12px;color:var(--muted)}
+ .museum-submit-page .quiet-button{font-size:14px}
+ .museum-submit-page .contribution-preview h2{font-size:20px}
+ .museum-submit-page .spotlight-editor>summary{font-size:16px}
+}
+@media screen and (max-width:700px){
+ .vault-overview{background:var(--museum-panel);padding:28px 24px}
+ .orb-label{font-size:11px}
+ .vault-header .brand small{font-size:8px}
+ .museum-submit-page{padding-inline:22px}
+}

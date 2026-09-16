@@ -78,3 +78,62 @@
 @media(min-width:761px) and (max-width:1600px){.orb-resize-hint{margin-left:24px;margin-right:24px}}
 @media(prefers-reduced-motion:reduce){.workspace-divider span{transition:none}}
 @media print{.workspace-divider,.orb-resize-hint{display:none!important}}
+
+/* The saved-file reader shares the Museum's type and control standards while
+   keeping its adjustable sphere column and authored reading layout. */
+@media screen{
+ .studio-page{--studio-paper-ink:#172e3e;--studio-paper-muted:#465e70;--studio-focus:#edc6a3}
+ .studio-page ::selection{background:#edc6a3;color:#152431}
+ .studio-page :is(input,textarea){caret-color:currentColor}
+ .studio-page :is(button,a,summary,select,input,textarea):focus-visible{outline:2px solid var(--studio-focus);outline-offset:4px}
+ .studio-page .reading-panel :is(button,a,summary,select,input,textarea):focus-visible{outline-color:#205b73}
+ .studio-page .skip{color:var(--studio-paper-ink);background:#fff}
+ .studio-page .skip:focus-visible{outline-color:#205b73}
+ .studio-page button,.studio-page .load-actions .button{min-height:44px;font-family:"Segoe UI",system-ui,sans-serif;letter-spacing:0}
+ .studio-page .nav a,.studio-page .language-menu summary{min-height:44px;font-size:13px;display:inline-flex;align-items:center}
+ .studio-page .eyebrow{letter-spacing:0;text-transform:none}
+ .studio-page .reading-tags,.studio-page .reading-tags span{color:var(--studio-paper-muted);font-size:12px}
+ .studio-page .reading-top .eyebrow{color:var(--studio-paper-muted);font-size:12px}
+ .load-actions .button,.load-actions button{font-size:13px}
+ .load-actions:has(#orb-file:focus-visible) label[for=orb-file]{outline:2px solid var(--studio-focus);outline-offset:4px}
+ .file-hint,#import-status,.stage-caption p:last-child,.orb-resize-hint{font-size:12px;line-height:1.6}
+ .stage-top{font-size:10px;letter-spacing:.04em}
+ .controller-heading{font-size:12px}
+ .orb-controller .compass{grid-template-rows:repeat(3,minmax(44px,auto))}
+ .orb-controller button,.orb-controller .reading-actions button,.stage-bottom button{font-size:12px;min-height:44px}
+ .display-options,.view-controls label{font-size:12px}
+ .view-controls select{font-size:16px;min-height:44px;padding:8px 4px}
+ .display-options summary,.compass-directory>summary{font-size:12px;min-height:44px;padding:12px 0}
+ .compass-point-grid h3,.compass-empty{font-size:12px}
+ .studio-page .compass-point-grid button{font-size:12px;min-height:44px}
+ .studio-page .reading-top button{font-size:12px;min-height:44px}
+ .studio-page .reading-panel summary{min-height:44px;padding-block:10px}
+ body.studio-page .orb-transfer button{min-height:44px;font-size:12px}
+ .studio-page .index-search input{font-size:16px;min-height:44px}
+}
+@media screen and (max-width:760px){
+ .studio-page .nav{height:auto;min-height:44px}
+ .studio-page .nav a{padding:10px 0}
+ .studio-heading{flex-wrap:wrap;gap:10px}
+ .load-actions{width:100%;flex-wrap:wrap;gap:8px}
+ .load-actions .button,.load-actions button{font-size:12px;padding:10px 12px}
+ .file-hint,#import-status{font-size:12px}
+ .orb-stage{height:244px;grid-template-columns:100px minmax(0,1fr)}
+ #orb-canvas{left:6px;top:6px;width:96px;height:94px}
+ .orb-controller{margin-left:0;grid-template-rows:20px repeat(3,44px)}
+ .controller-heading{font-size:11px;gap:4px}
+ .orb-controller button,.orb-controller .reading-actions button{font-size:11px;min-height:44px;padding:3px;overflow-wrap:anywhere}
+ .stage-bottom{top:102px;left:6px;width:96px}
+ .stage-bottom #rotation{min-height:44px;font-size:11px;padding:4px}
+ .display-options{top:148px;left:8px;width:94px;font-size:11px}
+ .display-options summary{min-height:44px;font-size:11px;padding:7px 0;line-height:1.35}
+ .display-options[open]{width:min(260px,calc(100vw - 36px));z-index:10}
+ .compass-directory{top:194px}
+ .compass-directory>summary{font-size:12px;min-height:44px;padding:12px 0}
+ .reading-panel{scroll-margin-top:256px}
+ .thread-label{font-size:12px;line-height:1.5}
+}
+@media screen and (max-width:760px) and (max-height:540px){
+ .orb-stage{position:relative}
+ .reading-panel{scroll-margin-top:12px}
+}
