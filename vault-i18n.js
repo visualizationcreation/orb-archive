@@ -31,3 +31,14 @@ Object.assign(window.ORB_SPANISH,{
  'GitHub attachment limits':'Límites de archivos adjuntos de GitHub',
  'Your package is larger than GitHub’s 25 MB attachment limit. It is kept intact. Upload it to a public download location you trust, then paste that download link into the manual review form.':'Tu paquete supera el límite de 25 MB de archivos adjuntos de GitHub. Se conserva completo. Súbelo a un lugar de descarga pública de confianza y pega el enlace en el formulario de revisión manual.'
 });
+Object.assign(window.ORB_SPANISH,{
+ 'Bring its readings, library, and recordings together. Add your perspective and choose how to be credited.':'Reúne sus lecturas, biblioteca y grabaciones. Añade tu perspectiva y elige cómo aparecer en los créditos.',
+ 'How should it be credited?':'¿Cómo quieres aparecer en los créditos?','Anonymous':'Anónimo','With a name':'Con un nombre','Your public name':'Tu nombre público',
+ 'Anonymous credit does not remove names from your uploaded files or notes. The manual review uses your public GitHub account.':'El crédito anónimo no elimina nombres de los archivos o notas que subas. La revisión manual utiliza tu cuenta pública de GitHub.',
+ 'About this orb':'Acerca de este orb','A special point for your personal note and how you would like the orb experienced. Both are optional and will be public with the orb.':'Un punto especial para tu nota personal y cómo te gustaría que se viviera el orb. Ambos son opcionales y se publicarán con el orb.',
+ 'A personal note':'Una nota personal','What brought you to this subject? What would you like someone to know?':'¿Qué te llevó a este tema? ¿Qué te gustaría que los demás supieran?',
+ 'How would you like this orb expressed?':'¿Cómo te gustaría que se expresara este orb?','Describe the mood, perspective, or way you hope people will explore it.':'Describe el ambiente, la perspectiva o la forma en que te gustaría que se explorara.',
+ 'Your words stay with the contribution. They guide its presentation; they do not automatically rewrite the orb.':'Tus palabras acompañan la contribución. Orientan su presentación; no reescriben el orb automáticamente.',
+ 'Public preview':'Vista previa pública','How I hope you experience this orb':'Cómo espero que vivas este orb','Your note and preferred presentation will appear here when you add them.':'Tu nota y la presentación que prefieres aparecerán aquí cuando las añadas.',
+ 'Your orb — an anonymous orb':'Tu orb — un orb anónimo'
+});
