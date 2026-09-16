@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {createHash, randomBytes} from 'node:crypto';
-import {buildMuseumPackage, PACKAGE_LIMITS, MuseumPackageError, crc32, sha256Fallback} from '../lib/museum-package.mjs';
+import {buildMuseumPackage, PACKAGE_LIMITS, MuseumPackageError, crc32, sha256Fallback, normalizeMuseumSpotlight, safeMuseumSpotlightURL} from '../lib/museum-package.mjs';
 
 const encode=s=>new TextEncoder().encode(s), decode=b=>new TextDecoder().decode(b);
 const html='<!doctype html><html><head><meta charset="utf-8"></head><body><h1>ORB</h1><script>globalThis.MUST_NOT_EXECUTE=true</script></body></html>';
@@ -119,6 +119,66 @@ test('imported contributor metadata survives omitted inputs while explicit choic
   const unknown=await buildMuseumPackage({...base(),orbJSON:{legacy:true,museum:{legacy:true}}});
   assert.equal(unknown.manifest.museum.creator,undefined);assert.equal(unknown.manifest.museum.contribution,undefined);assert.equal(unknown.manifest.museum.attribution,'anonymous');
   assert.deepEqual(record.museum.contribution,{note:'Original note',expression:'Original expression'});
+});
+
+test('spotlight normalizer preserves every valid row and rejects private or malformed links',()=>{
+  const source={profiles:[{label:' ',url:'HTTPS://SOCIAL.EXAMPLE.ORG/river',privateContact:'omit me'}],items:[{kind:'idea',title:' First thought ',description:'Line one\nLine two'},{kind:'project',title:'A project',url:'https://example.org/project?ref=museum#about'}],privateDraft:'omit me'},before=structuredClone(source);
+  assert.deepEqual(normalizeMuseumSpotlight(source),{profiles:[{label:'social.example.org',url:'https://social.example.org/river'}],items:[{kind:'idea',title:'First thought',description:'Line one\nLine two'},{kind:'project',title:'A project',url:'https://example.org/project?ref=museum#about'}]});
+  assert.deepEqual(source,before);
+  for(const url of ['javascript:alert(1)','data:text/html,hello','http://example.org','https://name:secret@example.org','https://localhost','https://a.local','https://a.local.','https://a.internal','https://a.test','https://a.invalid','https://a.lan','https://intranet','https://127.0.0.1','https://2130706433','https://0x7f000001','https://192.168.0.4','https://8.8.8.8','https://[::1]','https://[::ffff:192.168.0.1]','https://example.org/\npath','https://example.org/\u0000path','https://example.org\\@other.org/',' https://example.org','https://example.org/?token=secret','https://example.org/?%61pi_key=secret','https://example.org/?X-Amz-Signature=secret','https://example.org/?x-goog-credential=secret','https://example.org/?returnToken=secret','https://example.org/?expires=123','https://example.org/#access_token=secret','https://example.org/#/profile?token=secret','https://example.org/#%61pi_key=secret']){
+    assert.equal(safeMuseumSpotlightURL(url),null,url);
+    assert.throws(()=>normalizeMuseumSpotlight({profiles:[{url}]}),invalid('INVALID_SPOTLIGHT_URL','spotlight.profiles[0].url'),url);
+  }
+  assert.equal(safeMuseumSpotlightURL('https://social.example.org/person?ref=museum#work'),'https://social.example.org/person?ref=museum#work');
+  for(const value of [undefined,null,{}, {profiles:[],items:[]}])assert.equal(normalizeMuseumSpotlight(value),undefined);
+});
+
+test('spotlight rejects excess rows or invalid text instead of truncating or dropping material',()=>{
+  const profile={label:'P',url:'https://example.org/profile'},item={kind:'thought',title:'T'};
+  assert.equal(normalizeMuseumSpotlight({profiles:Array.from({length:6},()=>({...profile})),items:Array.from({length:6},()=>({...item}))}).items.length,6);
+  for(const kind of ['idea','thought','project','design','product'])assert.equal(normalizeMuseumSpotlight({items:[{kind,title:'Test'}]}).items[0].kind,kind);
+  assert.throws(()=>normalizeMuseumSpotlight({profiles:Array(7).fill(profile)}),invalid('INVALID_SPOTLIGHT','spotlight.profiles'));
+  assert.throws(()=>normalizeMuseumSpotlight({items:Array(7).fill(item)}),invalid('INVALID_SPOTLIGHT','spotlight.items'));
+  for(const value of [[],false,'text',{profiles:null},{profiles:{}},{profiles:[null]},{items:[[]]}])assert.throws(()=>normalizeMuseumSpotlight(value),invalid('INVALID_SPOTLIGHT'));
+  for(const row of [{},{label:'No link',url:''},{url:12}])assert.throws(()=>normalizeMuseumSpotlight({profiles:[row]}),invalid('INVALID_SPOTLIGHT_URL'));
+  assert.throws(()=>normalizeMuseumSpotlight({items:[{kind:'sponsored',title:'T'}]}),invalid('INVALID_SPOTLIGHT_KIND'));
+  assert.throws(()=>normalizeMuseumSpotlight({items:[{kind:'idea',title:' '}]}),invalid('REQUIRED'));
+  assert.throws(()=>normalizeMuseumSpotlight({items:[{...item,url:'javascript:alert(1)'}]}),invalid('INVALID_SPOTLIGHT_URL'));
+  const exact=normalizeMuseumSpotlight({profiles:[{label:'l'.repeat(80),url:'https://example.org/'+ 'a'.repeat(2028)}],items:[{kind:'design',title:'t'.repeat(180),description:'d'.repeat(2400)}]});
+  assert.equal(exact.profiles[0].label.length,80);assert.equal(exact.items[0].title.length,180);assert.equal(exact.items[0].description.length,2400);
+  assert.throws(()=>normalizeMuseumSpotlight({profiles:[{...profile,label:'x'.repeat(81)}]}),invalid('INVALID_TEXT','spotlight.profiles[0].label'));
+  assert.throws(()=>normalizeMuseumSpotlight({profiles:[{url:'https://example.org/'+'x'.repeat(2048)}]}),invalid('INVALID_SPOTLIGHT_URL'));
+  for(const [field,max]of [['title',180],['description',2400]]){
+    assert.throws(()=>normalizeMuseumSpotlight({items:[{...item,[field]:'x'.repeat(max+1)}]}),invalid('INVALID_TEXT','spotlight.items[0].'+field));
+    assert.throws(()=>normalizeMuseumSpotlight({items:[{...item,[field]:'bad\u0000text'}]}),invalid('INVALID_TEXT'));
+  }
+  let executed=0;const unsafe={};Object.defineProperty(unsafe,'profiles',{enumerable:true,get(){executed++;return [profile];}});
+  assert.throws(()=>normalizeMuseumSpotlight(unsafe),invalid('INVALID_JSON'));assert.throws(()=>normalizeMuseumSpotlight({profiles:new Array(1)}),invalid('INVALID_JSON'));
+  assert.throws(()=>normalizeMuseumSpotlight({items:[{...item,toJSON(){executed++;return item}}]}),invalid('INVALID_JSON'));assert.equal(executed,0);
+});
+
+test('anonymous review package retains deliberate spotlight with escaped cover links and exact authored bytes',async()=>{
+  const spotlight={profiles:[{label:'Social <img src=x>',url:'https://social.example.org/author?a=1&b=2'}],items:[{kind:'project',title:'A <script>alert(1)</script>',description:'An idea & a plan.\nRead slowly.',url:'https://example.org/project'},{kind:'thought',title:'An unlinked thought',description:'No invented destination.'}]};
+  const raw=JSON.stringify({museum:{creator:{displayName:'Original embedded author'},spotlight},content:{id:'stable-source'}})+'\n';
+  const result=await buildMuseumPackage({...base(),orbJSON:raw,attribution:'anonymous',creatorName:'Hidden new credit'}),files=await unzip(result.blob),cover=decode(files.get('cover.html'));
+  assert.equal(result.manifest.museum.creator,undefined);assert.deepEqual(result.manifest.museum.spotlight,spotlight);assert.deepEqual(JSON.parse(decode(files.get('submission.json'))).museum.spotlight,spotlight);
+  assert.match(cover,/>From the contributor<\/h2>/);assert.match(cover,/href="https:\/\/social\.example\.org\/author\?a=1&amp;b=2" target="_blank" rel="noopener noreferrer">Social &lt;img src=x&gt;<\/a>/);
+  assert.match(cover,/>A &lt;script&gt;alert\(1\)&lt;\/script&gt;<\/a>/);assert.match(cover,/<h3>An unlinked thought<\/h3>/);assert.match(cover,/An idea &amp; a plan\.\nRead slowly\./);
+  assert.doesNotMatch(cover,/<script|<img|<iframe|Hidden new credit/);assert.ok(result.warnings.some(w=>w.includes('These links may identify the author')));
+  assert.equal(result.manifest.externalReferences.find(ref=>ref.url==='https://example.org/project').status,'external_not_bundled');assert.equal(result.manifest.offline.externalFilesFetched,0);
+  assert.equal(decode(files.get('content/forest.html')),html);assert.equal(decode(files.get('orb-record.json')),raw);
+});
+
+test('spotlight imports when omitted, clears explicitly and never mutates the original record',async()=>{
+  const original={museum:{spotlight:{profiles:[{label:'Portfolio',url:'https://example.org/portfolio'}],items:[{kind:'product',title:'A made object',description:'The original description.'}]}}},before=structuredClone(original);
+  const retained=await buildMuseumPackage({...base(),orbJSON:original});assert.deepEqual(retained.manifest.museum.spotlight,original.museum.spotlight);
+  for(const spotlight of [null,{}, {profiles:[],items:[]}]){
+    const cleared=await buildMuseumPackage({...base(),orbJSON:original,spotlight});assert.equal(cleared.manifest.museum.spotlight,undefined);
+    const files=await unzip(cleared.blob);assert.deepEqual(JSON.parse(decode(files.get('orb-record.json'))),original);assert.doesNotMatch(decode(files.get('cover.html')),/>From the contributor<\/h2>/);
+  }
+  const replacement={items:[{kind:'design',title:'A different proposal'}]},changed=await buildMuseumPackage({...base(),orbJSON:original,spotlight:replacement});assert.deepEqual(changed.manifest.museum.spotlight,replacement);assert.deepEqual(original,before);
+  await assert.rejects(buildMuseumPackage({...base(),orbJSON:{museum:{spotlight:{profiles:[{url:'https://example.org/?api_key=secret'}]}}}}),invalid('INVALID_SPOTLIGHT_URL'));
+  let executed=0;const input=base();Object.defineProperty(input,'spotlight',{get(){executed++;return {}}});await assert.rejects(buildMuseumPackage(input),invalid('INVALID_INPUT','spotlight'));assert.equal(executed,0);
 });
 
 test('plain ORB records with a data field remain records; old metadata omissions are valid',async()=>{

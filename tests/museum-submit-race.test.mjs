@@ -16,7 +16,7 @@ const a=deferred(),b=deferred(),called=deferred();
 let inputAtBuild;
 const fileA={name:'a.json',size:100,text:()=>a.promise},fileB={name:'b.json',size:100,text:()=>b.promise};
 get('submission-html').files=[{name:'index.html',size:100}];
-const context=vm.createContext({document,window:{addEventListener(){}},URL:{createObjectURL:()=> 'blob:test',revokeObjectURL(){}},Blob,matchMedia:()=>({matches:true}),PACKAGE_LIMITS:{jsonBytes:8*1024*1024},buildMuseumPackage:async input=>{inputAtBuild=input;called.resolve(input);return {blob:new Blob(['zip']),manifest:{},filename:'review.zip',warnings:[]}}});
+const context=vm.createContext({document,window:{addEventListener(){}},URL:{createObjectURL:()=> 'blob:test',revokeObjectURL(){}},Blob,matchMedia:()=>({matches:true}),normalizeMuseumSpotlight:value=>value,safeMuseumSpotlightURL:()=>null,PACKAGE_LIMITS:{jsonBytes:8*1024*1024},buildMuseumPackage:async input=>{inputAtBuild=input;called.resolve(input);return {blob:new Blob(['zip']),manifest:{},filename:'review.zip',warnings:[]}}});
 const source=(await fs.readFile(new URL('../museum-submit.js',import.meta.url),'utf8')).replace(/^import[^\n]+\n/,'');
 vm.runInContext(source,context);
 get('submission-json').files=[fileA];listeners.get('museum-submission:change')({target:get('submission-json')});
