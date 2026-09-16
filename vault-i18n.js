@@ -52,3 +52,11 @@ Object.assign(window.ORB_SPANISH,{
  'Idea':'Idea','Thought':'Reflexión','Project':'Proyecto','Design':'Diseño','Product':'Producto','From the contributor':'De quien contribuye',
  'Shared work and profile links, separate from this orb’s sources.':'Trabajo y perfiles compartidos, separados de las fuentes de este orb.'
 });
+Object.assign(window.ORB_SPANISH||(window.ORB_SPANISH={}),{
+ 'The original collection is ready. Loading community orbs…':'La colección original está lista. Cargando orbs de la comunidad…',
+ 'Try again':'Intentar de nuevo','Publish directly from ORB, or keep a complete package of an older HTML edition.':'Publica directamente desde ORB o conserva un paquete completo de una edición HTML anterior.',
+ 'Already exploring in ORB?':'¿Ya estás explorando en ORB?',
+ 'Choose Add your orb to the Museum in the ORB app. Your readings, library and saved media publish together. Choose anonymous credit or add your name and personal note. Up to three new orbs per day in this browser.':'Elige Añadir tu orb al Museo en la aplicación ORB. Tus lecturas, biblioteca y medios guardados se publican juntos. Elige crédito anónimo o añade tu nombre y una nota personal. Hasta tres orbs nuevos al día en este navegador.',
+ 'Open ORB →':'Abrir ORB →','Keep an older HTML edition together':'Conserva completa una edición HTML anterior',
+ 'The form below makes a local package with its original HTML, recordings and supporting files. It does not publish or execute the HTML. Direct publishing is available from the ORB app.':'El formulario siguiente crea un paquete local con el HTML original, las grabaciones y los archivos complementarios. No publica ni ejecuta el HTML. Puedes publicar directamente desde la aplicación ORB.'
+});

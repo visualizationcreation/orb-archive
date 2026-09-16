@@ -1,0 +1,13 @@
+# Published Museum ORBs
+
+The original eight catalog ORBs and thirteen editions remain in `orbs.json` and the generated HTML. `vault.js` adds publicly published editions from the canonical Astra `/api/museum-publications` endpoint, preserving original IDs and edition arrays. A feed outage leaves the original collection available and exposes a retry button. `?orb=<64 hex ID>` selects a publication in the scene, with a detail lookup when necessary.
+
+`studio.html?publication=<ID>` loads structured JSON using `studio-entry.mjs` and `museum-published-view.mjs`. It does not load the file Studio's editing/upload scripts and never reads or executes submitted HTML. Normal `studio.html` still loads the original scripts in their original order.
+
+The trusted `museum-reader-runtime.js` is an exact copy of the app's built `public/portable-reader.bundle.txt`. Its base styles come from `public/portable-export.mjs`; Museum-specific styles follow them in `museum-reader.css`. When updating that runtime, rebuild the app's portable bundle, copy the trusted artifact, and verify all publication flows. Never substitute a contributor-supplied script. The wrapper removes the AI handoff link and adjusts hosted-reader copy. It displays all saved topics, called discoveries, focus windows and their paths as text and verified public source links. Contributor Reach links resolve only against exact catalog IDs or edition URLs; same-topic suggestions are labeled as topic matches, not evidence-backed relationships.
+
+The browser omits credentials on publication requests and bounds streamed responses to 5 MiB per record or 32 MiB for the feed. Publication IDs must be exactly 64 lowercase hexadecimal characters. The backend is responsible for publication validation, immutable editions, quota enforcement and media durability. Browser rendering escapes contributor prose and rejects private or unsafe link destinations. Anonymous credit suppresses display-name metadata; authored content may still identify its creator.
+
+The saved HTML package form remains a local backup route for older editions. Direct publication is launched from the ORB app. Browsing and local package creation do not call an AI provider.
+
+Validation: `node build-directory.cjs` and `node --test tests/*.test.mjs tests/*.test.cjs`. Test the directory and published reader at desktop, 390px and 320px; verify failure/retry, anonymous/named metadata, full readings, Library links, images, audio, saved exploration, malicious text, and normal File Studio behavior. Browser checks may use explicitly controlled API fixtures; never publish those fixtures to test production.
