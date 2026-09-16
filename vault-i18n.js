@@ -42,3 +42,13 @@ Object.assign(window.ORB_SPANISH,{
  'Public preview':'Vista previa pública','How I hope you experience this orb':'Cómo espero que vivas este orb','Your note and preferred presentation will appear here when you add them.':'Tu nota y la presentación que prefieres aparecerán aquí cuando las añadas.',
  'Your orb — an anonymous orb':'Tu orb — un orb anónimo'
 });
+Object.assign(window.ORB_SPANISH,{
+ 'Share your work':'Comparte tu trabajo','Profile links':'Enlaces de perfil','Your work & ideas':'Tu trabajo e ideas',
+ 'Add public profile links, or share an idea, thought, project, design, or product. These stay with your orb, separate from its sources.':'Añade perfiles públicos o comparte una idea, reflexión, proyecto, diseño o producto. Acompañan a tu orb, separados de sus fuentes.',
+ 'Only add links and words you want published. Profile links can identify you even when your orb has anonymous credit.':'Añade solo enlaces y palabras que quieras publicar. Los perfiles pueden identificarte aunque el orb tenga crédito anónimo.',
+ '+ Add a profile link':'+ Añadir un enlace de perfil','+ Add work or an idea':'+ Añadir trabajo o una idea','Clear shared work':'Borrar el trabajo compartido',
+ 'Up to six profile links and six entries. Ideas can be words alone; links must be public HTTPS addresses without sign-in tokens.':'Hasta seis perfiles y seis entradas. Las ideas pueden ser solo palabras; los enlaces deben ser direcciones HTTPS públicas sin claves de acceso.',
+ 'Profile label':'Nombre del perfil','Public profile link':'Enlace al perfil público','Kind':'Tipo','Title':'Título','A few words':'Unas palabras','Public link (optional)':'Enlace público (opcional)',
+ 'Idea':'Idea','Thought':'Reflexión','Project':'Proyecto','Design':'Diseño','Product':'Producto','From the contributor':'De quien contribuye',
+ 'Shared work and profile links, separate from this orb’s sources.':'Trabajo y perfiles compartidos, separados de las fuentes de este orb.'
+});

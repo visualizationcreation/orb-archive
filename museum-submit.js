@@ -1,4 +1,4 @@
-import {buildMuseumPackage,PACKAGE_LIMITS} from './lib/museum-package.mjs?v=contribution-1';
+import {buildMuseumPackage,PACKAGE_LIMITS,normalizeMuseumSpotlight,safeMuseumSpotlightURL} from './lib/museum-package.mjs?v=spotlight-1';
 
 const form=document.getElementById('museum-submission');
 const result=document.getElementById('package-result'),errorBox=document.getElementById('package-error'),progress=document.getElementById('package-progress');
@@ -8,6 +8,46 @@ const defaults={'submission-html':'Choose your HTML file','submission-json':'No 
 let packageURL,manifestURL,linkNumber=0,busy=false,jsonReadVersion=0;
 let pendingJSON=Promise.resolve();
 const editedContribution={contributorNote:false,expression:false};
+let spotlightEdited=false,spotlightUnloaded=false,spotlightNumber=0;
+const spotlightKinds=['idea','thought','project','design','product'];
+const spotlightContainer=type=>document.getElementById('spotlight-'+type);
+function spotlightInput(){
+  if(spotlightUnloaded&&!spotlightEdited)return undefined;
+  const result={};
+  for(const type of ['profiles','items']){
+    const rows=[...spotlightContainer(type).children].map(row=>Object.fromEntries([...row.querySelectorAll('[data-spotlight]')].map(input=>[input.dataset.spotlight,input.value.trim()]))).filter(row=>Object.entries(row).some(([key,value])=>key!=='kind'&&value));
+    if(rows.length)result[type]=rows;
+  }
+  return result;
+}
+function syncSpotlightButtons(){for(const type of ['profiles','items'])document.getElementById('add-spotlight-'+(type==='profiles'?'profile':'item')).disabled=busy||spotlightContainer(type).children.length>=6;}
+function changedSpotlight(){spotlightEdited=true;spotlightUnloaded=false;document.getElementById('spotlight-import-status').textContent='';discardResult();syncContributionPreview();}
+function addSpotlight(type,data={},user=true){
+  const list=spotlightContainer(type);if(list.children.length>=6)return;
+  const row=document.createElement('div');row.className='spotlight-row';row.dataset.spotlightRow=type;
+  const number=++spotlightNumber;
+  const fields=type==='profiles'?[['label','Profile label','text',80],['url','Public profile link','url',2048]]:[['kind','Kind','select'],['title','Title','text',180],['description','A few words','textarea',2400],['url','Public link (optional)','url',2048]];
+  for(const [key,labelText,typeName,limit] of fields){
+    const label=document.createElement('label');label.textContent=labelText;
+    const input=document.createElement(typeName==='select'?'select':typeName==='textarea'?'textarea':'input');input.name='spotlight-'+number+'-'+key;input.dataset.spotlight=key;
+    if(typeName==='select'){for(const kind of spotlightKinds){const option=document.createElement('option');option.value=kind;option.textContent=kind[0].toUpperCase()+kind.slice(1);input.append(option);}}
+    else{if(typeName==='textarea')input.rows=3;else input.type=typeName;input.maxLength=limit;if(typeName==='url'){input.placeholder='https://';input.setAttribute('inputmode','url');}}
+    input.value=typeof data[key]==='string'?data[key]:key==='kind'?'idea':'';label.append(input);row.append(label);
+  }
+  const remove=document.createElement('button');remove.type='button';remove.className='quiet-button spotlight-remove';remove.textContent='Remove';remove.setAttribute('aria-label',type==='profiles'?'Remove profile link':'Remove shared work');remove.addEventListener('click',()=>{row.remove();changedSpotlight();});row.append(remove);list.append(row);
+  if(user){changedSpotlight();row.querySelector('input,select,textarea').focus();}else syncSpotlightButtons();
+}
+function clearSpotlight(user=true){for(const type of ['profiles','items'])spotlightContainer(type).replaceChildren();spotlightUnloaded=false;if(user)changedSpotlight();else syncSpotlightButtons();}
+function spotlightPreview(){
+  const preview=document.getElementById('preview-spotlight');preview.replaceChildren();const data=spotlightInput()||{};
+  const link=(parent,title,url)=>{const safe=safeMuseumSpotlightURL(url);const node=document.createElement(safe?'a':'span');node.textContent=title;node.className='orb-content';if(safe){node.href=safe;node.rel='noopener noreferrer ugc';}parent.append(node);};
+  if(data.profiles?.length){const list=document.createElement('ul');list.className='spotlight-profiles';for(const profile of data.profiles){const item=document.createElement('li');link(item,profile.label||'Profile link',profile.url);list.append(item);}preview.append(list);}
+  if(data.items?.length){const list=document.createElement('ul');list.className='spotlight-items';for(const work of data.items){const item=document.createElement('li'),kind=document.createElement('small');kind.textContent=work.kind[0].toUpperCase()+work.kind.slice(1);item.append(kind);link(item,work.title||'Untitled entry',work.url);if(work.description){const description=document.createElement('p');description.className='contributor-copy orb-content';description.textContent=work.description;item.append(description);}list.append(item);}preview.append(list);}
+  const visible=!!preview.children.length;document.getElementById('preview-spotlight-section').hidden=!visible;syncSpotlightButtons();return visible;
+}
+document.getElementById('add-spotlight-profile').addEventListener('click',()=>addSpotlight('profiles'));
+document.getElementById('add-spotlight-item').addEventListener('click',()=>addSpotlight('items'));
+document.getElementById('clear-spotlight').addEventListener('click',()=>clearSpotlight());
 function contributionInput(){return {attribution:form.elements.attribution.value,creatorName:form.elements.attribution.value==='anonymous'?'':form.elements.creatorName.value.trim(),creatorNote:form.elements.contributorNote.value.trim(),expression:form.elements.expression.value.trim()};}
 function syncContributionPreview(){
   const anonymous=form.elements.attribution.value==='anonymous',name=form.elements.creatorName;
@@ -15,7 +55,7 @@ function syncContributionPreview(){
   const data=contributionInput(),title=form.elements.title.value.trim()||'Your orb',suffix=anonymous?'an anonymous orb':'an orb by '+(data.creatorName||'your name');
   document.getElementById('contribution-preview-title').textContent=title+' — '+suffix;
   for(const key of ['note','expression']){document.getElementById('preview-'+key).textContent=data[key==='note'?'creatorNote':'expression'];document.getElementById('preview-'+key+'-section').hidden=!data[key==='note'?'creatorNote':'expression'];}
-  document.getElementById('preview-empty').hidden=!!(data.creatorNote||data.expression);
+  const hasSpotlight=spotlightPreview();document.getElementById('preview-empty').hidden=!!(data.creatorNote||data.expression||hasSpotlight);
 }
 const size=bytes=>bytes>=1024*1024?(bytes/(1024*1024)).toFixed(1)+' MB':Math.ceil(bytes/1024)+' KB';
 function discardResult(){result.hidden=true;errorBox.hidden=true;progress.textContent='';if(packageURL)URL.revokeObjectURL(packageURL);if(manifestURL)URL.revokeObjectURL(manifestURL);packageURL=manifestURL=null;}
@@ -37,15 +77,20 @@ function addSource(){
   row.append(titleLabel,urlLabel,kindLabel,remove);library.append(row);title.focus();
 }
 document.getElementById('add-library-link').addEventListener('click',addSource);
-form.addEventListener('input',event=>{if(Object.hasOwn(editedContribution,event.target.name))editedContribution[event.target.name]=true;if(!busy){discardResult();syncContributionPreview();}});
+form.addEventListener('input',event=>{if(Object.hasOwn(editedContribution,event.target.name))editedContribution[event.target.name]=true;if(event.target.dataset?.spotlight)spotlightEdited=true;if(!busy){discardResult();syncContributionPreview();}});
 async function hydrateSavedContribution(){
   const version=++jsonReadVersion,file=document.getElementById('submission-json').files[0],status=document.getElementById('contribution-import-status');
-  let saved={},message='';
+  let saved={},savedSpotlight,message='';
   if(file){
     if(file.size>PACKAGE_LIMITS.jsonBytes){status.textContent='The selected ORB data is larger than 8 MB. Its saved note has not been loaded.';return;}
-    try{const record=JSON.parse((await file.text()).replace(/^\uFEFF/,''));saved=record?.museum?.contribution||{};}catch{if(version===jsonReadVersion)status.textContent='The saved note could not be read from this JSON file. Your current words are unchanged.';return;}
+    try{const record=JSON.parse((await file.text()).replace(/^\uFEFF/,''));saved=record?.museum?.contribution||{};savedSpotlight=record?.museum?.spotlight;}catch{if(version===jsonReadVersion)status.textContent='The saved note could not be read from this JSON file. Your current words are unchanged.';return;}
   }
   if(version!==jsonReadVersion)return;
+  const spotlightStatus=document.getElementById('spotlight-import-status');
+  if(!spotlightEdited){
+    try{const clean=normalizeMuseumSpotlight(savedSpotlight)||{};clearSpotlight(false);for(const type of ['profiles','items'])for(const row of clean[type]||[])addSpotlight(type,row,false);spotlightStatus.textContent=Object.keys(clean).length?'Saved public profiles and shared work loaded. Review them before preparing your package.':'';}
+    catch{clearSpotlight(false);spotlightUnloaded=true;spotlightStatus.textContent='Saved shared work needs attention and was not loaded. It remains in the original JSON. Clear shared work to replace it, or correct the JSON before preparing your package.';}
+  }else if(savedSpotlight)spotlightStatus.textContent='Your edited shared work was kept instead of the saved version.';
   const loaded=[],kept=[],oversized=[];
   for(const [field,key] of [['contributorNote','note'],['expression','expression']]){
     const value=typeof saved[key]==='string'?saved[key]:'';
@@ -58,7 +103,7 @@ async function hydrateSavedContribution(){
   if(oversized.length)message+=(message?' ':'')+'A saved field exceeds 2,400 characters and was not loaded. Shorten it before adding it here; the original JSON stays intact.';
   status.textContent=message;syncContributionPreview();discardResult();
 }
-form.addEventListener('change',event=>{if(!busy){discardResult();listFiles();syncContributionPreview();if(event.target.id==='submission-json')pendingJSON=hydrateSavedContribution();}});
+form.addEventListener('change',event=>{if(event.target.dataset?.spotlight)spotlightEdited=true;if(!busy){discardResult();listFiles();syncContributionPreview();if(event.target.id==='submission-json')pendingJSON=hydrateSavedContribution();}});
 function sourceLinks(){
   return [...library.querySelectorAll('.library-link-row')].flatMap(row=>{
     const title=row.querySelector('[data-library="title"]').value.trim(),urlInput=row.querySelector('[data-library="url"]'),value=urlInput.value.trim();
@@ -72,9 +117,10 @@ form.addEventListener('submit',async event=>{
   // A second selection can replace the read while submission awaits the first.
   let settledRead;do{settledRead=pendingJSON;await settledRead;}while(settledRead!==pendingJSON);
   if(busy||!form.reportValidity())return;discardResult();
-  let links;try{links=sourceLinks();}catch(error){errorBox.textContent=error.message;errorBox.hidden=false;return;}
+  let links,spotlight;try{links=sourceLinks();const raw=spotlightInput();spotlight=raw===undefined?undefined:normalizeMuseumSpotlight(raw)||{};}catch(error){errorBox.textContent=error.message;errorBox.hidden=false;return;}
   const input={title:form.elements.title.value,description:form.elements.description.value,...contributionInput(),html:document.getElementById('submission-html').files[0],audioFiles:[...document.getElementById('submission-audio').files],mediaFiles:[...document.getElementById('submission-media').files]};
   const json=document.getElementById('submission-json').files[0];if(json)input.orbJSON=json;
+  if(spotlight!==undefined)input.spotlight=spotlight;
   // Omitting an empty source list lets imported ORB JSON retain its own library.
   if(links.length)input.library=links;
   busy=true;form.setAttribute('aria-busy','true');const controls=[...form.elements];controls.forEach(control=>control.disabled=true);progress.textContent='Preparing your files…';
