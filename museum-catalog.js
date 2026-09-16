@@ -10,7 +10,7 @@
     if(r.safeLink(orb.imageCredits))add(library,{title:'Image library & credits',url:orb.imageCredits,type:'Images'});
     if(r.safeLink(f?.sourceUrl))add(library,{title:'Edition source files',url:f.sourceUrl,type:'Source record'});
     (meta.audio||[]).forEach(item=>add(audio,item));
-    (orb.availableJourneys||[]).filter(item=>item.narrationReady===true).forEach(item=>add(audio,{...item,title:item.name,url:r.safeLink(item.url)||f.url}));
+    if(!audio.length)(orb.availableJourneys||[]).filter(item=>item.narrationReady===true).forEach(item=>add(audio,{...item,title:item.name,url:r.safeLink(item.url)||f.url}));
     return {library,audio,creator:typeof meta.creator?.displayName==='string'?meta.creator.displayName.trim():'',legacy:meta.legacy===true};
   }
   function languageLabel(item){const key=String(item.language||'').toLowerCase(),label=({en:'English',es:'Español',english:'English',spanish:'Español'})[key]||item.language||'';return label&&!String(item.title).toLowerCase().includes(label.toLowerCase())?label:'';}
