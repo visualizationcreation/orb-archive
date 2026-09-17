@@ -1,11 +1,11 @@
-import {createMuseumTree} from './orb-tree.mjs?v=central-tree-20260916-1';
-import {startView,callOrbs,callTarget,layerCount,MAX_LAYERS,refocus,visibleEdges,sphereSize,unseen,branchCurve} from './orb-browsing.mjs?v=central-tree-20260916-1';
-import {createUniverse} from './orb-connect-pass.mjs?v=central-tree-20260916-1';
-import {savedWorks} from './orb-connect-snapshot.mjs?v=central-tree-20260916-1';
+import {createMuseumTree} from './orb-tree.mjs?v=central-tree-20260916-2';
+import {startView,callOrbs,callTarget,layerCount,MAX_LAYERS,refocus,visibleEdges,sphereSize,unseen,branchCurve,reconcileView} from './orb-browsing.mjs?v=central-tree-20260916-2';
+import {createUniverse} from './orb-connect-pass.mjs?v=central-tree-20260916-2';
+import {savedWorks} from './orb-connect-snapshot.mjs?v=central-tree-20260916-2';
 
 export function mountUniverse({catalog,overview}){
  const field=document.querySelector('.orb-field'),studio=field.closest('.vault-studio');
- const css=document.createElement('link');css.rel='stylesheet';css.href=new URL('./orb-universe.css?v=central-tree-20260916-1',import.meta.url).href;document.head.append(css);
+ const css=document.createElement('link');css.rel='stylesheet';css.href=new URL('./orb-universe.css?v=central-tree-20260916-2',import.meta.url).href;document.head.append(css);
  document.querySelector('.vault-workspace').classList.add('universe-workspace');field.classList.add('universe-field');
  const es=()=>document.documentElement.lang==='es',tr=(a,b)=>es()?b:a;
  const make=(tag,text='',className='')=>{const el=document.createElement(tag);el.textContent=text;el.className=className;return el;};
@@ -17,7 +17,7 @@ export function mountUniverse({catalog,overview}){
  const status=make('p','','universe-status');status.setAttribute('role','status');studio.append(status);
  let graph,view,trail=[],message='',origin={x:0,y:0},arriving=new Set(),zoom=1,fit=true;
  const plane=make('div','','universe-plane');
- function update(data){const works=new Map(savedWorks.map(o=>[o.id,o]));for(const orb of data)works.set(orb.id,{...works.get(orb.id),...orb});graph=createMuseumTree(createUniverse([...works.values()]));if(!view)readLocation();render();}
+ function update(data){const works=new Map(savedWorks.map(o=>[o.id,o]));for(const orb of data)works.set(orb.id,{...works.get(orb.id),...orb});graph=createMuseumTree(createUniverse([...works.values()]));if(!view)readLocation();else view=reconcileView(graph,view);render();}
  function readLocation(){const params=new URLSearchParams(location.search),id=params.get('map')||params.get('orb');view=startView(graph,graph.nodes.has(id)?id:'universe');trail=[];}
  function remember(){history.replaceState({orbBrowsing:{view,trail}},'');}
  function route(){const url=new URL(location.href);url.searchParams.delete('orb');view.center==='universe'?url.searchParams.delete('map'):url.searchParams.set('map',view.center);history.pushState({orbBrowsing:{view,trail}},'',url);}
@@ -50,6 +50,7 @@ export function mountUniverse({catalog,overview}){
   const note=make('p',tr('An authored arrangement · 16 September 2026. Collections are invitations to explore; the original orbs keep their identities.','Una organización de autor · 16 de septiembre de 2026. Las colecciones invitan a explorar; los orbs originales conservan su identidad.'),'vault-note');overview.append(note);
  }
  function render(recenter=false){
+  view=reconcileView(graph,view);
   const selected=view.nodes.find(n=>n.key===view.selected),depth=layerCount(view),target=callTarget(graph,view),blocked=selected.depth>=MAX_LAYERS;
   document.querySelector('#studio-title').textContent=tr('Follow a fractal of the Orb.','Sigue un fractal del Orb.');
   const subtitle=document.querySelector('.studio-heading > p:last-child');if(subtitle)subtitle.textContent=tr('Click an orb. Watch its smaller worlds unfold.','Haz clic en un orb. Despliega sus mundos más pequeños.');

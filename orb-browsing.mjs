@@ -11,13 +11,21 @@ export function callOrbs(tree,view,key=view.selected){
  const parent=callTarget(tree,view,key);if(!parent)return {view,added:[]};
  const next=structuredClone(view),siblings=tree.children.get(parent.id)||[],items=unseen(tree,view,key).slice(0,CALL_SIZE);
  for(const item of items){
-  const slot=siblings.indexOf(item.node.id),sector=parent.sector/Math.max(1,siblings.length),depth=parent.depth+1;
-  const angle=parent.depth===0?parent.angle-Math.PI/2+sector*(slot+.5):parent.angle+(slot-(siblings.length-1)/2)*sector;
-  const radius=parent.depth===0?205:parent.radius+170*Math.pow(.76,depth-2);
-  next.nodes.push({key:item.node.id,id:item.node.id,parent:parent.key,depth,x:Math.cos(angle)*radius,y:Math.sin(angle)*radius,angle,radius,sector});
+  next.nodes.push(positionChild(parent,item.node.id,siblings));
  }
  if(!next.expanded.includes(key))next.expanded.push(key);
  return {view:next,added:next.nodes.slice(view.nodes.length).map(n=>n.key)};
+}
+function positionChild(parent,id,siblings){
+ const slot=siblings.indexOf(id),sector=parent.sector/Math.max(1,siblings.length),depth=parent.depth+1;
+ const angle=parent.depth===0?parent.angle-Math.PI/2+sector*(slot+.5):parent.angle+(slot-(siblings.length-1)/2)*sector;
+ const radius=parent.depth===0?205:parent.radius+170*Math.pow(.76,depth-2);
+ return {key:id,id,parent:parent.key,depth,x:Math.cos(angle)*radius,y:Math.sin(angle)*radius,angle,radius,sector};
+}
+export function reconcileView(tree,view){
+ const next=structuredClone(view),placed=new Map();
+ next.nodes=next.nodes.map(node=>{const parent=placed.get(node.parent),updated=parent?positionChild(parent,node.id,tree.children.get(parent.id)||[]):node;placed.set(updated.key,updated);return updated;});
+ return next;
 }
 export const startView=(tree,center='universe')=>callOrbs(tree,newView(center)).view;
 export function refocus(tree,view,key){const node=view.nodes.find(n=>n.key===key);if(!node||node.parent===null||!(tree.children.get(node.id)||[]).length)return null;return startView(tree,node.id);}

@@ -1,9 +1,9 @@
 (async()=>{
 const {fetchMuseumJSON,mergeCatalog,connectionsFor,publicationId,listingFromPublication}=await import('./museum-publications.mjs');
 
-const {mountUniverse}=await import('./orb-universe.mjs?v=central-tree-20260916-1');
-const {createUniverse}=await import('./orb-connect-pass.mjs?v=central-tree-20260916-1');
-const {createMuseumTree}=await import('./orb-tree.mjs?v=central-tree-20260916-1');
+const {mountUniverse}=await import('./orb-universe.mjs?v=central-tree-20260916-2');
+const {createUniverse}=await import('./orb-connect-pass.mjs?v=central-tree-20260916-2');
+const {createMuseumTree}=await import('./orb-tree.mjs?v=central-tree-20260916-2');
 let universe;
 const original=JSON.parse(document.getElementById('orb-catalog').textContent).orbs;
 let catalog=[...original],request=0,selectedId=new URLSearchParams(location.search).get('orb');
