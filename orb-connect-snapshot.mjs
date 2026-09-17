@@ -179,5 +179,47 @@ export const savedWorks=[
       }
     ],
     "summary": "An exploration of Pacific Northwest mushrooms (focused on learning and safe field practice): what to look for, how local habitats shape fungi, how to build identification skills, and where to find credible regional resources and safety guidance."
+  },
+  {
+    "id": "34e3418d45ca094712392c38db7fc37cfecf9a07ef313cd97a061b5d9a1085aa",
+    "title": "Musée d’Orsay: Learning to See Modern Life",
+    "description": "Start with the place itself. The museum stands on the Left Bank of the Seine in Paris, at Esplanade Valéry Giscard d’Estaing. Nearby stations are Solférino on Métro line twelve and Musée d’Orsay on RER line C. Use the museum’s own website for tickets, accessibility and current ho",
+    "url": "https://orbiversity.com/orb-archive/studio.html?publication=34e3418d45ca094712392c38db7fc37cfecf9a07ef313cd97a061b5d9a1085aa",
+    "featuredEdition": "34e3418d45ca094712392c38db7fc37cfecf9a07ef313cd97a061b5d9a1085aa",
+    "editions": [
+      {
+        "id": "34e3418d45ca094712392c38db7fc37cfecf9a07ef313cd97a061b5d9a1085aa",
+        "url": "https://orbiversity.com/orb-archive/studio.html?publication=34e3418d45ca094712392c38db7fc37cfecf9a07ef313cd97a061b5d9a1085aa"
+      }
+    ],
+    "summary": "Sixteen connected stops through Orsay: a practical Paris visit, the station-turned-museum, and artists who changed what and how we see. Includes slow-looking exercises, museum sources and a free local Bella guided introduction. Display locations can change; this is an independent educational guide, not an official museum publication."
+  },
+  {
+    "id": "1e1165802b5fb2fccebe2be621c54987590383a5e225fd6ca2fe77f2b34a449b",
+    "title": "Musée d’Orsay: Learning to See Modern Life",
+    "description": "Start with the place itself. The museum stands on the Left Bank of the Seine in Paris, at Esplanade Valéry Giscard d’Estaing. Nearby stations are Solférino on Métro line twelve and Musée d’Orsay on RER line C. Use the museum’s own website for tickets, accessibility and current ho",
+    "url": "https://orbiversity.com/orb-archive/studio.html?publication=1e1165802b5fb2fccebe2be621c54987590383a5e225fd6ca2fe77f2b34a449b",
+    "featuredEdition": "1e1165802b5fb2fccebe2be621c54987590383a5e225fd6ca2fe77f2b34a449b",
+    "editions": [
+      {
+        "id": "1e1165802b5fb2fccebe2be621c54987590383a5e225fd6ca2fe77f2b34a449b",
+        "url": "https://orbiversity.com/orb-archive/studio.html?publication=1e1165802b5fb2fccebe2be621c54987590383a5e225fd6ca2fe77f2b34a449b"
+      }
+    ],
+    "summary": "Sixteen connected stops through Orsay: a practical Paris visit, the station-turned-museum, and artists who changed what and how we see. Includes slow-looking exercises, museum sources and a free local Bella guided introduction. Display locations can change; this is an independent educational guide, not an official museum publication."
+  },
+  {
+    "id": "5e021d6818874eabe257dfc22358f6d0141573e994806e620dfb883f321af981",
+    "title": "Palacio postal en México (Palacio Postal de la CDMX)",
+    "description": "El Palacio Postal (también conocido como Quinta Casa de Correos) es un edificio histórico del Centro Histórico de la Ciudad de México, asociado al servicio postal: funciona como sede/espacio institucional de Correos de México y alberga oferta cultural ligada a la historia del cor",
+    "url": "https://orbiversity.com/orb-archive/studio.html?publication=5e021d6818874eabe257dfc22358f6d0141573e994806e620dfb883f321af981",
+    "featuredEdition": "5e021d6818874eabe257dfc22358f6d0141573e994806e620dfb883f321af981",
+    "editions": [
+      {
+        "id": "5e021d6818874eabe257dfc22358f6d0141573e994806e620dfb883f321af981",
+        "url": "https://orbiversity.com/orb-archive/studio.html?publication=5e021d6818874eabe257dfc22358f6d0141573e994806e620dfb883f321af981"
+      }
+    ],
+    "summary": "Qué es el Palacio Postal, dónde se ubica y por qué es relevante (historia, arquitectura y uso actual), con rutas para explorar cultura postal y patrimonio del Centro Histórico de la Ciudad de México."
   }
 ];

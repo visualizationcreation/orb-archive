@@ -8,7 +8,7 @@ export function mountUniverse({catalog,overview}){
  const es=()=>document.documentElement.lang==='es',tr=(a,b)=>es()?b:a;
  const make=(tag,text='',className='')=>{const el=document.createElement(tag);el.textContent=text;el.className=className;return el;};
  const button=(label,fn,className='')=>{const el=make('button',label,className);el.type='button';el.onclick=fn;return el;};
- const label=node=>es()&&node.es?node.es:node.title;
+ const label=node=>(es()&&node.es?node.es:node.title)+(node.editionLabel?' · '+node.editionLabel:'');
  const copy=node=>es()&&node.summaryEs?node.summaryEs:node.summary||node.description;
  const nav=make('nav','','universe-nav');nav.setAttribute('aria-label','Universe navigation');studio.append(nav);
  const paging=make('div','','universe-pages');studio.append(paging);

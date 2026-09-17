@@ -1,8 +1,8 @@
 # Orb Connect — organizing pass of 16 September 2026
 
-The Museum now has a saved, authored arrangement of the 12 published ORBs observed on this date. Five grouping orbs hold overlapping collections. There are 22 membership connections and six jumps between groups. These are editorial navigation relationships, not scientific similarity scores or new contributed editions.
+The Museum now has a saved, authored arrangement of the 15 published entries (including two separately saved Musée d’Orsay editions) observed on this date. Six grouping orbs hold overlapping collections. There are 29 membership connections and eight jumps between groups. These are editorial navigation relationships, not scientific similarity scores or new contributed editions.
 
-The initial collections are Forests & Waters; Mexico: Places & Voices; Food, Seasons & Gathering; Belief, Memory & Meaning; and Ways of Seeing. Each has an introduction, member reasons and a stable ID. Original editions, creators, libraries, media, catalog IDs and publication storage are unchanged.
+The initial collections are Forests & Waters; Mexico: Places & Voices; Food, Seasons & Gathering; Belief, Memory & Meaning; Ways of Seeing; and Cities, Museums & Making. Each has an introduction, member reasons and a stable ID. Original editions, creators, libraries, media, catalog IDs and publication storage are unchanged.
 
 `orb-connect-pass.mjs` owns the authored groups and edges and the pure neighborhood model. `orb-connect-snapshot.mjs` retains only public catalog references observed during this pass, allowing the map to work when the community feed is unavailable. Live listings override the snapshot. Newly published works not in this pass appear under New arrivals rather than disappearing or receiving fabricated relationships.
 
