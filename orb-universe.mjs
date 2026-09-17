@@ -1,9 +1,9 @@
-import {createUniverse,neighborhood,pageOf} from './orb-connect-pass.mjs';
-import {savedWorks} from './orb-connect-snapshot.mjs';
+import {createUniverse,neighborhood,pageOf} from './orb-connect-pass.mjs?v=connect-20260916-2';
+import {savedWorks} from './orb-connect-snapshot.mjs?v=connect-20260916-2';
 
 export function mountUniverse({catalog,overview}){
  const field=document.querySelector('.orb-field'),studio=field.closest('.vault-studio');
- const css=document.createElement('link');css.rel='stylesheet';css.href=new URL('./orb-universe.css',import.meta.url).href;document.head.append(css);
+ const css=document.createElement('link');css.rel='stylesheet';css.href=new URL('./orb-universe.css?v=connect-20260916-2',import.meta.url).href;document.head.append(css);
  document.querySelector('.vault-workspace').classList.add('universe-workspace');field.classList.add('universe-field');
  const es=()=>document.documentElement.lang==='es',tr=(a,b)=>es()?b:a;
  const make=(tag,text='',className='')=>{const el=document.createElement(tag);el.textContent=text;el.className=className;return el;};

@@ -1,8 +1,8 @@
 (async()=>{
 const {fetchMuseumJSON,mergeCatalog,connectionsFor,publicationId,listingFromPublication}=await import('./museum-publications.mjs');
 
-const {mountUniverse}=await import('./orb-universe.mjs');
-const {pass}=await import('./orb-connect-pass.mjs');
+const {mountUniverse}=await import('./orb-universe.mjs?v=connect-20260916-2');
+const {pass}=await import('./orb-connect-pass.mjs?v=connect-20260916-2');
 let universe;
 const original=JSON.parse(document.getElementById('orb-catalog').textContent).orbs;
 let catalog=[...original],request=0,selectedId=new URLSearchParams(location.search).get('orb');
