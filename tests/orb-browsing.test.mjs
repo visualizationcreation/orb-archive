@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {newView,startView,callOrbs,callTarget,layerCount,refocus,visibleEdges,sphereSize,branchCurve} from '../orb-browsing.mjs';
+import {newView,startView,callOrbs,callTarget,layerCount,refocus,visibleEdges,sphereSize,branchCurve,reconcileView} from '../orb-browsing.mjs';
 import {createMuseumTree} from '../orb-tree.mjs';
 import {createUniverse} from '../orb-connect-pass.mjs';
 import {savedWorks} from '../orb-connect-snapshot.mjs';
@@ -33,4 +33,10 @@ test('four levels are a local view limit and eight is only a batch limit',()=>{
 });
 test('new arrivals remain reachable once and original catalog objects are unchanged',()=>{
  const graph=createUniverse([...savedWorks,{id:'new-work',title:'A new work',url:'https://example.com'}]),before=[...graph.nodes.keys()];const tree=createMuseumTree(graph),view=unfold(tree,startView(tree));assert.equal(view.nodes.filter(n=>n.id==='new-work').length,1);assert.deepEqual([...graph.nodes.keys()],before);assert.equal(tree.nodes.get('quinault').url,graph.nodes.get('quinault').url);
+});
+
+test('a live arrival rebalances existing sectors to the same positions as a fresh tree',()=>{
+ const before=museum(),shown=unfold(before,startView(before));const after=createMuseumTree(createUniverse([...savedWorks,{id:'later-arrival',title:'Later arrival'}]));
+ const updated=unfold(after,reconcileView(after,shown)),fresh=unfold(after,startView(after));
+ const sorted=view=>view.nodes.slice().sort((a,b)=>a.id.localeCompare(b.id));assert.deepEqual(sorted(updated),sorted(fresh));assert.equal(updated.nodes.filter(n=>n.id==='later-arrival').length,1);
 });
