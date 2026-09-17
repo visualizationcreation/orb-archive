@@ -1,8 +1,9 @@
 (async()=>{
 const {fetchMuseumJSON,mergeCatalog,connectionsFor,publicationId,listingFromPublication}=await import('./museum-publications.mjs');
 
-const {mountUniverse}=await import('./orb-universe.mjs?v=fractal-click-20260916-1');
-const {pass}=await import('./orb-connect-pass.mjs?v=fractal-click-20260916-1');
+const {mountUniverse}=await import('./orb-universe.mjs?v=central-tree-20260916-1');
+const {createUniverse}=await import('./orb-connect-pass.mjs?v=central-tree-20260916-1');
+const {createMuseumTree}=await import('./orb-tree.mjs?v=central-tree-20260916-1');
 let universe;
 const original=JSON.parse(document.getElementById('orb-catalog').textContent).orbs;
 let catalog=[...original],request=0,selectedId=new URLSearchParams(location.search).get('orb');
@@ -11,8 +12,8 @@ const state=()=>Object.fromEntries(Object.entries(controls).map(([key,value])=>[
 const es=()=>document.documentElement.lang==='es',tr=(en,sp)=>es()?sp:en;
 const e=escapeHtml;
 function connectionMarkup(orb){
-  const collections=pass.groups.filter(g=>g.members.some(([id])=>id===orb.id));
-  const grouping=collections.length?'<div class="museum-collections"><span>'+tr('Explore in','Explorar en')+'</span> '+collections.map(g=>'<a href="?map='+encodeURIComponent(g.id)+'&amp;lang='+(es()?'es':'en')+'">'+e(es()?g.es:g.title)+'</a>').join(' · ')+'</div>':'';
+  const tree=createMuseumTree(createUniverse(catalog)),owner=tree.nodes.get(tree.parent.get(orb.id)),collections=owner?[owner]:[];
+  const grouping=collections.length?'<div class="museum-collections"><span>'+tr('Home in the tree','Lugar en el árbol')+'</span> '+collections.map(g=>'<a href="?map='+encodeURIComponent(g.id)+'&amp;lang='+(es()?'es':'en')+'">'+e(es()?g.es:g.title)+'</a>').join(' · ')+'</div>':'';
   const connections=connectionsFor(orb,catalog);if(!connections.length)return grouping;
   return grouping+'<details class="museum-connections"><summary>'+tr('Connections in the Museum','Conexiones en el Museo')+'</summary><ul>'+connections.map(item=>{
     const target=featured(item.orb);if(!target)return '';
