@@ -33,3 +33,19 @@
 @media(max-width:700px){.universe-workspace{display:block;height:auto;min-height:0}.universe-workspace .vault-studio{height:760px}.universe-workspace .studio-heading{left:20px;right:20px}.universe-field{inset:155px 8px 66px}.universe-orb{width:104px;min-height:90px}.universe-sphere{width:37px;height:37px}.universe-center .universe-sphere{width:60px;height:60px}.universe-center{width:115px}.universe-label{font-size:11px}.universe-workspace .vault-overview{max-height:none;overflow:visible;padding:28px 24px}.universe-paths{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 18px}.universe-status{left:20px;right:20px;font-size:10px}.universe-nav{right:15px;gap:7px}.universe-workspace .studio-heading h1{font-size:25px}}
 @media(max-width:360px){.universe-orb{width:88px}.universe-label{font-size:10px}.universe-center{width:100px}.universe-workspace .studio-heading h1{font-size:22px}.universe-paths{grid-template-columns:1fr}}
 @media(prefers-reduced-motion:reduce){.universe-sphere{transition:none}}
+.universe-field{overflow:auto;overscroll-behavior:contain;inset:195px 12px 100px;scrollbar-color:#748d9c #07131d;touch-action:pan-x pan-y;border-radius:12px;border:1px solid #c5dcea12}
+.universe-plane{position:relative;min-width:100%;min-height:100%}
+.universe-plane .universe-lines{stroke-width:1.25}
+.universe-plane .universe-lines .cross-connection{stroke-dasharray:4 5}
+.universe-plane .universe-orb{width:154px;min-height:108px}
+.universe-orb[aria-pressed=true] .universe-sphere{outline:2px solid #e3cfb5;outline-offset:7px}
+.universe-orb[data-depth="2"] .universe-sphere{width:40px;height:40px}
+.universe-orb[data-depth="3"] .universe-sphere{width:34px;height:34px}
+.universe-orb[data-depth="4"] .universe-sphere{width:28px;height:28px}
+.universe-breadcrumb{flex-basis:100%;font-size:11px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:#b8ccd7;line-height:24px}
+.universe-nav .universe-call{border-color:#d6c39f;color:#f3dfb7}
+.universe-nav button:disabled{opacity:.4;cursor:default}
+.universe-pages{bottom:44px;left:20px;right:20px;text-align:center;line-height:1.5;color:#d6e3eb;pointer-events:none}
+.universe-pages p{margin:0;font-size:12px}
+.universe-branch-actions{margin:20px 0}
+@media(max-width:700px){.universe-field{inset:242px 8px 108px}.universe-nav{top:106px}.universe-workspace .vault-studio{height:830px}.universe-plane .universe-orb{width:150px}.universe-breadcrumb{font-size:10px}}
