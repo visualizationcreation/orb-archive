@@ -1,37 +1,36 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {newView,startView,callOrbs,callTarget,layerCount,refocus,visibleEdges,sphereSize} from '../orb-browsing.mjs';
+import {newView,startView,callOrbs,callTarget,layerCount,refocus,visibleEdges,sphereSize,branchCurve} from '../orb-browsing.mjs';
+import {createMuseumTree} from '../orb-tree.mjs';
 import {createUniverse} from '../orb-connect-pass.mjs';
 import {savedWorks} from '../orb-connect-snapshot.mjs';
-const graph=()=>({nodes:new Map(Array.from({length:30},(_,i)=>['n'+i,{id:'n'+i,title:'Node '+i}])),groups:[],edges:Array.from({length:29},(_,i)=>({from:'n'+i,to:'n'+(i+1)}))});
-const at=(view,id)=>view.nodes.find(node=>node.id===id).key;
-test('clicked parent grows local smaller children; old positions stay fixed',()=>{
- const g=graph();let view=newView('n0');
- for(let layer=1;layer<=4;layer++){view.selected=at(view,'n'+(layer-1));const before=structuredClone(view);view=callOrbs(g,view).view;assert.deepEqual(view.nodes.slice(0,before.nodes.length),before.nodes);assert.equal(layerCount(view),layer);assert.equal(view.center,'n0');const child=view.nodes.at(-1),parent=view.nodes.find(n=>n.key===child.parent);assert.ok(Math.hypot(child.x-parent.x,child.y-parent.y)<350);assert.ok(sphereSize(child.depth)<sphereSize(parent.depth));}
- view.selected=at(view,'n4');assert.equal(callTarget(g,view),null);assert.strictEqual(callOrbs(g,view).view,view);
+const museum=()=>createMuseumTree(createUniverse(savedWorks));
+function unfold(tree,view){for(let round=0;round<100;round++){const node=view.nodes.find(n=>callTarget(tree,view,n.key));if(!node)return view;view=callOrbs(tree,view,node.key).view;}throw Error('Growth did not terminate');}
+test('whole museum is one tree with a single home for all 15 published works',()=>{
+ const tree=museum();assert.equal(tree.workCount,15);assert.equal(tree.nodes.size,25);assert.equal(tree.parent.size,25);
+ const view=unfold(tree,startView(tree));assert.equal(view.nodes.length,26);assert.equal(new Set(view.nodes.map(n=>n.id)).size,view.nodes.length);
+ assert.equal(visibleEdges(tree,view).length,view.nodes.length-1);assert.equal(layerCount(view),4);
+ for(const node of tree.nodes.values()){let id=node.id;const seen=new Set();while(id!=='universe'){assert.ok(!seen.has(id));seen.add(id);id=tree.parent.get(id);assert.ok(id);}}
 });
-test('explicit refocus continues beyond four layers and keeps the return view intact',()=>{
- const g=graph();let view=startView(g,'n0');for(let i=1;i<=3;i++){view.selected=at(view,'n'+i);view=callOrbs(g,view).view;}
- const saved=structuredClone(view),next=refocus(g,view,at(view,'n4'));assert.equal(next.center,'n4');assert.equal(layerCount(next),1);assert.deepEqual(view,saved);assert.equal(refocus(g,view,'absent'),null);
+test('expanding in a different order gives the same primary homes and positions',()=>{
+ const tree=museum(),first=unfold(tree,startView(tree));let second=startView(tree);
+ for(let round=0;round<100;round++){const node=second.nodes.slice().reverse().find(n=>callTarget(tree,second,n.key));if(!node)break;second=callOrbs(tree,second,node.key).view;}
+ const sorted=view=>view.nodes.slice().sort((a,b)=>a.id.localeCompare(b.id));assert.deepEqual(sorted(first),sorted(second));
 });
-test('shared destinations unfold per branch without ancestor loops or duplicate children',()=>{
- const g=graph();g.edges=[{from:'n0',to:'n1'},{from:'n0',to:'n2'},{from:'n1',to:'n3'},{from:'n2',to:'n3'},{from:'n3',to:'n0'}];
- let view=startView(g,'n0');view.selected=at(view,'n1');view=callOrbs(g,view).view;view.selected=at(view,'n2');view=callOrbs(g,view).view;
- assert.equal(view.nodes.filter(n=>n.id==='n3').length,3);const before=view.nodes.length;view=callOrbs(g,view).view;assert.equal(view.nodes.length,before);
- view.selected=view.nodes.filter(n=>n.id==='n3').at(-1).key;view=callOrbs(g,view).view;assert.equal(view.nodes.filter(n=>n.id==='n0').length,1);assert.ok(visibleEdges(g,view).some(e=>e.kind==='shared'));
+test('nested children grow outward inside their parent sector with decreasing sizes',()=>{
+ const tree=museum(),view=unfold(tree,startView(tree));
+ for(const node of view.nodes.filter(n=>n.parent!==null)){const parent=view.nodes.find(n=>n.key===node.parent);assert.ok(node.radius>parent.radius);assert.ok(sphereSize(node.depth)<sphereSize(parent.depth));if(parent.depth)assert.ok(Math.abs(node.angle-parent.angle)<=parent.sector/2);assert.ok(node.sector<=parent.sector);}
 });
-test('a four-layer branch does not block a shallower sibling',()=>{
- const g=graph();g.edges.push({from:'n0',to:'n20'},{from:'n20',to:'n29'});let view=startView(g,'n0');for(let i=1;i<=3;i++){view.selected=at(view,'n'+i);view=callOrbs(g,view).view;}
- view.selected=at(view,'n20');assert.ok(callTarget(g,view));const result=callOrbs(g,view);assert.ok(result.added.length);assert.equal(layerCount(result.view),4);
+test('the app-style connectors are finite cubic curves, with no cross-links',()=>{
+ const tree=museum(),view=unfold(tree,startView(tree));for(const edge of visibleEdges(tree,view)){assert.equal(edge.kind,'branch');const curve=branchCurve(view.nodes.find(n=>n.key===edge.from),view.nodes.find(n=>n.key===edge.to));assert.match(curve,/^M .* C /);assert.doesNotMatch(curve,/NaN|Infinity/);}
 });
-test('eight is a batch size, not a total limit, and unrelated branches never grow',()=>{
- const g=graph();g.edges=Array.from({length:29},(_,i)=>({from:'n0',to:'n'+(i+1)}));let view=startView(g,'n0');assert.equal(view.nodes.length,9);while(callTarget(g,view))view=callOrbs(g,view).view;assert.equal(view.nodes.length,30);
- view.selected=at(view,'n1');assert.equal(callOrbs(g,view).added.length,0);
- for(const node of view.nodes)assert.ok(Number.isFinite(node.x)&&Number.isFinite(node.y));
+test('refocus follows only descendants and preserves the wider tree unchanged',()=>{
+ const tree=museum(),view=unfold(tree,startView(tree)),saved=structuredClone(view),focused=refocus(tree,view,'cities-museums');assert.equal(focused.center,'cities-museums');assert.ok(!focused.nodes.some(n=>n.id==='human-worlds'));assert.deepEqual(view,saved);assert.equal(refocus(tree,view,'quinault'),null);
 });
-test('actual museum unfolds a four-layer route from an existing group',()=>{
- const g=createUniverse(savedWorks);let view=startView(g);view.selected=at(view,'forests-waters');view=callOrbs(g,view).view;
- view.selected=at(view,'south-sound-salmon-watching-guide');view=callOrbs(g,view).view;
- const third=view.nodes.find(n=>n.id==='seasons-gathering'&&n.depth===3);assert.ok(third);view.selected=third.key;view=callOrbs(g,view).view;assert.ok(view.nodes.some(n=>n.depth===4));
- assert.equal(g.nodes.size,21);assert.equal(new Set(view.nodes.map(n=>n.key)).size,view.nodes.length);
+test('four levels are a local view limit and eight is only a batch limit',()=>{
+ const nodes=new Map(),children=new Map();for(let i=0;i<12;i++){nodes.set('n'+i,{id:'n'+i});children.set('n'+i,i<11?['n'+(i+1)]:[]);}const tree={nodes,children};const first=unfold(tree,startView(tree,'n0'));assert.equal(layerCount(first),4);assert.equal(first.nodes.length,5);const next=unfold(tree,refocus(tree,first,'n4'));assert.equal(next.nodes.at(-1).id,'n8');
+ const ids=Array.from({length:29},(_,i)=>'b'+i);const broad={nodes:new Map(ids.map(id=>[id,{id}])),children:new Map([['universe',ids]])};let view=unfold(broad,startView(broad));assert.equal(view.nodes.length,30);assert.equal(new Set(view.nodes.map(n=>n.id)).size,30);
+});
+test('new arrivals remain reachable once and original catalog objects are unchanged',()=>{
+ const graph=createUniverse([...savedWorks,{id:'new-work',title:'A new work',url:'https://example.com'}]),before=[...graph.nodes.keys()];const tree=createMuseumTree(graph),view=unfold(tree,startView(tree));assert.equal(view.nodes.filter(n=>n.id==='new-work').length,1);assert.deepEqual([...graph.nodes.keys()],before);assert.equal(tree.nodes.get('quinault').url,graph.nodes.get('quinault').url);
 });
