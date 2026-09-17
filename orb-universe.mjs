@@ -1,10 +1,10 @@
-import {startView,callOrbs,callTarget,layerCount,MAX_LAYERS,refocus,visibleEdges} from './orb-browsing.mjs?v=call-layers-20260916-1';
-import {createUniverse,neighborhood} from './orb-connect-pass.mjs?v=call-layers-20260916-1';
-import {savedWorks} from './orb-connect-snapshot.mjs?v=call-layers-20260916-1';
+import {startView,callOrbs,callTarget,layerCount,MAX_LAYERS,refocus,visibleEdges,sphereSize,unseen} from './orb-browsing.mjs?v=fractal-click-20260916-1';
+import {createUniverse,neighborhood} from './orb-connect-pass.mjs?v=fractal-click-20260916-1';
+import {savedWorks} from './orb-connect-snapshot.mjs?v=fractal-click-20260916-1';
 
 export function mountUniverse({catalog,overview}){
  const field=document.querySelector('.orb-field'),studio=field.closest('.vault-studio');
- const css=document.createElement('link');css.rel='stylesheet';css.href=new URL('./orb-universe.css?v=call-layers-20260916-1',import.meta.url).href;document.head.append(css);
+ const css=document.createElement('link');css.rel='stylesheet';css.href=new URL('./orb-universe.css?v=fractal-click-20260916-1',import.meta.url).href;document.head.append(css);
  document.querySelector('.vault-workspace').classList.add('universe-workspace');field.classList.add('universe-field');
  const es=()=>document.documentElement.lang==='es',tr=(a,b)=>es()?b:a;
  const make=(tag,text='',className='')=>{const el=document.createElement(tag);el.textContent=text;el.className=className;return el;};
@@ -14,19 +14,22 @@ export function mountUniverse({catalog,overview}){
  const nav=make('nav','','universe-nav');nav.setAttribute('aria-label','Universe navigation');studio.append(nav);
  const paging=make('div','','universe-pages');studio.append(paging);
  const status=make('p','','universe-status');status.setAttribute('role','status');studio.append(status);
- let graph,view,trail=[],message='',origin={x:0,y:0};
+ let graph,view,trail=[],message='',origin={x:0,y:0},arriving=new Set();
  const plane=make('div','','universe-plane');
  function update(data){const works=new Map(savedWorks.map(o=>[o.id,o]));for(const orb of data)works.set(orb.id,{...works.get(orb.id),...orb});graph=createUniverse([...works.values()]);if(!view)readLocation();render();}
  function readLocation(){const params=new URLSearchParams(location.search),id=params.get('map')||params.get('orb');view=startView(graph,graph.nodes.has(id)?id:'universe');trail=[];}
  function remember(){history.replaceState({orbBrowsing:{view,trail}},'');}
  function route(){const url=new URL(location.href);url.searchParams.delete('orb');view.center==='universe'?url.searchParams.delete('map'):url.searchParams.set('map',view.center);history.pushState({orbBrowsing:{view,trail}},'',url);}
- function choose(id){if(!view.nodes.some(n=>n.id===id))return;view.selected=id;message='';remember();render();field.querySelector('[aria-pressed=true]')?.focus({preventScroll:true});}
+ function choose(key){const node=view.nodes.find(n=>n.key===key);if(!node)return;view.selected=key;reveal(key);remember();render();field.querySelector('[aria-pressed=true]')?.focus({preventScroll:true});field.scrollTo({left:node.x+origin.x-field.clientWidth/2,top:node.y+origin.y-field.clientHeight/2,behavior:matchMedia('(prefers-reduced-motion:reduce)').matches?'instant':'smooth'});}
+ function reveal(key){const node=view.nodes.find(n=>n.key===key),result=callOrbs(graph,view,key);view=result.view;arriving=new Set(result.added);
+ message=result.added.length?tr('Unfolded ','Se desplegaron ')+result.added.length+(result.added.length===1?tr(' smaller orb around ',' orb pequeño alrededor de '):tr(' smaller orbs around ',' orbs pequeños alrededor de '))+(graph.nodes.get(node.id)?.title||'Orbiversity')+'.':node.depth>=MAX_LAYERS?tr('This branch has four layers. Refocus it to continue.','Esta rama tiene cuatro capas. Recéntrala para continuar.'):unseen(graph,view,key).length?tr('This cluster is full. Refocus the branch for more room.','Este grupo está lleno. Recentra la rama para obtener más espacio.'):tr('This point is fully unfolded. Choose one of its children or open its published ORB.','Este punto está desplegado. Elige uno de sus hijos o abre su ORB publicado.');
+ }
  function focus(id){const next=refocus(graph,view,id);if(!next)return;remember();trail.push(structuredClone(view));view=next;message='';route();render(true);}
  function back(){if(!trail.length)return;remember();view=trail.pop();message='';route();render(true);}
  function allWorlds(){if(view.center==='universe')return;remember();trail.push(structuredClone(view));view=startView(graph);message='';route();render(true);}
- function grow(){const result=callOrbs(graph,view);view=result.view;message=result.added.length?tr('Added ','Se añadieron ')+result.added.length+tr(' connected orbs. Earlier layers remain.',' orbs conectados. Las capas anteriores permanecen.'):'';remember();render();nav.querySelector('.universe-call')?.focus({preventScroll:true});}
- function panel(id){
-  const node=graph.nodes.get(id),isRoot=!node;overview.replaceChildren();
+ function grow(){reveal(view.selected);remember();render();nav.querySelector('.universe-call')?.focus({preventScroll:true});}
+ function panel(key){
+  const occurrence=view.nodes.find(n=>n.key===key),id=occurrence.id,node=graph.nodes.get(id),isRoot=!node;overview.replaceChildren();
   overview.setAttribute('aria-label',isRoot?tr('The Orbiversity universe','El universo de Orbiversity'):label(node));
   overview.append(make('p',isRoot?'Orb Connect':node.kind==='group'?tr('A grouping orb','Un orb de colección'):tr('A published orb','Un orb publicado'),'universe-kind'));
   overview.append(make('h2',isRoot?tr('Choose a world. Find another.','Elige un mundo. Descubre otro.'):label(node)));
@@ -36,24 +39,26 @@ export function mountUniverse({catalog,overview}){
    if(url){const a=make('a',tr('Open published ORB','Abrir ORB publicado'),'primary-link');a.href=url;overview.append(a);}
    overview.append(make('p',tr('The original edition opens with its readings, sources and available recordings.','La edición original conserva sus lecturas, fuentes y grabaciones disponibles.'),'overview-meta'));
   }
+  if(view.nodes.filter(n=>n.id===id).length>1)overview.append(make('p',tr('This same saved orb also appears in another branch.','Este mismo orb guardado también aparece en otra rama.'),'overview-meta'));
   const actions=make('div','','universe-branch-actions');
-  if(id!==view.center)actions.append(button(tr('Refocus this branch','Recentrar esta rama'),()=>focus(id),'primary-link'));
+  if(occurrence.parent!==null)actions.append(button(tr('Refocus this branch','Recentrar esta rama'),()=>focus(key),'primary-link'));
   overview.append(actions);
-  const near=neighborhood(graph,id),heading=make('h3',node?.kind==='work'?tr('Explore its collections','Explora sus colecciones'):tr('Paths from here','Caminos desde aquí'),'universe-path-title');overview.append(heading);
+  overview.append(make('h3',tr('Branches from this point','Ramas desde este punto'),'universe-path-title'));
   const paths=make('ul','','universe-paths');
-  for(const item of near){const li=make('li');li.append(button(label(item.node),()=>{if(view.nodes.some(n=>n.id===item.node.id))choose(item.node.id);else {view.selected=id;grow();if(view.nodes.some(n=>n.id===item.node.id))choose(item.node.id);}}));if(!isRoot)li.append(make('p',item.reason,'orb-content'));paths.append(li);}overview.append(paths);
+  for(const child of view.nodes.filter(n=>n.parent===key)){const item=graph.nodes.get(child.id),li=make('li');li.append(button(label(item),()=>choose(child.key)));paths.append(li);}overview.append(paths);
+  if(!paths.children.length)overview.append(make('p',occurrence.depth>=MAX_LAYERS?tr('Refocus this branch to unfold the next four layers.','Recentra esta rama para desplegar las próximas cuatro capas.'):tr('No further saved connections along this route.','No hay más conexiones guardadas en esta ruta.'),'overview-meta'));
   const note=make('p',tr('An authored arrangement · 16 September 2026. Collections are invitations to explore; the original orbs keep their identities.','Una organización de autor · 16 de septiembre de 2026. Las colecciones invitan a explorar; los orbs originales conservan su identidad.'),'vault-note');overview.append(note);
  }
  function render(recenter=false){
-  const selected=graph.nodes.get(view.selected),depth=layerCount(view),target=callTarget(graph,view),blocked=depth>=MAX_LAYERS;
+  const selected=view.nodes.find(n=>n.key===view.selected),depth=layerCount(view),target=callTarget(graph,view),blocked=selected.depth>=MAX_LAYERS;
   document.querySelector('#studio-title').textContent=tr('Follow a fractal of the Orb.','Sigue un fractal del Orb.');
-  const subtitle=document.querySelector('.studio-heading > p:last-child');if(subtitle)subtitle.textContent=tr('Call connections. Choose a branch. Go deeper.','Llama conexiones. Elige una rama. Profundiza.');
+  const subtitle=document.querySelector('.studio-heading > p:last-child');if(subtitle)subtitle.textContent=tr('Click an orb. Watch its smaller worlds unfold.','Haz clic en un orb. Despliega sus mundos más pequeños.');
   const scroll={left:field.scrollLeft,top:field.scrollTop};field.replaceChildren(plane);plane.replaceChildren();nav.replaceChildren();paging.replaceChildren();
   nav.append(button(tr('All worlds','Todos los mundos'),allWorlds));
   if(trail.length)nav.append(button(tr('Wider view','Vista anterior'),back));
   const call=button(tr('Call Orbs +','Llamar Orbs +'),grow,'universe-call');call.disabled=!target;nav.append(call);
-  call.title=target?tr('Reveal connections around ','Mostrar conexiones de ')+(graph.nodes.get(target.id)?.title||'Orbiversity'):tr('Choose a branch to refocus and continue.','Elige una rama para recentrar y continuar.');
-  const ref=button(tr('Refocus branch','Recentrar rama'),()=>focus(view.selected));ref.disabled=view.selected===view.center;nav.append(ref);
+  call.title=target?tr('Reveal connections around ','Mostrar conexiones de ')+(graph.nodes.get(target.id)?.title||'Orbiversity'):tr('Click a smaller orb to unfold its branch.','Haz clic en un orb pequeño para desplegar su rama.');
+  const ref=button(tr('Refocus branch','Recentrar rama'),()=>focus(view.selected));ref.disabled=selected.parent===null;nav.append(ref);
   nav.append(button(tr('Rearrange','Reordenar'),()=>{view.nodes=view.nodes.map(n=>({...n,x:n.x*Math.cos(.38)-n.y*Math.sin(.38),y:n.x*Math.sin(.38)+n.y*Math.cos(.38)}));remember();render(true);}));
   const path=make('span',[...trail.map(v=>graph.nodes.get(v.center)?.title||'Orbiversity'),graph.nodes.get(view.center)?.title||'Orbiversity'].join(' › '),'universe-breadcrumb');nav.append(path);
   const nodes=view.nodes,minX=Math.min(...nodes.map(n=>n.x))-110,minY=Math.min(...nodes.map(n=>n.y))-90;
@@ -61,23 +66,26 @@ export function mountUniverse({catalog,overview}){
   plane.style.width=width+'px';plane.style.height=height+'px';
   const dx=(width-(Math.max(...nodes.map(n=>n.x))-minX+110))/2-minX,dy=(height-(Math.max(...nodes.map(n=>n.y))-minY+90))/2-minY;
   const svg=document.createElementNS('http://www.w3.org/2000/svg','svg');svg.setAttribute('viewBox',`0 0 ${width} ${height}`);svg.classList.add('universe-lines');svg.setAttribute('aria-hidden','true');plane.append(svg);
-  const positions=new Map(nodes.map(n=>[n.id,n]));
-  for(const edge of visibleEdges(graph,view)){const a=positions.get(edge.from),b=positions.get(edge.to),line=document.createElementNS(svg.namespaceURI,'line');for(const [key,value]of Object.entries({x1:a.x+dx,y1:a.y+dy,x2:b.x+dx,y2:b.y+dy}))line.setAttribute(key,value);if(a.parent!==b.id&&b.parent!==a.id)line.classList.add('cross-connection');svg.append(line);}
+  const positions=new Map(nodes.map(n=>[n.key,n]));
+  for(const edge of visibleEdges(graph,view)){const a=positions.get(edge.from),b=positions.get(edge.to),line=document.createElementNS(svg.namespaceURI,'line');for(const [key,value]of Object.entries({x1:a.x+dx,y1:a.y+dy,x2:b.x+dx,y2:b.y+dy}))line.setAttribute(key,value);if(edge.kind==='shared')line.classList.add('cross-connection');else if(edge.from===view.selected)line.classList.add('universe-selected-branch');svg.append(line);}
+  function branchColor(item){let current=item;while(current){const color=graph.nodes.get(current.id)?.color;if(color)return color;current=positions.get(current.parent);}return '#a8c8df';}
   for(const item of nodes){
-   const node=graph.nodes.get(item.id),isCenter=item.id===view.center,text=node?label(node):'Orbiversity';
-   const el=button('',()=>choose(item.id),'universe-orb'+(isCenter?' universe-center':'')+(node?.kind==='work'?' universe-work':' universe-group'));
-   el.style.setProperty('--x',(item.x+dx)+'px');el.style.setProperty('--y',(item.y+dy)+'px');el.style.setProperty('--orb-color',node?.color||'#a8c8df');el.dataset.depth=item.depth;el.dataset.orbId=item.id;el.setAttribute('aria-label',text);el.setAttribute('aria-pressed',String(item.id===view.selected));
+   const node=graph.nodes.get(item.id),isCenter=item.parent===null,text=node?label(node):'Orbiversity';
+   const el=button('',()=>choose(item.key),'universe-orb'+(isCenter?' universe-center':'')+(node?.kind==='work'?' universe-work':' universe-group'));
+   el.style.setProperty('--x',(item.x+dx)+'px');el.style.setProperty('--y',(item.y+dy)+'px');el.style.setProperty('--orb-color',branchColor(item));el.style.setProperty('--sphere-size',sphereSize(item.depth)+'px');el.dataset.depth=item.depth;el.dataset.orbId=item.id;el.dataset.key=item.key;el.setAttribute('aria-label',text);el.setAttribute('aria-pressed',String(item.key===view.selected));
    el.append(make('span','','universe-sphere'),make('span',text,'universe-label orb-content'));
+   el.setAttribute('aria-expanded',String(view.expanded.includes(item.key)));el.title=text+' · '+tr('Click to unfold','Haz clic para desplegar');
    el.append(make('small',isCenter?tr('Current center','Centro actual'):tr('Layer ','Capa ')+item.depth,'universe-node-count'));plane.append(el);
+   if(arriving.has(item.key)&&!matchMedia('(prefers-reduced-motion:reduce)').matches){const parent=positions.get(item.parent);el.animate([{transform:`translate(-50%,-50%) translate(${parent.x-item.x}px,${parent.y-item.y}px) scale(.15)`,opacity:0},{transform:'translate(-50%,-50%) translate(0,0) scale(1)',opacity:1}],{duration:600,easing:'cubic-bezier(.16,1,.3,1)'});}
   }
-  const guidance=!target&&!blocked?tr('All connected orbs in this view are visible. Select a branch to explore it as a new center.','Todos los orbs conectados de esta vista están visibles. Elige una rama como nuevo centro.'):blocked?tr('Four layers reached. Select an orb, then Refocus branch to continue.','Has llegado a cuatro capas. Selecciona un orb y recentra su rama para continuar.'):depth>=3?tr('Three layers open. Choose a branch when you are ready to go deeper.','Tres capas abiertas. Elige una rama para profundizar.'):tr('Select an orb, then Call Orbs. Scroll the map to explore its growing branches.','Selecciona un orb y llama conexiones. Desplaza el mapa para explorar sus ramas.');
+  const guidance=blocked?tr('Four layers on this branch. Refocus it to continue deeper; other branches can still unfold.','Cuatro capas en esta rama. Recéntrala para continuar; las otras ramas aún pueden desplegarse.'):depth>=3?tr('Click a child to unfold its next layer. Refocus any branch for a closer view.','Haz clic en un hijo para desplegar su próxima capa. Recentra cualquier rama para verla de cerca.'):tr('Click any orb to unfold smaller orbs around it. Scroll to follow the branches.','Haz clic en cualquier orb para desplegar orbs pequeños a su alrededor. Desplázate para seguir las ramas.');
   paging.append(make('p',guidance));
-  status.textContent=(message?message+' ':'')+nodes.length+tr(' visible',' visibles')+' · '+depth+'/4 '+tr('layers','capas')+' · '+graph.workCount+tr(' published orbs',' orbs publicados');
+  status.textContent=(message?message+' ':'')+nodes.length+tr(' visible points',' puntos visibles')+' · '+depth+'/4 '+tr('layers','capas')+' · '+graph.workCount+tr(' published orbs',' orbs publicados');
   panel(view.selected);
-  if(recenter||!field.dataset.positioned){const center=positions.get(view.center);field.scrollLeft=center.x+dx-field.clientWidth/2;field.scrollTop=center.y+dy-field.clientHeight/2;field.dataset.positioned='true';}else{field.scrollLeft=scroll.left+dx-origin.x;field.scrollTop=scroll.top+dy-origin.y;}origin={x:dx,y:dy};
+  if(recenter||!field.dataset.positioned){const center=positions.get('root');field.scrollLeft=center.x+dx-field.clientWidth/2;field.scrollTop=center.y+dy-field.clientHeight/2;field.dataset.positioned='true';}else{field.scrollLeft=scroll.left+dx-origin.x;field.scrollTop=scroll.top+dy-origin.y;}origin={x:dx,y:dy};arriving.clear();
  }
- window.addEventListener('popstate',event=>{const saved=event.state?.orbBrowsing;if(saved&&saved.view.nodes.every(n=>n.id==='universe'||graph.nodes.has(n.id))){view=saved.view;trail=saved.trail;}else readLocation();message='';render(true);});
+ window.addEventListener('popstate',event=>{const saved=event.state?.orbBrowsing;if(saved?.view.version===2&&saved.view.nodes.every(n=>n.id==='universe'||graph.nodes.has(n.id))){view=saved.view;trail=saved.trail;}else readLocation();message='';render(true);});
  new ResizeObserver(()=>render()).observe(studio);
  new MutationObserver(()=>render()).observe(document.documentElement,{attributes:true,attributeFilter:['lang']});
- update(catalog);remember();return {update,select:id=>{if(graph.nodes.has(id)){if(view.nodes.some(n=>n.id===id))choose(id);else{trail.push(structuredClone(view));view=startView(graph,id);route();render(true);}}},current:()=>view.selected};
+ update(catalog);remember();return {update,select:id=>{if(graph.nodes.has(id)){const node=view.nodes.find(n=>n.id===id);if(node)choose(node.key);else{trail.push(structuredClone(view));view=startView(graph,id);route();render(true);}}},current:()=>view.nodes.find(n=>n.key===view.selected)?.id};
 }

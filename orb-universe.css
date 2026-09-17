@@ -49,3 +49,17 @@
 .universe-pages p{margin:0;font-size:12px}
 .universe-branch-actions{margin:20px 0}
 @media(max-width:700px){.universe-field{inset:242px 8px 108px}.universe-nav{top:106px}.universe-workspace .vault-studio{height:830px}.universe-plane .universe-orb{width:150px}.universe-breadcrumb{font-size:10px}}
+/* Nested sphere sizes express route depth; target sizes stay usable. */
+.universe-plane .universe-orb{min-height:0;height:44px;width:44px;justify-content:center;padding:0;overflow:visible}
+.universe-plane .universe-orb .universe-sphere{width:var(--sphere-size);height:var(--sphere-size)}
+.universe-plane .universe-label{position:absolute;top:calc(50% + var(--sphere-size)/2 + 8px);left:50%;transform:translateX(-50%);width:142px;max-width:none;margin:0;pointer-events:none;-webkit-line-clamp:2}
+.universe-plane .universe-node-count{position:absolute;top:calc(50% + var(--sphere-size)/2 + 40px);width:140px;pointer-events:none;font-size:9px;opacity:.65}
+.universe-plane .universe-orb[data-depth="2"] .universe-label{width:110px;font-size:10px}
+.universe-plane .universe-orb[data-depth="3"] .universe-label,.universe-plane .universe-orb[data-depth="4"] .universe-label{width:85px;font-size:9px;-webkit-line-clamp:1}
+.universe-plane .universe-orb[data-depth="3"] .universe-node-count,.universe-plane .universe-orb[data-depth="4"] .universe-node-count{display:none}
+.universe-plane .universe-orb:hover,.universe-plane .universe-orb:focus-visible,.universe-plane .universe-orb[aria-pressed=true]{z-index:2}
+.universe-plane .universe-orb:hover .universe-label,.universe-plane .universe-orb:focus-visible .universe-label,.universe-plane .universe-orb[aria-pressed=true] .universe-label{width:160px;-webkit-line-clamp:3;background:#07131de8;border-radius:5px;padding:3px;font-size:12px}
+.universe-plane .universe-orb:focus-visible{outline:2px solid #e3cfb5;outline-offset:3px;border-radius:50%}
+.universe-plane .universe-lines .cross-connection{stroke:#b1d3c842;stroke-dasharray:2 6}
+.universe-status{max-height:44px;overflow:auto;line-height:1.5}
+.universe-plane .universe-lines .universe-selected-branch{stroke:#e3cfb5aa;stroke-width:1.7}
