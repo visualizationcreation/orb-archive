@@ -60,3 +60,5 @@ Object.assign(window.ORB_SPANISH||(window.ORB_SPANISH={}),{
  'Open ORB →':'Abrir ORB →','Keep an older HTML edition together':'Conserva completa una edición HTML anterior',
  'The form below makes a local package with its original HTML, recordings and supporting files. It does not publish or execute the HTML. Direct publishing is available from the ORB app.':'El formulario siguiente crea un paquete local con el HTML original, las grabaciones y los archivos complementarios. No publica ni ejecuta el HTML. Puedes publicar directamente desde la aplicación ORB.'
 });
+
+Object.assign(window.ORB_SPANISH||(window.ORB_SPANISH={}),{"Explore with Nano": "Explorar con Nano", "Explore with Nano →": "Explorar con Nano →", "Explore your own subject": "Explora tu propio tema", "Nano creates a new ORB on the website. Follow its branches, read, listen, and publish a finished edition to the museum when you choose.": "Nano crea un nuevo ORB en el sitio web. Sigue sus ramas, lee, escucha y publica una edición terminada en el museo cuando quieras."});
