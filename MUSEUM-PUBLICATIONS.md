@@ -10,4 +10,4 @@ The browser omits credentials on publication requests and bounds streamed respon
 
 The saved HTML package form remains a local backup route for older editions. Direct publication is launched from the ORB app. Browsing and local package creation do not call an AI provider.
 
-Validation: `node build-directory.cjs` and `node --test tests/*.test.mjs tests/*.test.cjs`. Test the directory and published reader at desktop, 390px and 320px; verify failure/retry, anonymous/named metadata, full readings, Library links, images, audio, saved exploration, malicious text, and normal File Studio behavior. Browser checks may use explicitly controlled API fixtures; never publish those fixtures to test production.
+Validation: `node build-directory.cjs` and `node --test tests/*.test.mjs tests/*.test.cjs`. Test the directory and published reader at desktop, 390px and 320px; verify failure/retry, anonymous/named metadata, full readings, Reality Gallery links, images, audio, saved exploration, malicious text, and normal File Studio behavior. Browser checks may use explicitly controlled API fixtures; never publish those fixtures to test production.
