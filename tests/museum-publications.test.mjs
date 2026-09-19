@@ -14,7 +14,7 @@ test('published catalog cannot substitute an arbitrary reader, HTML or private l
 });
 test('public link policy rejects credentials, secret fragments and local hosts',()=>{for(const url of ['http://example.com','https://user:pass@example.com/','https://127.0.0.1/','https://[::1]/','https://service.local/','https://example.com/?API_KEY=x','https://example.com/#access_token=x','https://example.com/\nnext'])assert.equal(publicURL(url),null,url);assert.equal(publicURL('https://example.com/research?q=forest'),'https://example.com/research?q=forest');});
 test('merging preserves every static object, ID, and historical edition',async()=>{
-  const original=JSON.parse(await readFile(new URL('../orbs.json',import.meta.url),'utf8')).orbs;const before=JSON.stringify(original);const merged=mergeCatalog(original,[row(),row(),{...row(),id:original[0].id}]);assert.equal(merged.length,original.length+1);assert.equal(JSON.stringify(original),before);assert.equal(merged[0],original[0]);assert.equal(original.reduce((n,o)=>n+o.editions.length,0),13);
+  const original=JSON.parse(await readFile(new URL('../orbs.json',import.meta.url),'utf8')).orbs;const before=JSON.stringify(original);const merged=mergeCatalog(original,[row(),row(),{...row(),id:original[0].id}]);assert.equal(merged.length,original.length+1);assert.equal(JSON.stringify(original),before);assert.equal(merged[0],original[0]);assert.deepEqual(merged.slice(0,original.length).flatMap(o=>o.editions),original.flatMap(o=>o.editions));
 });
 test('Reach links require exact real ID or URL and reject contradictory targets',()=>{
   const first=normalizeListing(row()),second=normalizeListing(row(b)),third=normalizeListing({...row(c),category:'Art'});

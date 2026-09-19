@@ -17,7 +17,7 @@ const candidate={title:'River celebrations',description:'A proposed collection e
 test('real catalog exact title matching ignores diacritics and preserves all legacy IDs and editions',()=>{
  const manifest=JSON.parse(readFileSync(join(__dirname,'../orbs.json'),'utf8')),before=JSON.stringify(manifest);
  const plan=planIntake({title:'  DIA de Muertos  '},manifest);
- assert.equal(plan.catalogCount,8);assert.equal(plan.decision,'duplicate_review');assert.equal(plan.duplicates.length,1);
+ assert.equal(plan.catalogCount,manifest.orbs.length);assert.equal(plan.decision,'duplicate_review');assert.equal(plan.duplicates.length,1);
  const match=plan.duplicates[0],original=manifest.orbs.find(item=>item.id==='dia-de-muertos');
  assert.equal(match.id,original.id);assert.equal(match.score,100);assert.ok(match.reasons.some(reason=>reason.code==='same_title'));
  assert.deepEqual(match.editionIds,original.editions.map(edition=>edition.id));
