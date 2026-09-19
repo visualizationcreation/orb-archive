@@ -2772,7 +2772,7 @@
       "firstPublished": "2026-09-19",
       "publishedAt": "2026-09-19T22:20:29.899Z",
       "updated": "2026-09-19",
-      "revision": "3480ff9f923e7ed3c745e2062494a3149fe18d76",
+      "revision": "a193ed240b44ab4910341b66b34d1f10b1d49741",
       "availableJourneys": [],
       "featuredEdition": "us250-philadelphia-first-edition",
       "editions": [
@@ -2787,7 +2787,7 @@
           "orbSkillVersion": null,
           "interface": "Orbiversity read-only studio",
           "displayMeta": "8 readings · Sources & documentary image",
-          "sourceUrl": "https://github.com/visualizationcreation/us250-philadelphia/tree/3480ff9f923e7ed3c745e2062494a3149fe18d76",
+          "sourceUrl": "https://github.com/visualizationcreation/us250-philadelphia/tree/a193ed240b44ab4910341b66b34d1f10b1d49741",
           "note": "America at 250 — Four Cities, Many Stories",
           "verified": "2026-09-19"
         }
@@ -2954,7 +2954,7 @@
       "firstPublished": "2026-09-19",
       "publishedAt": "2026-09-19T22:20:29.899Z",
       "updated": "2026-09-19",
-      "revision": "53e8f92161f13ae8ace886c0fafc4af6e22fdc70",
+      "revision": "de53d04d7099e5c1378dc78ce33639d4525cc6e0",
       "availableJourneys": [],
       "featuredEdition": "us250-new-orleans-first-edition",
       "editions": [
@@ -2969,7 +2969,7 @@
           "orbSkillVersion": null,
           "interface": "Orbiversity read-only studio",
           "displayMeta": "8 readings · Sources & documentary image",
-          "sourceUrl": "https://github.com/visualizationcreation/us250-new-orleans/tree/53e8f92161f13ae8ace886c0fafc4af6e22fdc70",
+          "sourceUrl": "https://github.com/visualizationcreation/us250-new-orleans/tree/de53d04d7099e5c1378dc78ce33639d4525cc6e0",
           "note": "America at 250 — Four Cities, Many Stories",
           "verified": "2026-09-19"
         }
@@ -3131,7 +3131,7 @@
       "firstPublished": "2026-09-19",
       "publishedAt": "2026-09-19T22:20:29.899Z",
       "updated": "2026-09-19",
-      "revision": "7161fa6a9c03f9baa416d2614ce42a5a29bd6d51",
+      "revision": "c308cc5257eca1446deabfd8bf43b7a9e75aa75f",
       "availableJourneys": [],
       "featuredEdition": "us250-detroit-first-edition",
       "editions": [
@@ -3146,7 +3146,7 @@
           "orbSkillVersion": null,
           "interface": "Orbiversity read-only studio",
           "displayMeta": "8 readings · Sources & documentary image",
-          "sourceUrl": "https://github.com/visualizationcreation/us250-detroit/tree/7161fa6a9c03f9baa416d2614ce42a5a29bd6d51",
+          "sourceUrl": "https://github.com/visualizationcreation/us250-detroit/tree/c308cc5257eca1446deabfd8bf43b7a9e75aa75f",
           "note": "America at 250 — Four Cities, Many Stories",
           "verified": "2026-09-19"
         }
@@ -3389,7 +3389,7 @@
       "firstPublished": "2026-09-19",
       "publishedAt": "2026-09-19T22:20:29.899Z",
       "updated": "2026-09-19",
-      "revision": "cdfb27f7176c487084c614e7cc31584b00b5175c",
+      "revision": "1380e3efd17c2df6489f1ce7aadb4d631cd52751",
       "availableJourneys": [],
       "featuredEdition": "us250-los-angeles-first-edition",
       "editions": [
@@ -3404,7 +3404,7 @@
           "orbSkillVersion": null,
           "interface": "Orbiversity read-only studio",
           "displayMeta": "8 readings · Sources & documentary image",
-          "sourceUrl": "https://github.com/visualizationcreation/us250-los-angeles/tree/cdfb27f7176c487084c614e7cc31584b00b5175c",
+          "sourceUrl": "https://github.com/visualizationcreation/us250-los-angeles/tree/1380e3efd17c2df6489f1ce7aadb4d631cd52751",
           "note": "America at 250 — Four Cities, Many Stories",
           "verified": "2026-09-19"
         }
