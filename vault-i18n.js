@@ -1,4 +1,5 @@
 Object.assign(window.ORB_SPANISH||(window.ORB_SPANISH={}),{
+ 'Today’s ORBs':'Los ORBs de hoy','New worlds, added by the community. Open an orb and follow someone’s curiosity.':'Nuevos mundos añadidos por la comunidad. Abre un orb y sigue la curiosidad de otra persona.','Add your ORB':'Añade tu ORB','Recent additions from the saved collection. Community additions load when connected.':'Últimas adiciones de la colección guardada. Las adiciones de la comunidad se cargan al conectarse.','Show more additions':'Mostrar más adiciones','Refresh additions':'Actualizar adiciones',
  'Orbiversity · A vault of connected ORBs':'Orbiversity · Un archivo de ORBs conectados',
  'The collection':'La colección','Follow an orb. Find a connection.':'Sigue un orb. Encuentra una conexión.',
  'Saved readings · Linked editions':'Lecturas guardadas · Ediciones enlazadas','View the catalog':'Ver el catálogo','Add to Orbiversity':'Añadir a Orbiversity','The vault':'El archivo','Published ORBs':'ORBs publicados','Topic':'Tema','Format':'Formato','Sort by':'Ordenar por',

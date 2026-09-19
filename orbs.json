@@ -2753,6 +2753,848 @@
         "audio": [],
         "legacy": false
       }
+    },
+    {
+      "id": "us250-philadelphia",
+      "title": "Philadelphia — Founding ideas and the people who widened them",
+      "description": "A city of public promises and persistent questions. Follow the Declaration, Ona Judge, Mother Bethel and the making of national memory through eight connected readings.",
+      "url": "https://orbiversity.com/us250-philadelphia/",
+      "repository": "https://github.com/visualizationcreation/us250-philadelphia",
+      "tags": [
+        "United States",
+        "America at 250",
+        "philadelphia"
+      ],
+      "category": "History & Culture",
+      "format": "Read & explore",
+      "pointCount": 8,
+      "displayMeta": "8 readings · Sources & documentary image",
+      "firstPublished": "2026-09-19",
+      "publishedAt": "2026-09-19T22:20:29.899Z",
+      "updated": "2026-09-19",
+      "revision": "3480ff9f923e7ed3c745e2062494a3149fe18d76",
+      "availableJourneys": [],
+      "featuredEdition": "us250-philadelphia-first-edition",
+      "editions": [
+        {
+          "id": "us250-philadelphia-first-edition",
+          "label": "America at 250 · Reading edition",
+          "url": "https://orbiversity.com/us250-philadelphia/",
+          "published": "2026-09-19",
+          "generation": "authored",
+          "modelLabel": "Authored with Codex",
+          "modelId": null,
+          "orbSkillVersion": null,
+          "interface": "Orbiversity read-only studio",
+          "displayMeta": "8 readings · Sources & documentary image",
+          "sourceUrl": "https://github.com/visualizationcreation/us250-philadelphia/tree/3480ff9f923e7ed3c745e2062494a3149fe18d76",
+          "note": "America at 250 — Four Cities, Many Stories",
+          "verified": "2026-09-19"
+        }
+      ],
+      "museum": {
+        "attribution": "anonymous",
+        "category": "History & Culture",
+        "tags": [
+          "United States",
+          "America at 250",
+          "philadelphia"
+        ],
+        "library": [
+          {
+            "title": "About Us",
+            "url": "https://delawaretribe.org/about-us/",
+            "type": "Historical source",
+            "publisher": "Delaware Tribe of Indians",
+            "nodes": [
+              "us250-philadelphia-p01"
+            ]
+          },
+          {
+            "title": "Delaware Indian Villages at Philadelphia",
+            "url": "https://delawaretribe.org/wp-content/uploads/IndVillagesPhilly-Wes2.pdf",
+            "type": "Historical source",
+            "publisher": "Delaware Tribe of Indians — hosted historical study",
+            "nodes": [
+              "us250-philadelphia-p01"
+            ]
+          },
+          {
+            "title": "Declaration of Independence (1776)",
+            "url": "https://www.archives.gov/milestone-documents/declaration-of-independence",
+            "type": "Historical source",
+            "publisher": "National Archives",
+            "nodes": [
+              "us250-philadelphia-p02",
+              "us250-philadelphia-p08"
+            ]
+          },
+          {
+            "title": "Constitution of the United States (1787)",
+            "url": "https://www.archives.gov/milestone-documents/constitution",
+            "type": "Historical source",
+            "publisher": "National Archives",
+            "nodes": [
+              "us250-philadelphia-p03"
+            ]
+          },
+          {
+            "title": "Ona Judge Escapes to Freedom",
+            "url": "https://home.nps.gov/articles/independence-oneyjudge.htm",
+            "type": "Historical source",
+            "publisher": "National Park Service",
+            "nodes": [
+              "us250-philadelphia-p04"
+            ]
+          },
+          {
+            "title": "Mother Bethel: The Four Churches",
+            "url": "https://motherbethel.org/mother-bethel-the-four-churches/",
+            "type": "Historical source",
+            "publisher": "Mother Bethel AME Church",
+            "nodes": [
+              "us250-philadelphia-p05"
+            ]
+          },
+          {
+            "title": "Sarah Allen, 1849",
+            "url": "https://www.nps.gov/articles/000/inde-sarah-allen-1849.htm",
+            "type": "Historical source",
+            "publisher": "National Park Service",
+            "nodes": [
+              "us250-philadelphia-p05"
+            ]
+          },
+          {
+            "title": "Centennial Exposition, 1876",
+            "url": "https://www.loc.gov/free-to-use/centennial-exposition-1876/",
+            "type": "Historical source",
+            "publisher": "Library of Congress",
+            "nodes": [
+              "us250-philadelphia-p06",
+              "us250-philadelphia-p08"
+            ]
+          },
+          {
+            "title": "Independence Hall: Architecture",
+            "url": "https://www.nps.gov/inde/learn/historyculture/places-independencehall-architecture.htm",
+            "type": "Historical source",
+            "publisher": "National Park Service",
+            "nodes": [
+              "us250-philadelphia-p07"
+            ]
+          }
+        ],
+        "audio": []
+      },
+      "reaches": [
+        {
+          "sourcePoint": {
+            "id": "us250-philadelphia-p06",
+            "title": "A nation stages its hundredth birthday"
+          },
+          "target": {
+            "id": "us250-detroit",
+            "url": "https://orbiversity.com/us250-detroit/",
+            "topic": "Detroit — Making things, making music, remaking a city"
+          },
+          "relation": "comparison",
+          "reason": "Compare the Centennial Exhibition’s national showcase with Rivera’s industrial mural. These are different ways of presenting work, not a claim of direct influence.",
+          "evidence": [
+            {
+              "url": "https://www.loc.gov/free-to-use/centennial-exposition-1876/",
+              "title": "Centennial Exposition, 1876"
+            },
+            {
+              "url": "https://dia.org/riveracourt",
+              "title": "Rivera Court"
+            }
+          ]
+        },
+        {
+          "sourcePoint": {
+            "id": "us250-philadelphia-p07",
+            "title": "Which parts of a landmark are old?"
+          },
+          "target": {
+            "id": "us250-detroit",
+            "url": "https://orbiversity.com/us250-detroit/",
+            "topic": "Detroit — Making things, making music, remaking a city"
+          },
+          "relation": "comparison",
+          "reason": "Compare the conservation of Independence Hall with the reuse of Michigan Central. Both invite questions about what is retained, replaced and made useful again.",
+          "evidence": [
+            {
+              "url": "https://www.nps.gov/inde/learn/historyculture/places-independencehall-architecture.htm",
+              "title": "Independence Hall: Architecture"
+            },
+            {
+              "url": "https://michigancentral.com/a-new-beginning-ford-to-reopen-michigan-central-station-after-multi-year-historic-restoration/",
+              "title": "A New Beginning: Ford to Reopen Michigan Central Station"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "us250-new-orleans",
+      "title": "New Orleans — A river city that made an American sound",
+      "description": "Follow a river port into music, migration and living memory. Eight readings connect treaties and trade with Congo Square, neighborhood organizations and the work of listening.",
+      "url": "https://orbiversity.com/us250-new-orleans/",
+      "repository": "https://github.com/visualizationcreation/us250-new-orleans",
+      "tags": [
+        "United States",
+        "America at 250",
+        "new orleans"
+      ],
+      "category": "History & Culture",
+      "format": "Read & explore",
+      "pointCount": 8,
+      "displayMeta": "8 readings · Sources & documentary image",
+      "firstPublished": "2026-09-19",
+      "publishedAt": "2026-09-19T22:20:29.899Z",
+      "updated": "2026-09-19",
+      "revision": "53e8f92161f13ae8ace886c0fafc4af6e22fdc70",
+      "availableJourneys": [],
+      "featuredEdition": "us250-new-orleans-first-edition",
+      "editions": [
+        {
+          "id": "us250-new-orleans-first-edition",
+          "label": "America at 250 · Reading edition",
+          "url": "https://orbiversity.com/us250-new-orleans/",
+          "published": "2026-09-19",
+          "generation": "authored",
+          "modelLabel": "Authored with Codex",
+          "modelId": null,
+          "orbSkillVersion": null,
+          "interface": "Orbiversity read-only studio",
+          "displayMeta": "8 readings · Sources & documentary image",
+          "sourceUrl": "https://github.com/visualizationcreation/us250-new-orleans/tree/53e8f92161f13ae8ace886c0fafc4af6e22fdc70",
+          "note": "America at 250 — Four Cities, Many Stories",
+          "verified": "2026-09-19"
+        }
+      ],
+      "museum": {
+        "attribution": "anonymous",
+        "category": "History & Culture",
+        "tags": [
+          "United States",
+          "America at 250",
+          "new-orleans"
+        ],
+        "library": [
+          {
+            "title": "New Orleans: 300 // Bulbancha: 3000",
+            "url": "https://tripodnola.hnoc.org/episodes/new-orleans-300-bulbancha-3000/",
+            "type": "Historical source",
+            "publisher": "WWNO / Historic New Orleans Collection / University of New Orleans",
+            "nodes": [
+              "us250-new-orleans-p01",
+              "us250-new-orleans-p08"
+            ]
+          },
+          {
+            "title": "Louisiana Purchase Treaty (1803)",
+            "url": "https://www.archives.gov/milestone-documents/louisiana-purchase-treaty",
+            "type": "Historical source",
+            "publisher": "National Archives",
+            "nodes": [
+              "us250-new-orleans-p02"
+            ]
+          },
+          {
+            "title": "Jazz Origins in New Orleans",
+            "url": "https://www.nps.gov/jazz/learn/historyculture/history_early.htm",
+            "type": "Historical source",
+            "publisher": "National Park Service",
+            "nodes": [
+              "us250-new-orleans-p03"
+            ]
+          },
+          {
+            "title": "New Orleans, Slave Market of the South",
+            "url": "https://hnoc.org/virtual-exhibitions/purchased-lives/new-orleans-slave-market-south",
+            "type": "Historical source",
+            "publisher": "Historic New Orleans Collection",
+            "nodes": [
+              "us250-new-orleans-p04"
+            ]
+          },
+          {
+            "title": "Banking in the Antebellum South",
+            "url": "https://hnoc.org/virtual-exhibitions/money-money-money/banking-antebellum-south",
+            "type": "Historical source",
+            "publisher": "Historic New Orleans Collection",
+            "nodes": [
+              "us250-new-orleans-p04"
+            ]
+          },
+          {
+            "title": "Jazz Map",
+            "url": "https://www.nps.gov/jazz/learn/historyculture/jazz-map.htm",
+            "type": "Historical source",
+            "publisher": "National Park Service",
+            "nodes": [
+              "us250-new-orleans-p05",
+              "us250-new-orleans-p08"
+            ]
+          },
+          {
+            "title": "The 100th Anniversary of Louis Armstrong’s Arrival in Chicago",
+            "url": "https://virtualexhibits.louisarmstronghouse.org/2022/07/08/ill-never-forget-it-the-100th-anniversary-of-louis-armstrongs-arrival-in-chicago/",
+            "type": "Historical source",
+            "publisher": "Louis Armstrong House Museum",
+            "nodes": [
+              "us250-new-orleans-p06"
+            ]
+          },
+          {
+            "title": "Living with Hurricanes: Katrina and Beyond",
+            "url": "https://louisianastatemuseum.org/exhibit/living-hurricanes-katrina-and-beyond",
+            "type": "Historical source",
+            "publisher": "Louisiana State Museum",
+            "nodes": [
+              "us250-new-orleans-p07"
+            ]
+          }
+        ],
+        "audio": []
+      },
+      "reaches": [
+        {
+          "sourcePoint": {
+            "id": "us250-new-orleans-p06",
+            "title": "How a local sound travels"
+          },
+          "target": {
+            "id": "us250-detroit",
+            "url": "https://orbiversity.com/us250-detroit/",
+            "topic": "Detroit — Making things, making music, remaking a city"
+          },
+          "relation": "comparison",
+          "reason": "Follow two different ways music traveled: Armstrong’s move from New Orleans to Chicago, and Motown’s recording business in Detroit. This comparison does not claim that one caused the other.",
+          "evidence": [
+            {
+              "url": "https://virtualexhibits.louisarmstronghouse.org/2022/07/08/ill-never-forget-it-the-100th-anniversary-of-louis-armstrongs-arrival-in-chicago/",
+              "title": "The 100th Anniversary of Louis Armstrong’s Arrival in Chicago"
+            },
+            {
+              "url": "https://www.motownmuseum.org/about/esther-gordy/",
+              "title": "Esther Gordy Edwards"
+            }
+          ]
+        },
+        {
+          "sourcePoint": {
+            "id": "us250-new-orleans-p07",
+            "title": "Water, disaster and care"
+          },
+          "target": {
+            "id": "us250-los-angeles",
+            "url": "https://orbiversity.com/us250-los-angeles/",
+            "topic": "Los Angeles — Many beginnings, Pacific futures"
+          },
+          "relation": "contrast",
+          "reason": "Contrast flood protection and Hurricane Katrina with the geography of Los Angeles water supply. The mechanisms and affected communities are different.",
+          "evidence": [
+            {
+              "url": "https://louisianastatemuseum.org/exhibit/living-hurricanes-katrina-and-beyond",
+              "title": "Living with Hurricanes: Katrina and Beyond"
+            },
+            {
+              "url": "https://www.ladwp.com/who-we-are/our-history/water-system-past-and-present",
+              "title": "Water System — Past and Present"
+            },
+            {
+              "url": "https://www.oviwc.org/water-land-history",
+              "title": "Water & Land History"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "us250-detroit",
+      "title": "Detroit — Making things, making music, remaking a city",
+      "description": "Factories, church networks, murals, Motown and remembered neighborhoods: eight readings reveal a city made by people as well as products.",
+      "url": "https://orbiversity.com/us250-detroit/",
+      "repository": "https://github.com/visualizationcreation/us250-detroit",
+      "tags": [
+        "United States",
+        "America at 250",
+        "detroit"
+      ],
+      "category": "History & Culture",
+      "format": "Read & explore",
+      "pointCount": 8,
+      "displayMeta": "8 readings · Sources & documentary image",
+      "firstPublished": "2026-09-19",
+      "publishedAt": "2026-09-19T22:20:29.899Z",
+      "updated": "2026-09-19",
+      "revision": "7161fa6a9c03f9baa416d2614ce42a5a29bd6d51",
+      "availableJourneys": [],
+      "featuredEdition": "us250-detroit-first-edition",
+      "editions": [
+        {
+          "id": "us250-detroit-first-edition",
+          "label": "America at 250 · Reading edition",
+          "url": "https://orbiversity.com/us250-detroit/",
+          "published": "2026-09-19",
+          "generation": "authored",
+          "modelLabel": "Authored with Codex",
+          "modelId": null,
+          "orbSkillVersion": null,
+          "interface": "Orbiversity read-only studio",
+          "displayMeta": "8 readings · Sources & documentary image",
+          "sourceUrl": "https://github.com/visualizationcreation/us250-detroit/tree/7161fa6a9c03f9baa416d2614ce42a5a29bd6d51",
+          "note": "America at 250 — Four Cities, Many Stories",
+          "verified": "2026-09-19"
+        }
+      ],
+      "museum": {
+        "attribution": "anonymous",
+        "category": "History & Culture",
+        "tags": [
+          "United States",
+          "America at 250",
+          "detroit"
+        ],
+        "library": [
+          {
+            "title": "Founding of Detroit",
+            "url": "https://www.detroithistorical.org/learn/online-research/encyclopedia-of-detroit/founding-detroit",
+            "type": "Historical source",
+            "publisher": "Detroit Historical Society",
+            "nodes": [
+              "us250-detroit-p01"
+            ]
+          },
+          {
+            "title": "Our History",
+            "url": "https://www.fordpiquetteplant.org/about/history/",
+            "type": "Historical source",
+            "publisher": "Ford Piquette Avenue Plant Museum",
+            "nodes": [
+              "us250-detroit-p02"
+            ]
+          },
+          {
+            "title": "Bradby, Reverend Robert",
+            "url": "https://www.detroithistorical.org/learn/online-research/encyclopedia-of-detroit/bradby-reverend-robert",
+            "type": "Historical source",
+            "publisher": "Detroit Historical Society",
+            "nodes": [
+              "us250-detroit-p03"
+            ]
+          },
+          {
+            "title": "The Places of Labor History in Detroit",
+            "url": "https://www.nps.gov/articles/000/the-places-of-labor-history-in-detroit.htm",
+            "type": "Historical source",
+            "publisher": "National Park Service",
+            "nodes": [
+              "us250-detroit-p03"
+            ]
+          },
+          {
+            "title": "Rivera Court",
+            "url": "https://dia.org/riveracourt",
+            "type": "Historical source",
+            "publisher": "Detroit Institute of Arts",
+            "nodes": [
+              "us250-detroit-p04"
+            ]
+          },
+          {
+            "title": "Esther Gordy Edwards",
+            "url": "https://www.motownmuseum.org/about/esther-gordy/",
+            "type": "Historical source",
+            "publisher": "Motown Museum",
+            "nodes": [
+              "us250-detroit-p05"
+            ]
+          },
+          {
+            "title": "Black Bottom Neighborhood",
+            "url": "https://www.detroithistorical.org/learn/online-research/encyclopedia-of-detroit/black-bottom-neighborhood",
+            "type": "Historical source",
+            "publisher": "Detroit Historical Society",
+            "nodes": [
+              "us250-detroit-p06"
+            ]
+          },
+          {
+            "title": "Paradise Valley",
+            "url": "https://www.detroithistorical.org/learn/online-research/encyclopedia-of-detroit/paradise-valley",
+            "type": "Historical source",
+            "publisher": "Detroit Historical Society",
+            "nodes": [
+              "us250-detroit-p06"
+            ]
+          },
+          {
+            "title": "A New Beginning: Ford to Reopen Michigan Central Station",
+            "url": "https://michigancentral.com/a-new-beginning-ford-to-reopen-michigan-central-station-after-multi-year-historic-restoration/",
+            "type": "Historical source",
+            "publisher": "Michigan Central",
+            "nodes": [
+              "us250-detroit-p07"
+            ]
+          },
+          {
+            "title": "Ralph C. Wilson, Jr. Centennial Park",
+            "url": "https://www.detroitriverfront.org/plan-your-visit/parks-greenways/ralph-c-wilson-jr-centennial-park",
+            "type": "Historical source",
+            "publisher": "Detroit Riverfront Conservancy",
+            "nodes": [
+              "us250-detroit-p08"
+            ]
+          }
+        ],
+        "audio": []
+      },
+      "reaches": [
+        {
+          "sourcePoint": {
+            "id": "us250-detroit-p04",
+            "title": "Work becomes a mural"
+          },
+          "target": {
+            "id": "us250-philadelphia",
+            "url": "https://orbiversity.com/us250-philadelphia/",
+            "topic": "Philadelphia — Founding ideas and the people who widened them"
+          },
+          "relation": "comparison",
+          "reason": "Compare the Centennial Exhibition’s national showcase with Rivera’s industrial mural. These are different ways of presenting work, not a claim of direct influence.",
+          "evidence": [
+            {
+              "url": "https://dia.org/riveracourt",
+              "title": "Rivera Court"
+            },
+            {
+              "url": "https://www.loc.gov/free-to-use/centennial-exposition-1876/",
+              "title": "Centennial Exposition, 1876"
+            }
+          ]
+        },
+        {
+          "sourcePoint": {
+            "id": "us250-detroit-p05",
+            "title": "Hitsville and the work of keeping a story"
+          },
+          "target": {
+            "id": "us250-new-orleans",
+            "url": "https://orbiversity.com/us250-new-orleans/",
+            "topic": "New Orleans — A river city that made an American sound"
+          },
+          "relation": "comparison",
+          "reason": "Follow two different ways music traveled: Armstrong’s move from New Orleans to Chicago, and Motown’s recording business in Detroit. This comparison does not claim that one caused the other.",
+          "evidence": [
+            {
+              "url": "https://www.motownmuseum.org/about/esther-gordy/",
+              "title": "Esther Gordy Edwards"
+            },
+            {
+              "url": "https://virtualexhibits.louisarmstronghouse.org/2022/07/08/ill-never-forget-it-the-100th-anniversary-of-louis-armstrongs-arrival-in-chicago/",
+              "title": "The 100th Anniversary of Louis Armstrong’s Arrival in Chicago"
+            }
+          ]
+        },
+        {
+          "sourcePoint": {
+            "id": "us250-detroit-p05",
+            "title": "Hitsville and the work of keeping a story"
+          },
+          "target": {
+            "id": "us250-los-angeles",
+            "url": "https://orbiversity.com/us250-los-angeles/",
+            "topic": "Los Angeles — Many beginnings, Pacific futures"
+          },
+          "relation": "documented connection",
+          "reason": "The Motown Museum records the company’s headquarters move to Los Angeles in 1972. Read the story from both ends of that route.",
+          "evidence": [
+            {
+              "url": "https://www.motownmuseum.org/about/esther-gordy/",
+              "title": "Esther Gordy Edwards"
+            }
+          ]
+        },
+        {
+          "sourcePoint": {
+            "id": "us250-detroit-p06",
+            "title": "A neighborhood survives in memory"
+          },
+          "target": {
+            "id": "us250-los-angeles",
+            "url": "https://orbiversity.com/us250-los-angeles/",
+            "topic": "Los Angeles — Many beginnings, Pacific futures"
+          },
+          "relation": "comparison",
+          "reason": "Compare ways of preserving memory: Black Bottom’s neighborhood history and an exhibition about Japanese American incarceration. Urban clearance and wartime incarceration are not equivalent events.",
+          "evidence": [
+            {
+              "url": "https://www.detroithistorical.org/learn/online-research/encyclopedia-of-detroit/black-bottom-neighborhood",
+              "title": "Black Bottom Neighborhood"
+            },
+            {
+              "url": "https://www.detroithistorical.org/learn/online-research/encyclopedia-of-detroit/paradise-valley",
+              "title": "Paradise Valley"
+            },
+            {
+              "url": "https://www.janm.org/exhibits/behere1942",
+              "title": "BeHere / 1942"
+            }
+          ]
+        },
+        {
+          "sourcePoint": {
+            "id": "us250-detroit-p07",
+            "title": "Giving a station another life"
+          },
+          "target": {
+            "id": "us250-philadelphia",
+            "url": "https://orbiversity.com/us250-philadelphia/",
+            "topic": "Philadelphia — Founding ideas and the people who widened them"
+          },
+          "relation": "comparison",
+          "reason": "Compare the conservation of Independence Hall with the reuse of Michigan Central. Both invite questions about what is retained, replaced and made useful again.",
+          "evidence": [
+            {
+              "url": "https://michigancentral.com/a-new-beginning-ford-to-reopen-michigan-central-station-after-multi-year-historic-restoration/",
+              "title": "A New Beginning: Ford to Reopen Michigan Central Station"
+            },
+            {
+              "url": "https://www.nps.gov/inde/learn/historyculture/places-independencehall-architecture.htm",
+              "title": "Independence Hall: Architecture"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "us250-los-angeles",
+      "title": "Los Angeles — Many beginnings, Pacific futures",
+      "description": "Read the city through changing borders, water, arrival and creative work. Eight points connect El Pueblo, Little Tokyo and community art with landscapes beyond the skyline.",
+      "url": "https://orbiversity.com/us250-los-angeles/",
+      "repository": "https://github.com/visualizationcreation/us250-los-angeles",
+      "tags": [
+        "United States",
+        "America at 250",
+        "los angeles"
+      ],
+      "category": "History & Culture",
+      "format": "Read & explore",
+      "pointCount": 8,
+      "displayMeta": "8 readings · Sources & documentary image",
+      "firstPublished": "2026-09-19",
+      "publishedAt": "2026-09-19T22:20:29.899Z",
+      "updated": "2026-09-19",
+      "revision": "cdfb27f7176c487084c614e7cc31584b00b5175c",
+      "availableJourneys": [],
+      "featuredEdition": "us250-los-angeles-first-edition",
+      "editions": [
+        {
+          "id": "us250-los-angeles-first-edition",
+          "label": "America at 250 · Reading edition",
+          "url": "https://orbiversity.com/us250-los-angeles/",
+          "published": "2026-09-19",
+          "generation": "authored",
+          "modelLabel": "Authored with Codex",
+          "modelId": null,
+          "orbSkillVersion": null,
+          "interface": "Orbiversity read-only studio",
+          "displayMeta": "8 readings · Sources & documentary image",
+          "sourceUrl": "https://github.com/visualizationcreation/us250-los-angeles/tree/cdfb27f7176c487084c614e7cc31584b00b5175c",
+          "note": "America at 250 — Four Cities, Many Stories",
+          "verified": "2026-09-19"
+        }
+      ],
+      "museum": {
+        "attribution": "anonymous",
+        "category": "History & Culture",
+        "tags": [
+          "United States",
+          "America at 250",
+          "los-angeles"
+        ],
+        "library": [
+          {
+            "title": "El Pueblo de Los Angeles Historical Monument",
+            "url": "https://www.nps.gov/places/el-pueblo-de-los-angeles-historical-monument.htm",
+            "type": "Historical source",
+            "publisher": "National Park Service",
+            "nodes": [
+              "us250-los-angeles-p01"
+            ]
+          },
+          {
+            "title": "History",
+            "url": "https://gabrielinotribe.org/history/",
+            "type": "Historical source",
+            "publisher": "Gabrielino-Tongva Indian Tribe",
+            "nodes": [
+              "us250-los-angeles-p01"
+            ]
+          },
+          {
+            "title": "Treaty of Guadalupe Hidalgo (1848)",
+            "url": "https://www.archives.gov/milestone-documents/treaty-of-guadalupe-hidalgo",
+            "type": "Historical source",
+            "publisher": "National Archives",
+            "nodes": [
+              "us250-los-angeles-p02"
+            ]
+          },
+          {
+            "title": "Water System — Past and Present",
+            "url": "https://www.ladwp.com/who-we-are/our-history/water-system-past-and-present",
+            "type": "Historical source",
+            "publisher": "Los Angeles Department of Water and Power",
+            "nodes": [
+              "us250-los-angeles-p03"
+            ]
+          },
+          {
+            "title": "Water & Land History",
+            "url": "https://www.oviwc.org/water-land-history",
+            "type": "Historical source",
+            "publisher": "Owens Valley Indian Water Commission",
+            "nodes": [
+              "us250-los-angeles-p03"
+            ]
+          },
+          {
+            "title": "History",
+            "url": "https://unionstationla.com/history/",
+            "type": "Historical source",
+            "publisher": "Los Angeles Union Station",
+            "nodes": [
+              "us250-los-angeles-p04"
+            ]
+          },
+          {
+            "title": "The Building",
+            "url": "https://camla.org/the-building/",
+            "type": "Historical source",
+            "publisher": "Chinese American Museum, Los Angeles",
+            "nodes": [
+              "us250-los-angeles-p04"
+            ]
+          },
+          {
+            "title": "Esther Gordy Edwards",
+            "url": "https://www.motownmuseum.org/about/esther-gordy/",
+            "type": "Historical source",
+            "publisher": "Motown Museum",
+            "nodes": [
+              "us250-los-angeles-p05"
+            ]
+          },
+          {
+            "title": "BeHere / 1942",
+            "url": "https://www.janm.org/exhibits/behere1942",
+            "type": "Historical source",
+            "publisher": "Japanese American National Museum",
+            "nodes": [
+              "us250-los-angeles-p06"
+            ]
+          },
+          {
+            "title": "The Great Wall of Los Angeles and the Interpretive Green Bridge",
+            "url": "https://sparcinla.org/wp-content/uploads/downloads/GreenBridgeBooklet.pdf",
+            "type": "Historical source",
+            "publisher": "SPARC",
+            "nodes": [
+              "us250-los-angeles-p07"
+            ]
+          },
+          {
+            "title": "Paseo Del Rio at Taylor Yard Project",
+            "url": "https://engineering.lacity.gov/about-us/divisions/environmental-management/projects/paseo-del-rio-taylor-yard-project",
+            "type": "Historical source",
+            "publisher": "City of Los Angeles Bureau of Engineering",
+            "nodes": [
+              "us250-los-angeles-p08"
+            ]
+          }
+        ],
+        "audio": []
+      },
+      "reaches": [
+        {
+          "sourcePoint": {
+            "id": "us250-los-angeles-p05",
+            "title": "Creative work crosses a city boundary"
+          },
+          "target": {
+            "id": "us250-detroit",
+            "url": "https://orbiversity.com/us250-detroit/",
+            "topic": "Detroit — Making things, making music, remaking a city"
+          },
+          "relation": "documented connection",
+          "reason": "The Motown Museum records the company’s headquarters move to Los Angeles in 1972. Read the story from both ends of that route.",
+          "evidence": [
+            {
+              "url": "https://www.motownmuseum.org/about/esther-gordy/",
+              "title": "Esther Gordy Edwards"
+            }
+          ]
+        },
+        {
+          "sourcePoint": {
+            "id": "us250-los-angeles-p03",
+            "title": "A city’s water reaches beyond the city"
+          },
+          "target": {
+            "id": "us250-new-orleans",
+            "url": "https://orbiversity.com/us250-new-orleans/",
+            "topic": "New Orleans — A river city that made an American sound"
+          },
+          "relation": "contrast",
+          "reason": "Contrast flood protection and Hurricane Katrina with the geography of Los Angeles water supply. The mechanisms and affected communities are different.",
+          "evidence": [
+            {
+              "url": "https://www.ladwp.com/who-we-are/our-history/water-system-past-and-present",
+              "title": "Water System — Past and Present"
+            },
+            {
+              "url": "https://www.oviwc.org/water-land-history",
+              "title": "Water & Land History"
+            },
+            {
+              "url": "https://louisianastatemuseum.org/exhibit/living-hurricanes-katrina-and-beyond",
+              "title": "Living with Hurricanes: Katrina and Beyond"
+            }
+          ]
+        },
+        {
+          "sourcePoint": {
+            "id": "us250-los-angeles-p06",
+            "title": "A neighborhood holds memory"
+          },
+          "target": {
+            "id": "us250-detroit",
+            "url": "https://orbiversity.com/us250-detroit/",
+            "topic": "Detroit — Making things, making music, remaking a city"
+          },
+          "relation": "comparison",
+          "reason": "Compare ways of preserving memory: Black Bottom’s neighborhood history and an exhibition about Japanese American incarceration. Urban clearance and wartime incarceration are not equivalent events.",
+          "evidence": [
+            {
+              "url": "https://www.janm.org/exhibits/behere1942",
+              "title": "BeHere / 1942"
+            },
+            {
+              "url": "https://www.detroithistorical.org/learn/online-research/encyclopedia-of-detroit/black-bottom-neighborhood",
+              "title": "Black Bottom Neighborhood"
+            },
+            {
+              "url": "https://www.detroithistorical.org/learn/online-research/encyclopedia-of-detroit/paradise-valley",
+              "title": "Paradise Valley"
+            }
+          ]
+        }
+      ]
     }
   ],
   "schemaVersion": 2
