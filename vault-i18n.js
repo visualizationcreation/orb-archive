@@ -43,6 +43,7 @@ Object.assign(window.ORB_SPANISH,{
  'Your orb — an anonymous orb':'Tu orb — un orb anónimo'
 });
 Object.assign(window.ORB_SPANISH,{
+ 'Collection':'Colección','The collection':'La colección','Explore ORB free':'Explora ORB gratis','Explore the Orbiverse.':'Explora el Orbiverso.','A living collection of readings, recordings, and real sources.':'Una colección viva de lecturas, grabaciones y fuentes reales.',
  'Share your work':'Comparte tu trabajo','Profile links':'Enlaces de perfil','Your work & ideas':'Tu trabajo e ideas',
  'Add public profile links, or share an idea, thought, project, design, or product. These stay with your orb, separate from its sources.':'Añade perfiles públicos o comparte una idea, reflexión, proyecto, diseño o producto. Acompañan a tu orb, separados de sus fuentes.',
  'Only add links and words you want published. Profile links can identify you even when your orb has anonymous credit.':'Añade solo enlaces y palabras que quieras publicar. Los perfiles pueden identificarte aunque el orb tenga crédito anónimo.',

@@ -5,7 +5,7 @@ import {savedWorks} from './orb-connect-snapshot.mjs?v=central-tree-20260916-2';
 
 export function mountUniverse({catalog,overview}){
  const field=document.querySelector('.orb-field'),studio=field.closest('.vault-studio');
- const css=document.createElement('link');css.rel='stylesheet';css.href=new URL('./orb-universe.css?v=central-tree-20260916-2',import.meta.url).href;document.head.append(css);
+ const css=document.createElement('link');css.rel='stylesheet';css.href=new URL('./orb-universe.css?v=atlas-museum-20260919',import.meta.url).href;document.head.append(css);
  document.querySelector('.vault-workspace').classList.add('universe-workspace');field.classList.add('universe-field');
  const es=()=>document.documentElement.lang==='es',tr=(a,b)=>es()?b:a;
  const make=(tag,text='',className='')=>{const el=document.createElement(tag);el.textContent=text;el.className=className;return el;};
@@ -32,9 +32,9 @@ export function mountUniverse({catalog,overview}){
  function panel(key){
   const occurrence=view.nodes.find(n=>n.key===key),id=occurrence.id,node=graph.nodes.get(id),isRoot=!node;overview.replaceChildren();
   overview.setAttribute('aria-label',isRoot?tr('The Orbiversity universe','El universo de Orbiversity'):label(node));
-  overview.append(make('p',isRoot?'Orb Connect':node.kind==='group'?tr('A grouping orb','Un orb de colección'):tr('A published orb','Un orb publicado'),'universe-kind'));
-  overview.append(make('h2',isRoot?tr('One center. Worlds within worlds.','Un centro. Mundos dentro de mundos.'):label(node)));
-  overview.append(make('p',isRoot?tr('Start at the center and unfold a branch. Every saved orb has one home in this tree; smaller layers reveal the collections and works inside.','Empieza en el centro y despliega una rama. Cada orb guardado tiene un lugar en este árbol; las capas más pequeñas revelan sus colecciones y obras.'):copy(node),'overview-description'));
+  overview.append(make('p',isRoot?tr('The community collection','La colección de la comunidad'):node.kind==='group'?tr('A grouping orb','Un orb de colección'):tr('A published orb','Un orb publicado'),'universe-kind'));
+  overview.append(make('h2',isRoot?tr('Find a world to explore.','Encuentra un mundo para explorar.'):label(node)));
+  overview.append(make('p',isRoot?tr('Choose a blue sphere to reveal its connections. Each branch leads to a saved collection or a published orb, ready to read at your own pace.','Elige una esfera azul para revelar sus conexiones. Cada rama lleva a una colección guardada o un orb publicado, listo para leer a tu ritmo.'):copy(node),'overview-description'));
   if(node?.kind==='work'){
    const edition=node.editions?.find(e=>e.id===node.featuredEdition)||node.editions?.[0],url=edition?.url||node.url;
    if(url){const a=make('a',tr('Open published ORB','Abrir ORB publicado'),'primary-link');a.href=url;overview.append(a);}
@@ -52,8 +52,8 @@ export function mountUniverse({catalog,overview}){
  function render(recenter=false){
   view=reconcileView(graph,view);
   const selected=view.nodes.find(n=>n.key===view.selected),depth=layerCount(view),target=callTarget(graph,view),blocked=selected.depth>=MAX_LAYERS;
-  document.querySelector('#studio-title').textContent=tr('Follow a fractal of the Orb.','Sigue un fractal del Orb.');
-  const subtitle=document.querySelector('.studio-heading > p:last-child');if(subtitle)subtitle.textContent=tr('Click an orb. Watch its smaller worlds unfold.','Haz clic en un orb. Despliega sus mundos más pequeños.');
+  document.querySelector('#studio-title').textContent=tr('Explore the Orbiverse.','Explora el Orbiverso.');
+  const subtitle=document.querySelector('.studio-heading > p:last-child');if(subtitle)subtitle.textContent=tr('Choose an orb. Follow its readings, recordings, and real sources.','Elige un orb. Sigue sus lecturas, grabaciones y fuentes reales.');
   const scroll={left:field.scrollLeft,top:field.scrollTop};field.replaceChildren(plane);plane.replaceChildren();nav.replaceChildren();paging.replaceChildren();
   nav.append(button(tr('All worlds','Todos los mundos'),allWorlds));
   if(trail.length)nav.append(button(tr('Wider view','Vista anterior'),back));
@@ -83,7 +83,7 @@ export function mountUniverse({catalog,overview}){
   }
   const guidance=blocked?tr('Four layers on this branch. Refocus it to continue deeper; other branches can still unfold.','Cuatro capas en esta rama. Recéntrala para continuar; las otras ramas aún pueden desplegarse.'):depth>=3?tr('Click a child to unfold its next layer. Refocus any branch for a closer view.','Haz clic en un hijo para desplegar su próxima capa. Recentra cualquier rama para verla de cerca.'):tr('Click a branch to unfold the next layer. Each orb has one place in the tree.','Haz clic en una rama para desplegar la siguiente capa. Cada orb tiene un lugar en el árbol.');
   paging.append(make('p',guidance));
-  status.textContent=(message?message+' ':'')+nodes.length+tr(' unique points',' puntos únicos')+' · '+depth+'/4 '+tr('layers','capas')+' · '+graph.workCount+tr(' published orbs',' orbs publicados');
+  status.textContent=(message?message+' ':'')+nodes.length+tr(' unique points',' puntos únicos')+' · '+depth+'/4 '+tr('layers','capas')+' · '+graph.workCount+tr(' mapped orbs',' orbs en el mapa');
   panel(view.selected);
   if(fit||recenter||!field.dataset.positioned){const center=positions.get('root');field.scrollLeft=dx-field.clientWidth/2;field.scrollTop=dy-field.clientHeight/2;field.dataset.positioned='true';}else{field.scrollLeft=scroll.left+dx-origin.x;field.scrollTop=scroll.top+dy-origin.y;}origin={x:dx,y:dy};arriving.clear();
  }
