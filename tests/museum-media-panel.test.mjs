@@ -116,3 +116,13 @@ test('an old image error cannot replace the current ORB when both reuse the same
  const h=harness(),panel=h.mount(),a=record('same'),b=record('same');await panel.update({record:a});const stale=stage(panel).querySelector('img');await panel.update({record:b});const current=stage(panel).querySelector('img');stale.onerror();
  assert.equal(stage(panel).querySelector('img'),current);panel.destroy();
 });
+
+test('reviewed media is applied to a published record that already contains images',async()=>{
+ const original=record('old'),before=JSON.stringify(original),revised=record('reviewed');
+ const h=harness({discover:async()=>({items:collectMuseumMedia(revised),status:'saved'})}),panel=h.mount(),listing={id:idA};
+ await panel.update({record:original,listing,point:0});
+ assert.equal(h.calls.discovery.length,1);assert.equal(stage(panel).querySelector('img').src,'https://example.com/reviewed.jpg');
+ await panel.update({record:original,listing,point:1});
+ assert.equal(stage(panel).querySelector('img').src,'https://example.com/reviewed-trees.jpg');assert.equal(h.calls.discovery.length,1);
+ assert.equal(JSON.stringify(original),before);panel.destroy();
+});
