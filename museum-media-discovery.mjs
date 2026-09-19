@@ -1,4 +1,4 @@
-import {collectMuseumMedia} from './museum-media-model.mjs';
+import {collectMuseumMedia,applyPointImageReplacements} from './museum-media-model.mjs';
 import {publicURL} from './museum-publications.mjs';
 
 const INDEX_URL = new URL('./museum-media-index.json', import.meta.url).href;
@@ -73,7 +73,7 @@ export function createMuseumMediaLoader({fetchImpl = (...args) => fetch(...args)
       let indexUnavailable = false;
       if (!index) try {const candidate = await json(fetchImpl, indexURL, requestSignal, 2 * 1024 * 1024); if (candidate?.schemaVersion !== 1 || !candidate.orbs || typeof candidate.orbs !== 'object' || Array.isArray(candidate.orbs)) throw Error('Invalid index.'); index = candidate;} catch (error) {if (requestSignal.aborted) throw error; indexUnavailable = true;}
       const saved = index?.orbs && Object.hasOwn(index.orbs, listing.id) ? index.orbs[listing.id] : null, combined = {...listing, ...(saved ? {savedMedia: saved} : {})};
-      const items = collectMuseumMedia(record, {listing: combined});
+      const items = applyPointImageReplacements(collectMuseumMedia(record, {listing: combined}),saved?.imageReplacements);
       fallbackItems = items;
       if (items.some(item => item.kind === 'image' && item.access === 'direct')) return {items, status: 'saved'};
       const urls = value => (Array.isArray(value) ? value : []).map(item => item?.url);

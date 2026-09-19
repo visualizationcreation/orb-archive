@@ -8,6 +8,22 @@ const unique=values=>[...new Set(values.filter(Boolean))];
 const assetOrigin=new URL(PUBLICATIONS_API).origin;
 const duration=value=>typeof value==='number'&&Number.isFinite(value)&&value>=0?value:null;
 
+// Owner-reviewed display corrections live outside immutable publications. A
+// correction only supersedes an exact old URL/point when its replacement exists.
+export function applyPointImageReplacements(items,replacements){
+ let result=items;
+ for(const change of list(replacements,128)){
+  const node=nodeId(change?.node),from=publicURL(change?.from),to=publicURL(change?.to);
+  if(!node||!from||!to||from===to||!result.some(item=>item.url===to&&item.kind==='image'&&item.access==='direct'&&item.nodes.includes(node)))continue;
+  result=result.flatMap(item=>{
+   if(item.url!==from||item.kind!=='image'||!item.nodes.includes(node))return [item];
+   const nodes=item.nodes.filter(id=>id!==node);
+   return nodes.length?[{...item,node:nodes[0],nodes}]:[];
+  });
+ }
+ return result;
+}
+
 // Native players receive media files only. Provider pages remain links except
 // for the two exact iframe providers below; caller-supplied embed HTML is ignored.
 export function museumMediaAccess(value,{kind='source',savedImage=false}={}){

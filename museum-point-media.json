@@ -1,0 +1,582 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-09-19T23:37:43.974Z",
+  "orbs": {
+    "us250-philadelphia": {
+      "readingImages": [
+        {
+          "node": "us250-philadelphia-p01",
+          "title": "The Delaware River at Philadelphia",
+          "caption": "Looking west from Camden toward Philadelphia, April 2025. A present-day view of the river landscape; it does not reconstruct Lenape settlements.",
+          "source": "https://commons.wikimedia.org/wiki/File:2025-04-12_10_16_27_View_west_across_the_Delaware_River_towards_Center_City_Philadelphia_from_the_Camden_Waterfront_in_Camden,_Camden_County,_New_Jersey.jpg",
+          "credit": "Famartin",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+          "generated": false,
+          "src": "https://orbiversity.com/orb-archive/point-media-us250-philadelphia-p01.jpg"
+        },
+        {
+          "node": "us250-philadelphia-p02",
+          "title": "Independence Hall — historic postcard",
+          "caption": "Historic postcard of Independence Hall; date not recorded. This later depiction is not a view of the Declaration’s adoption in 1776.",
+          "source": "https://commons.wikimedia.org/wiki/File:Independece_hall.jpg",
+          "credit": "Sabold-Herb Co.",
+          "license": "Public domain",
+          "licenseURL": "https://creativecommons.org/publicdomain/mark/1.0/",
+          "generated": false,
+          "src": "https://orbiversity.com/orb-archive/point-media-us250-philadelphia-p02.jpg"
+        },
+        {
+          "node": "us250-philadelphia-p03",
+          "title": "The Constitution — first page",
+          "caption": "First page of the Constitution of the United States, signed in 1787. The document supplies the visual evidence for this reading about governmental structure.",
+          "source": "https://commons.wikimedia.org/wiki/File:Constitution_of_the_United_States_-_DPLA_-_9ca804144bd5965e992ae3528bc3c6a3_(page_1).jpg",
+          "credit": "Constitutional Convention",
+          "license": "Public domain",
+          "licenseURL": "https://creativecommons.org/publicdomain/mark/1.0/",
+          "generated": false,
+          "src": "https://orbiversity.com/orb-archive/point-media-us250-philadelphia-p03.jpg"
+        },
+        {
+          "node": "us250-philadelphia-p04",
+          "title": "The President’s House — memorial to the enslaved",
+          "caption": "The Memorial to the Enslaved at the President’s House site, photographed in June 2022. A place of remembrance connected to Ona Judge’s story, not a portrait of her.",
+          "source": "https://commons.wikimedia.org/wiki/File:Presidents_House_Site_-_Enslaved_Memorial_2022-06_(4).jpg",
+          "credit": "Kreuz und quer",
+          "license": "CC0",
+          "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+          "generated": false,
+          "src": "https://orbiversity.com/orb-archive/point-media-us250-philadelphia-p04.jpg"
+        },
+        {
+          "node": "us250-philadelphia-p05",
+          "title": "Mother Bethel A.M.E. Church",
+          "caption": "The surviving Mother Bethel church, photographed in 2014. This is a later building in the congregation’s history, not its original converted blacksmith’s shop.",
+          "source": "https://commons.wikimedia.org/wiki/File:Mother_Bethel_Philly_a.JPG",
+          "credit": "Smallbones",
+          "license": "CC0",
+          "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+          "generated": false,
+          "src": "https://orbiversity.com/orb-archive/point-media-us250-philadelphia-p05.jpg"
+        },
+        {
+          "node": "us250-philadelphia-p06",
+          "title": "The Centennial Exhibition opens",
+          "caption": "Published illustration of opening-day ceremonies at Philadelphia’s Centennial Exhibition, May 10, 1876. Historical artwork rather than a photograph.",
+          "source": "https://commons.wikimedia.org/wiki/File:Centennial_Exhibition,_Opening_Day.jpg",
+          "credit": "James D. McCabe",
+          "license": "Public domain",
+          "licenseURL": "https://creativecommons.org/publicdomain/mark/1.0/",
+          "generated": false,
+          "src": "https://orbiversity.com/orb-archive/point-media-us250-philadelphia-p06.jpg"
+        },
+        {
+          "node": "us250-philadelphia-p07",
+          "title": "Independence Hall’s tower",
+          "caption": "The tower of Independence Hall viewed from the south in 2017. Its appearance provides a starting point for examining alteration and restoration.",
+          "source": "https://commons.wikimedia.org/wiki/File:Independence_Hall,_Independence_National_Historical_Park,_Philadelphia_PA.jpg",
+          "credit": "Julie B. Shepard (Ladycrim)",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+          "generated": false,
+          "src": "https://orbiversity.com/orb-archive/point-media-us250-philadelphia-p07.jpg"
+        },
+        {
+          "node": "us250-philadelphia-p08",
+          "title": "The Liberty Bell and national memory",
+          "caption": "The Liberty Bell displayed across from Independence Hall, October 2016. A present-day symbol for the reading’s question about what an anniversary should remember.",
+          "source": "https://commons.wikimedia.org/wiki/File:Liberty_Bell,_2016.jpg",
+          "credit": "Phil Roeder",
+          "license": "CC BY 2.0",
+          "licenseURL": "https://creativecommons.org/licenses/by/2.0",
+          "generated": false,
+          "src": "https://orbiversity.com/orb-archive/point-media-us250-philadelphia-p08.jpg"
+        }
+      ],
+      "presentation": {
+        "version": 1,
+        "media": []
+      },
+      "museum": {
+        "audio": []
+      }
+    },
+    "us250-new-orleans": {
+      "readingImages": [
+        {
+          "node": "us250-new-orleans-p01",
+          "title": "The Mississippi curves through New Orleans",
+          "caption": "Aerial view of New Orleans and the Mississippi River, April 2007. Geographic context for Bulbancha’s longer history, not an image of the place before colonization.",
+          "source": "https://commons.wikimedia.org/wiki/File:Nouvelle-Orl%C3%A9ans_vue_a%C3%A9rienne.JPG",
+          "credit": "Ianaré T. Sévi",
+          "license": "Public domain",
+          "licenseURL": "https://creativecommons.org/publicdomain/mark/1.0/",
+          "generated": false,
+          "src": "https://orbiversity.com/orb-archive/point-media-us250-new-orleans-p01.jpg"
+        },
+        {
+          "node": "us250-new-orleans-p02",
+          "title": "The Port of New Orleans",
+          "caption": "A container ship at the Napoleon Avenue terminal, April 2007. A modern view illustrating the port’s continuing function; the Louisiana Purchase occurred in 1803.",
+          "source": "https://commons.wikimedia.org/wiki/File:MSC_Marina_docked_at_Port_of_New_Orleans.jpg",
+          "credit": "Gnovick at English Wikipedia",
+          "license": "CC BY 3.0",
+          "licenseURL": "https://creativecommons.org/licenses/by/3.0",
+          "generated": false,
+          "src": "https://orbiversity.com/orb-archive/point-media-us250-new-orleans-p02.jpg"
+        },
+        {
+          "node": "us250-new-orleans-p03",
+          "title": "Congo Square — modern view",
+          "caption": "A modern photograph of Congo Square. It shows the place, not a reconstruction of its early gatherings.",
+          "source": "https://commons.wikimedia.org/wiki/File:Congosquare-today.jpg",
+          "credit": "Falcanary at English Wikipedia",
+          "license": "Public domain",
+          "licenseURL": "https://creativecommons.org/publicdomain/mark/1.0/",
+          "generated": false,
+          "src": "https://orbiversity.com/orb-archive/point-media-us250-new-orleans-p03.jpg"
+        },
+        {
+          "node": "us250-new-orleans-p04",
+          "title": "A slave-auction advertisement, 1856",
+          "caption": "A New Orleans auction broadside dated February 23, 1856, naming people offered for sale. Primary-source evidence of slavery and the city’s trade in human beings; its dehumanizing language is historical evidence.",
+          "source": "https://commons.wikimedia.org/wiki/File:Slave_Auction_New_Orleans_Beard_%26_May_-_23_Feb_1856.jpg",
+          "credit": "J.A. Beard & May, New Orleans, slave auctioneers. Bulletin Print, 35 Gravier St., New Orleans",
+          "license": "Public domain",
+          "licenseURL": "https://creativecommons.org/publicdomain/mark/1.0/",
+          "generated": false,
+          "src": "https://orbiversity.com/orb-archive/point-media-us250-new-orleans-p04.jpg"
+        },
+        {
+          "node": "us250-new-orleans-p05",
+          "title": "Mardi Gras morning in Tremé",
+          "caption": "A Tremé neighborhood street on Mardi Gras morning, February 13, 2018. Contemporary place and cultural context rather than a scene from the beginnings of jazz.",
+          "source": "https://commons.wikimedia.org/wiki/File:Mardi_Gras_Morning_in_Treme_2018_14.jpg",
+          "credit": "Infrogmation of New Orleans",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+          "generated": false,
+          "src": "https://orbiversity.com/orb-archive/point-media-us250-new-orleans-p05.jpg"
+        },
+        {
+          "node": "us250-new-orleans-p06",
+          "title": "King Oliver, circa 1915",
+          "caption": "Historical portrait of jazz musician King Oliver, circa 1915. Oliver’s work connects the New Orleans story to the movement of jazz and Louis Armstrong’s career.",
+          "source": "https://commons.wikimedia.org/wiki/File:King_Oliver_(1915_portrait).jpg",
+          "credit": "Photographer unknown.",
+          "license": "Public domain",
+          "licenseURL": "https://creativecommons.org/publicdomain/mark/1.0/",
+          "generated": false,
+          "src": "https://orbiversity.com/orb-archive/point-media-us250-new-orleans-p06.jpg"
+        },
+        {
+          "node": "us250-new-orleans-p07",
+          "title": "Hurricane Katrina from space",
+          "caption": "NASA satellite image of Hurricane Katrina on August 28, 2005. A view of the storm itself, not a photograph of damage or recovery in New Orleans.",
+          "source": "https://commons.wikimedia.org/wiki/File:Katrina_2005-08-28_1700Z.jpg",
+          "credit": "NASA",
+          "license": "Public domain",
+          "licenseURL": "https://creativecommons.org/publicdomain/mark/1.0/",
+          "generated": false,
+          "src": "https://orbiversity.com/orb-archive/point-media-us250-new-orleans-p07.jpg"
+        },
+        {
+          "node": "us250-new-orleans-p08",
+          "title": "A living parade tradition",
+          "caption": "Participants in the Big 9 parade on St. Claude Avenue, New Orleans, December 21, 2008. A specific example of the city’s continuing public musical culture.",
+          "source": "https://commons.wikimedia.org/wiki/File:Low9InThe8thGreengals.jpg",
+          "credit": "Infrogmation of New Orleans",
+          "license": "CC BY-SA 3.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0",
+          "generated": false,
+          "src": "https://orbiversity.com/orb-archive/point-media-us250-new-orleans-p08.jpg"
+        }
+      ],
+      "presentation": {
+        "version": 1,
+        "media": []
+      },
+      "museum": {
+        "audio": []
+      }
+    },
+    "us250-detroit": {
+      "readingImages": [
+        {
+          "node": "us250-detroit-p01",
+          "title": "The Detroit River meets Lake Erie",
+          "caption": "NOAA aerial image showing the Detroit River’s southern entrance and northeastern Lake Erie. Geographic context for the waterway, not a photograph of early settlement.",
+          "source": "https://commons.wikimedia.org/wiki/File:Line7133_(25152922307).jpg",
+          "credit": "NOAA Photo Library",
+          "license": "Public domain",
+          "licenseURL": "https://creativecommons.org/publicdomain/mark/1.0/",
+          "generated": false,
+          "src": "https://orbiversity.com/orb-archive/point-media-us250-detroit-p01.jpg"
+        },
+        {
+          "node": "us250-detroit-p02",
+          "title": "Ford Piquette Avenue Plant",
+          "caption": "The surviving plant’s front exterior. This is the building where the first Model Ts were produced, not a view of assembly-line work.",
+          "source": "https://commons.wikimedia.org/wiki/File:Ford_Piquette_Avenue_Plant_-_Front_Exterior.jpg",
+          "credit": "Jackdude101",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+          "generated": false,
+          "src": "https://orbiversity.com/orb-archive/point-media-us250-detroit-p02.jpg"
+        },
+        {
+          "node": "us250-detroit-p03",
+          "title": "Second Baptist Church of Detroit",
+          "caption": "The church exterior, photographed in July 2008. A surviving institution for a reading about the support networks that make arrival possible.",
+          "source": "https://commons.wikimedia.org/wiki/File:Second_Baptist_Church_of_Detroit_Michigan.jpg",
+          "credit": "Andrew Jameson",
+          "license": "CC BY-SA 3.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0",
+          "generated": false,
+          "src": "https://orbiversity.com/orb-archive/point-media-us250-detroit-p03.jpg"
+        },
+        {
+          "node": "us250-detroit-p04",
+          "title": "Rivera Court — industry on the walls",
+          "caption": "A 2025 interior view of Rivera Court at the Detroit Institute of Arts, showing the Detroit Industry murals in their architectural setting. The murals date to 1932–1933.",
+          "source": "https://commons.wikimedia.org/wiki/File:Detroit_Institute_of_Arts_2025b.jpg",
+          "credit": "Antony-22",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+          "generated": false,
+          "src": "https://orbiversity.com/orb-archive/point-media-us250-detroit-p04.jpg"
+        },
+        {
+          "node": "us250-detroit-p05",
+          "title": "Hitsville U.S.A.",
+          "caption": "The Hitsville U.S.A. buildings in Detroit, photographed in June 2006. The preserved place anchors the history of Motown and the work of keeping its story.",
+          "source": "https://commons.wikimedia.org/wiki/File:Hitsville_USA.jpg",
+          "credit": "Blob4000 at English Wikipedia Later versions were uploaded by FuriousFreddy at en.wikipedia.",
+          "license": "Public domain",
+          "licenseURL": "https://creativecommons.org/publicdomain/mark/1.0/",
+          "generated": false,
+          "src": "https://orbiversity.com/orb-archive/point-media-us250-detroit-p05.jpg"
+        },
+        {
+          "node": "us250-detroit-p06",
+          "title": "Lafayette Park after redevelopment",
+          "caption": "A 2006 view of Lafayette Park redevelopment in the former Black Bottom area. This shows a later landscape, not the vanished neighborhood before clearance.",
+          "source": "https://commons.wikimedia.org/wiki/File:Lafayette_Park_Detroit_redevelopment_over_Black_Bottom.jpg",
+          "credit": "Mikerussell at en.wikipedia",
+          "license": "CC BY-SA 3.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0",
+          "generated": false,
+          "src": "https://orbiversity.com/orb-archive/point-media-us250-detroit-p06.jpg"
+        },
+        {
+          "node": "us250-detroit-p07",
+          "title": "Michigan Central Station — a later chapter",
+          "caption": "Michigan Central Station photographed in July 2026, after its restoration. A contemporary image for the reading about reuse and continuing change.",
+          "source": "https://commons.wikimedia.org/wiki/File:Michigan_Central_Station_2026.jpg",
+          "credit": "WMrapids",
+          "license": "CC0",
+          "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+          "generated": false,
+          "src": "https://orbiversity.com/orb-archive/point-media-us250-detroit-p07.jpg"
+        },
+        {
+          "node": "us250-detroit-p08",
+          "title": "Public space on the riverfront",
+          "caption": "Rivard Place on Detroit’s riverfront, April 2008, with its promenade and carousel. Context for public waterfront access; this is not the newer Ralph C. Wilson, Jr. Centennial Park.",
+          "source": "https://commons.wikimedia.org/wiki/File:Detroit_International_Riverfront_Rivard_Place_Merry_Go_Round.jpg",
+          "credit": "Mikerussell at English Wikipedia",
+          "license": "CC BY-SA 3.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0",
+          "generated": false,
+          "src": "https://orbiversity.com/orb-archive/point-media-us250-detroit-p08.jpg"
+        }
+      ],
+      "presentation": {
+        "version": 1,
+        "media": []
+      },
+      "museum": {
+        "audio": []
+      }
+    },
+    "us250-los-angeles": {
+      "readingImages": [
+        {
+          "node": "us250-los-angeles-p01",
+          "title": "La Placita in El Pueblo",
+          "caption": "La Placita church at El Pueblo, photographed in July 2007. A surviving landmark of the city’s layered history, not a depiction of the earlier Tongva village.",
+          "source": "https://commons.wikimedia.org/wiki/File:La_Placita_Parish_2007.jpg",
+          "credit": "Matthew D. Herrera (User:Dataproducts)",
+          "license": "Public domain",
+          "licenseURL": "https://creativecommons.org/publicdomain/mark/1.0/",
+          "generated": false,
+          "src": "https://orbiversity.com/orb-archive/point-media-us250-los-angeles-p01.jpg"
+        },
+        {
+          "node": "us250-los-angeles-p02",
+          "title": "The Treaty of Guadalupe Hidalgo",
+          "caption": "Cover and seal of the treaty’s exchange copy, 1848. A historical document for the reading about the changing border and sovereignty.",
+          "source": "https://commons.wikimedia.org/wiki/File:TreatyOfGuadalupeHidalgoCover.jpg",
+          "credit": "Governments of USA and Mexico",
+          "license": "Public domain",
+          "licenseURL": "https://creativecommons.org/publicdomain/mark/1.0/",
+          "generated": false,
+          "src": "https://orbiversity.com/orb-archive/point-media-us250-los-angeles-p02.jpg"
+        },
+        {
+          "node": "us250-los-angeles-p03",
+          "title": "Water arriving through the aqueduct system",
+          "caption": "The Second Los Angeles Aqueduct Cascades at Sylmar, photographed in September 2008. This later part of the system illustrates water infrastructure; it is not the 1913 opening of the original aqueduct.",
+          "source": "https://commons.wikimedia.org/wiki/File:Second_Los_Angeles_Aqueduct_Cascades,_Sylmar.jpg",
+          "credit": "Los Angeles (talk · contribs)",
+          "license": "CC BY-SA 3.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0",
+          "generated": false,
+          "src": "https://orbiversity.com/orb-archive/point-media-us250-los-angeles-p03.jpg"
+        },
+        {
+          "node": "us250-los-angeles-p04",
+          "title": "Union Station and its rail approaches",
+          "caption": "A modern overhead view of Los Angeles Union Station. The photograph shows the surviving station, not the earlier Chinatown displaced by development.",
+          "source": "https://commons.wikimedia.org/wiki/File:Los_Angeles_Union_Station_22.jpg",
+          "credit": "Basil D Soufi",
+          "license": "CC BY-SA 3.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0",
+          "generated": false,
+          "src": "https://orbiversity.com/orb-archive/point-media-us250-los-angeles-p04.jpg"
+        },
+        {
+          "node": "us250-los-angeles-p05",
+          "title": "Berry Gordy — a creative connection",
+          "caption": "Motown founder Berry Gordy at a performance of The Hot Chocolate Nutcracker in December 2010. A later portrait connected to the organization’s history, not a photograph of its 1972 move to Los Angeles.",
+          "source": "https://commons.wikimedia.org/wiki/File:BerryGordyDec10.jpg",
+          "credit": "Angela George",
+          "license": "CC BY-SA 3.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0",
+          "generated": false,
+          "src": "https://orbiversity.com/orb-archive/point-media-us250-los-angeles-p05.jpg"
+        },
+        {
+          "node": "us250-los-angeles-p06",
+          "title": "Japanese American National Museum",
+          "caption": "The museum in Little Tokyo, photographed in November 2010. A place of remembrance; this is not an image of forced removal in 1942 or a claim that the cited 2022 exhibition is still running.",
+          "source": "https://commons.wikimedia.org/wiki/File:Japanese_American_National_Museum.jpg",
+          "credit": "Justefrain",
+          "license": "CC BY 3.0",
+          "licenseURL": "https://creativecommons.org/licenses/by/3.0",
+          "generated": false,
+          "src": "https://orbiversity.com/orb-archive/point-media-us250-los-angeles-p06.jpg"
+        },
+        {
+          "node": "us250-los-angeles-p07",
+          "title": "The Great Wall of Los Angeles",
+          "caption": "The northern end of the Great Wall, photographed in December 2024. A view of the mural’s setting and its more recent timeline sections.",
+          "source": "https://commons.wikimedia.org/wiki/File:Great_Wall_of_Los_Angeles_North.jpg",
+          "credit": "RobotGoggles",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+          "generated": false,
+          "src": "https://orbiversity.com/orb-archive/point-media-us250-los-angeles-p07.jpg"
+        },
+        {
+          "node": "us250-los-angeles-p08",
+          "title": "Lupines on former railway land",
+          "caption": "Lupines at Rio de Los Angeles State Park, March 2010. The park occupies part of the former Taylor Yard landscape; this is contextual imagery, not a photograph or rendering of the proposed Paseo del Rio project.",
+          "source": "https://commons.wikimedia.org/wiki/File:Rio_de_Los_Angeles_State_Park_lupines.jpg",
+          "credit": "Laurie Avocado",
+          "license": "CC BY 2.0",
+          "licenseURL": "https://creativecommons.org/licenses/by/2.0",
+          "generated": false,
+          "src": "https://orbiversity.com/orb-archive/point-media-us250-los-angeles-p08.jpg"
+        }
+      ],
+      "presentation": {
+        "version": 1,
+        "media": []
+      },
+      "museum": {
+        "audio": []
+      }
+    },
+    "b7bdf9371c9175c4a5869c6defa948c4dbcf9a57c2cf07bcae0870b8d1bd147c": {
+      "readingImages": [
+        {
+          "node": "r0_gpp_goals_default",
+          "title": "A female athlete stands confidently in a gritty gym with worn walls, wearing a black sports top and shorts. She appears ready for a workout, showcasing her fitness dedication.",
+          "caption": "Existing gym photograph retained as general exercise context. It does not document a particular study or establish the effectiveness of a program.",
+          "source": "https://commons.wikimedia.org/wiki/File:Strong_female_athlete_poses_confidently_in_gym_with_worn_walls_during_training_session_in_urban_setting.jpg",
+          "credit": "Shixart1985",
+          "license": "CC BY 2.0",
+          "licenseURL": "https://creativecommons.org/licenses/by/2.0",
+          "generated": false,
+          "src": "https://orbiversity.com/orb-archive/point-media-training-goals-01.jpg"
+        },
+        {
+          "node": "r1_mechanisms_transfer_recovery",
+          "title": "Kettlebell squat — strength-training context",
+          "caption": "A person performing a kettlebell squat. Relevant exercise context for the discussion of physical training; the photograph is not evidence that one training strategy outperforms another.",
+          "source": "https://commons.wikimedia.org/wiki/File:Kettle_bell_squats.jpg",
+          "credit": "Tyler Read",
+          "license": "CC BY 2.0",
+          "licenseURL": "https://creativecommons.org/licenses/by/2.0",
+          "generated": false,
+          "src": "https://orbiversity.com/orb-archive/point-media-training-goals-02.jpg"
+        },
+        {
+          "node": "r2_goal_template_leading_indicators",
+          "title": "Stop 3 — A calm goal-setting template: tiers, leading indicators, and “earned” specificity",
+          "caption": "Existing AI-generated conceptual illustration retained for this point. Any depicted labels, code, charts or interfaces are illustrative, not verified screenshots or evidence.",
+          "source": "https://www.orbforma.com/api/illustration-asset?id=6b683c53dab1160916d292504bdd41c21b277c2364433f4e2d8d1b6df76c8597",
+          "credit": "Created with OpenAI · gpt-image-2",
+          "license": "AI-generated illustration",
+          "generated": true,
+          "src": "https://orbiversity.com/orb-archive/point-media-training-goals-03.jpg"
+        }
+      ],
+      "imageReplacements": [
+        {
+          "node": "r0_gpp_goals_default",
+          "from": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/Strong_female_athlete_poses_confidently_in_gym_with_worn_walls_during_training_session_in_urban_setting.jpg/960px-Strong_female_athlete_poses_confidently_in_gym_with_worn_walls_during_training_session_in_urban_setting.jpg",
+          "to": "https://orbiversity.com/orb-archive/point-media-training-goals-01.jpg"
+        },
+        {
+          "node": "r1_mechanisms_transfer_recovery",
+          "from": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/19th_Battlefield_Coordination_Detachment_-_Joint_Air-Ground_Integration_Center_%28JAGIC%29_Training%2C_Lille_France_%287860440%29.jpg/960px-19th_Battlefield_Coordination_Detachment_-_Joint_Air-Ground_Integration_Center_%28JAGIC%29_Training%2C_Lille_France_%287860440%29.jpg",
+          "to": "https://orbiversity.com/orb-archive/point-media-training-goals-02.jpg"
+        },
+        {
+          "node": "r2_goal_template_leading_indicators",
+          "from": "https://www.orbforma.com/api/illustration-asset?id=6b683c53dab1160916d292504bdd41c21b277c2364433f4e2d8d1b6df76c8597",
+          "to": "https://orbiversity.com/orb-archive/point-media-training-goals-03.jpg"
+        }
+      ]
+    },
+    "34cbf9af6a3cca12f6cb8f014c77832894a1fb17b7cdd3ac43383be84b96cf0d": {
+      "readingImages": [
+        {
+          "node": "r0",
+          "title": "Enhanced previews, now as an indexing layer",
+          "caption": "Existing AI-generated conceptual illustration retained for this point. Any depicted labels, code, charts or interfaces are illustrative, not verified screenshots or evidence.",
+          "source": "https://www.orbforma.com/api/illustration-asset?id=1aad7456bc8abe35e82296289b725cf37be07c98e71c4938100320a99b70f80e",
+          "credit": "Created with OpenAI · gpt-image-2",
+          "license": "AI-generated illustration",
+          "generated": true,
+          "src": "https://orbiversity.com/orb-archive/point-media-structured-data-01.jpg"
+        },
+        {
+          "node": "r1",
+          "title": "Google Rich Results Test — valid structured data example (2020)",
+          "caption": "Google’s published 2020 example of the Rich Results Test. It illustrates validation results; the current interface may differ, and eligibility does not guarantee search appearance.",
+          "source": "https://developers.google.com/search/blog/2020/07/rich-results-test-out-of-beta",
+          "credit": "Google Search Central",
+          "license": "CC BY 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+          "generated": false,
+          "src": "https://orbiversity.com/orb-archive/point-media-structured-data-02.jpg"
+        },
+        {
+          "node": "r2",
+          "title": "Schema.org: the shared vocabulary for labeled cards",
+          "caption": "Existing AI-generated conceptual illustration retained for this point. Any depicted labels, code, charts or interfaces are illustrative, not verified screenshots or evidence.",
+          "source": "https://www.orbforma.com/api/illustration-asset?id=7e04ff9213af3b11add644f3c0ad16c43c35b18cee1eafd017671637de73a871",
+          "credit": "Created with OpenAI · gpt-image-2",
+          "license": "AI-generated illustration",
+          "generated": true,
+          "src": "https://orbiversity.com/orb-archive/point-media-structured-data-03.jpg"
+        },
+        {
+          "node": "r3",
+          "title": "RAG and agents: why the whole stack still matters",
+          "caption": "Existing AI-generated conceptual illustration retained for this point. Any depicted labels, code, charts or interfaces are illustrative, not verified screenshots or evidence.",
+          "source": "https://www.orbforma.com/api/illustration-asset?id=61a65b04845a9c53d139b7b25b6461321395674d3de8dbbc3b2293b567a6268d",
+          "credit": "Created with OpenAI · gpt-image-2",
+          "license": "AI-generated illustration",
+          "generated": true,
+          "src": "https://orbiversity.com/orb-archive/point-media-structured-data-04.jpg"
+        },
+        {
+          "node": "r4",
+          "title": "Concrete orbforma examples: where index cards help",
+          "caption": "Existing AI-generated conceptual illustration retained for this point. Any depicted labels, code, charts or interfaces are illustrative, not verified screenshots or evidence.",
+          "source": "https://www.orbforma.com/api/illustration-asset?id=fadcd6b57867c1b87de335cf676d6a06cc912ae8fcb36d13098fac70d4a4fb63",
+          "credit": "Created with OpenAI · gpt-image-2",
+          "license": "AI-generated illustration",
+          "generated": true,
+          "src": "https://orbiversity.com/orb-archive/point-media-structured-data-05.jpg"
+        },
+        {
+          "node": "r5",
+          "title": "Practical implementation habits (so you don’t “sprinkle” markup)",
+          "caption": "Existing AI-generated conceptual illustration retained for this point. Any depicted labels, code, charts or interfaces are illustrative, not verified screenshots or evidence.",
+          "source": "https://www.orbforma.com/api/illustration-asset?id=528833bdc22a5a1e5e0fd3104bf32b8fd09f5715fef9d78e57fb7b46c88d9b85",
+          "credit": "Created with OpenAI · gpt-image-2",
+          "license": "AI-generated illustration",
+          "generated": true,
+          "src": "https://orbiversity.com/orb-archive/point-media-structured-data-06.jpg"
+        },
+        {
+          "node": "r6",
+          "title": "What structured data won’t do (and how to frame expectations)",
+          "caption": "Existing AI-generated conceptual illustration retained for this point. Any depicted labels, code, charts or interfaces are illustrative, not verified screenshots or evidence.",
+          "source": "https://www.orbforma.com/api/illustration-asset?id=4afe4ef581a96ee1137195c70e09d1da964b2b5bc7809f3769fb4e40289bda2f",
+          "credit": "Created with OpenAI · gpt-image-2",
+          "license": "AI-generated illustration",
+          "generated": true,
+          "src": "https://orbiversity.com/orb-archive/point-media-structured-data-07.jpg"
+        },
+        {
+          "node": "r7",
+          "title": "Further exploration paths (what to do next)",
+          "caption": "Existing AI-generated conceptual illustration retained for this point. Any depicted labels, code, charts or interfaces are illustrative, not verified screenshots or evidence.",
+          "source": "https://www.orbforma.com/api/illustration-asset?id=71583a81d62d7575367efe7b34ece25f3d3056e5ed0a99b461937fc959f1e101",
+          "credit": "Created with OpenAI · gpt-image-2",
+          "license": "AI-generated illustration",
+          "generated": true,
+          "src": "https://orbiversity.com/orb-archive/point-media-structured-data-08.jpg"
+        }
+      ],
+      "imageReplacements": [
+        {
+          "node": "r0",
+          "from": "https://www.orbforma.com/api/illustration-asset?id=1aad7456bc8abe35e82296289b725cf37be07c98e71c4938100320a99b70f80e",
+          "to": "https://orbiversity.com/orb-archive/point-media-structured-data-01.jpg"
+        },
+        {
+          "node": "r1",
+          "from": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/Request_for_2_Factor_Auth_tester_permissions.png/960px-Request_for_2_Factor_Auth_tester_permissions.png",
+          "to": "https://orbiversity.com/orb-archive/point-media-structured-data-02.jpg"
+        },
+        {
+          "node": "r2",
+          "from": "https://www.orbforma.com/api/illustration-asset?id=7e04ff9213af3b11add644f3c0ad16c43c35b18cee1eafd017671637de73a871",
+          "to": "https://orbiversity.com/orb-archive/point-media-structured-data-03.jpg"
+        },
+        {
+          "node": "r3",
+          "from": "https://www.orbforma.com/api/illustration-asset?id=61a65b04845a9c53d139b7b25b6461321395674d3de8dbbc3b2293b567a6268d",
+          "to": "https://orbiversity.com/orb-archive/point-media-structured-data-04.jpg"
+        },
+        {
+          "node": "r4",
+          "from": "https://www.orbforma.com/api/illustration-asset?id=fadcd6b57867c1b87de335cf676d6a06cc912ae8fcb36d13098fac70d4a4fb63",
+          "to": "https://orbiversity.com/orb-archive/point-media-structured-data-05.jpg"
+        },
+        {
+          "node": "r5",
+          "from": "https://www.orbforma.com/api/illustration-asset?id=528833bdc22a5a1e5e0fd3104bf32b8fd09f5715fef9d78e57fb7b46c88d9b85",
+          "to": "https://orbiversity.com/orb-archive/point-media-structured-data-06.jpg"
+        },
+        {
+          "node": "r6",
+          "from": "https://www.orbforma.com/api/illustration-asset?id=4afe4ef581a96ee1137195c70e09d1da964b2b5bc7809f3769fb4e40289bda2f",
+          "to": "https://orbiversity.com/orb-archive/point-media-structured-data-07.jpg"
+        },
+        {
+          "node": "r7",
+          "from": "https://www.orbforma.com/api/illustration-asset?id=71583a81d62d7575367efe7b34ece25f3d3056e5ed0a99b461937fc959f1e101",
+          "to": "https://orbiversity.com/orb-archive/point-media-structured-data-08.jpg"
+        }
+      ]
+    }
+  }
+}
