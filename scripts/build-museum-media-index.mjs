@@ -127,6 +127,12 @@ export async function buildMuseumMediaIndex() {
     result.orbs[listing.id] = {readingImages, presentation: {version: 1, media}, museum: {audio}, sourceURLs: [...new Set(parts.flatMap(part => part.sourceURLs))], originalURL: page.url};
     console.log(JSON.stringify({id: listing.id, images: readingImages.length, videos: media.length, recordings: audio.length}));
   }
+  // Preserve owner-reviewed point images, including immutable public editions
+  // that are supplied by the live feed rather than the static catalog.
+  try {
+    const reviewed=JSON.parse(await fs.readFile(path.join(root,'museum-point-media.json'),'utf8'));
+    if(reviewed.schemaVersion===1&&reviewed.orbs&&typeof reviewed.orbs==='object')Object.assign(result.orbs,reviewed.orbs);
+  } catch(error) {if(error.code!=='ENOENT')throw error;}
   await fs.writeFile(path.join(root, 'museum-media-index.json'), JSON.stringify(result, null, 2) + '\n');
   if (diagnostics.length) console.log(JSON.stringify({diagnostics}));
   return result;
