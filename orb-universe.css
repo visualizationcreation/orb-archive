@@ -19,3 +19,7 @@
 @media(max-width:800px){.universe-plane .universe-orb:not(.universe-center) .universe-label{width:82px;font-size:11px;-webkit-line-clamp:3}.universe-plane .universe-orb:not(.universe-center)[aria-pressed=true] .universe-label,.universe-plane .universe-orb:not(.universe-center):focus-visible .universe-label{width:112px;font-size:12px;-webkit-line-clamp:3}}
 @media(max-width:390px){.universe-workspace .studio-heading h1{font-size:23px}.universe-workspace .vault-overview{padding-inline:20px}.universe-paths{grid-template-columns:1fr}}
 @media(prefers-reduced-motion:reduce){.universe-sphere{transition:none}}
+
+/* Give saved photographs and film the same full frame as the Orbforma desk. */
+@media(min-width:801px){.universe-workspace{grid-template-columns:minmax(0,1fr) clamp(350px,35vw,540px)}.universe-workspace .vault-overview{padding:26px 28px}.universe-workspace .vault-overview>*{flex-shrink:0}.universe-workspace .vault-overview .museum-media{width:100%}}
+.universe-workspace .vault-overview .museum-media{align-self:stretch}.universe-workspace .vault-overview:has(.museum-media:not([hidden])) .universe-kind{display:none}

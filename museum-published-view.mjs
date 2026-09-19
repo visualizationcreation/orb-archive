@@ -4,14 +4,57 @@ const id=publicationId(new URLSearchParams(location.search).get('publication'));
 const make=(tag,text='',className='')=>{const el=document.createElement(tag);el.textContent=text;if(className)el.className=className;return el;};
 let es=new URLSearchParams(location.search).get('lang')==='es';const label=(en,sp)=>es?sp:en;
 for(const stylesheet of document.querySelectorAll('link[rel="stylesheet"]'))stylesheet.disabled=true;
-const style=make('link');style.rel='stylesheet';style.href='museum-reader.css?v=publication-1';document.head.append(style);
+const style=make('link');style.rel='stylesheet';style.href='museum-reader.css?v=media-desk-20260919';document.head.append(style);
 document.body.className='museum-published-reader';document.documentElement.lang=es?'es':'en';
 const shell=make('main','','publication-loading'),home=make('a',label('← The Museum','← El Museo'));home.href='./';
 const heading=make('h1',label('Opening your orb…','Abriendo tu orb…')),status=make('p');status.setAttribute('role','status');
 const retry=make('button',label('Try again','Intentar de nuevo'));retry.type='button';retry.hidden=true;
 shell.append(home,heading,status,retry);document.body.replaceChildren(shell);
 let generation=0;
+let disposeMedia=()=>{};
 function failure(error){heading.textContent=label('This orb could not open.','No se pudo abrir este orb.');status.textContent=error.message||label('Please try again.','Inténtalo de nuevo.');retry.hidden=false;retry.disabled=false;}
+async function attachMediaDesk(publication){
+  const article=document.querySelector('.portable-layout>article'),points=document.getElementById('orb-points');
+  if(!article||!points)return;
+  const readings=publication.record.content.readings,readingHeading=article.querySelector(':scope>h2');
+  const currentPoint=()=>{
+    const value=points.querySelector('[aria-current="true"][data-point]')?.dataset.point;
+    const index=value===undefined?NaN:Number(value);
+    if(Number.isInteger(index)&&index>=0&&index<readings.length)return index;
+    // Older editions may not expose the point index. Their own reading title
+    // provides a fallback without importing or changing the portable runtime.
+    return Math.max(0,readings.findIndex(reading=>reading.label===readingHeading?.textContent));
+  };
+  let panel,observer,active=false,lastPoint=-1;
+  const stop=()=>panel?.stop();
+  const restore=()=>{
+    active=false;observer?.disconnect();window.removeEventListener('pagehide',stop);
+    panel?.destroy();document.body.classList.remove('museum-media-ready');
+  };
+  try{
+    const {mountMuseumMediaPanel}=await import('./museum-media-panel.mjs?v=media-desk-20260919');
+    panel=mountMuseumMediaPanel({onChoosePoint(index){
+      if(!Number.isInteger(index)||index<0||index>=readings.length)return;
+      [...points.querySelectorAll('button[data-point]')].find(button=>Number(button.dataset.point)===index)?.click();
+    }});
+    article.prepend(panel.element);
+    const listing=listingFromPublication(publication);
+    const update=async()=>{
+      const point=currentPoint();if(point===lastPoint)return;lastPoint=point;
+      await panel.update({record:publication.record,listing,point});
+    };
+    await update();
+    // A visitor can navigate while the first media lookup is still pending.
+    if(currentPoint()!==lastPoint)await update();
+    for(const player of article.querySelectorAll(':scope>.media audio,:scope>.media video'))player.pause();
+    document.body.classList.add('museum-media-ready');active=true;
+    observer=new MutationObserver(()=>{if(active)void update().catch(restore);});
+    observer.observe(points,{subtree:true,childList:true,attributes:true,attributeFilter:['aria-current','data-point']});
+    if(readingHeading)observer.observe(readingHeading,{subtree:true,childList:true,characterData:true});
+    window.addEventListener('pagehide',stop);
+    disposeMedia=restore;
+  }catch{restore();} // Preserve the edition's original media if the desk cannot load.
+}
 function appendExploration(record){
   const windows=savedExploration(record);if(!windows.some(window=>window.nodes.length))return;
   const section=make('section','','publication-exploration');section.id='publication-exploration';section.setAttribute('aria-labelledby','exploration-heading');const title=make('h2',label('Saved exploration','Exploración guardada'));title.id='exploration-heading';section.append(title,make('p',label('The topics, discoveries and paths saved with this edition. Source links open their original providers.','Los temas, descubrimientos y caminos guardados con esta edición. Los enlaces abren las fuentes originales.')));
@@ -34,6 +77,7 @@ function appendConnections(publication,catalog){
   document.body.append(section);
 }
 async function open(){
+  disposeMedia();disposeMedia=()=>{};
   const serial=++generation;retry.disabled=true;retry.hidden=true;status.textContent=label('Loading the published readings and saved materials.','Cargando las lecturas publicadas y los materiales guardados.');
   try{
     if(!id)throw new Error(label('This published ORB address is not valid. Return to the Museum to choose an orb.','Esta dirección de ORB no es válida. Vuelve al Museo para elegir un orb.'));
@@ -49,16 +93,24 @@ async function open(){
     shell.remove();
     // The hosted reader stays within published content. It has no AI handoff,
     // upload, editing, or generation controls.
-    for(const link of document.querySelectorAll('a'))if(link.href.startsWith('https://www.orbforma.com/nano.html?q='))link.remove();
+    const orientationCopy=new Set(['Opens a new Orb in Nano. This saved reading stays open in this tab.','Abre un nuevo Orb en Nano. Esta lectura guardada permanece abierta en esta pestaña.']);
+    for(const link of document.querySelectorAll('a'))if(link.href.startsWith('https://www.orbforma.com/nano.html?q=')){
+      const section=link.parentElement,note=section?.lastElementChild;
+      // Remove only the portable runtime's known orientation block, not an
+      // authored source section that happens to link to Nano.
+      if(section?.matches('.portable-layout>article>section')&&section.children.length===2&&section.firstElementChild===link&&note?.tagName==='P'&&orientationCopy.has(note.textContent))section.remove();
+      else link.remove();
+    }
     const footer=document.querySelector('footer');if(footer)footer.replaceChildren(make('p',label('Published ORB · Readings and navigation are ready to explore. External sources and recordings may need a connection.','ORB publicado · Explora sus lecturas y conexiones. Las fuentes y grabaciones externas pueden necesitar conexión.')));
     const header=document.querySelector('header');if(header){const museumLink=make('a',label('Back to the Museum','Volver al Museo'));museumLink.href=MUSEUM_HOME+'?orb='+id;header.append(museumLink);}
     const publishedDate=new Date(publication.publishedAt),meta=make('p','','publication-edition');meta.textContent=label('Published edition','Edición publicada')+(Number.isFinite(publishedDate.getTime())?' · '+publishedDate.toLocaleDateString(es?'es':'en',{dateStyle:'medium'}):'');document.querySelector('h1')?.after(meta);
     if(publication.parentId&&publicationURL(publication.parentId)){const previous=make('a',label('Earlier edition','Edición anterior'));previous.href=publicationURL(publication.parentId);meta.append(document.createTextNode(' · '),previous);}
+    await attachMediaDesk(publication);
     appendExploration(publication.record);
     try{
       const [staticResponse,feed]=await Promise.all([fetch('orbs.json',{credentials:'omit'}),fetchMuseumJSON()]);const original=await staticResponse.json();if(serial===generation)appendConnections(publication,mergeCatalog(original.orbs,feed.orbs));
     }catch{const note=make('p',label('Other Museum connections are temporarily unavailable. The full orb is open above.','Las demás conexiones del Museo no están disponibles temporalmente. El orb completo está abierto arriba.'),'publication-connection-note');document.body.append(note);}
-  }catch(error){if(serial!==generation)return;document.querySelectorAll('#orb-data,script[src^="museum-reader-runtime"]').forEach(el=>el.remove());document.body.replaceChildren(shell);failure(error);}
+  }catch(error){if(serial!==generation)return;disposeMedia();document.querySelectorAll('#orb-data,script[src^="museum-reader-runtime"]').forEach(el=>el.remove());document.body.replaceChildren(shell);failure(error);}
 }
 retry.onclick=()=>location.reload();
 open();

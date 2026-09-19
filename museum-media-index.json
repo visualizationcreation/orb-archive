@@ -1,0 +1,2240 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-09-19T20:42:11.782Z",
+  "orbs": {
+    "quinault": {
+      "readingImages": [
+        {
+          "node": null,
+          "src": "https://orbiversity.com/Quinault-orb/lake-quinault.jpg",
+          "title": "Lake Quinault, south shore",
+          "source": "https://commons.wikimedia.org/wiki/File:Lake_Quinault_South_Shore_1-27-11_ONP_photo_(3)_(17126356720).jpg",
+          "credit": "Olympic National Park",
+          "license": "Public domain",
+          "licenseURL": "https://creativecommons.org/publicdomain/mark/1.0/"
+        }
+      ],
+      "presentation": {
+        "version": 1,
+        "media": []
+      },
+      "museum": {
+        "audio": [
+          {
+            "url": "https://orbiversity.com/Quinault-orb/point-01.mp3",
+            "title": "Enter the valley",
+            "node": "journey/enter-valley",
+            "durationSeconds": 86.832
+          },
+          {
+            "url": "https://orbiversity.com/Quinault-orb/point-02.mp3",
+            "title": "Follow the rain",
+            "node": "journey/follow-rain",
+            "durationSeconds": 93.384
+          },
+          {
+            "url": "https://orbiversity.com/Quinault-orb/point-03.mp3",
+            "title": "The land beneath",
+            "node": "journey/land-beneath",
+            "durationSeconds": 94.2
+          },
+          {
+            "url": "https://orbiversity.com/Quinault-orb/point-04.mp3",
+            "title": "A forest grows through decay",
+            "node": "journey/living-forest",
+            "durationSeconds": 89.328
+          },
+          {
+            "url": "https://orbiversity.com/Quinault-orb/point-05.mp3",
+            "title": "Water connects the valley",
+            "node": "journey/connected-water",
+            "durationSeconds": 102.24
+          },
+          {
+            "url": "https://orbiversity.com/Quinault-orb/point-06.mp3",
+            "title": "A living homeland",
+            "node": "journey/living-homeland",
+            "durationSeconds": 98.736
+          },
+          {
+            "url": "https://orbiversity.com/Quinault-orb/point-07.mp3",
+            "title": "The work of repair",
+            "node": "journey/work-of-repair",
+            "durationSeconds": 100.512
+          },
+          {
+            "url": "https://orbiversity.com/Quinault-orb/point-08.mp3",
+            "title": "Return to the whole valley",
+            "node": "journey/whole-valley",
+            "durationSeconds": 91.752
+          },
+          {
+            "url": "https://orbiversity.com/Quinault-orb/forest-sample.mp3",
+            "title": "Quinault"
+          }
+        ]
+      },
+      "sourceURLs": [
+        "https://www.nps.gov/olym/learn/nature/temperate-rain-forests.htm",
+        "https://www.nps.gov/olym/planyourvisit/quinault-area-brochure.htm",
+        "https://www.nps.gov/olym/learn/nature/glaciers.htm",
+        "https://quinaultindiannation.com/224/Lake-Quinault-Management-Plan",
+        "https://quinaultindiannation.com/163/Quinault-Division-of-Natural-Resources-Q",
+        "https://www.quinaultindiannation.com/189/Habitat-Management-and-Restoration",
+        "https://quinaultindiannation.com/247/Project-Background"
+      ],
+      "originalURL": "https://orbiversity.com/Quinault-orb/"
+    },
+    "the-orb-skill": {
+      "readingImages": [],
+      "presentation": {
+        "version": 1,
+        "media": []
+      },
+      "museum": {
+        "audio": []
+      },
+      "sourceURLs": [
+        "https://visualizationcreation.github.io/orbplugin/",
+        "https://visualizationcreation.github.io/orb-archive/",
+        "https://pubmed.ncbi.nlm.nih.gov/16507066/",
+        "https://pubmed.ncbi.nlm.nih.gov/16719566/",
+        "https://visualizationcreation.github.io/orb-share/tool.html"
+      ],
+      "originalURL": "https://orbiversity.com/the-orb-skill/"
+    },
+    "olympic-national-park": {
+      "readingImages": [
+        {
+          "node": "one-peninsula",
+          "src": "https://orbiversity.com/olympic-national-park/mountains.jpg",
+          "title": "The Bailey Range from Hurricane Ridge.",
+          "source": "https://www.nps.gov/olym/learn/nature/mountains.htm",
+          "credit": "National Park Service",
+          "license": "NPS website image; no third-party copyright notice on the source page. NPS reuse policy: https://www.nps.gov/aboutus/disclaimer.htm"
+        },
+        {
+          "node": "glacier-budget",
+          "src": "https://orbiversity.com/olympic-national-park/ice.jpg",
+          "title": "Blue Glacier in 1899 and 2008. Historical comparison, not a present-day view.",
+          "source": "https://www.nps.gov/olym/learn/nature/glaciers.htm",
+          "credit": "1899: Olympic National Park archives; 2008: Jim Patterson / ONP",
+          "license": "NPS website image; no third-party copyright notice on the source page. NPS reuse policy: https://www.nps.gov/aboutus/disclaimer.htm"
+        },
+        {
+          "node": "quinault-blueback",
+          "src": "https://orbiversity.com/olympic-national-park/lake.jpg",
+          "title": "Lake Quinault from the south shore; Olympic National Park photograph.",
+          "source": "https://commons.wikimedia.org/wiki/File:Lake_Quinault_South_Shore_1-27-11_ONP_photo_(3)_(17126356720).jpg",
+          "credit": "Olympic National Park / public domain",
+          "license": "Public domain NPS photograph"
+        },
+        {
+          "node": "rocky-edge",
+          "src": "https://orbiversity.com/olympic-national-park/coast.jpg",
+          "title": "Hole-in-the-Wall, north of Rialto Beach.",
+          "source": "https://www.nps.gov/olym/learn/nature/coast.htm",
+          "credit": "National Park Service",
+          "license": "NPS website image; no third-party copyright notice on the source page. NPS reuse policy: https://www.nps.gov/aboutus/disclaimer.htm"
+        },
+        {
+          "node": "living-homelands",
+          "src": "https://orbiversity.com/olympic-national-park/tribal-canoes.jpg",
+          "title": "Canoes participating in a Tribal Journey on peninsula waters. This is a shared regional event, not a portrait of all eight Tribes.",
+          "source": "https://www.nps.gov/olym/learn/historyculture/tribes-of-the-olympic-peninsula.htm",
+          "credit": "National Park Service",
+          "license": "NPS-origin image, no third-party restriction indicated on the source page. https://www.nps.gov/aboutus/disclaimer.htm"
+        },
+        {
+          "node": "shared-stewardship",
+          "src": "https://orbiversity.com/olympic-national-park/native-plant-center.jpg",
+          "title": "Jill Zarzeczny tending salal starts at the NPS Native Plant Center for revegetation work.",
+          "source": "https://www.nps.gov/olym/learn/nature/elwha-revegetation.htm",
+          "credit": "NPS Photo",
+          "license": "NPS-origin image, no third-party restriction indicated on the source page. https://www.nps.gov/aboutus/disclaimer.htm"
+        },
+        {
+          "node": "fire-in-wet-country",
+          "src": "https://orbiversity.com/olympic-national-park/montane-fire.jpg",
+          "title": "A lightning-caused fire in a montane Douglas-fir stand in the Little River valley. Archival NPS photograph.",
+          "source": "https://www.nps.gov/olym/learn/nature/montane-forests.htm",
+          "credit": "National Park Service",
+          "license": "NPS-origin image, no third-party restriction indicated on the source page. https://www.nps.gov/aboutus/disclaimer.htm"
+        },
+        {
+          "node": "olympic-marmot",
+          "src": "https://orbiversity.com/olympic-national-park/olympic-marmot.jpg",
+          "title": "An Olympic marmot in an alpine meadow. Published with the park’s 2021 monitoring report; not a current population assessment.",
+          "source": "https://www.nps.gov/olym/learn/nature/2021-marmot-monitoring-results.htm",
+          "credit": "NPS Photo",
+          "license": "NPS-origin image, no third-party restriction indicated on the source page. https://www.nps.gov/aboutus/disclaimer.htm"
+        },
+        {
+          "node": "elwha-reconnection",
+          "src": "https://orbiversity.com/olympic-national-park/elwha-dam-removal.jpg",
+          "title": "Elwha Dam during construction and approximately the same view in 2012 after removal. Historical comparison.",
+          "source": "https://www.nps.gov/olym/learn/nature/jan13-aug14_blogentries.htm",
+          "credit": "National Park Service",
+          "license": "NPS-origin image, no third-party restriction indicated on the source page. https://www.nps.gov/aboutus/disclaimer.htm"
+        },
+        {
+          "node": "tracking-return",
+          "src": "https://orbiversity.com/olympic-national-park/salmon-research.jpg",
+          "title": "A radio-tagged Chinook is released into the Elwha, from an NPS July 2014 research update. Tagging is a distinct field method from the eDNA sampling discussed in the reading.",
+          "source": "https://www.nps.gov/olym/learn/nature/jan13-aug14_blogentries.htm",
+          "credit": "National Park Service photo",
+          "license": "NPS-origin image, no third-party restriction indicated on the source page. https://www.nps.gov/aboutus/disclaimer.htm"
+        },
+        {
+          "node": "between-the-tides",
+          "src": "https://orbiversity.com/olympic-national-park/intertidal-life.jpg",
+          "title": "Purple and red sea urchins share a tidepool with the orange feeding tentacles of a sea cucumber.",
+          "source": "https://www.nps.gov/olym/learn/nature/coast.htm",
+          "credit": "National Park Service",
+          "license": "NPS-origin image, no third-party restriction indicated on the source page. https://www.nps.gov/aboutus/disclaimer.htm"
+        },
+        {
+          "node": "reading-the-evidence",
+          "src": "https://orbiversity.com/olympic-national-park/glacier-fieldwork.jpg",
+          "title": "A researcher records measurements on Olympic’s glacier ice. A field observation becomes part of a longer record.",
+          "source": "https://www.nps.gov/olym/learn/scienceresearch.htm",
+          "credit": "NPS / Bill Baccus",
+          "license": "NPS-origin image, no third-party restriction indicated on the source page. https://www.nps.gov/aboutus/disclaimer.htm"
+        },
+        {
+          "node": "ozette-memory",
+          "src": "https://orbiversity.com/olympic-national-park/visual-ozette-memory.svg",
+          "title": "An object is not its whole story. Evidence gains meaning through context and the people who interpret it. Original explanatory illustration; schematic, not a measured dataset.",
+          "source": "https://makah.com/attractions/museum/",
+          "credit": "ORB Journeys",
+          "license": "Original SVG illustration created for Nathan Wilson’s ORB Journeys."
+        },
+        {
+          "node": "seafloor-to-summit",
+          "src": "https://orbiversity.com/olympic-national-park/visual-seafloor-to-summit.svg",
+          "title": "Oceanic material becomes mountain terrain. Subduction, accretion and uplift are distinct parts of the explanation. Original explanatory illustration; schematic, not a measured dataset.",
+          "source": "https://www.nps.gov/olym/learn/nature/geology.htm",
+          "credit": "ORB Journeys",
+          "license": "Original SVG illustration created for Nathan Wilson’s ORB Journeys."
+        },
+        {
+          "node": "rain-shadow",
+          "src": "https://orbiversity.com/olympic-national-park/visual-rain-shadow.svg",
+          "title": "A mountain barrier divides the weather. Windward and leeward exposure help create different growing conditions. Original explanatory illustration; schematic, not a measured dataset.",
+          "source": "https://www.nps.gov/olym/learn/nature/mountains.htm",
+          "credit": "ORB Journeys",
+          "license": "Original SVG illustration created for Nathan Wilson’s ORB Journeys."
+        },
+        {
+          "node": "salmon-life",
+          "src": "https://orbiversity.com/olympic-national-park/visual-salmon-life.svg",
+          "title": "One life connects several habitats. Timing and freshwater needs vary among salmon species and populations. Original explanatory illustration; schematic, not a measured dataset.",
+          "source": "https://www.nps.gov/olym/learn/nature/the-salmon-life-cycle.htm",
+          "credit": "ORB Journeys",
+          "license": "Original SVG illustration created for Nathan Wilson’s ORB Journeys."
+        },
+        {
+          "node": "ocean-in-the-forest",
+          "src": "https://orbiversity.com/olympic-national-park/visual-ocean-in-the-forest.svg",
+          "title": "The ocean’s nutrients travel upstream. Returning fish connect marine production with freshwater food webs. Original explanatory illustration; schematic, not a measured dataset.",
+          "source": "https://www.usgs.gov/publications/rapid-return-marine-derived-nutrients-a-freshwater-food-web-following-dam-removal",
+          "credit": "ORB Journeys",
+          "license": "Original SVG illustration created for Nathan Wilson’s ORB Journeys."
+        },
+        {
+          "node": "sediment-to-sea",
+          "src": "https://orbiversity.com/olympic-national-park/visual-sediment-to-sea.svg",
+          "title": "Sediment continues beyond the river mouth. Reconnection can change the shoreline and the seabed. Original explanatory illustration; schematic, not a measured dataset.",
+          "source": "https://www.usgs.gov/centers/pcmsc/news/elwha-river-new-study-examines-effects-dam-removals-coastal-ecosystems",
+          "credit": "ORB Journeys",
+          "license": "Original SVG illustration created for Nathan Wilson’s ORB Journeys."
+        },
+        {
+          "node": "floor-ice",
+          "src": "https://orbiversity.com/olympic-national-park/visual-floor-ice.svg",
+          "title": "A stream has more than one water source. The research question concerns the size and timing of changing contributions. Original explanatory illustration; schematic, not a measured dataset.",
+          "source": "https://www.nps.gov/im/nccn/glaciers.htm",
+          "credit": "ORB Journeys",
+          "license": "Original SVG illustration created for Nathan Wilson’s ORB Journeys."
+        },
+        {
+          "node": "floor-forest",
+          "src": "https://orbiversity.com/olympic-national-park/visual-floor-forest.svg",
+          "title": "Which process explains a changing forest?. Repeated plots can connect vegetation changes with local conditions. Original explanatory illustration; schematic, not a measured dataset.",
+          "source": "https://www.nps.gov/rlc/northcoastcascades/research.htm",
+          "credit": "ORB Journeys",
+          "license": "Original SVG illustration created for Nathan Wilson’s ORB Journeys."
+        },
+        {
+          "node": "floor-marmot",
+          "src": "https://orbiversity.com/olympic-national-park/visual-floor-marmot.svg",
+          "title": "Not seen is not always absent. A hypothetical survey pattern shows why repeat visits matter. Original explanatory illustration; schematic, not a measured dataset.",
+          "source": "https://www.nps.gov/olym/getinvolved/olympic-marmot-monitoring.htm",
+          "credit": "ORB Journeys",
+          "license": "Original SVG illustration created for Nathan Wilson’s ORB Journeys."
+        },
+        {
+          "node": "floor-salmon",
+          "src": "https://orbiversity.com/olympic-national-park/visual-floor-salmon.svg",
+          "title": "From a reopened route to a lasting population. Each recovery claim needs evidence matched to its scale. Original explanatory illustration; schematic, not a measured dataset.",
+          "source": "https://www.usgs.gov/publications/environmental-dna-effective-tool-track-recolonizing-migratory-fish-following-large",
+          "credit": "ORB Journeys",
+          "license": "Original SVG illustration created for Nathan Wilson’s ORB Journeys."
+        },
+        {
+          "node": "floor-coast",
+          "src": "https://orbiversity.com/olympic-national-park/visual-floor-coast.svg",
+          "title": "Several pressures can leave similar signals. The challenge is to distinguish patterns from their causes. Original explanatory illustration; schematic, not a measured dataset.",
+          "source": "https://www.nps.gov/im/nccn/intertidal.htm",
+          "credit": "ORB Journeys",
+          "license": "Original SVG illustration created for Nathan Wilson’s ORB Journeys."
+        },
+        {
+          "node": "floor-quinault",
+          "src": "https://orbiversity.com/olympic-national-park/visual-floor-quinault.svg",
+          "title": "Make the data gap specific. A useful investigation connects a measurement with a real decision. Original explanatory illustration; schematic, not a measured dataset.",
+          "source": "https://quinaultindiannation.com/224/Lake-Quinault-Management-Plan",
+          "credit": "ORB Journeys",
+          "license": "Original SVG illustration created for Nathan Wilson’s ORB Journeys."
+        },
+        {
+          "node": "ice-carved-land",
+          "src": "https://orbiversity.com/olympic-national-park/lake-crescent.jpg",
+          "title": "Lake Crescent reflections near the wharf.",
+          "source": "https://www.nps.gov/olym/planyourvisit/visiting-lake-crescent.htm",
+          "credit": "NPS / C. Bubar",
+          "license": "NPS website photograph credited to NPS; no third-party copyright notice on source. https://www.nps.gov/aboutus/disclaimer.htm"
+        },
+        {
+          "node": "forest-mosaic",
+          "src": "https://orbiversity.com/olympic-national-park/hurricane-meadow.jpg",
+          "title": "Meadows at Hurricane Ridge.",
+          "source": "https://www.nps.gov/olym/planyourvisit/visiting-hurricane-ridge.htm",
+          "credit": "NPS / C. Bubar",
+          "license": "NPS website photograph credited to NPS; no third-party copyright notice on source. https://www.nps.gov/aboutus/disclaimer.htm"
+        },
+        {
+          "node": "rainforest-layers",
+          "src": "https://orbiversity.com/olympic-national-park/hoh-canopy.jpg",
+          "title": "Bigleaf maples and epiphytes in the Hoh rainforest.",
+          "source": "https://www.nps.gov/olym/learn/nature/temperate-rain-forests.htm",
+          "credit": "National Park Service",
+          "license": "NPS website photograph credited to NPS; no third-party copyright notice on source. https://www.nps.gov/aboutus/disclaimer.htm"
+        },
+        {
+          "node": "fallen-wood",
+          "src": "https://orbiversity.com/olympic-national-park/queets-forest.jpg",
+          "title": "Hiker in the Queets rainforest; a contextual forest view.",
+          "source": "https://www.nps.gov/olym/planyourvisit/queets-river-trail.htm",
+          "credit": "NPS / Bryan Bell",
+          "license": "NPS website photograph credited to NPS; no third-party copyright notice on source. https://www.nps.gov/aboutus/disclaimer.htm"
+        },
+        {
+          "node": "river-continuum",
+          "src": "https://orbiversity.com/olympic-national-park/staircase-valley.jpg",
+          "title": "Upper reaches of the North Fork Skokomish River valley.",
+          "source": "https://www.nps.gov/olym/planyourvisit/visiting-staircase.htm",
+          "credit": "National Park Service",
+          "license": "NPS website photograph credited to NPS; no third-party copyright notice on source. https://www.nps.gov/aboutus/disclaimer.htm"
+        },
+        {
+          "node": "wood-and-cold-water",
+          "src": "https://orbiversity.com/olympic-national-park/sol-duc-falls.jpg",
+          "title": "Rainbow over Sol Duc Falls.",
+          "source": "https://www.nps.gov/olym/planyourvisit/visiting-the-sol-duc-valley.htm",
+          "credit": "National Park Service",
+          "license": "NPS website photograph credited to NPS; no third-party copyright notice on source. https://www.nps.gov/aboutus/disclaimer.htm"
+        },
+        {
+          "node": "park-and-peninsula",
+          "src": "https://orbiversity.com/olympic-national-park/olympic-park-and-peninsula.jpg",
+          "title": "An elevated oblique conceptual view of a forested peninsula, snowy mountainous interior and a river winding into a separate ocean coast.",
+          "source": "https://www.nps.gov/olym/index.htm",
+          "credit": "AI-generated illustration · local FLUX.2 Klein",
+          "license": "Original explanatory illustration prepared for ORB Journeys.",
+          "generated": true
+        },
+        {
+          "node": "tribal-sovereignty",
+          "src": "https://orbiversity.com/olympic-national-park/olympic-tribal-sovereignty.jpg",
+          "title": "An imagined reading table. This does not depict an actual Tribal council chamber.",
+          "source": "https://www.nps.gov/olym/learn/historyculture/tribes-of-the-olympic-peninsula.htm",
+          "credit": "AI-generated illustration · local FLUX.2 Klein",
+          "license": "Original explanatory illustration prepared for ORB Journeys.",
+          "generated": true
+        },
+        {
+          "node": "ozette-archaeology",
+          "src": "https://orbiversity.com/olympic-national-park/olympic-ozette-archaeology.jpg",
+          "title": "Schematic preservation of wood in sediment; not a reconstruction of actual Ozette objects.",
+          "source": "https://makah.com/attractions/museum/",
+          "credit": "AI-generated illustration · local FLUX.2 Klein",
+          "license": "Original explanatory illustration prepared for ORB Journeys.",
+          "generated": true
+        },
+        {
+          "node": "crescent-basalt",
+          "src": "https://orbiversity.com/olympic-national-park/olympic-crescent-basalt.jpg",
+          "title": "A close natural-history illustration of rounded dark basalt pillow forms in a rock exposure, textured chilled margins and tiny mineral details, cool gray-blue light.",
+          "source": "https://www.nps.gov/olym/learn/nature/geology.htm",
+          "credit": "AI-generated illustration · local FLUX.2 Klein",
+          "license": "Original explanatory illustration prepared for ORB Journeys.",
+          "generated": true
+        },
+        {
+          "node": "accretion-and-uplift",
+          "src": "https://orbiversity.com/olympic-national-park/diagram-accretion-and-uplift.svg",
+          "title": "Assembly is different from excavation. Folded strata record deformation; valleys also record removal of material.",
+          "source": "https://www.nps.gov/subjects/geology/plate-tectonics-subduction-zones.htm",
+          "credit": "ORB Journeys · Authored explanatory diagram",
+          "license": "Original explanatory illustration prepared for ORB Journeys."
+        },
+        {
+          "node": "glacial-valleys",
+          "src": "https://orbiversity.com/olympic-national-park/olympic-glacial-valleys.jpg",
+          "title": "A wide elevated view of a U-shaped mountain valley with steep glacially smoothed sides and a narrow river on its flat floor, distant snowy ridges.",
+          "source": "https://www.nps.gov/olym/learn/nature/geology.htm",
+          "credit": "AI-generated illustration · local FLUX.2 Klein",
+          "license": "Original explanatory illustration prepared for ORB Journeys.",
+          "generated": true
+        },
+        {
+          "node": "crescent-trout",
+          "src": "https://orbiversity.com/olympic-national-park/olympic-crescent-trout.jpg",
+          "title": "Imagined trout in lake habitat; not a diagnostic portrait of a named population.",
+          "source": "https://www.nps.gov/olym/planyourvisit/visiting-lake-crescent.htm",
+          "credit": "AI-generated illustration · local FLUX.2 Klein",
+          "license": "Original explanatory illustration prepared for ORB Journeys.",
+          "generated": true
+        },
+        {
+          "node": "snowpack-storage",
+          "src": "https://orbiversity.com/olympic-national-park/olympic-snowpack-storage.jpg",
+          "title": "A close alpine slope where granular spring snow slowly melts into a narrow rivulet flowing around exposed stones.",
+          "source": "https://www.nps.gov/olym/learn/nature/glaciers.htm",
+          "credit": "AI-generated illustration · local FLUX.2 Klein",
+          "license": "Original explanatory illustration prepared for ORB Journeys.",
+          "generated": true
+        },
+        {
+          "node": "blue-glacier-record",
+          "src": "https://orbiversity.com/olympic-national-park/olympic-blue-glacier-record.jpg",
+          "title": "An oblique imagined glacier study scene: long pale blue glacier flowing between dark rocky ridges, visible crevasses, an observer-free surveying tripod on safe foreground rock.",
+          "source": "https://www.nps.gov/olym/learn/nature/glaciers.htm",
+          "credit": "AI-generated illustration · local FLUX.2 Klein",
+          "license": "Original explanatory illustration prepared for ORB Journeys.",
+          "generated": true
+        },
+        {
+          "node": "mass-balance",
+          "src": "https://orbiversity.com/olympic-national-park/diagram-mass-balance.svg",
+          "title": "An account of glacier gains and losses. A snowy winter can still be followed by a negative annual balance.",
+          "source": "https://www.nps.gov/im/nccn/glaciers.htm",
+          "credit": "ORB Journeys · Authored explanatory diagram",
+          "license": "Original explanatory illustration prepared for ORB Journeys."
+        },
+        {
+          "node": "summer-streamflow",
+          "src": "https://orbiversity.com/olympic-national-park/olympic-summer-streamflow.jpg",
+          "title": "A mountain stream gathering water from a small snow patch, a distant glacier and a moist rocky spring along its bank.",
+          "source": "https://www.nps.gov/olym/learn/nature/glaciers.htm",
+          "credit": "AI-generated illustration · local FLUX.2 Klein",
+          "license": "Original explanatory illustration prepared for ORB Journeys.",
+          "generated": true
+        },
+        {
+          "node": "treeline-patterns",
+          "src": "https://orbiversity.com/olympic-national-park/olympic-treeline-patterns.jpg",
+          "title": "A mountain meadow at treeline with scattered small conifers sheltered beside boulders and denser trees lower on the slope, lingering snow in a hollow.",
+          "source": "https://www.nps.gov/olym/learn/nature/mountains.htm",
+          "credit": "AI-generated illustration · local FLUX.2 Klein",
+          "license": "Original explanatory illustration prepared for ORB Journeys.",
+          "generated": true
+        },
+        {
+          "node": "meadow-phenology",
+          "src": "https://orbiversity.com/olympic-national-park/olympic-meadow-phenology.jpg",
+          "title": "A low view of alpine meadow plants emerging at the edge of a retreating patch of spring snow, small buds and green shoots, some flowers in a nearby snow-free patch.",
+          "source": "https://www.nps.gov/rlc/northcoastcascades/research.htm",
+          "credit": "AI-generated illustration · local FLUX.2 Klein",
+          "license": "Original explanatory illustration prepared for ORB Journeys.",
+          "generated": true
+        },
+        {
+          "node": "island-evolution",
+          "src": "https://orbiversity.com/olympic-national-park/diagram-island-evolution.svg",
+          "title": "An ecological island need not be an ocean island. For some high-country species, intervening lowlands can limit connections.",
+          "source": "https://www.nps.gov/olym/learn/nature/olympic-marmot.htm",
+          "credit": "ORB Journeys · Authored explanatory diagram",
+          "license": "Original explanatory illustration prepared for ORB Journeys."
+        },
+        {
+          "node": "marmot-hibernation",
+          "src": "https://orbiversity.com/olympic-national-park/olympic-marmot-hibernation.jpg",
+          "title": "A gentle natural-history cutaway of an underground burrow beneath a rocky alpine meadow, one stocky tawny-gray marmot curled asleep in a dry chamber.",
+          "source": "https://www.nps.gov/olym/learn/nature/olympic-marmot.htm",
+          "credit": "AI-generated illustration · local FLUX.2 Klein",
+          "license": "Original explanatory illustration prepared for ORB Journeys.",
+          "generated": true
+        },
+        {
+          "node": "canopy-epiphytes",
+          "src": "https://orbiversity.com/olympic-national-park/olympic-canopy-epiphytes.jpg",
+          "title": "A close detailed upward view of a thick temperate rainforest branch carrying moss cushions, lichens and small ferns, sunlight diffused through the canopy.",
+          "source": "https://www.nps.gov/olym/learn/nature/temperate-rain-forests.htm",
+          "credit": "AI-generated illustration · local FLUX.2 Klein",
+          "license": "Original explanatory illustration prepared for ORB Journeys.",
+          "generated": true
+        },
+        {
+          "node": "nurse-logs",
+          "src": "https://orbiversity.com/olympic-national-park/olympic-nurse-logs.jpg",
+          "title": "A fallen decaying conifer trunk crossing the foreground, its soft mossy wood supporting several tiny conifer seedlings with fine roots settling into crevices.",
+          "source": "https://www.nps.gov/olym/learn/nature/temperate-rain-forests.htm",
+          "credit": "AI-generated illustration · local FLUX.2 Klein",
+          "license": "Original explanatory illustration prepared for ORB Journeys.",
+          "generated": true
+        },
+        {
+          "node": "decay-and-soil",
+          "src": "https://orbiversity.com/olympic-national-park/olympic-decay-and-soil.jpg",
+          "title": "A ground-level naturalist view of decaying wood breaking into dark moist forest soil, fine fungal threads, a small fruiting mushroom and roots meeting the fragments.",
+          "source": "https://www.fs.usda.gov/pnw/pubs/pnw_gtr461.pdf",
+          "credit": "AI-generated illustration · local FLUX.2 Klein",
+          "license": "Original explanatory illustration prepared for ORB Journeys.",
+          "generated": true
+        },
+        {
+          "node": "fire-records",
+          "src": "https://orbiversity.com/olympic-national-park/diagram-fire-records.svg",
+          "title": "Different clues, different reach. Compare dates, places and methods before reconstructing a fire history.",
+          "source": "https://www.nps.gov/olym/learn/nature/fireecology.htm",
+          "credit": "ORB Journeys · Authored explanatory diagram",
+          "license": "Original explanatory illustration prepared for ORB Journeys."
+        },
+        {
+          "node": "douglas-fir-pattern",
+          "src": "https://orbiversity.com/olympic-national-park/olympic-douglas-fir-pattern.jpg",
+          "title": "A low upward view beside a mature Douglas-fir-like conifer with deeply furrowed bark and a high canopy, on a drier eastern Olympic-like valley floor.",
+          "source": "https://www.nps.gov/olym/planyourvisit/visiting-staircase.htm",
+          "credit": "AI-generated illustration · local FLUX.2 Klein",
+          "license": "Original explanatory illustration prepared for ORB Journeys.",
+          "generated": true
+        },
+        {
+          "node": "floodplain-channels",
+          "src": "https://orbiversity.com/olympic-national-park/olympic-floodplain-channels.jpg",
+          "title": "An elevated natural-history view of a forest river splitting around a gravel island, with a connected quiet side channel, fallen wood and a broad green floodplain.",
+          "source": "https://www.nps.gov/olym/learn/nature/the-salmon-life-cycle.htm",
+          "credit": "AI-generated illustration · local FLUX.2 Klein",
+          "license": "Original explanatory illustration prepared for ORB Journeys.",
+          "generated": true
+        },
+        {
+          "node": "stream-temperature",
+          "src": "https://orbiversity.com/olympic-national-park/olympic-stream-temperature.jpg",
+          "title": "A shaded cool tributary entering a wider sunlit stream, dark riparian canopy over the tributary and gravel under clear water at the meeting point.",
+          "source": "https://www.nps.gov/im/nccn/water-quality.htm",
+          "credit": "AI-generated illustration · local FLUX.2 Klein",
+          "license": "Original explanatory illustration prepared for ORB Journeys.",
+          "generated": true
+        },
+        {
+          "node": "aquatic-insects",
+          "src": "https://orbiversity.com/olympic-national-park/diagram-aquatic-insects.svg",
+          "title": "Small animals add a biological record. Immature stream insects are not interchangeable with winged adults.",
+          "source": "https://www.nps.gov/im/nccn/water-quality.htm",
+          "credit": "ORB Journeys · Authored explanatory diagram",
+          "license": "Original explanatory illustration prepared for ORB Journeys."
+        },
+        {
+          "node": "salmon-redds",
+          "src": "https://orbiversity.com/olympic-national-park/diagram-salmon-redds.svg",
+          "title": "Occupied habitat beneath the streambed. Early salmon development occurs among gravel even after adults leave.",
+          "source": "https://www.nps.gov/olym/learn/nature/the-salmon-life-cycle.htm",
+          "credit": "ORB Journeys · Authored explanatory diagram",
+          "license": "Original explanatory illustration prepared for ORB Journeys."
+        },
+        {
+          "node": "smolt-transition",
+          "src": "https://orbiversity.com/olympic-national-park/olympic-smolt-transition.jpg",
+          "title": "A single small silver juvenile salmon swimming from a clear river toward a softly suggested estuary, rippled surface light, visible gill cover and streamlined body.",
+          "source": "https://www.nps.gov/olym/learn/nature/the-salmon-life-cycle.htm",
+          "credit": "AI-generated illustration · local FLUX.2 Klein",
+          "license": "Original explanatory illustration prepared for ORB Journeys.",
+          "generated": true
+        },
+        {
+          "node": "tracing-marine-nutrients",
+          "src": "https://orbiversity.com/olympic-national-park/olympic-tracing-marine-nutrients.jpg",
+          "title": "A conceptual still life pairing a silver salmon silhouette reflected in stream water with a leaf and a clean sample vial on a neutral laboratory tray at the riverbank.",
+          "source": "https://www.sciencedirect.com/science/article/abs/pii/S0006320715301002",
+          "credit": "AI-generated illustration · local FLUX.2 Klein",
+          "license": "Original explanatory illustration prepared for ORB Journeys.",
+          "generated": true
+        },
+        {
+          "node": "lake-water-column",
+          "src": "https://orbiversity.com/olympic-national-park/olympic-lake-water-column.jpg",
+          "title": "An underwater cutaway-style view of a deep lake: bright surface layer with tiny suspended particles, dimmer blue water below and a dark lake bed.",
+          "source": "https://quinaultindiannation.com/342/Water-Quality",
+          "credit": "AI-generated illustration · local FLUX.2 Klein",
+          "license": "Original explanatory illustration prepared for ORB Journeys.",
+          "generated": true
+        },
+        {
+          "node": "blueback-monitoring",
+          "src": "https://orbiversity.com/olympic-national-park/olympic-blueback-monitoring.jpg",
+          "title": "An imagined fisheries fieldwork scene with an unattended fish-counting station beside a broad lake outlet, measuring board and blank waterproof notebook in foreground, forested hills across the lake.",
+          "source": "https://quinaultindiannation.com/192/Salmon---River-Fisheries",
+          "credit": "AI-generated illustration · local FLUX.2 Klein",
+          "license": "Original explanatory illustration prepared for ORB Journeys.",
+          "generated": true
+        },
+        {
+          "node": "elwha-sediment-pulse",
+          "src": "https://orbiversity.com/olympic-national-park/diagram-elwha-sediment-pulse.svg",
+          "title": "Sediment changes clarity and substrate. Suspended particles and deposited material produce different effects.",
+          "source": "https://www.usgs.gov/centers/pcmsc/news/elwha-river-new-study-examines-effects-dam-removals-coastal-ecosystems",
+          "credit": "ORB Journeys · Authored explanatory diagram",
+          "license": "Original explanatory illustration prepared for ORB Journeys."
+        },
+        {
+          "node": "reservoir-revegetation",
+          "src": "https://orbiversity.com/olympic-national-park/olympic-reservoir-revegetation.jpg",
+          "title": "An imagined recovering former reservoir surface with young native conifer saplings, low grasses and exposed patches of sediment between old stumps, a river now flowing freely through the valley.",
+          "source": "https://www.nps.gov/olym/learn/nature/elwha-revegetation.htm",
+          "credit": "AI-generated illustration · local FLUX.2 Klein",
+          "license": "Original explanatory illustration prepared for ORB Journeys.",
+          "generated": true
+        },
+        {
+          "node": "edna-sampling",
+          "src": "https://orbiversity.com/olympic-national-park/olympic-edna-sampling.jpg",
+          "title": "A close realistic illustration of gloved hands holding a sterile sample bottle just below the surface of a clear river, label blank, rippling water and stones visible below.",
+          "source": "https://www.usgs.gov/publications/environmental-dna-effective-tool-track-recolonizing-migratory-fish-following-large",
+          "credit": "AI-generated illustration · local FLUX.2 Klein",
+          "license": "Original explanatory illustration prepared for ORB Journeys.",
+          "generated": true
+        },
+        {
+          "node": "fish-abundance",
+          "src": "https://orbiversity.com/olympic-national-park/olympic-fish-abundance.jpg",
+          "title": "A clear underwater stream scene with several salmon partly hidden by rippled light and submerged wood, one fish visible while others are hard to distinguish.",
+          "source": "https://repository.library.noaa.gov/view/noaa/61348",
+          "credit": "AI-generated illustration · local FLUX.2 Klein",
+          "license": "Original explanatory illustration prepared for ORB Journeys.",
+          "generated": true
+        },
+        {
+          "node": "estuary-nursery",
+          "src": "https://orbiversity.com/olympic-national-park/olympic-estuary-nursery.jpg",
+          "title": "A quiet shallow estuary margin with sedges, fine sediment, submerged woody cover and several small juvenile fish near a sheltered bank.",
+          "source": "https://www.nps.gov/olym/learn/nature/the-salmon-life-cycle.htm",
+          "credit": "AI-generated illustration · local FLUX.2 Klein",
+          "license": "Original explanatory illustration prepared for ORB Journeys.",
+          "generated": true
+        },
+        {
+          "node": "sea-stack-landscape",
+          "src": "https://orbiversity.com/olympic-national-park/olympic-sea-stack-landscape.jpg",
+          "title": "A sculptural offshore sea stack beside a wave-cut rocky headland, surf moving around the resistant pillar, stratified rock texture and a cool cloudy Pacific sky.",
+          "source": "https://www.nps.gov/olym/learn/nature/coast.htm",
+          "credit": "AI-generated illustration · local FLUX.2 Klein",
+          "license": "Original explanatory illustration prepared for ORB Journeys.",
+          "generated": true
+        },
+        {
+          "node": "coastal-upwelling",
+          "src": "https://orbiversity.com/olympic-national-park/olympic-coastal-upwelling.jpg",
+          "title": "A clean conceptual ocean cutaway beside a sloping coast, with deep cool blue water curving upward toward a sunlit green-blue surface layer and wind suggested by fine surface ripples.",
+          "source": "https://oceanservice.noaa.gov/facts/upwelling.html",
+          "credit": "AI-generated illustration · local FLUX.2 Klein",
+          "license": "Original explanatory illustration prepared for ORB Journeys.",
+          "generated": true
+        },
+        {
+          "node": "kelp-forests",
+          "src": "https://orbiversity.com/olympic-national-park/diagram-kelp-forests.svg",
+          "title": "Another kind of habitat-forming organism. A simplified bull-kelp form: holdfast, flexible stipe, float and blades.",
+          "source": "https://olympiccoast.noaa.gov/science/habitat/kelp.html",
+          "credit": "ORB Journeys · Authored explanatory diagram",
+          "license": "Original explanatory illustration prepared for ORB Journeys."
+        },
+        {
+          "node": "tidal-zonation",
+          "src": "https://orbiversity.com/olympic-national-park/olympic-tidal-zonation.jpg",
+          "title": "A close sloping rocky intertidal shore at low tide, upper dry rock with barnacles, a mid zone with dark mussels, and lower water-filled pools with anemone-like forms.",
+          "source": "https://www.nps.gov/im/nccn/intertidal.htm",
+          "credit": "AI-generated illustration · local FLUX.2 Klein",
+          "license": "Original explanatory illustration prepared for ORB Journeys.",
+          "generated": true
+        },
+        {
+          "node": "coastal-measurements",
+          "src": "https://orbiversity.com/olympic-national-park/diagram-coastal-measurements.svg",
+          "title": "Keep the instrument’s setting with its record. Place, observation period and measurement type are part of the evidence.",
+          "source": "https://olympiccoast.noaa.gov/science/oceanographic-moorings/",
+          "credit": "ORB Journeys · Authored explanatory diagram",
+          "license": "Original explanatory illustration prepared for ORB Journeys."
+        },
+        {
+          "node": "evidence-baselines",
+          "src": "https://orbiversity.com/olympic-national-park/olympic-evidence-baselines.jpg",
+          "title": "A pair of unmarked field notebooks beside a camera on a stable forest overlook, with a glacier valley framed in the distance.",
+          "source": "https://www.nps.gov/olym/learn/scienceresearch.htm",
+          "credit": "AI-generated illustration · local FLUX.2 Klein",
+          "license": "Original explanatory illustration prepared for ORB Journeys.",
+          "generated": true
+        },
+        {
+          "node": "research-design",
+          "src": "https://orbiversity.com/olympic-national-park/olympic-research-design.jpg",
+          "title": "A close still life of simple field tools on a plain canvas cloth: clean water sample bottles, a thermometer, ruler, blank notebook and pencil, forest stream softly visible behind.",
+          "source": "https://www.nps.gov/rlc/northcoastcascades/research.htm",
+          "credit": "AI-generated illustration · local FLUX.2 Klein",
+          "license": "Original explanatory illustration prepared for ORB Journeys.",
+          "generated": true
+        },
+        {
+          "node": "elk-browsing",
+          "src": "https://orbiversity.com/olympic-national-park/olympic-elk-browsing.jpg",
+          "title": "Roosevelt elk resting on gravel in Olympic National Park.",
+          "source": "https://npgallery.nps.gov/AssetDetail/4252DF2D-1DD8-B71B-0B7B85E452EE7A55",
+          "credit": "National Park Service",
+          "license": "NPGallery: Public domain, full granting rights."
+        },
+        {
+          "node": "mountain-goat-removal",
+          "src": "https://orbiversity.com/olympic-national-park/olympic-mountain-goat-removal.jpg",
+          "title": "Captured Olympic mountain goats arriving at a staging area for transport to the Cascades, September 2018.",
+          "source": "https://www.nps.gov/olym/planyourvisit/mountain-goat-capture-and-translocation.htm",
+          "credit": "NPS / J. Burger",
+          "license": "NPS-credited photograph; no third-party restriction on source page. https://www.nps.gov/aboutus/disclaimer.htm"
+        }
+      ],
+      "presentation": {
+        "version": 1,
+        "media": []
+      },
+      "museum": {
+        "audio": []
+      },
+      "sourceURLs": [
+        "https://www.nps.gov/olym/index.htm",
+        "https://www.nps.gov/olym/learn/historyculture/tribes-of-the-olympic-peninsula.htm",
+        "https://www.nps.gov/olym/learn/management/memorandum-of-understanding.htm",
+        "https://www.nps.gov/olym/learn/historyculture/index.htm",
+        "https://makah.com/attractions/museum/",
+        "https://www.nps.gov/olym/learn/nature/geology.htm",
+        "https://www.nps.gov/articles/nps-geodiversity-atlas-olympic-national-park-washington.htm",
+        "https://www.nps.gov/subjects/geology/plate-tectonics-subduction-zones.htm",
+        "https://www.nps.gov/olym/learn/nature/mountains.htm",
+        "https://www.nps.gov/olym/learn/nature/glaciers.htm",
+        "https://www.nps.gov/im/nccn/glaciers.htm",
+        "https://www.nps.gov/olym/learn/nature/temperate-rain-forests.htm",
+        "https://www.nps.gov/olym/learn/nature/montane-forests.htm",
+        "https://www.nps.gov/olym/learn/nature/fireecology.htm",
+        "https://www.usgs.gov/geology-and-ecology-of-national-parks/ecology-olympic-national-park",
+        "https://www.nps.gov/olym/learn/nature/olympic-marmot.htm",
+        "https://www.nps.gov/olym/getinvolved/olympic-marmot-monitoring.htm",
+        "https://www.nps.gov/olym/learn/nature/rivers-and-lakes.htm",
+        "https://www.nps.gov/olym/learn/nature/the-salmon-life-cycle.htm",
+        "https://www.nps.gov/olym/learn/nature/anadromous-fish.htm",
+        "https://www.sciencedirect.com/science/article/abs/pii/S0006320715301002",
+        "https://quinaultindiannation.com/192/Salmon---River-Fisheries",
+        "https://quinaultindiannation.com/342/Water-Quality",
+        "https://quinaultindiannation.com/224/Lake-Quinault-Management-Plan",
+        "https://www.elwha.org/departments/natural-resources/river-restoration/",
+        "https://www.nps.gov/olym/learn/nature/history-of-the-elwha.htm",
+        "https://repository.library.noaa.gov/view/noaa/61348",
+        "https://www.usgs.gov/publications/environmental-dna-effective-tool-track-recolonizing-migratory-fish-following-large",
+        "https://www.usgs.gov/centers/pcmsc/news/elwha-river-new-study-examines-effects-dam-removals-coastal-ecosystems",
+        "https://www.nps.gov/olym/learn/nature/coast.htm",
+        "https://www.nps.gov/im/nccn/intertidal.htm",
+        "https://www.nps.gov/articles/ocean-acidification-in-the-rocky-intertidal.htm",
+        "https://www.nps.gov/olym/learn/scienceresearch.htm",
+        "https://www.nps.gov/rlc/northcoastcascades/research.htm",
+        "https://www.nps.gov/olym/planyourvisit/visiting-lake-crescent.htm",
+        "https://www.nps.gov/olym/planyourvisit/visiting-hurricane-ridge.htm",
+        "https://www.nps.gov/olym/planyourvisit/visiting-the-hoh.htm",
+        "https://www.nps.gov/olym/planyourvisit/queets-area-brochure.htm",
+        "https://www.nps.gov/olym/planyourvisit/visiting-the-sol-duc-valley.htm",
+        "https://www.nps.gov/olym/planyourvisit/visiting-staircase.htm",
+        "https://www.nps.gov/olym/planyourvisit/mountain-goat-capture-and-translocation.htm",
+        "https://www.nps.gov/articles/000/roosevelt-elk.htm",
+        "https://www.nps.gov/thingstodo/momentsintime.htm",
+        "https://www.fs.usda.gov/pnw/pubs/pnw_gtr461.pdf",
+        "https://www.nps.gov/olym/learn/nature/elwha-revegetation.htm",
+        "https://www.nps.gov/olym/learn/nature/jan13-aug14_blogentries.htm",
+        "https://olympiccoast.noaa.gov/explore/environment/oceanography.html",
+        "https://oceanservice.noaa.gov/facts/upwelling.html",
+        "https://olympiccoast.noaa.gov/about/",
+        "https://olympiccoast.noaa.gov/science/habitat/kelp.html",
+        "https://olympiccoast.noaa.gov/science/oceanographic-moorings/",
+        "https://olympiccoast.noaa.gov/living/marinelife/invert/",
+        "https://www.nps.gov/im/nccn/water-quality.htm",
+        "https://www.fisheries.noaa.gov/news/scientists-improve-predictions-how-temperature-affects-survival-fish-embryos",
+        "https://www.fisheries.noaa.gov/west-coast/sustainable-fisheries/pacific-salmon-and-steelhead-fisheries-management-glossary",
+        "https://www.usgs.gov/water-science-school/science/temperature-and-water",
+        "https://oceanservice.noaa.gov/facts/estuary.html",
+        "https://oceanservice.noaa.gov/facts/intertidal-zone.html",
+        "https://www.nps.gov/subjects/geology/coastal-landforms.htm"
+      ],
+      "originalURL": "https://orbiversity.com/olympic-national-park/"
+    },
+    "crystal-ball-orb": {
+      "readingImages": [
+        {
+          "node": "prices",
+          "src": "https://orbiversity.com/crystal-ball-orb/photo-prices.webp",
+          "title": "Web photograph Vegetables in a supermarket. Context for household prices, not the forecast CPI release. Daderot · Source & image details ↗",
+          "source": "https://orbiversity.com/crystal-ball-orb/image-credits.html#prices",
+          "credit": "Daderot"
+        },
+        {
+          "node": "thresholds",
+          "src": "https://orbiversity.com/crystal-ball-orb/photo-thresholds.webp",
+          "title": "Web photograph An existing smartphone in use. Context for everyday technology, not an unreleased device. Océanos y dados · Source & image details ↗",
+          "source": "https://orbiversity.com/crystal-ball-orb/image-credits.html#thresholds",
+          "credit": "Océanos y dados"
+        },
+        {
+          "node": "spotlight",
+          "src": "https://orbiversity.com/crystal-ball-orb/photo-spotlight.webp",
+          "title": "Web photograph A concert lighting rig. Context for the spectacle of performance, not the Emmy ceremony. Joe Loong · Source & image details ↗",
+          "source": "https://orbiversity.com/crystal-ball-orb/image-credits.html#spotlight",
+          "credit": "Joe Loong"
+        },
+        {
+          "node": "momentum",
+          "src": "https://orbiversity.com/crystal-ball-orb/photo-momentum.webp",
+          "title": "Web photograph An all-weather running track. Sporting context, not a forecast medal result. Mk2010 · Source & image details ↗",
+          "source": "https://orbiversity.com/crystal-ball-orb/image-credits.html#momentum",
+          "credit": "Mk2010"
+        },
+        {
+          "node": "orbit",
+          "src": "https://orbiversity.com/crystal-ball-orb/photo-orbit.webp",
+          "title": "Web photograph NASA astronaut Jessica Meir working outside the ISS on March 18, 2026. Historical mission context. NASA Johnson Space Center · Source & image details ↗",
+          "source": "https://orbiversity.com/crystal-ball-orb/image-credits.html#orbit",
+          "credit": "NASA Johnson Space Center"
+        },
+        {
+          "node": "atmosphere",
+          "src": "https://orbiversity.com/crystal-ball-orb/photo-atmosphere.webp",
+          "title": "Web photograph Earth’s upper atmosphere seen from space. Context imagery, not a current weather outlook. NASA Earth Observatory · Source & image details ↗",
+          "source": "https://orbiversity.com/crystal-ball-orb/image-credits.html#atmosphere",
+          "credit": "NASA Earth Observatory"
+        },
+        {
+          "node": "cpi",
+          "src": "https://orbiversity.com/crystal-ball-orb/photo-cpi.webp",
+          "title": "Web photograph Grocery checkout at the NAS Oceana commissary in 2002. Historical shopping context, not current price evidence. U.S. Navy photo by Photographer’s Mate 1st Class Michael W. Pendergrass. · Source & image details ↗",
+          "source": "https://orbiversity.com/crystal-ball-orb/image-credits.html#cpi",
+          "credit": "U.S. Navy photo by Photographer’s Mate 1st Class Michael W. Pendergrass."
+        },
+        {
+          "node": "cpi-evidence",
+          "src": "https://orbiversity.com/crystal-ball-orb/photo-cpi-evidence.webp",
+          "title": "AI-generated illustration Conceptual still life about checking a previous price measurement. Created locally with FLUX.2 Klein 4B · Source & image details ↗",
+          "source": "https://orbiversity.com/crystal-ball-orb/image-credits.html#cpi-evidence",
+          "credit": "Created locally with FLUX.2 Klein 4B",
+          "generated": true
+        },
+        {
+          "node": "cpi-question",
+          "src": "https://orbiversity.com/crystal-ball-orb/photo-cpi-question.webp",
+          "title": "AI-generated illustration Illustration of different household cost components; no measured data shown. Created locally with FLUX.2 Klein 4B · Source & image details ↗",
+          "source": "https://orbiversity.com/crystal-ball-orb/image-credits.html#cpi-question",
+          "credit": "Created locally with FLUX.2 Klein 4B",
+          "generated": true
+        },
+        {
+          "node": "games",
+          "src": "https://orbiversity.com/crystal-ball-orb/photo-games.webp",
+          "title": "Web photograph Hangzhou Olympic Sports Center Stadium. Historical Asian Games context; not the 2026 Aichi–Nagoya venue. Yveltal · Source & image details ↗",
+          "source": "https://orbiversity.com/crystal-ball-orb/image-credits.html#games",
+          "credit": "Yveltal"
+        },
+        {
+          "node": "games-evidence",
+          "src": "https://orbiversity.com/crystal-ball-orb/photo-games-evidence.webp",
+          "title": "AI-generated illustration Imagined sporting venue illustrating competitive depth. Created locally with FLUX.2 Klein 4B · Source & image details ↗",
+          "source": "https://orbiversity.com/crystal-ball-orb/image-credits.html#games-evidence",
+          "credit": "Created locally with FLUX.2 Klein 4B",
+          "generated": true
+        },
+        {
+          "node": "games-question",
+          "src": "https://orbiversity.com/crystal-ball-orb/photo-games-question.webp",
+          "title": "AI-generated illustration Concept illustration of scheduling and early-event bias. Created locally with FLUX.2 Klein 4B · Source & image details ↗",
+          "source": "https://orbiversity.com/crystal-ball-orb/image-credits.html#games-question",
+          "credit": "Created locally with FLUX.2 Klein 4B",
+          "generated": true
+        },
+        {
+          "node": "fold",
+          "src": "https://orbiversity.com/crystal-ball-orb/photo-fold.webp",
+          "title": "AI-generated illustration Imagined folding handset; not an Apple product photograph. Created locally with FLUX.2 Klein 4B · Source & image details ↗",
+          "source": "https://orbiversity.com/crystal-ball-orb/image-credits.html#fold",
+          "credit": "Created locally with FLUX.2 Klein 4B",
+          "generated": true
+        },
+        {
+          "node": "fold-evidence",
+          "src": "https://orbiversity.com/crystal-ball-orb/photo-fold-evidence.webp",
+          "title": "AI-generated illustration Imagined presentation stage; an invitation does not confirm a product. Created locally with FLUX.2 Klein 4B · Source & image details ↗",
+          "source": "https://orbiversity.com/crystal-ball-orb/image-credits.html#fold-evidence",
+          "credit": "Created locally with FLUX.2 Klein 4B",
+          "generated": true
+        },
+        {
+          "node": "fold-question",
+          "src": "https://orbiversity.com/crystal-ball-orb/photo-fold-question.webp",
+          "title": "AI-generated illustration Illustration of the distance between a reveal and delivery. Created locally with FLUX.2 Klein 4B · Source & image details ↗",
+          "source": "https://orbiversity.com/crystal-ball-orb/image-credits.html#fold-question",
+          "credit": "Created locally with FLUX.2 Klein 4B",
+          "generated": true
+        },
+        {
+          "node": "emmy",
+          "src": "https://orbiversity.com/crystal-ball-orb/photo-emmy.webp",
+          "title": "Web photograph Noah Wyle photographed in 2010. Portrait context for the awards discussion, not the 2026 ceremony. starbright31 · Source & image details ↗",
+          "source": "https://orbiversity.com/crystal-ball-orb/image-credits.html#emmy",
+          "credit": "starbright31"
+        },
+        {
+          "node": "emmy-evidence",
+          "src": "https://orbiversity.com/crystal-ball-orb/photo-emmy-evidence.webp",
+          "title": "AI-generated illustration Concept illustration of recognition across production disciplines. Created locally with FLUX.2 Klein 4B · Source & image details ↗",
+          "source": "https://orbiversity.com/crystal-ball-orb/image-credits.html#emmy-evidence",
+          "credit": "Created locally with FLUX.2 Klein 4B",
+          "generated": true
+        },
+        {
+          "node": "emmy-question",
+          "src": "https://orbiversity.com/crystal-ball-orb/photo-emmy-question.webp",
+          "title": "AI-generated illustration Imagined sealed ballots; actual Emmy votes are not shown. Created locally with FLUX.2 Klein 4B · Source & image details ↗",
+          "source": "https://orbiversity.com/crystal-ball-orb/image-credits.html#emmy-question",
+          "credit": "Created locally with FLUX.2 Klein 4B",
+          "generated": true
+        },
+        {
+          "node": "agent-permission",
+          "src": "https://orbiversity.com/crystal-ball-orb/photo-agent-permission.webp",
+          "title": "AI-generated illustration Concept illustration of a purchase-approval pause; not the Muse interface. Created locally with FLUX.2 Klein 4B · Source & image details ↗",
+          "source": "https://orbiversity.com/crystal-ball-orb/image-credits.html#agent-permission",
+          "credit": "Created locally with FLUX.2 Klein 4B",
+          "generated": true
+        },
+        {
+          "node": "agent-permission-evidence",
+          "src": "https://orbiversity.com/crystal-ball-orb/photo-agent-permission-evidence.webp",
+          "title": "AI-generated illustration Concept illustration of an authorization checkpoint. Created locally with FLUX.2 Klein 4B · Source & image details ↗",
+          "source": "https://orbiversity.com/crystal-ball-orb/image-credits.html#agent-permission-evidence",
+          "credit": "Created locally with FLUX.2 Klein 4B",
+          "generated": true
+        },
+        {
+          "node": "agent-permission-question",
+          "src": "https://orbiversity.com/crystal-ball-orb/photo-agent-permission-question.webp",
+          "title": "AI-generated illustration Illustration of checking behavior against a stated safeguard. Created locally with FLUX.2 Klein 4B · Source & image details ↗",
+          "source": "https://orbiversity.com/crystal-ball-orb/image-credits.html#agent-permission-question",
+          "credit": "Created locally with FLUX.2 Klein 4B",
+          "generated": true
+        },
+        {
+          "node": "progress",
+          "src": "https://orbiversity.com/crystal-ball-orb/photo-progress.webp",
+          "title": "Web photograph Progress 85 approaching the ISS in 2023. An earlier spacecraft mission, not Progress 96 docking. NASA TV · Source & image details ↗",
+          "source": "https://orbiversity.com/crystal-ball-orb/image-credits.html#progress",
+          "credit": "NASA TV"
+        },
+        {
+          "node": "progress-evidence",
+          "src": "https://orbiversity.com/crystal-ball-orb/photo-progress-evidence.webp",
+          "title": "AI-generated illustration Concept illustration of a changing mission timetable. Created locally with FLUX.2 Klein 4B · Source & image details ↗",
+          "source": "https://orbiversity.com/crystal-ball-orb/image-credits.html#progress-evidence",
+          "credit": "Created locally with FLUX.2 Klein 4B",
+          "generated": true
+        },
+        {
+          "node": "progress-question",
+          "src": "https://orbiversity.com/crystal-ball-orb/photo-progress-question.webp",
+          "title": "AI-generated illustration Schematic illustration of the final docking step, not Progress 96 footage. Created locally with FLUX.2 Klein 4B · Source & image details ↗",
+          "source": "https://orbiversity.com/crystal-ball-orb/image-credits.html#progress-question",
+          "credit": "Created locally with FLUX.2 Klein 4B",
+          "generated": true
+        },
+        {
+          "node": "crew13",
+          "src": "https://orbiversity.com/crystal-ball-orb/photo-crew13.webp",
+          "title": "Web photograph The launchpad service structure before the Crew-5 launch on October 5, 2022. Historical mission context; this is not Crew-13. NASA/Joel Kowsky · Source & image details ↗",
+          "source": "https://orbiversity.com/crystal-ball-orb/image-credits.html#crew13",
+          "credit": "NASA/Joel Kowsky"
+        },
+        {
+          "node": "crew13-evidence",
+          "src": "https://orbiversity.com/crystal-ball-orb/photo-crew13-evidence.webp",
+          "title": "AI-generated illustration Imagined waiting period before a crew launch. Created locally with FLUX.2 Klein 4B · Source & image details ↗",
+          "source": "https://orbiversity.com/crystal-ball-orb/image-credits.html#crew13-evidence",
+          "credit": "Created locally with FLUX.2 Klein 4B",
+          "generated": true
+        },
+        {
+          "node": "crew13-question",
+          "src": "https://orbiversity.com/crystal-ball-orb/photo-crew13-question.webp",
+          "title": "AI-generated illustration Illustration of readiness checks; no Crew-13 inspection is depicted. Created locally with FLUX.2 Klein 4B · Source & image details ↗",
+          "source": "https://orbiversity.com/crystal-ball-orb/image-credits.html#crew13-question",
+          "credit": "Created locally with FLUX.2 Klein 4B",
+          "generated": true
+        },
+        {
+          "node": "hacks",
+          "src": "https://orbiversity.com/crystal-ball-orb/photo-hacks.webp",
+          "title": "Web photograph Jean Smart in an earlier portrait. Context for the comedy-awards discussion, not a 2026 winner photograph. Gage Skidmore · Source & image details ↗",
+          "source": "https://orbiversity.com/crystal-ball-orb/image-credits.html#hacks",
+          "credit": "Gage Skidmore"
+        },
+        {
+          "node": "hacks-evidence",
+          "src": "https://orbiversity.com/crystal-ball-orb/photo-hacks-evidence.webp",
+          "title": "AI-generated illustration Imagined production scene illustrating a range of creative contributions. Created locally with FLUX.2 Klein 4B · Source & image details ↗",
+          "source": "https://orbiversity.com/crystal-ball-orb/image-credits.html#hacks-evidence",
+          "credit": "Created locally with FLUX.2 Klein 4B",
+          "generated": true
+        },
+        {
+          "node": "hacks-question",
+          "src": "https://orbiversity.com/crystal-ball-orb/photo-hacks-question.webp",
+          "title": "AI-generated illustration Concept illustration of competing creative contenders. Created locally with FLUX.2 Klein 4B · Source & image details ↗",
+          "source": "https://orbiversity.com/crystal-ball-orb/image-credits.html#hacks-question",
+          "credit": "Created locally with FLUX.2 Klein 4B",
+          "generated": true
+        },
+        {
+          "node": "tennis",
+          "src": "https://orbiversity.com/crystal-ball-orb/photo-tennis.webp",
+          "title": "Web photograph The US Open in 2019. Venue context, not the September 2026 final. jeff horne from Richmond, VA · Source & image details ↗",
+          "source": "https://orbiversity.com/crystal-ball-orb/image-credits.html#tennis",
+          "credit": "jeff horne from Richmond, VA"
+        },
+        {
+          "node": "tennis-evidence",
+          "src": "https://orbiversity.com/crystal-ball-orb/photo-tennis-evidence.webp",
+          "title": "AI-generated illustration Imagined tennis scene about match structure; not a forecast result. Created locally with FLUX.2 Klein 4B · Source & image details ↗",
+          "source": "https://orbiversity.com/crystal-ball-orb/image-credits.html#tennis-evidence",
+          "credit": "Created locally with FLUX.2 Klein 4B",
+          "generated": true
+        },
+        {
+          "node": "tennis-question",
+          "src": "https://orbiversity.com/crystal-ball-orb/photo-tennis-question.webp",
+          "title": "AI-generated illustration Concept illustration of matchup uncertainty, without identifying finalists. Created locally with FLUX.2 Klein 4B · Source & image details ↗",
+          "source": "https://orbiversity.com/crystal-ball-orb/image-credits.html#tennis-question",
+          "credit": "Created locally with FLUX.2 Klein 4B",
+          "generated": true
+        },
+        {
+          "node": "atlantic",
+          "src": "https://orbiversity.com/crystal-ball-orb/photo-atlantic.webp",
+          "title": "Web photograph Hurricane Isabel viewed from the ISS in 2003. Historical cyclone imagery, not a current storm or warning. Image courtesy of Mike Trenchard, Earth Sciences & Image Analysis Laboratory, NASA Johnson Space Center. · Source & image details ↗",
+          "source": "https://orbiversity.com/crystal-ball-orb/image-credits.html#atlantic",
+          "credit": "Image courtesy of Mike Trenchard, Earth Sciences & Image Analysis Laboratory, NASA Johnson Space Center."
+        },
+        {
+          "node": "atlantic-evidence",
+          "src": "https://orbiversity.com/crystal-ball-orb/photo-atlantic-evidence.webp",
+          "title": "AI-generated illustration Concept illustration of the age of a weather outlook. Created locally with FLUX.2 Klein 4B · Source & image details ↗",
+          "source": "https://orbiversity.com/crystal-ball-orb/image-credits.html#atlantic-evidence",
+          "credit": "Created locally with FLUX.2 Klein 4B",
+          "generated": true
+        },
+        {
+          "node": "atlantic-question",
+          "src": "https://orbiversity.com/crystal-ball-orb/photo-atlantic-question.webp",
+          "title": "AI-generated illustration Imagined coastal rainfall: quiet cyclone formation does not mean no hazards. Created locally with FLUX.2 Klein 4B · Source & image details ↗",
+          "source": "https://orbiversity.com/crystal-ball-orb/image-credits.html#atlantic-question",
+          "credit": "Created locally with FLUX.2 Klein 4B",
+          "generated": true
+        },
+        {
+          "node": "made-real",
+          "src": "https://orbiversity.com/crystal-ball-orb/photo-made-real.webp",
+          "title": "Web photograph Robotic palletizing in a bread production setting. Existing automation, not a new IMTS result. KUKA Roboter GmbH, Bachmann · Source & image details ↗",
+          "source": "https://orbiversity.com/crystal-ball-orb/image-credits.html#made-real",
+          "credit": "KUKA Roboter GmbH, Bachmann"
+        },
+        {
+          "node": "imagined-worlds",
+          "src": "https://orbiversity.com/crystal-ball-orb/photo-imagined-worlds.webp",
+          "title": "Web photograph A planetarium interior. A real place for exploring imagined and distant worlds. Mbrickn · Source & image details ↗",
+          "source": "https://orbiversity.com/crystal-ball-orb/image-credits.html#imagined-worlds",
+          "credit": "Mbrickn"
+        },
+        {
+          "node": "starcraft",
+          "src": "https://orbiversity.com/crystal-ball-orb/photo-starcraft.webp",
+          "title": "Web photograph The Anaheim Convention Center during an earlier BlizzCon. Event context; no new StarCraft game is shown. Twisted Nether · Source & image details ↗",
+          "source": "https://orbiversity.com/crystal-ball-orb/image-credits.html#starcraft",
+          "credit": "Twisted Nether"
+        },
+        {
+          "node": "starcraft-evidence",
+          "src": "https://orbiversity.com/crystal-ball-orb/photo-starcraft-evidence.webp",
+          "title": "AI-generated illustration Fictional signal imagery; not a screenshot of Blizzard’s teaser. Created locally with FLUX.2 Klein 4B · Source & image details ↗",
+          "source": "https://orbiversity.com/crystal-ball-orb/image-credits.html#starcraft-evidence",
+          "credit": "Created locally with FLUX.2 Klein 4B",
+          "generated": true
+        },
+        {
+          "node": "starcraft-question",
+          "src": "https://orbiversity.com/crystal-ball-orb/photo-starcraft-question.webp",
+          "title": "AI-generated illustration Imagined unrevealed world; no unannounced game content is depicted. Created locally with FLUX.2 Klein 4B · Source & image details ↗",
+          "source": "https://orbiversity.com/crystal-ball-orb/image-credits.html#starcraft-question",
+          "credit": "Created locally with FLUX.2 Klein 4B",
+          "generated": true
+        },
+        {
+          "node": "robot-lesson",
+          "src": "https://orbiversity.com/crystal-ball-orb/photo-robot-lesson.webp",
+          "title": "Web-sourced image A published image of an underwater ROV manipulator arm. Context for robotic hardware; not Standard Bots or an autonomous-learning demonstration. BPLINFO / Blueprint Lab (www.blueprintlab.com) · Source & image details ↗",
+          "source": "https://orbiversity.com/crystal-ball-orb/image-credits.html#robot-lesson",
+          "credit": "BPLINFO / Blueprint Lab (www.blueprintlab.com)"
+        },
+        {
+          "node": "robot-lesson-evidence",
+          "src": "https://orbiversity.com/crystal-ball-orb/photo-robot-lesson-evidence.webp",
+          "title": "AI-generated illustration Illustration of teaching a robot; not an observed Standard Bots demonstration. Created locally with FLUX.2 Klein 4B · Source & image details ↗",
+          "source": "https://orbiversity.com/crystal-ball-orb/image-credits.html#robot-lesson-evidence",
+          "credit": "Created locally with FLUX.2 Klein 4B",
+          "generated": true
+        },
+        {
+          "node": "robot-lesson-question",
+          "src": "https://orbiversity.com/crystal-ball-orb/photo-robot-lesson-question.webp",
+          "title": "AI-generated illustration Illustration of changing a task to test generalization. Created locally with FLUX.2 Klein 4B · Source & image details ↗",
+          "source": "https://orbiversity.com/crystal-ball-orb/image-credits.html#robot-lesson-question",
+          "credit": "Created locally with FLUX.2 Klein 4B",
+          "generated": true
+        },
+        {
+          "node": "drone-factory",
+          "src": "https://orbiversity.com/crystal-ball-orb/photo-drone-factory.webp",
+          "title": "Web photograph A DJI Phantom 3 Advanced photographed in 2015. Existing quadcopter context; not an ORNL-built IMTS unit. Jacek Halicki · Source & image details ↗",
+          "source": "https://orbiversity.com/crystal-ball-orb/image-credits.html#drone-factory",
+          "credit": "Jacek Halicki"
+        },
+        {
+          "node": "drone-factory-evidence",
+          "src": "https://orbiversity.com/crystal-ball-orb/photo-drone-factory-evidence.webp",
+          "title": "AI-generated illustration Illustration of drone components and integration, not the IMTS production cell. Created locally with FLUX.2 Klein 4B · Source & image details ↗",
+          "source": "https://orbiversity.com/crystal-ball-orb/image-credits.html#drone-factory-evidence",
+          "credit": "Created locally with FLUX.2 Klein 4B",
+          "generated": true
+        },
+        {
+          "node": "drone-factory-question",
+          "src": "https://orbiversity.com/crystal-ball-orb/photo-drone-factory-question.webp",
+          "title": "AI-generated illustration Imagined production batch illustrating yield and scale questions. Created locally with FLUX.2 Klein 4B · Source & image details ↗",
+          "source": "https://orbiversity.com/crystal-ball-orb/image-credits.html#drone-factory-question",
+          "credit": "Created locally with FLUX.2 Klein 4B",
+          "generated": true
+        },
+        {
+          "node": "agent-team",
+          "src": "https://orbiversity.com/crystal-ball-orb/photo-agent-team.webp",
+          "title": "Web photograph The entrance to Dreamforce 2022. Historical event context, not evidence of a 2026 AI-agent demonstration. InvadingInvader · Source & image details ↗",
+          "source": "https://orbiversity.com/crystal-ball-orb/image-credits.html#agent-team",
+          "credit": "InvadingInvader"
+        },
+        {
+          "node": "agent-team-evidence",
+          "src": "https://orbiversity.com/crystal-ball-orb/photo-agent-team-evidence.webp",
+          "title": "AI-generated illustration Concept illustration of an agent handoff; not Salesforce software footage. Created locally with FLUX.2 Klein 4B · Source & image details ↗",
+          "source": "https://orbiversity.com/crystal-ball-orb/image-credits.html#agent-team-evidence",
+          "credit": "Created locally with FLUX.2 Klein 4B",
+          "generated": true
+        },
+        {
+          "node": "agent-team-question",
+          "src": "https://orbiversity.com/crystal-ball-orb/photo-agent-team-question.webp",
+          "title": "AI-generated illustration Illustration of stopping and recovering a failed workflow. Created locally with FLUX.2 Klein 4B · Source & image details ↗",
+          "source": "https://orbiversity.com/crystal-ball-orb/image-credits.html#agent-team-question",
+          "credit": "Created locally with FLUX.2 Klein 4B",
+          "generated": true
+        },
+        {
+          "node": "zircon",
+          "src": "https://orbiversity.com/crystal-ball-orb/photo-zircon.webp",
+          "title": "Web photograph Tokyo Game Show in September 2024. Historical event context; not Project ZIRCON gameplay. RuinDig/Yuki Uchida · Source & image details ↗",
+          "source": "https://orbiversity.com/crystal-ball-orb/image-credits.html#zircon",
+          "credit": "RuinDig/Yuki Uchida"
+        },
+        {
+          "node": "zircon-evidence",
+          "src": "https://orbiversity.com/crystal-ball-orb/photo-zircon-evidence.webp",
+          "title": "AI-generated illustration Imagined gameplay demonstration; not Project ZIRCON footage. Created locally with FLUX.2 Klein 4B · Source & image details ↗",
+          "source": "https://orbiversity.com/crystal-ball-orb/image-credits.html#zircon-evidence",
+          "credit": "Created locally with FLUX.2 Klein 4B",
+          "generated": true
+        },
+        {
+          "node": "zircon-question",
+          "src": "https://orbiversity.com/crystal-ball-orb/photo-zircon-question.webp",
+          "title": "AI-generated illustration Concept illustration of the limited view offered by a polished demo. Created locally with FLUX.2 Klein 4B · Source & image details ↗",
+          "source": "https://orbiversity.com/crystal-ball-orb/image-credits.html#zircon-question",
+          "credit": "Created locally with FLUX.2 Klein 4B",
+          "generated": true
+        },
+        {
+          "node": null,
+          "src": "https://orbiversity.com/crystal-ball-orb/photo-fold.webp",
+          "title": "AI-generated illustration Imagined folding handset; not an Apple product photograph. Created locally with FLUX.2 Klein 4B · Source & image details ↗",
+          "source": "https://orbiversity.com/crystal-ball-orb/image-credits.html#fold",
+          "credit": "Created locally with FLUX.2 Klein 4B",
+          "generated": true
+        },
+        {
+          "node": null,
+          "src": "https://orbiversity.com/crystal-ball-orb/photo-progress.webp",
+          "title": "Web photograph Progress 85 approaching the ISS in 2023. An earlier spacecraft mission, not Progress 96 docking. NASA TV · Source & image details ↗",
+          "source": "https://orbiversity.com/crystal-ball-orb/image-credits.html#progress",
+          "credit": "NASA TV"
+        },
+        {
+          "node": null,
+          "src": "https://orbiversity.com/crystal-ball-orb/photo-emmy.webp",
+          "title": "Web photograph Noah Wyle photographed in 2010. Portrait context for the awards discussion, not the 2026 ceremony. starbright31 · Source & image details ↗",
+          "source": "https://orbiversity.com/crystal-ball-orb/image-credits.html#emmy",
+          "credit": "starbright31"
+        },
+        {
+          "node": null,
+          "src": "https://orbiversity.com/crystal-ball-orb/photo-games.webp",
+          "title": "Web photograph Hangzhou Olympic Sports Center Stadium. Historical Asian Games context; not the 2026 Aichi–Nagoya venue. Yveltal · Source & image details ↗",
+          "source": "https://orbiversity.com/crystal-ball-orb/image-credits.html#games",
+          "credit": "Yveltal"
+        },
+        {
+          "node": null,
+          "src": "https://orbiversity.com/crystal-ball-orb/photo-cpi.webp",
+          "title": "Web photograph Grocery checkout at the NAS Oceana commissary in 2002. Historical shopping context, not current price evidence. U.S. Navy photo by Photographer’s Mate 1st Class Michael W. Pendergrass. · Source & image details ↗",
+          "source": "https://orbiversity.com/crystal-ball-orb/image-credits.html#cpi",
+          "credit": "U.S. Navy photo by Photographer’s Mate 1st Class Michael W. Pendergrass."
+        },
+        {
+          "node": null,
+          "src": "https://orbiversity.com/crystal-ball-orb/photo-starcraft.webp",
+          "title": "Web photograph The Anaheim Convention Center during an earlier BlizzCon. Event context; no new StarCraft game is shown. Twisted Nether · Source & image details ↗",
+          "source": "https://orbiversity.com/crystal-ball-orb/image-credits.html#starcraft",
+          "credit": "Twisted Nether"
+        },
+        {
+          "node": null,
+          "src": "https://orbiversity.com/crystal-ball-orb/photo-robot-lesson.webp",
+          "title": "Web-sourced image A published image of an underwater ROV manipulator arm. Context for robotic hardware; not Standard Bots or an autonomous-learning demonstration. BPLINFO / Blueprint Lab (www.blueprintlab.com) · Source & image details ↗",
+          "source": "https://orbiversity.com/crystal-ball-orb/image-credits.html#robot-lesson",
+          "credit": "BPLINFO / Blueprint Lab (www.blueprintlab.com)"
+        },
+        {
+          "node": null,
+          "src": "https://orbiversity.com/crystal-ball-orb/photo-agent-team.webp",
+          "title": "Web photograph The entrance to Dreamforce 2022. Historical event context, not evidence of a 2026 AI-agent demonstration. InvadingInvader · Source & image details ↗",
+          "source": "https://orbiversity.com/crystal-ball-orb/image-credits.html#agent-team",
+          "credit": "InvadingInvader"
+        },
+        {
+          "node": null,
+          "src": "https://orbiversity.com/crystal-ball-orb/photo-thresholds.webp",
+          "title": "Web photograph An existing smartphone in use. Context for everyday technology, not an unreleased device. Océanos y dados · Source & image details ↗",
+          "source": "https://orbiversity.com/crystal-ball-orb/image-credits.html#thresholds",
+          "credit": "Océanos y dados"
+        }
+      ],
+      "presentation": {
+        "version": 1,
+        "media": []
+      },
+      "museum": {
+        "audio": []
+      },
+      "sourceURLs": [
+        "https://www.bls.gov/schedule/2026/09_sched_list.htm",
+        "https://www.bls.gov/news.release/archives/cpi_08122026.htm",
+        "https://www.aichi-nagoya2026.org/ja/news-2045/",
+        "https://oca.asia/news/4457-oca-acting-director-general-praises-high-quality-hangzhou-asian-games.html",
+        "https://www.aichi-nagoya2026.org/",
+        "https://developer.apple.com/hello/september26/",
+        "https://www.tomsguide.com/phones/iphones/apple-september-event-preview-all-the-new-products-to-expect-at-iphone-18-pro-launch-and-beyond",
+        "https://www.televisionacademy.com/features/news/awards-news/260708-nominations",
+        "https://www.televisionacademy.com/shows/the-pitt",
+        "https://about.fb.com/news/2026/09/introducing-muse-personal-ai-agent/",
+        "https://www.nasa.gov/news-release/nasa-to-cover-progress-96-spacecraft-launch-docking/",
+        "https://www.nasa.gov/event/roscosmos-progress-96/",
+        "https://www.nasa.gov/event/nasas-spacex-crew-13/",
+        "https://www.televisionacademy.com/shows/hacks",
+        "https://prod-east-nhc.woc.noaa.gov/gtwo.php?basin=atlc&fdays=7",
+        "https://www.usopen.org/en_US/us-open-at-home/how_tennis_works_us_open_101.html",
+        "https://www.atptour.com/en/news/us-open-2026-history-draw-schedule",
+        "https://worldofwarcraft.blizzard.com/en-us/news/24188065",
+        "https://www.pcgamer.com/games/its-really-starting-to-look-like-a-new-starcraft-game-will-be-revealed-at-blizzcon/",
+        "https://mobile.imts.com/read/article-details.cfm?articleid=2301&type=5",
+        "https://www.imts.com/read/article-details/Manufacturing-at-Mission-Speed-Drones-and-Test-Flight-Vehicles-at-IMTS-2026-Demonstrate-Surge-Production/2452/type/Read/1",
+        "https://www.imts.com/show/attractions.cfm",
+        "https://www.salesforce.com/blog/salesforce-architect-guide-dreamforce-2026/",
+        "https://www.salesforce.com/dreamforce/",
+        "https://www.konami.com/games/tgs/en/",
+        "https://tgs.cesa.or.jp/2026/en"
+      ],
+      "originalURL": "https://orbiversity.com/crystal-ball-orb/"
+    },
+    "south-sound-salmon-watching-guide": {
+      "readingImages": [
+        {
+          "node": "the-return",
+          "src": "https://orbiversity.com/south-sound-salmon-watching-guide/photos/the-return.webp",
+          "title": "Chum salmon in Pipers Creek, Seattle. A regional salmon example, not a South Sound sighting.",
+          "source": "https://commons.wikimedia.org/wiki/File:Salmon_swimming_upstream_in_lower_Piper_Creek,_Carkeek_Park,_Seattle_02.jpg",
+          "credit": "Photo by Joe Mabel",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0"
+        },
+        {
+          "node": "season-calendar",
+          "src": "https://orbiversity.com/south-sound-salmon-watching-guide/photos/season-calendar.webp",
+          "title": "Capitol Lake and the Washington State Capitol in Olympia. A summer landscape, not an autumn run report.",
+          "source": "https://commons.wikimedia.org/wiki/File:Washington_State_Capitol,_Capitol_Lake,_Olympia,_Washington,_June_24,_2025.jpg",
+          "credit": "OceanLoop",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0"
+        },
+        {
+          "node": "fifth-avenue",
+          "src": "https://orbiversity.com/south-sound-salmon-watching-guide/photos/fifth-avenue.webp",
+          "title": "An aerial photograph of Capitol Lake, Olympia: the broader downtown setting near the 5th Avenue stop. This is not a close-up of the fish passage.",
+          "source": "https://commons.wikimedia.org/wiki/File:Capitol_Lake,_Olympia,_Washington,_August_14,_2023.jpg",
+          "credit": "United States Geological Survey (USGS)",
+          "license": "Public domain",
+          "licenseURL": "https://creativecommons.org/publicdomain/mark/1.0/"
+        },
+        {
+          "node": "tumwater-falls",
+          "src": "https://orbiversity.com/south-sound-salmon-watching-guide/photos/tumwater-falls.webp",
+          "title": "Lower Tumwater Falls and its footbridge on the Deschutes River.",
+          "source": "https://commons.wikimedia.org/wiki/File:Lower_Tumwater_Falls_02.jpg",
+          "credit": "Joe Mabel",
+          "license": "CC BY-SA 3.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0"
+        },
+        {
+          "node": "the-leap",
+          "src": "https://orbiversity.com/south-sound-salmon-watching-guide/photos/the-leap.webp",
+          "title": "A salmon jumping at the Sol Duc cascades, photographed in 2015 by Olympic National Park.",
+          "source": "https://commons.wikimedia.org/wiki/File:Salmon_jumping_Sol_Duc_cascade_fall_2015_cbubar_(23158113035).jpg",
+          "credit": "Olympic National Park",
+          "license": "Public domain",
+          "licenseURL": "https://creativecommons.org/publicdomain/mark/1.0/"
+        },
+        {
+          "node": "sol-duc",
+          "src": "https://orbiversity.com/south-sound-salmon-watching-guide/photos/sol-duc.webp",
+          "title": "The Salmon Cascades overlook on the Sol Duc River, Olympic National Park.",
+          "source": "https://commons.wikimedia.org/wiki/File:Sol_Duc_river_overlook_salmon_cascades_c_bubar_march_05_2015_(16691657954).jpg",
+          "credit": "Olympic National Park",
+          "license": "Public domain",
+          "licenseURL": "https://creativecommons.org/publicdomain/mark/1.0/"
+        },
+        {
+          "node": "issaquah",
+          "src": "https://orbiversity.com/south-sound-salmon-watching-guide/photos/issaquah.webp",
+          "title": "Issaquah Salmon Hatchery, photographed in September 2023.",
+          "source": "https://commons.wikimedia.org/wiki/File:Hatchery_6921.jpg",
+          "credit": "Chris Light",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0"
+        },
+        {
+          "node": "read-the-water",
+          "src": "https://orbiversity.com/south-sound-salmon-watching-guide/photos/read-the-water.webp",
+          "title": "Salmon in Issaquah Creek at the hatchery. Look through reflections to find the fish.",
+          "source": "https://commons.wikimedia.org/wiki/File:Salmon_6971.jpg",
+          "credit": "Chris Light",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0"
+        },
+        {
+          "node": "bayshore",
+          "src": "https://orbiversity.com/south-sound-salmon-watching-guide/photos/bayshore.webp",
+          "title": "Bayshore Preserve, Washington, photographed in March 2025. Seasonal appearance will differ.",
+          "source": "https://commons.wikimedia.org/wiki/File:Bayshore_Preserve,_Washington_01.jpg",
+          "credit": "OlympiaBuebird",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0"
+        },
+        {
+          "node": "hoodsport",
+          "src": "https://orbiversity.com/south-sound-salmon-watching-guide/photos/hoodsport.webp",
+          "title": "Hoodsport on Hood Canal. A town and shoreline view, not a photograph of the hatchery viewing platform.",
+          "source": "https://commons.wikimedia.org/wiki/File:Hoodsport_5013.jpg",
+          "credit": "Chris Light",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0"
+        },
+        {
+          "node": "kennedy-creek",
+          "src": "https://orbiversity.com/south-sound-salmon-watching-guide/photos/kennedy-creek.webp",
+          "title": "Kennedy Creek Natural Area Preserve at the estuary. This is a different viewing area from the seasonal Kennedy Creek Salmon Trail upstream.",
+          "source": "https://commons.wikimedia.org/wiki/File:Kennedy_Creek_0284.JPG",
+          "credit": "Brianhe",
+          "license": "CC BY-SA 3.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0"
+        },
+        {
+          "node": "donkey-creek",
+          "src": "https://orbiversity.com/south-sound-salmon-watching-guide/photos/donkey-creek.webp",
+          "title": "Gig Harbor waterfront and Mount Rainier: the town setting for a Donkey Creek outing, not the creek itself.",
+          "source": "https://commons.wikimedia.org/wiki/File:Gig_Harbor_Waterfront_and_Mt_Rainier.jpg",
+          "credit": "Martinvirtualtours",
+          "license": "CC BY-SA 3.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0"
+        },
+        {
+          "node": "mclane-creek",
+          "src": "https://orbiversity.com/south-sound-salmon-watching-guide/photos/mclane-creek.webp",
+          "title": "Pond and boardwalk at McLane Creek Nature Trail. The salmon-viewing creek is another part of the trail.",
+          "source": "https://commons.wikimedia.org/wiki/File:McLane_Creek_Nature_Pond_01.jpg",
+          "credit": "Mattsjc",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0"
+        },
+        {
+          "node": "swan-creek",
+          "src": "https://orbiversity.com/south-sound-salmon-watching-guide/photos/swan-creek.webp",
+          "title": "Swan Creek Park, Tacoma, photographed in June 2024. A park view, not a current salmon report.",
+          "source": "https://commons.wikimedia.org/wiki/File:2024-06-15,_Swan_Creek_Park_(Tacoma,_Washington),_105446AM.jpg",
+          "credit": "Steven Pavlov",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0"
+        },
+        {
+          "node": "hoh-rainforest",
+          "src": "https://orbiversity.com/south-sound-salmon-watching-guide/photos/hoh-rainforest.webp",
+          "title": "The Hoh River in Olympic National Park. Look for seasonal salmon-viewing guidance for the smaller tributaries rather than assuming fish will be visible here.",
+          "source": "https://commons.wikimedia.org/wiki/File:Hoh_River_2022.jpg",
+          "credit": "Sea Cow",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0"
+        },
+        {
+          "node": "finding-home",
+          "src": "https://orbiversity.com/south-sound-salmon-watching-guide/photos/finding-home.webp",
+          "title": "Salmon in Issaquah Creek at the hatchery, September 2023. An individual fish’s homing history is not known from a photograph.",
+          "source": "https://commons.wikimedia.org/wiki/File:Salmon_6968.jpg",
+          "credit": "Chris Light",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0"
+        },
+        {
+          "node": "the-redd",
+          "src": "https://orbiversity.com/south-sound-salmon-watching-guide/photos/the-redd.webp",
+          "title": "Chum salmon returning in Pipers Creek, Seattle. This photograph illustrates the spawning environment; it does not identify a particular redd.",
+          "source": "https://commons.wikimedia.org/wiki/File:Salmon_swimming_upstream_in_lower_Piper_Creek,_Carkeek_Park,_Seattle_01.jpg",
+          "credit": "Photo by Joe Mabel",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0"
+        },
+        {
+          "node": "river-and-forest",
+          "src": "https://orbiversity.com/south-sound-salmon-watching-guide/photos/river-and-forest.webp",
+          "title": "A nurse log in the Hoh rainforest, Olympic National Park: forest life growing through decay.",
+          "source": "https://commons.wikimedia.org/wiki/File:Nurse_log_hoh_rainforest_c_bubar_march_05-2015_(16693104543).jpg",
+          "credit": "Olympic National Park",
+          "license": "Public domain",
+          "licenseURL": "https://creativecommons.org/publicdomain/mark/1.0/"
+        },
+        {
+          "node": "what-we-cannot-predict",
+          "src": "https://orbiversity.com/south-sound-salmon-watching-guide/photos/what-we-cannot-predict.webp",
+          "title": "McLane Creek near Mud Bay, photographed from US 101. This lower watershed view is not the Nature Trail viewing platform.",
+          "source": "https://commons.wikimedia.org/wiki/File:McLane_Creek_7213.jpg",
+          "credit": "Chris Light",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0"
+        },
+        {
+          "node": "choose-your-outing",
+          "src": "https://orbiversity.com/south-sound-salmon-watching-guide/photos/choose-your-outing.webp",
+          "title": "Upper Tumwater Falls with the Capitol Boulevard crossing behind it, photographed in March 2011. Water and foliage change with the season.",
+          "source": "https://commons.wikimedia.org/wiki/File:Upper_Tumwater_Falls_02.jpg",
+          "credit": "Joe Mabel",
+          "license": "CC BY-SA 3.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0"
+        },
+        {
+          "node": null,
+          "src": "https://orbiversity.com/south-sound-salmon-watching-guide/photos/the-return.webp",
+          "title": "Chum salmon in Pipers Creek, Seattle",
+          "source": "https://orbiversity.com/south-sound-salmon-watching-guide/"
+        }
+      ],
+      "presentation": {
+        "version": 1,
+        "media": []
+      },
+      "museum": {
+        "audio": [
+          {
+            "url": "https://orbiversity.com/south-sound-salmon-watching-guide/audio/learn.mp3",
+            "title": "South Sound Salmon Watching Guide"
+          }
+        ]
+      },
+      "sourceURLs": [
+        "https://wdfw.wa.gov/places-to-go/salmon-viewing",
+        "https://www.experienceolympia.com/blog/where-to-view-the-chinook-salmon-run-in-olympia/",
+        "https://www.ci.tumwater.wa.us/departments/parks-recreation-department/events/falls-fest",
+        "https://streamteam.info/nature-sleuths/mclane-creek-nature-trail-forest-walk/",
+        "https://spsseg.org/kennedy-creek-salmon-trail/",
+        "https://capitollandtrust.org/salmon-experience1",
+        "https://wdfw.wa.gov/sites/default/files/publications/02309/wdfw02309.pdf",
+        "https://wdfw.wa.gov/places-to-go/fishing-piers/hoodsport-hatchery-handicap-platform",
+        "https://harborwildwatch.org/programs/public-programs/",
+        "https://www.gigharborwa.gov/183/Donkey-Creek-Park",
+        "https://www.parkstacoma.gov/event/salmon-saturdays-2025-3/",
+        "https://www.parkstacoma.gov/place/swan-creek-park/",
+        "https://www.issaquahfish.org/category/seasons/",
+        "https://www.nps.gov/places/000/salmon-cascades.htm",
+        "https://www.nps.gov/olym/learn/nature/coho-salmon.htm",
+        "https://www.nps.gov/olym/planyourvisit/current-conditions.htm",
+        "https://www.fisheries.noaa.gov/west-coast/science-data/fish-olfaction-and-homing-research",
+        "https://myodfw.com/articles/see-salmon-spawn",
+        "https://wdfw.wa.gov/sites/default/files/publications/00063/wdfw00063.pdf",
+        "https://wdfw.wa.gov/species-habitats/science/marine-toxics/6ppd",
+        "https://seawolf-fishing.com/wp-content/uploads/2023/10/Salmon-Viewing-Opportunities-Table-1.pdf"
+      ],
+      "originalURL": "https://orbiversity.com/south-sound-salmon-watching-guide/"
+    },
+    "dia-de-muertos": {
+      "readingImages": [
+        {
+          "node": "welcome",
+          "src": "https://orbiversity.com/dia-de-muertos/photo-90433159.jpg",
+          "title": "Mexico City parade, 2018 · performers in butterfly-colored costumes",
+          "source": "https://commons.wikimedia.org/wiki/File:D%C3%ADa_de_Muertos_M%C3%A9xico.jpg",
+          "credit": "Martin Herrera Miranda",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0"
+        },
+        {
+          "node": "memory",
+          "src": "https://orbiversity.com/dia-de-muertos/photo-29397392.jpg",
+          "title": "A resident beside his ofrenda in Cuicatlán, Oaxaca",
+          "source": "https://commons.wikimedia.org/wiki/File:Ofrenda_de_D%C3%ADa_de_Muertos_9.JPG",
+          "credit": "A01335977",
+          "license": "CC BY-SA 3.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0"
+        },
+        {
+          "node": "names",
+          "src": "https://orbiversity.com/dia-de-muertos/photo-90720204.jpg",
+          "title": "An offering documented on Janitzio",
+          "source": "https://commons.wikimedia.org/wiki/File:Ofrenda_de_D%C3%ADa_de_muertos_en_Janitzio,_Michoac%C3%A1n.jpg",
+          "credit": "Gustavo Valdes R.",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0"
+        },
+        {
+          "node": "hospitality",
+          "src": "https://orbiversity.com/dia-de-muertos/photo-82250462.jpg",
+          "title": "Hanal Pixán, 2017 · a documented Yucatecan celebration",
+          "source": "https://commons.wikimedia.org/wiki/File:Hanal_Pixan,_2017_04.jpg",
+          "credit": "Gildardo Sánchez",
+          "license": "CC BY 2.0",
+          "licenseURL": "https://creativecommons.org/licenses/by/2.0"
+        },
+        {
+          "node": "calendar",
+          "src": "https://orbiversity.com/dia-de-muertos/photo-90653338.jpg",
+          "title": "The cemetery entrance on Janitzio",
+          "source": "https://commons.wikimedia.org/wiki/File:D%C3%ADa_de_Muertos_en_Janitzio.jpg",
+          "credit": "Aranzacat",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0"
+        },
+        {
+          "node": "feelings",
+          "src": "https://orbiversity.com/dia-de-muertos/photo-76941731.jpg",
+          "title": "Noche de Muertos in Janitzio · candlelit cemetery",
+          "source": "https://commons.wikimedia.org/wiki/File:Noche_de_Muertos_en_Janitzio.jpg",
+          "credit": "Miguel Angel Mandujano Contreras",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0"
+        },
+        {
+          "node": "floor-memory",
+          "src": "https://orbiversity.com/dia-de-muertos/photo-9457365.jpg",
+          "title": "Día de Muertos on Janitzio · an interior scene",
+          "source": "https://commons.wikimedia.org/wiki/File:Janitzio_d%C3%ADa_de_muertos.jpg",
+          "credit": "SEKVO",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0"
+        },
+        {
+          "node": "offering",
+          "src": "https://orbiversity.com/dia-de-muertos/photo-94845987.jpg",
+          "title": "Sugar skulls and cempasúchil in an offering",
+          "source": "https://commons.wikimedia.org/wiki/File:Calaveras_de_az%C3%BAcar_IX.jpg",
+          "credit": "J Mndz",
+          "license": "CC BY-SA 2.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/2.0"
+        },
+        {
+          "node": "flowers",
+          "src": "https://orbiversity.com/dia-de-muertos/photo-63761027.jpg",
+          "title": "A close view of cempasúchil flowers",
+          "source": "https://commons.wikimedia.org/wiki/File:Tagetes_erecta_(cempasuchil)_-_flor_de_D%C3%ADa_de_Muertos_-_Closeup_-_3.jpg",
+          "credit": "ProtoplasmaKid",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0"
+        },
+        {
+          "node": "light",
+          "src": "https://orbiversity.com/dia-de-muertos/photo-82440944.jpg",
+          "title": "Altar competition in Valladolid, Yucatán",
+          "source": "https://commons.wikimedia.org/wiki/File:Hanal_Pixan_Valladolid_Yucatan_2012_01.jpg",
+          "credit": "Marysol*",
+          "license": "CC BY-SA 2.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/2.0"
+        },
+        {
+          "node": "water",
+          "src": "https://orbiversity.com/dia-de-muertos/photo-89770286.jpg",
+          "title": "An altar of Hanal Pixán with food and religious imagery",
+          "source": "https://commons.wikimedia.org/wiki/File:Altar_de_Hanal_Pix%C3%A1n_Com%C3%BAn.jpg",
+          "credit": "Juan Manuel Arana Ravell",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0"
+        },
+        {
+          "node": "space",
+          "src": "https://orbiversity.com/dia-de-muertos/photo-36685212.jpg",
+          "title": "An ofrenda in Huaquechula, Puebla",
+          "source": "https://commons.wikimedia.org/wiki/File:Ofrenda6_en_Huaquechula,_Puebla..JPG",
+          "credit": "EmilianoMexico",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0"
+        },
+        {
+          "node": "floor-symbols",
+          "src": "https://orbiversity.com/dia-de-muertos/photo-94342731.jpg",
+          "title": "Cempasúchil placed on a green surface",
+          "source": "https://commons.wikimedia.org/wiki/File:Cempas%C3%BAchil_en_ofrenda.jpg",
+          "credit": "JMndz",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0"
+        },
+        {
+          "node": "hands",
+          "src": "https://orbiversity.com/dia-de-muertos/photo-94847618.jpg",
+          "title": "Pan de muerto · a photographed bread display",
+          "source": "https://commons.wikimedia.org/wiki/File:Pan_de_muerto_IV.jpg",
+          "credit": "J Mndz",
+          "license": "CC BY-SA 2.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/2.0"
+        },
+        {
+          "node": "field",
+          "src": "https://orbiversity.com/dia-de-muertos/photo-111981010.jpg",
+          "title": "A field of cempasúchil in Mexico",
+          "source": "https://commons.wikimedia.org/wiki/File:Vista_de_los_campos_de_cempas%C3%BAchil_en_Atlixco_01.jpg",
+          "credit": "B.jars",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0"
+        },
+        {
+          "node": "bread",
+          "src": "https://orbiversity.com/dia-de-muertos/photo-36716547.jpg",
+          "title": "The crumb and sugar crust of pan de muerto",
+          "source": "https://commons.wikimedia.org/wiki/File:Pan_de_muerto_closeup.jpg",
+          "credit": "ProtoplasmaKid",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0"
+        },
+        {
+          "node": "paper",
+          "src": "https://orbiversity.com/dia-de-muertos/photo-124997084.jpg",
+          "title": "Papel picado · skeleton motifs in colored paper",
+          "source": "https://commons.wikimedia.org/wiki/File:Adorno_de_papel_picado_en_la_calle_Carranza_de_Aguascalientes_10.jpg",
+          "credit": "Luis Alvaz",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0"
+        },
+        {
+          "node": "sugar",
+          "src": "https://orbiversity.com/dia-de-muertos/photo-94845993.jpg",
+          "title": "Decorated sugar figures",
+          "source": "https://commons.wikimedia.org/wiki/File:Calaveras_de_az%C3%BAcar_V.jpg",
+          "credit": "J Mndz",
+          "license": "CC BY-SA 2.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/2.0"
+        },
+        {
+          "node": "floor-craft",
+          "src": "https://orbiversity.com/dia-de-muertos/photo-63839452.jpg",
+          "title": "Pan de muerto from Putla de Guerrero, Oaxaca",
+          "source": "https://commons.wikimedia.org/wiki/File:Pan_de_Muerto_de_Putla_de_Guerrero.jpg",
+          "credit": "Obkilios",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0"
+        },
+        {
+          "node": "places",
+          "src": "https://orbiversity.com/dia-de-muertos/photo-90652927.jpg",
+          "title": "Flowers and visitors at the Janitzio cemetery",
+          "source": "https://commons.wikimedia.org/wiki/File:Pante%C3%B3n_de_Janitzio.jpg",
+          "credit": "EfrenDelRosal",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0"
+        },
+        {
+          "node": "michoacan",
+          "src": "https://orbiversity.com/dia-de-muertos/photo-76651907.jpg",
+          "title": "An altar documented during Día de Muertos on Janitzio",
+          "source": "https://commons.wikimedia.org/wiki/File:Altar_dia_de_muertos.jpg",
+          "credit": "Gabriel Gutierrez",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0"
+        },
+        {
+          "node": "yucatan",
+          "src": "https://orbiversity.com/dia-de-muertos/photo-82250466.jpg",
+          "title": "Hanal Pixán, 2017 · two offering tables",
+          "source": "https://commons.wikimedia.org/wiki/File:Hanal_Pixan,_2017_06.jpg",
+          "credit": "Gildardo Sánchez",
+          "license": "CC BY 2.0",
+          "licenseURL": "https://creativecommons.org/licenses/by/2.0"
+        },
+        {
+          "node": "huasteca",
+          "src": "https://orbiversity.com/dia-de-muertos/photo-139963032.jpg",
+          "title": "Musicians at Xantolo in Huejutla",
+          "source": "https://commons.wikimedia.org/wiki/File:Photo_5050861672033528885_y.jpg",
+          "credit": "Bezalelrodriguez",
+          "license": "CC BY 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by/4.0"
+        },
+        {
+          "node": "huaquechula",
+          "src": "https://orbiversity.com/dia-de-muertos/photo-90469908.jpg",
+          "title": "Visitors before a tall ofrenda in Huaquechula",
+          "source": "https://commons.wikimedia.org/wiki/File:Ofrenda_en_Huaquechula_3.jpg",
+          "credit": "Roberto Galland",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0"
+        },
+        {
+          "node": "floor-places",
+          "src": "https://orbiversity.com/dia-de-muertos/photo-75281433.jpg",
+          "title": "Xantolo festival in Xalapa · guests from Ixhuatlán de Madero",
+          "source": "https://commons.wikimedia.org/wiki/File:Festival_Xantolo_en_Xalapa_-_Altar_de_muertos.jpg",
+          "credit": "Koffermejia",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0"
+        },
+        {
+          "node": "histories",
+          "src": "https://orbiversity.com/dia-de-muertos/photo-90854213.jpg",
+          "title": "A Faro de Oriente parade float arriving at the Zócalo, Mexico City, 2019",
+          "source": "https://commons.wikimedia.org/wiki/File:Desfile_D%C3%ADa_de_Muertos_CDMX.jpg",
+          "credit": "Aline Livier",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0"
+        },
+        {
+          "node": "history-roots",
+          "src": "https://orbiversity.com/dia-de-muertos/photo-29732925.jpg",
+          "title": "An Oaxaca-themed altar at the Museo Nacional de las Intervenciones",
+          "source": "https://commons.wikimedia.org/wiki/File:Altar_de_muertos_Juquila,_Oaxaca_en_San_Diego_Churubusco.JPG",
+          "credit": "Daniel.quinonez.1",
+          "license": "CC BY-SA 3.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0"
+        },
+        {
+          "node": "history-colonial",
+          "src": "https://orbiversity.com/dia-de-muertos/photo-36685209.jpg",
+          "title": "Religious imagery and fabric in an ofrenda, Huaquechula",
+          "source": "https://commons.wikimedia.org/wiki/File:Ofrenda3_en_Huaquechula,_Puebla..jpg",
+          "credit": "EmilianoMexico",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0"
+        },
+        {
+          "node": "history-public",
+          "src": "https://orbiversity.com/dia-de-muertos/photo-17081090.jpg",
+          "title": "Catrina figures photographed in 2011",
+          "source": "https://commons.wikimedia.org/wiki/File:Catrinas_2011.jpg",
+          "credit": "Tomascastelazo",
+          "license": "CC BY-SA 3.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0"
+        },
+        {
+          "node": "parade-art",
+          "src": "https://orbiversity.com/dia-de-muertos/photo-140189125.jpg",
+          "title": "Costumed participants in the Mexico City parade",
+          "source": "https://commons.wikimedia.org/wiki/File:Gran_Desfile_del_D%C3%ADa_de_Muertos_2033.jpg",
+          "credit": "Secretaría de Cultura de la Ciudad de México",
+          "license": "CC BY 2.0",
+          "licenseURL": "https://creativecommons.org/licenses/by/2.0"
+        },
+        {
+          "node": "floor-history",
+          "src": "https://orbiversity.com/dia-de-muertos/photo-63801891.jpg",
+          "title": "Colorful catrinas and catrines",
+          "source": "https://commons.wikimedia.org/wiki/File:Catrinas_and_Catrines.jpg",
+          "credit": "Tomascastelazo",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0"
+        },
+        {
+          "node": "future",
+          "src": "https://orbiversity.com/dia-de-muertos/photo-76976678.jpg",
+          "title": "Día de Muertos celebration in central Oaxaca",
+          "source": "https://commons.wikimedia.org/wiki/File:Dia_de_muertos_en_Oaxaca.jpg",
+          "credit": "RigelNava",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0"
+        },
+        {
+          "node": "migration",
+          "src": "https://orbiversity.com/dia-de-muertos/photo-124997069.jpg",
+          "title": "Papel picado over a street in Mexico · comparison image",
+          "source": "https://commons.wikimedia.org/wiki/File:Adorno_de_papel_picado_en_la_calle_Carranza_de_Aguascalientes_02.jpg",
+          "credit": "Luis Alvaz",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0"
+        },
+        {
+          "node": "public-memory",
+          "src": "https://orbiversity.com/dia-de-muertos/photo-140188696.jpg",
+          "title": "Monumental ofrenda, Mexico City, 2023 · train installation",
+          "source": "https://commons.wikimedia.org/wiki/File:Ofrenda_monumental_2023_(train_left).jpg",
+          "credit": "Secretaría de Cultura de la Ciudad de México",
+          "license": "CC BY 2.0",
+          "licenseURL": "https://creativecommons.org/licenses/by/2.0"
+        },
+        {
+          "node": "looking",
+          "src": "https://orbiversity.com/dia-de-muertos/photo-145070295.jpg",
+          "title": "A Catrina costume at a Day of the Dead event",
+          "source": "https://commons.wikimedia.org/wiki/File:A_Catrina_custome_from_Day_of_the_Dead_parade_in_Mexico_city.jpg",
+          "credit": "Rose04zr",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0"
+        },
+        {
+          "node": "floor-future",
+          "src": "https://orbiversity.com/dia-de-muertos/photo-178035302.jpg",
+          "title": "Huaquechula altar dedicated to Ignacio “Nachito” Peralta Soledad",
+          "source": "https://commons.wikimedia.org/wiki/File:Altar_dedicado_a_Nachito_Peralta_Soledad_en_su_casa_de_Huaquechula,_Puebla..jpg",
+          "credit": "CivitasAngelorum",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0"
+        },
+        {
+          "node": "huaquechula",
+          "src": "https://orbiversity.com/dia-de-muertos/photo-90469907.jpg",
+          "title": "An ofrenda in Huaquechula",
+          "source": "https://commons.wikimedia.org/wiki/File:Ofrenda_en_Huaquechula.jpg",
+          "credit": "Roberto Galland",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0"
+        },
+        {
+          "node": "flowers",
+          "src": "https://orbiversity.com/dia-de-muertos/photo-63761029.jpg",
+          "title": "Cempasúchil and white flowers",
+          "source": "https://commons.wikimedia.org/wiki/File:Tagetes_erecta_(cempasuchil)_-_flor_de_D%C3%ADa_de_Muertos_-_Closeup_-_1.jpg",
+          "credit": "ProtoplasmaKid",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0"
+        },
+        {
+          "node": "flowers",
+          "src": "https://orbiversity.com/dia-de-muertos/photo-95305491.jpg",
+          "title": "Orange and yellow cempasúchil",
+          "source": "https://commons.wikimedia.org/wiki/File:Cempasuchil_Mexicano.jpg",
+          "credit": "Armando Olivo Martín del Campo",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0"
+        },
+        {
+          "node": "sugar",
+          "src": "https://orbiversity.com/dia-de-muertos/photo-94845982.jpg",
+          "title": "Sugar skulls in an offering",
+          "source": "https://commons.wikimedia.org/wiki/File:Calaveras_de_az%C3%BAcar_XII.jpg",
+          "credit": "J Mndz",
+          "license": "CC BY-SA 2.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/2.0"
+        },
+        {
+          "node": "sugar",
+          "src": "https://orbiversity.com/dia-de-muertos/photo-94845984.jpg",
+          "title": "A decorated sugar skull",
+          "source": "https://commons.wikimedia.org/wiki/File:Calaveras_de_az%C3%BAcar_XIV.jpg",
+          "credit": "J Mndz",
+          "license": "CC BY-SA 2.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/2.0"
+        },
+        {
+          "node": "sugar",
+          "src": "https://orbiversity.com/dia-de-muertos/photo-94845994.jpg",
+          "title": "Small sugar skulls with bright decorations",
+          "source": "https://commons.wikimedia.org/wiki/File:Calaveras_de_az%C3%BAcar_IV.jpg",
+          "credit": "J Mndz",
+          "license": "CC BY-SA 2.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/2.0"
+        },
+        {
+          "node": "yucatan",
+          "src": "https://orbiversity.com/dia-de-muertos/photo-82250455.jpg",
+          "title": "Participants in a documented Hanal Pixán celebration, 2017",
+          "source": "https://commons.wikimedia.org/wiki/File:Hanal_Pixan,_2017_01.jpg",
+          "credit": "Gildardo Sánchez",
+          "license": "CC BY 2.0",
+          "licenseURL": "https://creativecommons.org/licenses/by/2.0"
+        },
+        {
+          "node": "yucatan",
+          "src": "https://orbiversity.com/dia-de-muertos/photo-82250457.jpg",
+          "title": "An offering table during Hanal Pixán, 2017",
+          "source": "https://commons.wikimedia.org/wiki/File:Hanal_Pixan,_2017_03.jpg",
+          "credit": "Gildardo Sánchez",
+          "license": "CC BY 2.0",
+          "licenseURL": "https://creativecommons.org/licenses/by/2.0"
+        },
+        {
+          "node": "yucatan",
+          "src": "https://orbiversity.com/dia-de-muertos/photo-82250481.jpg",
+          "title": "Preparing an offering during Hanal Pixán, 2017",
+          "source": "https://commons.wikimedia.org/wiki/File:Hanal_Pixan,_2017_13.jpg",
+          "credit": "Gildardo Sánchez",
+          "license": "CC BY 2.0",
+          "licenseURL": "https://creativecommons.org/licenses/by/2.0"
+        },
+        {
+          "node": "huasteca",
+          "src": "https://orbiversity.com/dia-de-muertos/photo-75281438.jpg",
+          "title": "An altar from Ixhuatlán de Madero presented in Xalapa",
+          "source": "https://commons.wikimedia.org/wiki/File:Festival_Xantolo_-_altar_de_muertos.jpg",
+          "credit": "Koffermejia",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0"
+        },
+        {
+          "node": "huasteca",
+          "src": "https://orbiversity.com/dia-de-muertos/photo-90688756.jpg",
+          "title": "University of Guanajuato Folk Dance Company performing Xantolo · staged performance",
+          "source": "https://commons.wikimedia.org/wiki/File:Danza_Xantolo_en_el_FIC.jpg",
+          "credit": "Monica.Heald.Fotografia",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0"
+        },
+        {
+          "node": "history-public",
+          "src": "https://orbiversity.com/dia-de-muertos/photo-2997738.jpg",
+          "title": "Sculpted catrina figures",
+          "source": "https://commons.wikimedia.org/wiki/File:Catrinas_2.jpg",
+          "credit": "Tomascastelazo",
+          "license": "CC BY-SA 3.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0"
+        },
+        {
+          "node": "history-public",
+          "src": "https://orbiversity.com/dia-de-muertos/photo-81495561.jpg",
+          "title": "Catrina figures in Tonalá",
+          "source": "https://commons.wikimedia.org/wiki/File:La_Calavera_Catrina_Tonal%C3%A1.jpg",
+          "credit": "Gzzz",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0"
+        },
+        {
+          "node": "looking",
+          "src": "https://orbiversity.com/dia-de-muertos/photo-116246320.jpg",
+          "title": "A couple dressed for Día de Muertos in Oaxaca City",
+          "source": "https://commons.wikimedia.org/wiki/File:D%C3%ADa_de_Muertos_(Oaxaca).jpg",
+          "credit": "México en Fotos, A.C.",
+          "license": "CC BY-SA 2.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/2.0"
+        },
+        {
+          "node": "looking",
+          "src": "https://orbiversity.com/dia-de-muertos/photo-76976684.jpg",
+          "title": "A costumed participant in Oaxaca",
+          "source": "https://commons.wikimedia.org/wiki/File:Dia_de_muertos_en_Oaxaca_2.jpg",
+          "credit": "RigelNava",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0"
+        },
+        {
+          "node": "sharing",
+          "src": "https://orbiversity.com/dia-de-muertos/photo-75039066.jpg",
+          "title": "A basket of pan de muerto",
+          "source": "https://commons.wikimedia.org/wiki/File:Entrega_de_pan_de_muerto_2991_(46061194481).jpg",
+          "credit": "Gobierno CDMX",
+          "license": "CC0"
+        }
+      ],
+      "presentation": {
+        "version": 1,
+        "media": [
+          {
+            "id": "saved-0",
+            "node": "parade-art",
+            "kind": "video",
+            "url": "https://www.youtube.com/watch?v=qSjmox36y3w",
+            "title": "Mexico City: the 2024 grand parade",
+            "caption": "An official visual account of the 2024 parade, uploaded in 2025. Watch the costumes, moving structures, and coordination.",
+            "credit": "Secretaría de Cultura Ciudad de México"
+          },
+          {
+            "id": "saved-1",
+            "node": "welcome",
+            "kind": "video",
+            "url": "https://www.youtube.com/watch?v=GwXMaxfI4As",
+            "title": "The Indigenous festivity dedicated to the dead",
+            "caption": "UNESCO’s heritage film offers a starting point for the beliefs and preparations of the communities it documents.",
+            "credit": "UNESCO"
+          },
+          {
+            "id": "saved-2",
+            "node": "places",
+            "kind": "video",
+            "url": "https://www.youtube.com/watch?v=lM-tUspn3aw",
+            "title": "D Todo: celebrating Día de Muertos",
+            "caption": "Canal Once explores the celebration and the importance of differences between places.",
+            "credit": "Canal Once"
+          },
+          {
+            "id": "saved-3",
+            "node": "places",
+            "kind": "video",
+            "url": "https://www.youtube.com/watch?v=kpRp2MS4GX4",
+            "title": "A young documentary perspective",
+            "caption": "A UNESCO Youth Bloggers account. Read its historical framing alongside the ORB’s sources and regional distinctions.",
+            "credit": "UNESCO"
+          },
+          {
+            "id": "saved-4",
+            "node": "flowers",
+            "kind": "video",
+            "url": "https://www.youtube.com/watch?v=VQITTPB65yY",
+            "title": "The cempasúchil flower",
+            "caption": "A short feature selected in INAH’s Día de Muertos collection. Follow the flower from material presence to cultural meaning.",
+            "credit": "Videos DMC"
+          },
+          {
+            "id": "saved-5",
+            "node": "offering",
+            "kind": "video",
+            "url": "https://www.youtube.com/watch?v=iick72JtgC0",
+            "title": "The offerings of Día de Muertos",
+            "caption": "A feature on the ofrenda, linked by INAH. Compare its general account with the particular arrangements in the gallery.",
+            "credit": "Videos DMC"
+          },
+          {
+            "id": "saved-6",
+            "node": "hands",
+            "kind": "video",
+            "url": "https://www.youtube.com/watch?v=lautqFmzOQE",
+            "title": "Cartonería in Día de Muertos",
+            "caption": "Look for the relationship between paper construction, scale, and the finished celebratory figure.",
+            "credit": "Videos DMC"
+          },
+          {
+            "id": "saved-7",
+            "node": "bread",
+            "kind": "video",
+            "url": "https://www.youtube.com/watch?v=KLZuoHkP7VI",
+            "title": "Pan de muerto: origins and evolution",
+            "caption": "A historical introduction to bread in the celebration, selected by INAH.",
+            "credit": "Videos DMC"
+          },
+          {
+            "id": "saved-8",
+            "node": "hands",
+            "kind": "video",
+            "url": "https://www.youtube.com/watch?v=Agk1dZPKsOk",
+            "title": "Cartonería beyond the celebration",
+            "caption": "A wider view of the craft, reminding us that its makers and materials have lives beyond one holiday.",
+            "credit": "Videos DMC"
+          },
+          {
+            "id": "saved-9",
+            "node": "floor-craft",
+            "kind": "video",
+            "url": "https://www.youtube.com/watch?v=R903f37yvFI",
+            "title": "Cartonería: a living craft and community",
+            "caption": "Follow the connection between making objects and sustaining a community of practice.",
+            "credit": "Videos DMC"
+          },
+          {
+            "id": "saved-10",
+            "node": "paper",
+            "kind": "video",
+            "url": "https://www.youtube.com/watch?v=nusr32TdWUU",
+            "title": "Papel picado: origins and tradition",
+            "caption": "A closer look at a paper tradition. Notice how the design depends on what is cut away and what remains.",
+            "credit": "Videos DMC"
+          },
+          {
+            "id": "saved-11",
+            "node": "field",
+            "kind": "video",
+            "url": "https://www.youtube.com/watch?v=HO74Mkxp4eM",
+            "title": "Cempasúchil: a living tradition",
+            "caption": "Pair this feature with the field photograph and the reading about agricultural work.",
+            "credit": "Videos DMC"
+          },
+          {
+            "id": "saved-12",
+            "node": "paper",
+            "kind": "video",
+            "url": "https://www.youtube.com/watch?v=4UWJHENXqRc",
+            "title": "Papel picado: a living tradition",
+            "caption": "Return to the people and skills behind the delicate finished sheets.",
+            "credit": "Videos DMC"
+          }
+        ]
+      },
+      "museum": {
+        "audio": []
+      },
+      "sourceURLs": [],
+      "originalURL": "https://orbiversity.com/dia-de-muertos/"
+    },
+    "autumn-in-two-orbits": {
+      "readingImages": [
+        {
+          "node": "keats",
+          "src": "https://orbiversity.com/autumn-in-two-orbits/orchard.jpg",
+          "title": "A canopy of gold",
+          "source": "https://commons.wikimedia.org/wiki/File:Fall_foliage_-_Portland_Japanese_Garden_-_Portland,_Oregon_-_DSC08260.jpg",
+          "credit": "Daderot",
+          "license": "CC0",
+          "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/deed.en"
+        },
+        {
+          "node": "dickinson",
+          "src": "https://orbiversity.com/autumn-in-two-orbits/maple.jpg",
+          "title": "A scarf of scarlet",
+          "source": "https://commons.wikimedia.org/wiki/File:Acer_palmatum_fall_foliage_01.jpg",
+          "credit": "Joe Mabel",
+          "license": "CC BY-SA 3.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0"
+        },
+        {
+          "node": "dunbar",
+          "src": "https://orbiversity.com/autumn-in-two-orbits/brook.jpg",
+          "title": "Small fans of sunlight",
+          "source": "https://commons.wikimedia.org/wiki/File:Ginko_tree_in_late_October_01.jpg",
+          "credit": "Marz62",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0"
+        },
+        {
+          "node": "jackson",
+          "src": "https://orbiversity.com/autumn-in-two-orbits/october.jpg",
+          "title": "October, in full color",
+          "source": "https://commons.wikimedia.org/wiki/File:Leaves_aglow.jpg",
+          "credit": "dnak",
+          "license": "CC BY 2.0",
+          "licenseURL": "https://creativecommons.org/licenses/by/2.0"
+        },
+        {
+          "node": "stevenson",
+          "src": "https://orbiversity.com/autumn-in-two-orbits/fire.jpg",
+          "title": "A leaf holds the light",
+          "source": "https://commons.wikimedia.org/wiki/File:Autumn_leaves_in_Discovery_Park,_Seattle,_1983.jpg",
+          "credit": "Courtesy of the Seattle Municipal Archives, item 169930",
+          "license": "CC BY 2.0",
+          "licenseURL": "https://creativecommons.org/licenses/by/2.0"
+        },
+        {
+          "node": "blake",
+          "src": "https://orbiversity.com/autumn-in-two-orbits/golden-load.jpg",
+          "title": "The path carries on",
+          "source": "https://commons.wikimedia.org/wiki/File:Fall_is_here_-_Flickr_-_brewbooks.jpg",
+          "credit": "brewbooks",
+          "license": "CC BY-SA 2.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/2.0"
+        },
+        {
+          "node": null,
+          "src": "https://orbiversity.com/autumn-in-two-orbits/orchard.jpg?v=pnw-v3",
+          "title": "Golden leaves spread above dark branches at Portland Japanese Garden.",
+          "source": "https://orbiversity.com/autumn-in-two-orbits/"
+        }
+      ],
+      "presentation": {
+        "version": 1,
+        "media": [
+          {
+            "id": "saved-0",
+            "node": null,
+            "kind": "video",
+            "url": "https://www.youtube.com/watch?v=WVFtpmpVOJM",
+            "title": "Autumn in the Pacific Northwest · EN",
+            "caption": "Separate recorded English and Spanish short film adaptations; the longer guided text remains unrecorded."
+          },
+          {
+            "id": "saved-1",
+            "node": null,
+            "kind": "video",
+            "url": "https://www.youtube.com/watch?v=rbTfYA5qNj8",
+            "title": "Autumn in the Pacific Northwest · ES",
+            "caption": "Separate recorded English and Spanish short film adaptations; the longer guided text remains unrecorded."
+          }
+        ]
+      },
+      "museum": {
+        "audio": [
+          {
+            "url": "https://orbiversity.com/autumn-in-two-orbits/autumn-piano.mp3",
+            "title": "Autumn in the Pacific Northwest"
+          }
+        ]
+      },
+      "sourceURLs": [],
+      "originalURL": "https://orbiversity.com/autumn-in-two-orbits/"
+    },
+    "core-belief": {
+      "readingImages": [],
+      "presentation": {
+        "version": 1,
+        "media": []
+      },
+      "museum": {
+        "audio": []
+      },
+      "sourceURLs": [
+        "https://www.cci.health.wa.gov.au/~/media/CCI/Consumer%20Modules/Improving%20Self-Esteem/Improving%20Self-Esteem%20-%2002%20-%20How%20Low%20Self-Esteem%20Develops.pdf",
+        "https://www.cci.health.wa.gov.au/-/media/CCI/Consumer-Modules/Improving-Self-Esteem/Improving-Self-Esteem---03---How-Low-Self-Esteem-is-Maintained.pdf",
+        "https://www.cci.health.wa.gov.au/~/media/CCI/Consumer-Modules/Improving-Self-Esteem/Improving-Self-Esteem---08---Developing-Balanced-Core-Beliefs.pdf",
+        "https://cci.health.wa.gov.au/~/media/CCI/Consumer-Modules/Improving-Self-Esteem/Improving-Self-Esteem---07---Adjusting-Rules-and-Assumptions.pdf",
+        "https://cci.health.wa.gov.au/Resources/Looking-After-Yourself/Perfectionism",
+        "https://www.healthywa.health.wa.gov.au/Articles/A_E/Assertive-communication",
+        "https://cci.health.wa.gov.au/~/media/CCI/Consumer%20Modules/Assert%20Yourself/Assert%20Yourself%20-%2006%20-%20How%20to%20Say%20No%20Assertively.pdf",
+        "https://www.ptsd.va.gov/understand_tx/cognitive_processing.asp",
+        "https://www.nimh.nih.gov/health/topics/post-traumatic-stress-disorder-ptsd",
+        "https://www.ptsd.va.gov/disaster_events/for_everyone/helpful_thinking.asp",
+        "https://www.ptsd.va.gov/understand/what/trauma_triggers.asp",
+        "https://www.ptsd.va.gov/gethelp/negative_coping.asp",
+        "https://www.gov.uk/government/publications/controlling-or-coercive-behaviour-statutory-guidance-framework/controlling-or-coercive-behaviour-statutory-guidance-framework-accessible",
+        "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2018.01344/full"
+      ],
+      "originalURL": "https://orbiversity.com/core-belief/"
+    }
+  }
+}

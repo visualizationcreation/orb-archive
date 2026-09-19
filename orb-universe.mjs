@@ -2,10 +2,11 @@ import {createMuseumTree} from './orb-tree.mjs?v=central-tree-20260916-2';
 import {startView,callOrbs,callTarget,layerCount,MAX_LAYERS,refocus,visibleEdges,sphereSize,unseen,branchCurve,reconcileView} from './orb-browsing.mjs?v=central-tree-20260916-2';
 import {createUniverse} from './orb-connect-pass.mjs?v=central-tree-20260916-2';
 import {savedWorks} from './orb-connect-snapshot.mjs?v=central-tree-20260916-2';
+import {mountMuseumMediaPanel} from './museum-media-panel.mjs?v=media-20260919';
 
 export function mountUniverse({catalog,overview}){
  const field=document.querySelector('.orb-field'),studio=field.closest('.vault-studio');
- const css=document.createElement('link');css.rel='stylesheet';css.href=new URL('./orb-universe.css?v=atlas-museum-20260919',import.meta.url).href;document.head.append(css);
+ const css=document.createElement('link');css.rel='stylesheet';css.href=new URL('./orb-universe.css?v=media-20260919',import.meta.url).href;document.head.append(css);
  document.querySelector('.vault-workspace').classList.add('universe-workspace');field.classList.add('universe-field');
  const es=()=>document.documentElement.lang==='es',tr=(a,b)=>es()?b:a;
  const make=(tag,text='',className='')=>{const el=document.createElement(tag);el.textContent=text;el.className=className;return el;};
@@ -17,6 +18,7 @@ export function mountUniverse({catalog,overview}){
  const status=make('p','','universe-status');status.setAttribute('role','status');studio.append(status);
  let graph,view,trail=[],message='',origin={x:0,y:0},arriving=new Set(),zoom=1,fit=true;
  const plane=make('div','','universe-plane');
+ const mediaPanel=mountMuseumMediaPanel({compact:true});
  function update(data){const works=new Map(savedWorks.map(o=>[o.id,o]));for(const orb of data)works.set(orb.id,{...works.get(orb.id),...orb});graph=createMuseumTree(createUniverse([...works.values()]));if(!view)readLocation();else view=reconcileView(graph,view);render();}
  function readLocation(){const params=new URLSearchParams(location.search),id=params.get('map')||params.get('orb');view=startView(graph,graph.nodes.has(id)?id:'universe');trail=[];}
  function remember(){history.replaceState({orbBrowsing:{view,trail}},'');}
@@ -34,6 +36,7 @@ export function mountUniverse({catalog,overview}){
   overview.setAttribute('aria-label',isRoot?tr('The Orbiversity universe','El universo de Orbiversity'):label(node));
   overview.append(make('p',isRoot?tr('The community collection','La colección de la comunidad'):node.kind==='group'?tr('A grouping orb','Un orb de colección'):tr('A published orb','Un orb publicado'),'universe-kind'));
   overview.append(make('h2',isRoot?tr('Find a world to explore.','Encuentra un mundo para explorar.'):label(node)));
+  if(node?.kind==='work'){overview.append(mediaPanel.element);void mediaPanel.update({listing:node});}else void mediaPanel.update({});
   overview.append(make('p',isRoot?tr('Choose a blue sphere to reveal its connections. Each branch leads to a saved collection or a published orb, ready to read at your own pace.','Elige una esfera azul para revelar sus conexiones. Cada rama lleva a una colección guardada o un orb publicado, listo para leer a tu ritmo.'):copy(node),'overview-description'));
   if(node?.kind==='work'){
    const edition=node.editions?.find(e=>e.id===node.featuredEdition)||node.editions?.[0],url=edition?.url||node.url;
