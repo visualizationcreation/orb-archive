@@ -96,7 +96,8 @@ export function mountMuseumMediaPanel({compact=false,onChoosePoint}={}){
       setItems(collectMuseumMedia(record,{listing}));status.textContent='';
     }catch(error){if(run!==serial)return;failed=true;setItems(collectMuseumMedia(record,{listing}));status.textContent=tr('Some saved media could not load.','No se pudo cargar parte del contenido guardado.');}
     if(run!==serial)return;
-    if(!record||!items.some(item=>item.kind==='image'&&item.access==='direct')){
+    // Published ORBs can have reviewed point images even when the original record already contains photos.
+    if(listing?.id||!record||!items.some(item=>item.kind==='image'&&item.access==='direct')){
       if(!items.length&&!failed)status.textContent=tr('Looking for a related source image…','Buscando una imagen relacionada…');
       try{const result=await loadMuseumMedia({record,listing,signal:controller.signal});if(run!==serial)return;
         if(result.status==='unavailable')failed=true;
