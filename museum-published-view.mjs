@@ -107,6 +107,9 @@ async function open(){
     if(publication.parentId&&publicationURL(publication.parentId)){const previous=make('a',label('Earlier edition','Edición anterior'));previous.href=publicationURL(publication.parentId);meta.append(document.createTextNode(' · '),previous);}
     await attachMediaDesk(publication);
     appendExploration(publication.record);
+    try{const {mountMuseumComments}=await import('./museum-comments.mjs');
+      const discussion=mountMuseumComments();document.body.append(discussion.element);discussion.update({id,title:publication.record.content.title});
+    }catch{const link=make('a','Open this ORB’s comments');link.href='https://www.orbforma.com/comments.html?orb='+id;document.body.append(link);}
     try{
       const [staticResponse,feed]=await Promise.all([fetch('orbs.json',{credentials:'omit'}),fetchMuseumJSON()]);const original=await staticResponse.json();if(serial===generation)appendConnections(publication,mergeCatalog(original.orbs,feed.orbs));
     }catch{const note=make('p',label('Other Museum connections are temporarily unavailable. The full orb is open above.','Las demás conexiones del Museo no están disponibles temporalmente. El orb completo está abierto arriba.'),'publication-connection-note');document.body.append(note);}

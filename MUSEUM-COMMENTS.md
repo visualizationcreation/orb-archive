@@ -1,0 +1,13 @@
+# Museum conversations
+
+Every published work can have a conversation from its Museum preview or catalog Comments link. Community editions also show comments below their read-only Studio. Historical standalone HTML editions are preserved; their conversation is available in the Museum.
+
+Comments and one level of replies are saved separately from the immutable ORB, using `https://www.orbforma.com/api/museum-comments`. This service uses its own Netlify Blobs store, `orb-museum-comments-v1`, and does not call an AI model. A stable catalog ID is the discussion key. The current static catalog IDs are bundled in `orb-world-full/lib/museum-comment-catalog.mjs`; update that allowlist when publishing a new static catalog entry. Newly submitted community editions are recognized through the public publication catalog automatically.
+
+Visitors use an unverified display name without signing in. Browser storage holds a random private comment identity and IDs of their own comments; clearing it loses self-removal access. Neither the identity nor raw IP address is published. Names and comments are rendered as text, never HTML. The server bounds names to 60 characters and comments to 1,200, checks origins and publication IDs, and enforces 15 seconds between posts, 10 posts per browser/day, 30 per network/day, and 1,000 posts/day globally. The finite initial capacity is 500 entries per ORB and 10,000 total; deleted entries count toward quotas. These measures limit ordinary abuse, not verified-person identity or a determined attacker.
+
+Remove creates a tombstone, clears the public text/name, and retains replies. Only that comment's private browser identity or the existing signed Orbforma owner session can remove it. Owner moderation opens the same discussion on Orbforma (`/comments.html?orb=...`); sign in through Orb Builder first. Cross-site third-party cookies are not required for guest posting.
+
+Writes use optimistic concurrency on the discussion ledger. A retried request ID does not create a second comment or consume a second allowance. Invalid storage fails closed. Failed submissions preserve the draft. The UI supports chronological replies, newest-first roots, ten roots per page, refresh, phone layouts and keyboard controls. Anonymous names are not identity verification; there are no likes, notification emails, automatic moderation or visitor accounts in this release.
+
+Backend source and focused tests: `orb-world-full/lib/museum-comments.mjs`, `netlify/functions/museum-comments.mjs`, `tests/museum-comments.test.mjs`. Frontend copies of `museum-comments.mjs` and `.css` must stay in sync between this Museum and Orbforma's public folder. Deployment scripts and QA artifacts are in `output/museum-comments/` in the owner workspace.

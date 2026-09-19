@@ -29,7 +29,7 @@ function render({preserveURL=false}={}){
   renderArrivals();
   const current=state(),rows=filterCatalog(catalog,current);
   if(current.sort!=='title')rows.sort((a,b)=>(b.publishedAt||(current.sort==='newest'?b.firstPublished:dateValue(b))||'').localeCompare(a.publishedAt||(current.sort==='newest'?a.firstPublished:dateValue(a))||'')||a.title.localeCompare(b.title));
-  entries.innerHTML=rows.map(orb=>ORBMuseum.entry(orb).replace('<details class="version-details">',connectionMarkup(orb)+'<details class="version-details">')).join('');
+  entries.innerHTML=rows.map(orb=>ORBMuseum.entry(orb).replace('<details class="version-details">','<p><a href="?orb='+encodeURIComponent(orb.id)+'#orb-comments" data-comment-orb="'+encodeURIComponent(orb.id)+'">'+tr('Comments','Comentarios')+'</a></p>'+connectionMarkup(orb)+'<details class="version-details">')).join('');
   document.getElementById('empty').hidden=!!rows.length;
   document.getElementById('count').textContent=rows.length===catalog.length?catalog.length+' ORBs':rows.length+tr(' of ',' de ')+catalog.length+' ORBs';
   document.querySelector('.edition-total').textContent=' · '+catalog.reduce((total,orb)=>total+editionList(orb).length,0)+tr(' editions',' ediciones');
@@ -60,6 +60,7 @@ window.addEventListener('popstate',()=>{selectedId=new URLSearchParams(location.
 for(const eventName of ['pointerover','focusin'])document.addEventListener(eventName,event=>{if(eventName==='pointerover'&&event.pointerType!=='mouse')return;const item=event.target.closest('[data-orb],article[data-orb-id]');if(item&&!item.contains(event.relatedTarget))preview(item.dataset.orb||item.dataset.orbId);});
 overview.addEventListener('click',event=>{const link=event.target.closest('.edition-link');if(!link||event.button!==0||event.metaKey||event.ctrlKey||event.shiftKey||event.altKey)return;const id=new URL(link.href).hash.slice(1);event.preventDefault();if(!document.getElementById(id))reset();const target=document.getElementById(id);if(target){const url=new URL(location.href);url.hash=id;history.pushState(null,'',url);target.scrollIntoView({block:'start'});}});
 renderScene();
+entries.addEventListener('click',event=>{const link=event.target.closest('[data-comment-orb]');if(!link||event.button!==0||event.ctrlKey||event.metaKey||event.shiftKey||event.altKey)return;event.preventDefault();universe?.select(decodeURIComponent(link.dataset.commentOrb));document.getElementById('orb-comments')?.scrollIntoView({block:'start'});});
 arrivalMore?.addEventListener('click',()=>{const count=arrivalBody.querySelectorAll('.arrival').length;arrivalLimit+=8;renderArrivals();const next=arrivalBody.querySelectorAll('.arrival h3 a')[count];next?.focus({preventScroll:true});});
 arrivalRefresh?.addEventListener('click',loadPublications);
 let arrivalDay=new Date().toDateString();
