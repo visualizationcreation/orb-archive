@@ -4220,6 +4220,361 @@
           ]
         }
       ]
+    },
+    {
+      "id": "orb-learn-grounding",
+      "title": "When Everything Feels Too Much",
+      "description": "A gentle grounding practice with ordinary objects, comfortable anchors and one manageable next step.",
+      "url": "https://orbiversity.com/orb-learn-grounding/",
+      "repository": "https://github.com/visualizationcreation/orb-learn-grounding",
+      "tags": [
+        "mental health",
+        "ORB Learn",
+        "English",
+        "Español"
+      ],
+      "category": "Wellbeing",
+      "format": "Read & listen",
+      "pointCount": 8,
+      "displayMeta": "8 illustrated readings · English / Español · Gentle Guide audio",
+      "firstPublished": "2026-09-20",
+      "publishedAt": "2026-09-20T04:28:17.158Z",
+      "updated": "2026-09-20",
+      "revision": "bf58b329ed760ecec4e2b68d4e8c0a58f6c4f485",
+      "availableJourneys": [
+        {
+          "name": "English reading",
+          "language": "en",
+          "narrationReady": true
+        },
+        {
+          "name": "Lectura en español",
+          "language": "es",
+          "narrationReady": true
+        }
+      ],
+      "featuredEdition": "orb-learn-grounding-bilingual",
+      "editions": [
+        {
+          "id": "orb-learn-grounding-bilingual",
+          "label": "ORB Learn · Bilingual reading & listening",
+          "url": "https://orbiversity.com/orb-learn-grounding/",
+          "published": "2026-09-20",
+          "generation": "authored",
+          "modelLabel": "Authored with Codex",
+          "modelId": null,
+          "orbSkillVersion": null,
+          "interface": "Orbiversity illustrated reading & listening",
+          "displayMeta": "8 readings · English / Español · ElevenLabs Gentle Guide",
+          "sourceUrl": "https://github.com/visualizationcreation/orb-learn-grounding/tree/bf58b329ed760ecec4e2b68d4e8c0a58f6c4f485",
+          "note": "A Little More Room — optional educational practices, not treatment. Original AI illustrations and recorded narration.",
+          "verified": "2026-09-20"
+        }
+      ],
+      "museum": {
+        "attribution": "anonymous",
+        "category": "Wellbeing",
+        "tags": [
+          "mental health",
+          "ORB Learn"
+        ],
+        "library": [
+          {
+            "title": "Doing What Matters in Times of Stress",
+            "url": "https://www.who.int/publications-detail-redirect/9789240003927",
+            "type": "website"
+          },
+          {
+            "title": "Caring for Your Mental Health",
+            "url": "https://www.nimh.nih.gov/health/topics/caring-for-your-mental-health",
+            "type": "website"
+          }
+        ]
+      },
+      "reaches": []
+    },
+    {
+      "id": "orb-learn-thoughts",
+      "title": "A Thought Is Not a Verdict",
+      "description": "Separate an observation from an interpretation and make room for a more balanced response.",
+      "url": "https://orbiversity.com/orb-learn-thoughts/",
+      "repository": "https://github.com/visualizationcreation/orb-learn-thoughts",
+      "tags": [
+        "mental health",
+        "ORB Learn",
+        "English",
+        "Español"
+      ],
+      "category": "Wellbeing",
+      "format": "Read & listen",
+      "pointCount": 8,
+      "displayMeta": "8 illustrated readings · English / Español · Gentle Guide audio",
+      "firstPublished": "2026-09-20",
+      "publishedAt": "2026-09-20T04:28:20.438Z",
+      "updated": "2026-09-20",
+      "revision": "0396e17a81f2a0acc4ce36d37b34abdf48e77862",
+      "availableJourneys": [
+        {
+          "name": "English reading",
+          "language": "en",
+          "narrationReady": true
+        },
+        {
+          "name": "Lectura en español",
+          "language": "es",
+          "narrationReady": true
+        }
+      ],
+      "featuredEdition": "orb-learn-thoughts-bilingual",
+      "editions": [
+        {
+          "id": "orb-learn-thoughts-bilingual",
+          "label": "ORB Learn · Bilingual reading & listening",
+          "url": "https://orbiversity.com/orb-learn-thoughts/",
+          "published": "2026-09-20",
+          "generation": "authored",
+          "modelLabel": "Authored with Codex",
+          "modelId": null,
+          "orbSkillVersion": null,
+          "interface": "Orbiversity illustrated reading & listening",
+          "displayMeta": "8 readings · English / Español · ElevenLabs Gentle Guide",
+          "sourceUrl": "https://github.com/visualizationcreation/orb-learn-thoughts/tree/0396e17a81f2a0acc4ce36d37b34abdf48e77862",
+          "note": "A Little More Room — optional educational practices, not treatment. Original AI illustrations and recorded narration.",
+          "verified": "2026-09-20"
+        }
+      ],
+      "museum": {
+        "attribution": "anonymous",
+        "category": "Wellbeing",
+        "tags": [
+          "mental health",
+          "ORB Learn"
+        ],
+        "library": [
+          {
+            "title": "Reframing unhelpful thoughts",
+            "url": "https://www.nhs.uk/every-mind-matters/mental-wellbeing-tips/self-help-cbt-techniques/reframing-unhelpful-thoughts/",
+            "type": "website"
+          },
+          {
+            "title": "Doing What Matters in Times of Stress",
+            "url": "https://www.who.int/publications-detail-redirect/9789240003927",
+            "type": "website"
+          }
+        ]
+      },
+      "reaches": []
+    },
+    {
+      "id": "orb-learn-self-compassion",
+      "title": "Be on Your Own Side",
+      "description": "Practice a kinder inner voice without ignoring mistakes, responsibility or the need for support.",
+      "url": "https://orbiversity.com/orb-learn-self-compassion/",
+      "repository": "https://github.com/visualizationcreation/orb-learn-self-compassion",
+      "tags": [
+        "mental health",
+        "ORB Learn",
+        "English",
+        "Español"
+      ],
+      "category": "Wellbeing",
+      "format": "Read & listen",
+      "pointCount": 8,
+      "displayMeta": "8 illustrated readings · English / Español · Gentle Guide audio",
+      "firstPublished": "2026-09-20",
+      "publishedAt": "2026-09-20T04:28:23.858Z",
+      "updated": "2026-09-20",
+      "revision": "cedd556492cf230b7628122d6e8722f80c689bd2",
+      "availableJourneys": [
+        {
+          "name": "English reading",
+          "language": "en",
+          "narrationReady": true
+        },
+        {
+          "name": "Lectura en español",
+          "language": "es",
+          "narrationReady": true
+        }
+      ],
+      "featuredEdition": "orb-learn-self-compassion-bilingual",
+      "editions": [
+        {
+          "id": "orb-learn-self-compassion-bilingual",
+          "label": "ORB Learn · Bilingual reading & listening",
+          "url": "https://orbiversity.com/orb-learn-self-compassion/",
+          "published": "2026-09-20",
+          "generation": "authored",
+          "modelLabel": "Authored with Codex",
+          "modelId": null,
+          "orbSkillVersion": null,
+          "interface": "Orbiversity illustrated reading & listening",
+          "displayMeta": "8 readings · English / Español · ElevenLabs Gentle Guide",
+          "sourceUrl": "https://github.com/visualizationcreation/orb-learn-self-compassion/tree/cedd556492cf230b7628122d6e8722f80c689bd2",
+          "note": "A Little More Room — optional educational practices, not treatment. Original AI illustrations and recorded narration.",
+          "verified": "2026-09-20"
+        }
+      ],
+      "museum": {
+        "attribution": "anonymous",
+        "category": "Wellbeing",
+        "tags": [
+          "mental health",
+          "ORB Learn"
+        ],
+        "library": [
+          {
+            "title": "Building self-compassion",
+            "url": "https://www.cci.health.wa.gov.au/Resources/Looking-After-Yourself/Self-Compassion",
+            "type": "website"
+          }
+        ]
+      },
+      "reaches": []
+    },
+    {
+      "id": "orb-learn-small-steps",
+      "title": "One Small Step Back Into Life",
+      "description": "Choose a small, meaningful action and adjust its size to the energy available today.",
+      "url": "https://orbiversity.com/orb-learn-small-steps/",
+      "repository": "https://github.com/visualizationcreation/orb-learn-small-steps",
+      "tags": [
+        "mental health",
+        "ORB Learn",
+        "English",
+        "Español"
+      ],
+      "category": "Wellbeing",
+      "format": "Read & listen",
+      "pointCount": 8,
+      "displayMeta": "8 illustrated readings · English / Español · Gentle Guide audio",
+      "firstPublished": "2026-09-20",
+      "publishedAt": "2026-09-20T04:28:27.398Z",
+      "updated": "2026-09-20",
+      "revision": "b6715459d6d485191f92a4edc73439840743de59",
+      "availableJourneys": [
+        {
+          "name": "English reading",
+          "language": "en",
+          "narrationReady": true
+        },
+        {
+          "name": "Lectura en español",
+          "language": "es",
+          "narrationReady": true
+        }
+      ],
+      "featuredEdition": "orb-learn-small-steps-bilingual",
+      "editions": [
+        {
+          "id": "orb-learn-small-steps-bilingual",
+          "label": "ORB Learn · Bilingual reading & listening",
+          "url": "https://orbiversity.com/orb-learn-small-steps/",
+          "published": "2026-09-20",
+          "generation": "authored",
+          "modelLabel": "Authored with Codex",
+          "modelId": null,
+          "orbSkillVersion": null,
+          "interface": "Orbiversity illustrated reading & listening",
+          "displayMeta": "8 readings · English / Español · ElevenLabs Gentle Guide",
+          "sourceUrl": "https://github.com/visualizationcreation/orb-learn-small-steps/tree/b6715459d6d485191f92a4edc73439840743de59",
+          "note": "A Little More Room — optional educational practices, not treatment. Original AI illustrations and recorded narration.",
+          "verified": "2026-09-20"
+        }
+      ],
+      "museum": {
+        "attribution": "anonymous",
+        "category": "Wellbeing",
+        "tags": [
+          "mental health",
+          "ORB Learn"
+        ],
+        "library": [
+          {
+            "title": "Tackling your to-do list",
+            "url": "https://www.nhs.uk/every-mind-matters/mental-wellbeing-tips/self-help-cbt-techniques/tackling-your-to-do-list/",
+            "type": "website"
+          },
+          {
+            "title": "Treatment for depression",
+            "url": "https://www.nhs.uk/mental-health/conditions/depression-in-adults/treatment/",
+            "type": "website"
+          }
+        ]
+      },
+      "reaches": []
+    },
+    {
+      "id": "orb-learn-connection",
+      "title": "Connection Without Losing Yourself",
+      "description": "Explore connection, clear requests and everyday boundaries without losing your own needs.",
+      "url": "https://orbiversity.com/orb-learn-connection/",
+      "repository": "https://github.com/visualizationcreation/orb-learn-connection",
+      "tags": [
+        "mental health",
+        "ORB Learn",
+        "English",
+        "Español"
+      ],
+      "category": "Wellbeing",
+      "format": "Read & listen",
+      "pointCount": 8,
+      "displayMeta": "8 illustrated readings · English / Español · Gentle Guide audio",
+      "firstPublished": "2026-09-20",
+      "publishedAt": "2026-09-20T04:28:31.097Z",
+      "updated": "2026-09-20",
+      "revision": "cd534bc69807867d37060a0784cc0ffade90a517",
+      "availableJourneys": [
+        {
+          "name": "English reading",
+          "language": "en",
+          "narrationReady": true
+        },
+        {
+          "name": "Lectura en español",
+          "language": "es",
+          "narrationReady": true
+        }
+      ],
+      "featuredEdition": "orb-learn-connection-bilingual",
+      "editions": [
+        {
+          "id": "orb-learn-connection-bilingual",
+          "label": "ORB Learn · Bilingual reading & listening",
+          "url": "https://orbiversity.com/orb-learn-connection/",
+          "published": "2026-09-20",
+          "generation": "authored",
+          "modelLabel": "Authored with Codex",
+          "modelId": null,
+          "orbSkillVersion": null,
+          "interface": "Orbiversity illustrated reading & listening",
+          "displayMeta": "8 readings · English / Español · ElevenLabs Gentle Guide",
+          "sourceUrl": "https://github.com/visualizationcreation/orb-learn-connection/tree/cd534bc69807867d37060a0784cc0ffade90a517",
+          "note": "A Little More Room — optional educational practices, not treatment. Original AI illustrations and recorded narration.",
+          "verified": "2026-09-20"
+        }
+      ],
+      "museum": {
+        "attribution": "anonymous",
+        "category": "Wellbeing",
+        "tags": [
+          "mental health",
+          "ORB Learn"
+        ],
+        "library": [
+          {
+            "title": "Social Wellness Toolkit",
+            "url": "https://www.nih.gov/health-information/your-healthiest-self-wellness-toolkits/social-wellness-toolkit",
+            "type": "website"
+          },
+          {
+            "title": "Caring for Your Mental Health",
+            "url": "https://www.nimh.nih.gov/health/topics/caring-for-your-mental-health",
+            "type": "website"
+          }
+        ]
+      },
+      "reaches": []
     }
   ],
   "schemaVersion": 2
