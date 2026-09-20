@@ -1,8 +1,8 @@
 (async()=>{
 const {fetchMuseumJSON,mergeCatalog,connectionsFor,publicationId,listingFromPublication}=await import('./museum-publications.mjs');
 
-const {mountUniverse}=await import('./orb-universe.mjs?v=media-20260919');
-const {createUniverse}=await import('./orb-connect-pass.mjs?v=central-tree-20260916-2');
+const {mountUniverse}=await import('./orb-universe.mjs?v=self-development-20260919');
+const {createUniverse}=await import('./orb-connect-pass.mjs?v=self-development-20260919');
 const {createMuseumTree}=await import('./orb-tree.mjs?v=central-tree-20260916-2');
 let universe;
 let arrivalLimit=8;

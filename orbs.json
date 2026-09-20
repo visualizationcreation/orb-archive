@@ -3595,6 +3595,631 @@
           ]
         }
       ]
+    },
+    {
+      "id": "from-intention-to-action",
+      "title": "From Intention to Action",
+      "description": "Choose a worthwhile direction, turn it into a workable next step, and learn from what happens. Eight readings connect meaningful goals with practical follow-through.",
+      "url": "https://orbiversity.com/from-intention-to-action/",
+      "repository": "https://github.com/visualizationcreation/from-intention-to-action",
+      "tags": [
+        "self-development",
+        "personal growth",
+        "goals"
+      ],
+      "category": "Self-Development",
+      "format": "Read & explore",
+      "pointCount": 8,
+      "displayMeta": "8 readings · Exercises & research",
+      "firstPublished": "2026-09-19",
+      "publishedAt": "2026-09-20T00:03:30.836Z",
+      "updated": "2026-09-19",
+      "revision": "85196cc12fe15741b65982b282dff806b55732b7",
+      "availableJourneys": [],
+      "featuredEdition": "from-intention-to-action-first-edition",
+      "editions": [
+        {
+          "id": "from-intention-to-action-first-edition",
+          "label": "Self-development · Reading edition",
+          "url": "https://orbiversity.com/from-intention-to-action/",
+          "published": "2026-09-19",
+          "generation": "authored",
+          "modelLabel": "Authored with Codex",
+          "modelId": null,
+          "orbSkillVersion": null,
+          "interface": "Orbiversity read-only studio",
+          "displayMeta": "8 readings · Exercises & research",
+          "sourceUrl": "https://github.com/visualizationcreation/from-intention-to-action/tree/85196cc12fe15741b65982b282dff806b55732b7",
+          "note": "Self-Development — Small Changes, Deeper Living",
+          "verified": "2026-09-19"
+        }
+      ],
+      "museum": {
+        "attribution": "anonymous",
+        "category": "Self-Development",
+        "tags": [
+          "self-development",
+          "personal growth",
+          "goals"
+        ],
+        "library": [
+          {
+            "title": "Intentional — Chris Bailey (2026)",
+            "url": "https://www.penguinrandomhouse.com/books/761228/intentional-by-chris-bailey/",
+            "type": "Book / publisher overview",
+            "publisher": "Penguin Life",
+            "nodes": [
+              "from-intention-to-action-p01"
+            ]
+          },
+          {
+            "title": "Self-Determination Theory and the Facilitation of Intrinsic Motivation, Social Development, and Well-Being",
+            "url": "https://selfdeterminationtheory.org/SDT/documents/2000_RyanDeci_SDT.pdf",
+            "type": "Research",
+            "publisher": "Ryan & Deci · American Psychologist, 2000",
+            "nodes": [
+              "from-intention-to-action-p02"
+            ]
+          },
+          {
+            "title": "The interplay between goal intentions and implementation intentions",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/15574664/",
+            "type": "Research",
+            "publisher": "Sheeran, Webb & Gollwitzer · Personality and Social Psychology Bulletin, 2005",
+            "nodes": [
+              "from-intention-to-action-p03",
+              "from-intention-to-action-p04",
+              "from-intention-to-action-p08"
+            ]
+          },
+          {
+            "title": "Does Monitoring Goal Progress Promote Goal Attainment?",
+            "url": "https://www.apa.org/pubs/journals/releases/bul-bul0000025.pdf",
+            "type": "Research",
+            "publisher": "Harkin et al. · Psychological Bulletin, 2016",
+            "nodes": [
+              "from-intention-to-action-p05",
+              "from-intention-to-action-p08"
+            ]
+          },
+          {
+            "title": "Self-compassion increases self-improvement motivation",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/22645164/",
+            "type": "Research",
+            "publisher": "Breines & Chen · Personality and Social Psychology Bulletin, 2012",
+            "nodes": [
+              "from-intention-to-action-p06"
+            ]
+          },
+          {
+            "title": "Adaptive self-regulation of unattainable goals",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/15018681/",
+            "type": "Research",
+            "publisher": "Wrosch et al. · Personality and Social Psychology Bulletin, 2003",
+            "nodes": [
+              "from-intention-to-action-p07"
+            ]
+          }
+        ],
+        "audio": []
+      },
+      "reaches": [
+        {
+          "sourcePoint": {
+            "id": "from-intention-to-action-p02",
+            "title": "Separate a chosen value from an inherited demand"
+          },
+          "target": {
+            "id": "a-life-that-matters",
+            "url": "https://orbiversity.com/a-life-that-matters/",
+            "topic": "A Life That Matters"
+          },
+          "relation": "association",
+          "reason": "A direction becomes concrete through a contribution you can sustain. This is an editorial connection between two original exercises.",
+          "evidence": [
+            {
+              "url": "https://selfdeterminationtheory.org/SDT/documents/2000_RyanDeci_SDT.pdf",
+              "title": "Self-Determination Theory and the Facilitation of Intrinsic Motivation, Social Development, and Well-Being"
+            },
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/32881540/",
+              "title": "Rewards of kindness? A meta-analysis of the link between prosociality and well-being"
+            },
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/15018681/",
+              "title": "Adaptive self-regulation of unattainable goals"
+            }
+          ]
+        },
+        {
+          "sourcePoint": {
+            "id": "from-intention-to-action-p06",
+            "title": "Return after a miss with a specific repair"
+          },
+          "target": {
+            "id": "the-beliefs-we-live-by",
+            "url": "https://orbiversity.com/the-beliefs-we-live-by/",
+            "topic": "The Beliefs We Live By"
+          },
+          "relation": "association",
+          "reason": "Returning after a missed action can pair with an accurate, usable statement about the next step.",
+          "evidence": [
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/22645164/",
+              "title": "Self-compassion increases self-improvement motivation"
+            },
+            {
+              "url": "https://www.uni-muenster.de/imperia/md/content/psyifp/aeechterhoff/wintersemester2011-12/seminarthemenfelderdersozialpsychologie/04_wood_etal_selfstatements_psychscience2009.pdf",
+              "title": "Positive Self-Statements: Power for Some, Peril for Others"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a-life-that-matters",
+      "title": "A Life That Matters",
+      "description": "Explore being valued, making a contribution and belonging without earning your worth through endless usefulness. Eight readings invite a more grounded sense of purpose.",
+      "url": "https://orbiversity.com/a-life-that-matters/",
+      "repository": "https://github.com/visualizationcreation/a-life-that-matters",
+      "tags": [
+        "self-development",
+        "personal growth",
+        "purpose"
+      ],
+      "category": "Self-Development",
+      "format": "Read & explore",
+      "pointCount": 8,
+      "displayMeta": "8 readings · Exercises & research",
+      "firstPublished": "2026-09-19",
+      "publishedAt": "2026-09-20T00:03:30.836Z",
+      "updated": "2026-09-19",
+      "revision": "7d7a079a191cdafa7484214455bb0a685c516aaa",
+      "availableJourneys": [],
+      "featuredEdition": "a-life-that-matters-first-edition",
+      "editions": [
+        {
+          "id": "a-life-that-matters-first-edition",
+          "label": "Self-development · Reading edition",
+          "url": "https://orbiversity.com/a-life-that-matters/",
+          "published": "2026-09-19",
+          "generation": "authored",
+          "modelLabel": "Authored with Codex",
+          "modelId": null,
+          "orbSkillVersion": null,
+          "interface": "Orbiversity read-only studio",
+          "displayMeta": "8 readings · Exercises & research",
+          "sourceUrl": "https://github.com/visualizationcreation/a-life-that-matters/tree/7d7a079a191cdafa7484214455bb0a685c516aaa",
+          "note": "Self-Development — Small Changes, Deeper Living",
+          "verified": "2026-09-19"
+        }
+      ],
+      "museum": {
+        "attribution": "anonymous",
+        "category": "Self-Development",
+        "tags": [
+          "self-development",
+          "personal growth",
+          "purpose"
+        ],
+        "library": [
+          {
+            "title": "Mattering — Jennifer Breheny Wallace (2026)",
+            "url": "https://www.penguinrandomhouse.com/books/756179/mattering-by-jennifer-breheny-wallace/",
+            "type": "Book / publisher overview",
+            "publisher": "Portfolio",
+            "nodes": [
+              "a-life-that-matters-p01",
+              "a-life-that-matters-p02",
+              "a-life-that-matters-p05"
+            ]
+          },
+          {
+            "title": "Social Interactions and Well-Being: The Surprising Power of Weak Ties",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/24769739/",
+            "type": "Research",
+            "publisher": "Sandstrom & Dunn · Personality and Social Psychology Bulletin, 2014",
+            "nodes": [
+              "a-life-that-matters-p03",
+              "a-life-that-matters-p06",
+              "a-life-that-matters-p08"
+            ]
+          },
+          {
+            "title": "Rewards of kindness? A meta-analysis of the link between prosociality and well-being",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/32881540/",
+            "type": "Research",
+            "publisher": "Hui et al. · Psychological Bulletin, 2020",
+            "nodes": [
+              "a-life-that-matters-p04",
+              "a-life-that-matters-p07",
+              "a-life-that-matters-p08"
+            ]
+          },
+          {
+            "title": "Self-Determination Theory and the Facilitation of Intrinsic Motivation, Social Development, and Well-Being",
+            "url": "https://selfdeterminationtheory.org/SDT/documents/2000_RyanDeci_SDT.pdf",
+            "type": "Research",
+            "publisher": "Ryan & Deci · American Psychologist, 2000",
+            "nodes": [
+              "a-life-that-matters-p06"
+            ]
+          },
+          {
+            "title": "Adaptive self-regulation of unattainable goals",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/15018681/",
+            "type": "Research",
+            "publisher": "Wrosch et al. · Personality and Social Psychology Bulletin, 2003",
+            "nodes": [
+              "a-life-that-matters-p07"
+            ]
+          }
+        ],
+        "audio": []
+      },
+      "reaches": [
+        {
+          "sourcePoint": {
+            "id": "a-life-that-matters-p02",
+            "title": "Do not make usefulness the price of belonging"
+          },
+          "target": {
+            "id": "connection-without-losing-yourself",
+            "url": "https://orbiversity.com/connection-without-losing-yourself/",
+            "topic": "Connection Without Losing Yourself"
+          },
+          "relation": "association",
+          "reason": "Belonging need not require unlimited usefulness. Follow that question into a practical way to describe your availability.",
+          "evidence": [
+            {
+              "url": "https://www.penguinrandomhouse.com/books/756179/mattering-by-jennifer-breheny-wallace/",
+              "title": "Mattering — Jennifer Breheny Wallace (2026)"
+            },
+            {
+              "url": "https://www.penguinrandomhouse.com/books/760457/the-balancing-act-by-nedra-glover-tawwab/",
+              "title": "The Balancing Act — Nedra Glover Tawwab (2026)"
+            }
+          ]
+        },
+        {
+          "sourcePoint": {
+            "id": "a-life-that-matters-p07",
+            "title": "Let purpose become a contribution you can sustain"
+          },
+          "target": {
+            "id": "from-intention-to-action",
+            "url": "https://orbiversity.com/from-intention-to-action/",
+            "topic": "From Intention to Action"
+          },
+          "relation": "association",
+          "reason": "A meaningful contribution needs a workable next action. Follow the connection from purpose to planning.",
+          "evidence": [
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/32881540/",
+              "title": "Rewards of kindness? A meta-analysis of the link between prosociality and well-being"
+            },
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/15018681/",
+              "title": "Adaptive self-regulation of unattainable goals"
+            },
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/15574664/",
+              "title": "The interplay between goal intentions and implementation intentions"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "the-beliefs-we-live-by",
+      "title": "The Beliefs We Live By",
+      "description": "Separate observations from assumptions, examine a prediction, and try a more flexible response. Eight readings connect belief, evidence and small experiments without promising that thought controls everything.",
+      "url": "https://orbiversity.com/the-beliefs-we-live-by/",
+      "repository": "https://github.com/visualizationcreation/the-beliefs-we-live-by",
+      "tags": [
+        "self-development",
+        "personal growth",
+        "beliefs"
+      ],
+      "category": "Self-Development",
+      "format": "Read & explore",
+      "pointCount": 8,
+      "displayMeta": "8 readings · Exercises & research",
+      "firstPublished": "2026-09-19",
+      "publishedAt": "2026-09-20T00:03:30.836Z",
+      "updated": "2026-09-19",
+      "revision": "b6a2f5092679acc9ac10d0d10a0e39ab0b98ec2a",
+      "availableJourneys": [],
+      "featuredEdition": "the-beliefs-we-live-by-first-edition",
+      "editions": [
+        {
+          "id": "the-beliefs-we-live-by-first-edition",
+          "label": "Self-development · Reading edition",
+          "url": "https://orbiversity.com/the-beliefs-we-live-by/",
+          "published": "2026-09-19",
+          "generation": "authored",
+          "modelLabel": "Authored with Codex",
+          "modelId": null,
+          "orbSkillVersion": null,
+          "interface": "Orbiversity read-only studio",
+          "displayMeta": "8 readings · Exercises & research",
+          "sourceUrl": "https://github.com/visualizationcreation/the-beliefs-we-live-by/tree/b6a2f5092679acc9ac10d0d10a0e39ab0b98ec2a",
+          "note": "Self-Development — Small Changes, Deeper Living",
+          "verified": "2026-09-19"
+        }
+      ],
+      "museum": {
+        "attribution": "anonymous",
+        "category": "Self-Development",
+        "tags": [
+          "self-development",
+          "personal growth",
+          "beliefs"
+        ],
+        "library": [
+          {
+            "title": "Beyond Belief — Nir Eyal with Julie Li (2026)",
+            "url": "https://www.penguinrandomhouse.com/books/761993/beyond-belief-by-nir-eyal-with-julie-li/",
+            "type": "Book / publisher overview",
+            "publisher": "Portfolio",
+            "nodes": [
+              "the-beliefs-we-live-by-p01",
+              "the-beliefs-we-live-by-p02"
+            ]
+          },
+          {
+            "title": "Considering the opposite: a corrective strategy for social judgment",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/6527215/",
+            "type": "Research",
+            "publisher": "Lord, Lepper & Preston · Journal of Personality and Social Psychology, 1984",
+            "nodes": [
+              "the-beliefs-we-live-by-p03",
+              "the-beliefs-we-live-by-p04",
+              "the-beliefs-we-live-by-p08"
+            ]
+          },
+          {
+            "title": "The interplay between goal intentions and implementation intentions",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/15574664/",
+            "type": "Research",
+            "publisher": "Sheeran, Webb & Gollwitzer · Personality and Social Psychology Bulletin, 2005",
+            "nodes": [
+              "the-beliefs-we-live-by-p04"
+            ]
+          },
+          {
+            "title": "A national experiment reveals where a growth mindset improves achievement",
+            "url": "https://www.nature.com/articles/s41586-019-1466-y",
+            "type": "Research",
+            "publisher": "Yeager et al. · Nature, 2019",
+            "nodes": [
+              "the-beliefs-we-live-by-p05",
+              "the-beliefs-we-live-by-p07",
+              "the-beliefs-we-live-by-p08"
+            ]
+          },
+          {
+            "title": "Positive Self-Statements: Power for Some, Peril for Others",
+            "url": "https://www.uni-muenster.de/imperia/md/content/psyifp/aeechterhoff/wintersemester2011-12/seminarthemenfelderdersozialpsychologie/04_wood_etal_selfstatements_psychscience2009.pdf",
+            "type": "Research",
+            "publisher": "Wood, Perunovic & Lee · Psychological Science, 2009",
+            "nodes": [
+              "the-beliefs-we-live-by-p06"
+            ]
+          },
+          {
+            "title": "Self-Determination Theory and the Facilitation of Intrinsic Motivation, Social Development, and Well-Being",
+            "url": "https://selfdeterminationtheory.org/SDT/documents/2000_RyanDeci_SDT.pdf",
+            "type": "Research",
+            "publisher": "Ryan & Deci · American Psychologist, 2000",
+            "nodes": [
+              "the-beliefs-we-live-by-p07"
+            ]
+          }
+        ],
+        "audio": []
+      },
+      "reaches": [
+        {
+          "sourcePoint": {
+            "id": "the-beliefs-we-live-by-p04",
+            "title": "Test one small belief with a reversible action"
+          },
+          "target": {
+            "id": "from-intention-to-action",
+            "url": "https://orbiversity.com/from-intention-to-action/",
+            "topic": "From Intention to Action"
+          },
+          "relation": "association",
+          "reason": "A small test of a belief and a review of an action plan both need observations that are distinct from judgments.",
+          "evidence": [
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/6527215/",
+              "title": "Considering the opposite: a corrective strategy for social judgment"
+            },
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/15574664/",
+              "title": "The interplay between goal intentions and implementation intentions"
+            },
+            {
+              "url": "https://www.apa.org/pubs/journals/releases/bul-bul0000025.pdf",
+              "title": "Does Monitoring Goal Progress Promote Goal Attainment?"
+            }
+          ]
+        },
+        {
+          "sourcePoint": {
+            "id": "the-beliefs-we-live-by-p07",
+            "title": "Distinguish a belief from the barrier around it"
+          },
+          "target": {
+            "id": "connection-without-losing-yourself",
+            "url": "https://orbiversity.com/connection-without-losing-yourself/",
+            "topic": "Connection Without Losing Yourself"
+          },
+          "relation": "association",
+          "reason": "Some barriers call for support rather than a new belief. Explore how to ask for a specific form of help.",
+          "evidence": [
+            {
+              "url": "https://www.nature.com/articles/s41586-019-1466-y",
+              "title": "A national experiment reveals where a growth mindset improves achievement"
+            },
+            {
+              "url": "https://selfdeterminationtheory.org/SDT/documents/2000_RyanDeci_SDT.pdf",
+              "title": "Self-Determination Theory and the Facilitation of Intrinsic Motivation, Social Development, and Well-Being"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "connection-without-losing-yourself",
+      "title": "Connection Without Losing Yourself",
+      "description": "Practice asking, listening and setting limits while keeping both people’s choices visible. Eight readings explore closeness that can make room for independence.",
+      "url": "https://orbiversity.com/connection-without-losing-yourself/",
+      "repository": "https://github.com/visualizationcreation/connection-without-losing-yourself",
+      "tags": [
+        "self-development",
+        "personal growth",
+        "relationships"
+      ],
+      "category": "Self-Development",
+      "format": "Read & explore",
+      "pointCount": 8,
+      "displayMeta": "8 readings · Exercises & research",
+      "firstPublished": "2026-09-19",
+      "publishedAt": "2026-09-20T00:03:30.836Z",
+      "updated": "2026-09-19",
+      "revision": "521797b35d96b98b7a8e8ee863334235f356367c",
+      "availableJourneys": [],
+      "featuredEdition": "connection-without-losing-yourself-first-edition",
+      "editions": [
+        {
+          "id": "connection-without-losing-yourself-first-edition",
+          "label": "Self-development · Reading edition",
+          "url": "https://orbiversity.com/connection-without-losing-yourself/",
+          "published": "2026-09-19",
+          "generation": "authored",
+          "modelLabel": "Authored with Codex",
+          "modelId": null,
+          "orbSkillVersion": null,
+          "interface": "Orbiversity read-only studio",
+          "displayMeta": "8 readings · Exercises & research",
+          "sourceUrl": "https://github.com/visualizationcreation/connection-without-losing-yourself/tree/521797b35d96b98b7a8e8ee863334235f356367c",
+          "note": "Self-Development — Small Changes, Deeper Living",
+          "verified": "2026-09-19"
+        }
+      ],
+      "museum": {
+        "attribution": "anonymous",
+        "category": "Self-Development",
+        "tags": [
+          "self-development",
+          "personal growth",
+          "relationships"
+        ],
+        "library": [
+          {
+            "title": "The Balancing Act — Nedra Glover Tawwab (2026)",
+            "url": "https://www.penguinrandomhouse.com/books/760457/the-balancing-act-by-nedra-glover-tawwab/",
+            "type": "Book / publisher overview",
+            "publisher": "Tarcher",
+            "nodes": [
+              "connection-without-losing-yourself-p01",
+              "connection-without-losing-yourself-p02",
+              "connection-without-losing-yourself-p04",
+              "connection-without-losing-yourself-p08"
+            ]
+          },
+          {
+            "title": "Self-Determination Theory and the Facilitation of Intrinsic Motivation, Social Development, and Well-Being",
+            "url": "https://selfdeterminationtheory.org/SDT/documents/2000_RyanDeci_SDT.pdf",
+            "type": "Research",
+            "publisher": "Ryan & Deci · American Psychologist, 2000",
+            "nodes": [
+              "connection-without-losing-yourself-p03"
+            ]
+          },
+          {
+            "title": "Intimacy as an interpersonal process: self-disclosure and perceived partner responsiveness",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/9599440/",
+            "type": "Research",
+            "publisher": "Laurenceau, Barrett & Pietromonaco · Journal of Personality and Social Psychology, 1998",
+            "nodes": [
+              "connection-without-losing-yourself-p05",
+              "connection-without-losing-yourself-p06",
+              "connection-without-losing-yourself-p08"
+            ]
+          },
+          {
+            "title": "Self-compassion increases self-improvement motivation",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/22645164/",
+            "type": "Research",
+            "publisher": "Breines & Chen · Personality and Social Psychology Bulletin, 2012",
+            "nodes": [
+              "connection-without-losing-yourself-p06"
+            ]
+          },
+          {
+            "title": "Social Interactions and Well-Being: The Surprising Power of Weak Ties",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/24769739/",
+            "type": "Research",
+            "publisher": "Sandstrom & Dunn · Personality and Social Psychology Bulletin, 2014",
+            "nodes": [
+              "connection-without-losing-yourself-p07"
+            ]
+          }
+        ],
+        "audio": []
+      },
+      "reaches": [
+        {
+          "sourcePoint": {
+            "id": "connection-without-losing-yourself-p07",
+            "title": "Share support across a wider circle"
+          },
+          "target": {
+            "id": "a-life-that-matters",
+            "url": "https://orbiversity.com/a-life-that-matters/",
+            "topic": "A Life That Matters"
+          },
+          "relation": "association",
+          "reason": "A relationship need not carry every need. Explore the different settings where support and shared interests can grow.",
+          "evidence": [
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/24769739/",
+              "title": "Social Interactions and Well-Being: The Surprising Power of Weak Ties"
+            },
+            {
+              "url": "https://selfdeterminationtheory.org/SDT/documents/2000_RyanDeci_SDT.pdf",
+              "title": "Self-Determination Theory and the Facilitation of Intrinsic Motivation, Social Development, and Well-Being"
+            }
+          ]
+        },
+        {
+          "sourcePoint": {
+            "id": "connection-without-losing-yourself-p06",
+            "title": "Repair a specific moment instead of winning the whole argument"
+          },
+          "target": {
+            "id": "from-intention-to-action",
+            "url": "https://orbiversity.com/from-intention-to-action/",
+            "topic": "From Intention to Action"
+          },
+          "relation": "association",
+          "reason": "Repairing a conversation and returning after a missed commitment both focus on an action you can change.",
+          "evidence": [
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/9599440/",
+              "title": "Intimacy as an interpersonal process: self-disclosure and perceived partner responsiveness"
+            },
+            {
+              "url": "https://pubmed.ncbi.nlm.nih.gov/22645164/",
+              "title": "Self-compassion increases self-improvement motivation"
+            }
+          ]
+        }
+      ]
     }
   ],
   "schemaVersion": 2

@@ -1,6 +1,6 @@
 import {createMuseumTree} from './orb-tree.mjs?v=central-tree-20260916-2';
 import {startView,callOrbs,callTarget,layerCount,MAX_LAYERS,refocus,visibleEdges,sphereSize,unseen,branchCurve,reconcileView} from './orb-browsing.mjs?v=central-tree-20260916-2';
-import {createUniverse} from './orb-connect-pass.mjs?v=central-tree-20260916-2';
+import {createUniverse} from './orb-connect-pass.mjs?v=self-development-20260919';
 import {savedWorks} from './orb-connect-snapshot.mjs?v=central-tree-20260916-2';
 import {mountMuseumMediaPanel} from './museum-media-panel.mjs?v=media-20260919';
 import {mountMuseumComments} from './museum-comments.mjs';
@@ -53,7 +53,7 @@ export function mountUniverse({catalog,overview}){
   const paths=make('ul','','universe-paths');
   for(const child of view.nodes.filter(n=>n.parent===key)){const item=graph.nodes.get(child.id),li=make('li');li.append(button(label(item),()=>choose(child.key)));paths.append(li);}overview.append(paths);
   if(!paths.children.length)overview.append(make('p',occurrence.depth>=MAX_LAYERS?tr('Refocus this branch to unfold the next four layers.','Recentra esta rama para desplegar las próximas cuatro capas.'):tr('No further saved connections along this route.','No hay más conexiones guardadas en esta ruta.'),'overview-meta'));
-  const note=make('p',tr('An authored arrangement · 16 September 2026. Collections are invitations to explore; the original orbs keep their identities.','Una organización de autor · 16 de septiembre de 2026. Las colecciones invitan a explorar; los orbs originales conservan su identidad.'),'vault-note');overview.append(note);
+  const note=make('p',tr('An authored arrangement · 19 September 2026. Collections are invitations to explore; the original orbs keep their identities.','Una organización de autor · 19 de septiembre de 2026. Las colecciones invitan a explorar; los orbs originales conservan su identidad.'),'vault-note');overview.append(note);
  }
  function render(recenter=false){
   view=reconcileView(graph,view);

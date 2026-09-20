@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-19T23:37:44.012Z",
+  "generatedAt": "2026-09-20T00:03:30.836Z",
   "orbs": {
     "quinault": {
       "readingImages": [
@@ -2811,6 +2811,86 @@
           "to": "https://orbiversity.com/orb-archive/point-media-structured-data-08.jpg"
         }
       ]
+    },
+    "from-intention-to-action": {
+      "readingImages": [
+        {
+          "src": "https://orbiversity.com/from-intention-to-action/diagram.png",
+          "source": "https://orbiversity.com/from-intention-to-action/diagram.svg",
+          "title": "From Intention to Action — a practice map",
+          "caption": "Original explanatory diagram for this ORB. A suggested reflection sequence, not research data or a book illustration.",
+          "credit": "Orbiversity · original diagram authored with Codex",
+          "node": null,
+          "generated": false
+        }
+      ],
+      "presentation": {
+        "version": 1,
+        "media": []
+      },
+      "museum": {
+        "audio": []
+      }
+    },
+    "a-life-that-matters": {
+      "readingImages": [
+        {
+          "src": "https://orbiversity.com/a-life-that-matters/diagram.png",
+          "source": "https://orbiversity.com/a-life-that-matters/diagram.svg",
+          "title": "A Life That Matters — a practice map",
+          "caption": "Original explanatory diagram for this ORB. A suggested reflection sequence, not research data or a book illustration.",
+          "credit": "Orbiversity · original diagram authored with Codex",
+          "node": null,
+          "generated": false
+        }
+      ],
+      "presentation": {
+        "version": 1,
+        "media": []
+      },
+      "museum": {
+        "audio": []
+      }
+    },
+    "the-beliefs-we-live-by": {
+      "readingImages": [
+        {
+          "src": "https://orbiversity.com/the-beliefs-we-live-by/diagram.png",
+          "source": "https://orbiversity.com/the-beliefs-we-live-by/diagram.svg",
+          "title": "The Beliefs We Live By — a practice map",
+          "caption": "Original explanatory diagram for this ORB. A suggested reflection sequence, not research data or a book illustration.",
+          "credit": "Orbiversity · original diagram authored with Codex",
+          "node": null,
+          "generated": false
+        }
+      ],
+      "presentation": {
+        "version": 1,
+        "media": []
+      },
+      "museum": {
+        "audio": []
+      }
+    },
+    "connection-without-losing-yourself": {
+      "readingImages": [
+        {
+          "src": "https://orbiversity.com/connection-without-losing-yourself/diagram.png",
+          "source": "https://orbiversity.com/connection-without-losing-yourself/diagram.svg",
+          "title": "Connection Without Losing Yourself — a practice map",
+          "caption": "Original explanatory diagram for this ORB. A suggested reflection sequence, not research data or a book illustration.",
+          "credit": "Orbiversity · original diagram authored with Codex",
+          "node": null,
+          "generated": false
+        }
+      ],
+      "presentation": {
+        "version": 1,
+        "media": []
+      },
+      "museum": {
+        "audio": []
+      }
     }
   }
 }
