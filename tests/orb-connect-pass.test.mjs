@@ -13,7 +13,15 @@ test('every published orb can be reached from the collections and has a return r
  const graph=createUniverse(savedWorks),visited=new Set(['universe']),queue=['universe'];
  while(queue.length)for(const {node}of neighborhood(graph,queue.shift()))if(!visited.has(node.id)){visited.add(node.id);queue.push(node.id);}
  assert.equal(visited.size,graph.nodes.size+1);
- for(const group of pass.groups)for(const [id]of group.members)assert.ok(neighborhood(graph,id).some(n=>n.node.id===group.id));
+ for(const group of graph.groups)for(const [id]of group.members)assert.ok(neighborhood(graph,id).some(n=>n.node.id===group.id));
+});
+test('self-development joins four new works to the existing universe',()=>{
+ const ids=['from-intention-to-action','a-life-that-matters','the-beliefs-we-live-by','connection-without-losing-yourself'];
+ const graph=createUniverse([...savedWorks,...ids.map(id=>({id,title:id,url:'https://orbiversity.com/'+id+'/'}))]);
+ assert.equal(graph.workCount,19);
+ assert.equal(graph.nodes.get('self-development').members.length,4);
+ for(const id of ids)assert.ok(neighborhood(graph,id).some(n=>n.node.id==='self-development'));
+ assert.ok(neighborhood(graph,'self-development').some(n=>n.node.id==='belief-memory'));
 });
 test('future arrivals remain navigable without inventing semantic membership',()=>{
  const next={id:'another-world',title:'A new orb',url:'https://example.org/orb'};const graph=createUniverse([...savedWorks,next]);
