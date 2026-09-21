@@ -35,3 +35,21 @@ dialog{border:1px solid #c0d4e2;border-radius:15px;padding:24px;width:min(640px,
 #reader-gallery-hint{font-size:.86rem;line-height:1.5;margin:0 0 18px}
 .discovery .channel h3{padding:10px 14px;background:#ffe58a;color:#203b4d;border-radius:6px}
 .point-label.center-topic{z-index:2}
+/* Phone controls follow wrapped content instead of overlapping fixed panel offsets. */
+.notice{position:relative;inset:auto;transform:none;width:auto;max-width:650px;margin:10px 17px;pointer-events:auto}
+.home>.notice,#reader-scroll>.notice{margin:0 0 18px}
+@media(max-width:650px) and (orientation:portrait){
+ .notice{position:relative;inset:auto;transform:none;width:auto;max-width:none;margin:10px 17px;flex:0 0 auto;pointer-events:auto}
+ .home>.notice{margin:0 0 18px}
+ body.has-reader #exploration{position:fixed;z-index:4;inset:68px 0 calc(49px + env(safe-area-inset-bottom,0px));display:flex;flex-direction:column;overflow-y:auto;pointer-events:none;scroll-padding:8px}
+ body.has-reader .exploration-head{flex:0 0 auto;background:#f5f9fc}
+ body.has-reader.solar .exploration-head{background:#183e5e}
+ body.has-reader.future-mode .exploration-head{background:#332944}
+ body.has-reader #reader,body.has-reader.future-mode #reader,body.has-reader.playing #reader{position:relative;inset:auto;flex:1 0 180px;min-height:180px;width:calc(100% - 18px);margin:0 9px;pointer-events:auto}
+ body.has-reader .reader-top,body.has-reader .reader-actions{flex-shrink:0}
+ body.has-reader #reader-scroll{min-height:0}
+ .reader-top button{min-height:44px}
+ body.has-reader .player{position:relative;inset:auto;flex:0 0 auto;width:calc(100% - 18px);max-width:none;margin:8px 9px 0;pointer-events:auto}
+ .player button{min-height:44px}
+ .edition-footer{padding-bottom:calc(9px + env(safe-area-inset-bottom,0px))}
+}
