@@ -1,0 +1,305 @@
+{
+  "id": "us250-new-orleans",
+  "title": "New Orleans — A river city that made an American sound",
+  "summary": "Follow a river port into music, migration and living memory. Eight readings connect treaties and trade with Congo Square, neighborhood organizations and the work of listening.",
+  "collection": "America at 250 — Four Cities, Many Stories",
+  "pointCount": 8,
+  "language": "en",
+  "canonical": "https://orbiversity.com/us250-new-orleans/",
+  "publicationStatus": "published",
+  "idMapping": [
+    {
+      "draftId": "us250-new-orleans.p01",
+      "id": "us250-new-orleans-p01"
+    },
+    {
+      "draftId": "us250-new-orleans.p02",
+      "id": "us250-new-orleans-p02"
+    },
+    {
+      "draftId": "us250-new-orleans.p03",
+      "id": "us250-new-orleans-p03"
+    },
+    {
+      "draftId": "us250-new-orleans.p04",
+      "id": "us250-new-orleans-p04"
+    },
+    {
+      "draftId": "us250-new-orleans.p05",
+      "id": "us250-new-orleans-p05"
+    },
+    {
+      "draftId": "us250-new-orleans.p06",
+      "id": "us250-new-orleans-p06"
+    },
+    {
+      "draftId": "us250-new-orleans.p07",
+      "id": "us250-new-orleans-p07"
+    },
+    {
+      "draftId": "us250-new-orleans.p08",
+      "id": "us250-new-orleans-p08"
+    }
+  ],
+  "sourceRegister": [
+    {
+      "id": "bulbancha",
+      "title": "New Orleans: 300 // Bulbancha: 3000",
+      "publisher": "WWNO / Historic New Orleans Collection / University of New Orleans",
+      "url": "https://tripodnola.hnoc.org/episodes/new-orleans-300-bulbancha-3000/",
+      "accessedAt": "2026-09-19"
+    },
+    {
+      "id": "purchase",
+      "title": "Louisiana Purchase Treaty (1803)",
+      "publisher": "National Archives",
+      "url": "https://www.archives.gov/milestone-documents/louisiana-purchase-treaty",
+      "accessedAt": "2026-09-19"
+    },
+    {
+      "id": "jazz",
+      "title": "Jazz Origins in New Orleans",
+      "publisher": "National Park Service",
+      "url": "https://www.nps.gov/jazz/learn/historyculture/history_early.htm",
+      "accessedAt": "2026-09-19"
+    },
+    {
+      "id": "trade",
+      "title": "New Orleans, Slave Market of the South",
+      "publisher": "Historic New Orleans Collection",
+      "url": "https://hnoc.org/virtual-exhibitions/purchased-lives/new-orleans-slave-market-south",
+      "accessedAt": "2026-09-19"
+    },
+    {
+      "id": "banking",
+      "title": "Banking in the Antebellum South",
+      "publisher": "Historic New Orleans Collection",
+      "url": "https://hnoc.org/virtual-exhibitions/money-money-money/banking-antebellum-south",
+      "accessedAt": "2026-09-19"
+    },
+    {
+      "id": "jazz-map",
+      "title": "Jazz Map",
+      "publisher": "National Park Service",
+      "url": "https://www.nps.gov/jazz/learn/historyculture/jazz-map.htm",
+      "accessedAt": "2026-09-19"
+    },
+    {
+      "id": "armstrong",
+      "title": "The 100th Anniversary of Louis Armstrong’s Arrival in Chicago",
+      "publisher": "Louis Armstrong House Museum",
+      "url": "https://virtualexhibits.louisarmstronghouse.org/2022/07/08/ill-never-forget-it-the-100th-anniversary-of-louis-armstrongs-arrival-in-chicago/",
+      "accessedAt": "2026-09-19"
+    },
+    {
+      "id": "katrina",
+      "title": "Living with Hurricanes: Katrina and Beyond",
+      "publisher": "Louisiana State Museum",
+      "url": "https://louisianastatemuseum.org/exhibit/living-hurricanes-katrina-and-beyond",
+      "accessedAt": "2026-09-19"
+    }
+  ],
+  "sourcePointAssignments": [
+    {
+      "id": "us250-new-orleans-p01",
+      "sourceIds": [
+        "bulbancha"
+      ]
+    },
+    {
+      "id": "us250-new-orleans-p02",
+      "sourceIds": [
+        "purchase"
+      ]
+    },
+    {
+      "id": "us250-new-orleans-p03",
+      "sourceIds": [
+        "jazz"
+      ]
+    },
+    {
+      "id": "us250-new-orleans-p04",
+      "sourceIds": [
+        "trade",
+        "banking"
+      ]
+    },
+    {
+      "id": "us250-new-orleans-p05",
+      "sourceIds": [
+        "jazz-map"
+      ]
+    },
+    {
+      "id": "us250-new-orleans-p06",
+      "sourceIds": [
+        "armstrong"
+      ]
+    },
+    {
+      "id": "us250-new-orleans-p07",
+      "sourceIds": [
+        "katrina"
+      ]
+    },
+    {
+      "id": "us250-new-orleans-p08",
+      "sourceIds": [
+        "bulbancha",
+        "jazz-map"
+      ]
+    }
+  ],
+  "authorship": "Original text authored with Codex for the owner; anonymous public credit.",
+  "media": {
+    "included": [
+      {
+        "node": "us250-new-orleans-p01",
+        "title": "The Mississippi curves through New Orleans",
+        "caption": "Aerial view of New Orleans and the Mississippi River, April 2007. Geographic context for Bulbancha’s longer history, not an image of the place before colonization.",
+        "source": "https://commons.wikimedia.org/wiki/File:Nouvelle-Orl%C3%A9ans_vue_a%C3%A9rienne.JPG",
+        "credit": "Ianaré T. Sévi",
+        "license": "Public domain",
+        "licenseURL": "https://creativecommons.org/publicdomain/mark/1.0/",
+        "generated": false,
+        "src": "https://orbiversity.com/orb-archive/point-media-us250-new-orleans-p01.jpg"
+      },
+      {
+        "node": "us250-new-orleans-p02",
+        "title": "The Port of New Orleans",
+        "caption": "A container ship at the Napoleon Avenue terminal, April 2007. A modern view illustrating the port’s continuing function; the Louisiana Purchase occurred in 1803.",
+        "source": "https://commons.wikimedia.org/wiki/File:MSC_Marina_docked_at_Port_of_New_Orleans.jpg",
+        "credit": "Gnovick at English Wikipedia",
+        "license": "CC BY 3.0",
+        "licenseURL": "https://creativecommons.org/licenses/by/3.0",
+        "generated": false,
+        "src": "https://orbiversity.com/orb-archive/point-media-us250-new-orleans-p02.jpg"
+      },
+      {
+        "node": "us250-new-orleans-p03",
+        "title": "Congo Square — modern view",
+        "caption": "A modern photograph of Congo Square. It shows the place, not a reconstruction of its early gatherings.",
+        "source": "https://commons.wikimedia.org/wiki/File:Congosquare-today.jpg",
+        "credit": "Falcanary at English Wikipedia",
+        "license": "Public domain",
+        "licenseURL": "https://creativecommons.org/publicdomain/mark/1.0/",
+        "generated": false,
+        "src": "https://orbiversity.com/orb-archive/point-media-us250-new-orleans-p03.jpg"
+      },
+      {
+        "node": "us250-new-orleans-p04",
+        "title": "A slave-auction advertisement, 1856",
+        "caption": "A New Orleans auction broadside dated February 23, 1856, naming people offered for sale. Primary-source evidence of slavery and the city’s trade in human beings; its dehumanizing language is historical evidence.",
+        "source": "https://commons.wikimedia.org/wiki/File:Slave_Auction_New_Orleans_Beard_%26_May_-_23_Feb_1856.jpg",
+        "credit": "J.A. Beard & May, New Orleans, slave auctioneers. Bulletin Print, 35 Gravier St., New Orleans",
+        "license": "Public domain",
+        "licenseURL": "https://creativecommons.org/publicdomain/mark/1.0/",
+        "generated": false,
+        "src": "https://orbiversity.com/orb-archive/point-media-us250-new-orleans-p04.jpg"
+      },
+      {
+        "node": "us250-new-orleans-p05",
+        "title": "Mardi Gras morning in Tremé",
+        "caption": "A Tremé neighborhood street on Mardi Gras morning, February 13, 2018. Contemporary place and cultural context rather than a scene from the beginnings of jazz.",
+        "source": "https://commons.wikimedia.org/wiki/File:Mardi_Gras_Morning_in_Treme_2018_14.jpg",
+        "credit": "Infrogmation of New Orleans",
+        "license": "CC BY-SA 4.0",
+        "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+        "generated": false,
+        "src": "https://orbiversity.com/orb-archive/point-media-us250-new-orleans-p05.jpg"
+      },
+      {
+        "node": "us250-new-orleans-p06",
+        "title": "King Oliver, circa 1915",
+        "caption": "Historical portrait of jazz musician King Oliver, circa 1915. Oliver’s work connects the New Orleans story to the movement of jazz and Louis Armstrong’s career.",
+        "source": "https://commons.wikimedia.org/wiki/File:King_Oliver_(1915_portrait).jpg",
+        "credit": "Photographer unknown.",
+        "license": "Public domain",
+        "licenseURL": "https://creativecommons.org/publicdomain/mark/1.0/",
+        "generated": false,
+        "src": "https://orbiversity.com/orb-archive/point-media-us250-new-orleans-p06.jpg"
+      },
+      {
+        "node": "us250-new-orleans-p07",
+        "title": "Hurricane Katrina from space",
+        "caption": "NASA satellite image of Hurricane Katrina on August 28, 2005. A view of the storm itself, not a photograph of damage or recovery in New Orleans.",
+        "source": "https://commons.wikimedia.org/wiki/File:Katrina_2005-08-28_1700Z.jpg",
+        "credit": "NASA",
+        "license": "Public domain",
+        "licenseURL": "https://creativecommons.org/publicdomain/mark/1.0/",
+        "generated": false,
+        "src": "https://orbiversity.com/orb-archive/point-media-us250-new-orleans-p07.jpg"
+      },
+      {
+        "node": "us250-new-orleans-p08",
+        "title": "A living parade tradition",
+        "caption": "Participants in the Big 9 parade on St. Claude Avenue, New Orleans, December 21, 2008. A specific example of the city’s continuing public musical culture.",
+        "source": "https://commons.wikimedia.org/wiki/File:Low9InThe8thGreengals.jpg",
+        "credit": "Infrogmation of New Orleans",
+        "license": "CC BY-SA 3.0",
+        "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0",
+        "generated": false,
+        "src": "https://orbiversity.com/orb-archive/point-media-us250-new-orleans-p08.jpg"
+      }
+    ],
+    "generated": [],
+    "note": "Eight point-specific images with source credits. No narration or video was added."
+  },
+  "checkedConnections": [
+    {
+      "sourcePoint": {
+        "id": "us250-new-orleans-p06",
+        "title": "How a local sound travels"
+      },
+      "target": {
+        "id": "us250-detroit",
+        "url": "https://orbiversity.com/us250-detroit/",
+        "topic": "Detroit — Making things, making music, remaking a city"
+      },
+      "targetPoint": "us250-detroit-p05",
+      "relation": "comparison",
+      "label": "From a local sound to wider audiences",
+      "reason": "Follow two different ways music traveled: Armstrong’s move from New Orleans to Chicago, and Motown’s recording business in Detroit. This comparison does not claim that one caused the other.",
+      "evidence": [
+        {
+          "url": "https://virtualexhibits.louisarmstronghouse.org/2022/07/08/ill-never-forget-it-the-100th-anniversary-of-louis-armstrongs-arrival-in-chicago/",
+          "title": "The 100th Anniversary of Louis Armstrong’s Arrival in Chicago"
+        },
+        {
+          "url": "https://www.motownmuseum.org/about/esther-gordy/",
+          "title": "Esther Gordy Edwards"
+        }
+      ]
+    },
+    {
+      "sourcePoint": {
+        "id": "us250-new-orleans-p07",
+        "title": "Water, disaster and care"
+      },
+      "target": {
+        "id": "us250-los-angeles",
+        "url": "https://orbiversity.com/us250-los-angeles/",
+        "topic": "Los Angeles — Many beginnings, Pacific futures"
+      },
+      "targetPoint": "us250-los-angeles-p03",
+      "relation": "contrast",
+      "label": "Different urban water problems",
+      "reason": "Contrast flood protection and Hurricane Katrina with the geography of Los Angeles water supply. The mechanisms and affected communities are different.",
+      "evidence": [
+        {
+          "url": "https://louisianastatemuseum.org/exhibit/living-hurricanes-katrina-and-beyond",
+          "title": "Living with Hurricanes: Katrina and Beyond"
+        },
+        {
+          "url": "https://www.ladwp.com/who-we-are/our-history/water-system-past-and-present",
+          "title": "Water System — Past and Present"
+        },
+        {
+          "url": "https://www.oviwc.org/water-land-history",
+          "title": "Water & Land History"
+        }
+      ]
+    }
+  ]
+}

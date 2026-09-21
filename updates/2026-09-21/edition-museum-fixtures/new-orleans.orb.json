@@ -1,0 +1,585 @@
+{
+  "content": {
+    "contentVersion": 2,
+    "title": "New Orleans — A river city that made an American sound",
+    "scope": "Follow a river port into music, migration and living memory. Eight readings connect treaties and trade with Congo Square, neighborhood organizations and the work of listening.",
+    "visualQuery": "new orleans",
+    "intent": {
+      "subject": "New Orleans — A river city that made an American sound",
+      "direction": "Explore eight city histories through people, places and evidence.",
+      "perspective": "A curious visitor to America at 250; celebration with historical context.",
+      "origins": {
+        "subject": "stated",
+        "direction": "inferred",
+        "perspective": "inferred"
+      }
+    },
+    "form": "explore",
+    "axes": {
+      "x": {
+        "negative": "",
+        "positive": "",
+        "active": false,
+        "reason": "No unsupported spatial contrast or chronology is assigned."
+      },
+      "y": {
+        "negative": "",
+        "positive": "",
+        "active": false,
+        "reason": "No unsupported spatial contrast or chronology is assigned."
+      },
+      "z": {
+        "negative": "",
+        "positive": "",
+        "active": false,
+        "reason": "No unsupported spatial contrast or chronology is assigned."
+      }
+    },
+    "readings": [
+      {
+        "id": "us250-new-orleans-p01",
+        "label": "The river before the border",
+        "text": "A city’s anniversary can make its colonial founding seem like the beginning of everything. The TriPod episode “New Orleans: 300 // Bulbancha: 3000” asks listeners to reconsider that frame. Produced with the Historic New Orleans Collection and the University of New Orleans, it brings together Indigenous people describing the place they call Bulbancha and their experience of the city’s tricentennial.\n\nThe episode’s title is a deliberate challenge to the celebration’s timescale, not a reason to substitute one simple origin story for another. Its value here lies in hearing present-day people explain the place from their own positions. A city can contain several ways of naming and remembering the same landscape.\n\nBegin this ORB with that openness. The river port, a treaty, a musical gathering and a hurricane museum tell different parts of New Orleans. They do not cancel one another. An American anniversary becomes more interesting when the national timeline is set beside the longer histories of the places it includes.",
+        "kind": "fact",
+        "speaker": "",
+        "learn": "",
+        "visualQuery": "Mississippi River New Orleans",
+        "visualBrief": {
+          "subject": "Mississippi River New Orleans",
+          "context": "Real source imagery related to the named place or object. Read captions for date and exact subject.",
+          "role": "subject",
+          "avoid": "Generated portraits, generic substitute skylines or a modern photograph presented as historical evidence."
+        },
+        "coordinates": {
+          "x": null,
+          "y": null,
+          "z": null
+        },
+        "placementReason": "Broad city/place context; entry to the authored reading tree.",
+        "parent": -1,
+        "next": -1
+      },
+      {
+        "id": "us250-new-orleans-p02",
+        "label": "A port changes countries",
+        "text": "New Orleans was not part of the United States in 1776. The Louisiana Purchase Treaty of 1803 belongs to a later stage of the national story. The National Archives explains the importance of New Orleans and access to the Mississippi in the negotiations that produced the purchase.\n\nA port is a useful place to understand why political boundaries matter. Goods can move along a river while the rules governing trade, authority and belonging change around them. A treaty records decisions between governments; it does not, on its own, tell us how every resident experienced the transition or resolve Indigenous relationships to the land.\n\nRead the document with two questions in mind. What exactly did its parties agree to transfer? Whose interests and experiences require evidence beyond the treaty? This distinction keeps the purchase from becoming merely a large colored patch on a map. The next readings enter the city through cultural practice and the human costs of commerce.",
+        "kind": "fact",
+        "speaker": "",
+        "learn": "",
+        "visualQuery": "New Orleans Mississippi port",
+        "visualBrief": {
+          "subject": "New Orleans Mississippi port",
+          "context": "Real source imagery related to the named place or object. Read captions for date and exact subject.",
+          "role": "subject",
+          "avoid": "Generated portraits, generic substitute skylines or a modern photograph presented as historical evidence."
+        },
+        "coordinates": {
+          "x": null,
+          "y": null,
+          "z": null
+        },
+        "placementReason": "A named case within the city context or its stated broader point.",
+        "parent": 0,
+        "next": -1
+      },
+      {
+        "id": "us250-new-orleans-p03",
+        "label": "Congo Square and cultural continuity",
+        "text": "Congo Square is an important setting in the history of African diasporic cultural life in New Orleans. The National Park Service’s account places music and dance there within a broader story of the traditions, encounters and social conditions from which jazz emerged. It does not require us to imagine jazz appearing fully formed at one time or in one place.\n\nThat is a better way to understand creativity. People carry rhythms, techniques and ways of gathering; they preserve some things and adapt others under changing conditions. Cultural continuity can coexist with invention. A public gathering also has a social and political setting, including the constraints imposed on enslaved people.\n\nWhen looking at a photograph of Congo Square today, keep its evidentiary limits clear. It shows a present-day place, not an unmediated view of an early performance. Let the image orient you, then let historical sources explain the practices. From here, the neighborhood music network adds another scale of understanding.",
+        "kind": "fact",
+        "speaker": "",
+        "learn": "",
+        "visualQuery": "Congo Square New Orleans",
+        "visualBrief": {
+          "subject": "Congo Square New Orleans",
+          "context": "Real source imagery related to the named place or object. Read captions for date and exact subject.",
+          "role": "subject",
+          "avoid": "Generated portraits, generic substitute skylines or a modern photograph presented as historical evidence."
+        },
+        "coordinates": {
+          "x": null,
+          "y": null,
+          "z": null
+        },
+        "placementReason": "A named case within the city context or its stated broader point.",
+        "parent": 1,
+        "next": -1
+      },
+      {
+        "id": "us250-new-orleans-p04",
+        "label": "The human cost inside a trading city",
+        "text": "The Historic New Orleans Collection’s “Purchased Lives” exhibition maps the city’s slave-trading sites using directories, advertisements, property records and other evidence. It locates commerce in streets and buildings rather than leaving enslavement as an abstraction somewhere outside the city.\n\nAnother HNOC exhibition examines banking in the antebellum South. Its account connects expanding credit with markets in land, crops and enslaved people. Read together, the two sources show why an account of a prosperous port needs to ask what was being financed and whose lives were treated as property.\n\nThis point narrows the proposed labor story to evidence that can be located and examined. It does not pretend that financial records tell the whole experience of an enslaved person, or that all port workers shared one history. The lesson is a method: follow an institution’s wealth back through the records that made it possible, then notice which human experiences those records fail to preserve.",
+        "kind": "fact",
+        "speaker": "",
+        "learn": "",
+        "visualQuery": "historic New Orleans riverfront",
+        "visualBrief": {
+          "subject": "historic New Orleans riverfront",
+          "context": "Real source imagery related to the named place or object. Read captions for date and exact subject.",
+          "role": "subject",
+          "avoid": "Generated portraits, generic substitute skylines or a modern photograph presented as historical evidence."
+        },
+        "coordinates": {
+          "x": null,
+          "y": null,
+          "z": null
+        },
+        "placementReason": "A named case within the city context or its stated broader point.",
+        "parent": 1,
+        "next": -1
+      },
+      {
+        "id": "us250-new-orleans-p05",
+        "label": "A neighborhood becomes a musical network",
+        "text": "Music needs places and relationships as well as talented performers. The National Park Service’s jazz map connects New Orleans music with neighborhoods, halls, clubs and other social settings. Following those locations reveals a citywide network rather than a single stage on which a musical style was invented.\n\nConsider what a recurring gathering can make possible: musicians meet, audiences learn a repertoire, and people develop expectations about how an occasion should sound. Those are questions to bring to the individual sites, not an excuse to assume every club or parade had the same purpose. Mutual aid, celebration, work and remembrance can intersect without becoming interchangeable.\n\nThe map also makes absence visible. A documented site may survive, change use or disappear. Its historical importance cannot be measured only by how attractive its current facade looks. This is a useful bridge from Congo Square’s cultural-history question to the next reading, where a musician carries a local experience into a different city and recording environment.",
+        "kind": "fact",
+        "speaker": "",
+        "learn": "",
+        "visualQuery": "Treme New Orleans",
+        "visualBrief": {
+          "subject": "Treme New Orleans",
+          "context": "Real source imagery related to the named place or object. Read captions for date and exact subject.",
+          "role": "subject",
+          "avoid": "Generated portraits, generic substitute skylines or a modern photograph presented as historical evidence."
+        },
+        "coordinates": {
+          "x": null,
+          "y": null,
+          "z": null
+        },
+        "placementReason": "A named case within the city context or its stated broader point.",
+        "parent": 2,
+        "next": -1
+      },
+      {
+        "id": "us250-new-orleans-p06",
+        "label": "How a local sound travels",
+        "text": "In 1922, Louis Armstrong left New Orleans to join Joe Oliver in Chicago. The Louis Armstrong House Museum revisits that move through Armstrong’s own accounts and other records. Its centenary essay even examines conflicting remembered dates, showing how historical research can refine a celebrated personal story rather than merely repeat it.\n\nThe journey gives “influence” a concrete route: a musician, an invitation, travel and a new working setting. It also reminds us that recordings and performances are not culture moving by itself. People make decisions, form partnerships and adjust to audiences and technologies.\n\nThis ORB does not reproduce an archival recording or claim permission to sample one. The museum’s original page provides the listening context and its conditions. Follow that source to hear how memory sounds; then compare the movement of New Orleans music with Motown’s later enterprise in Detroit. The comparison concerns how local creativity reaches wider audiences, not a claim that the two histories are identical.",
+        "kind": "fact",
+        "speaker": "",
+        "learn": "",
+        "visualQuery": "Louis Armstrong King Oliver",
+        "visualBrief": {
+          "subject": "Louis Armstrong King Oliver",
+          "context": "Real source imagery related to the named place or object. Read captions for date and exact subject.",
+          "role": "subject",
+          "avoid": "Generated portraits, generic substitute skylines or a modern photograph presented as historical evidence."
+        },
+        "coordinates": {
+          "x": null,
+          "y": null,
+          "z": null
+        },
+        "placementReason": "A named case within the city context or its stated broader point.",
+        "parent": 4,
+        "next": -1
+      },
+      {
+        "id": "us250-new-orleans-p07",
+        "label": "Water, disaster and care",
+        "text": "The Louisiana State Museum’s “Living with Hurricanes: Katrina and Beyond” brings artifacts and personal accounts into a history of storms, disaster and recovery. Such a collection can connect large-scale events with the ordinary objects through which people remember them.\n\nA useful reading separates several questions. What happened physically? What decisions shaped exposure and evacuation? How did people care for one another, and what did returning or rebuilding involve? Those questions call for different evidence. An engineering explanation cannot substitute for a resident’s account, while one remembered experience cannot stand for every neighborhood.\n\nLook for the relationship between an object and its recorded story, rather than treating an image of damage as the whole city. The Museum’s purpose is also a reminder that recovery is remembered and interpreted over time. In this collection, New Orleans remains a place of cultural creation and everyday life as well as disaster. Its people are more than witnesses to what happened to them.",
+        "kind": "fact",
+        "speaker": "",
+        "learn": "",
+        "visualQuery": "New Orleans hurricane museum",
+        "visualBrief": {
+          "subject": "New Orleans hurricane museum",
+          "context": "Real source imagery related to the named place or object. Read captions for date and exact subject.",
+          "role": "subject",
+          "avoid": "Generated portraits, generic substitute skylines or a modern photograph presented as historical evidence."
+        },
+        "coordinates": {
+          "x": null,
+          "y": null,
+          "z": null
+        },
+        "placementReason": "A named case within the city context or its stated broader point.",
+        "parent": 0,
+        "next": -1
+      },
+      {
+        "id": "us250-new-orleans-p08",
+        "label": "Listening to a living city",
+        "text": "A city’s history does not end at the museum door. The Indigenous voices in TriPod and the musical places identified by the jazz park offer different ways to continue: listen to people explaining their own relationships to place, and follow a named site back to the evidence about it.\n\nHere is a practical exercise. Pick one claim that caught your attention in this ORB. Open its source and identify who is speaking, when the account was made and what kind of evidence it uses. Then ask what another source would need to add. This is an invitation to curiosity, not an instruction to distrust every account equally.\n\nThe celebration offered here is of cultural life made and sustained by people. That life becomes easier to appreciate when it is not reduced to a picturesque backdrop. Carry one specific connection onward: Armstrong’s move, a neighborhood institution, or a city’s relationship with water. Each provides a reason to enter another ORB.",
+        "kind": "interpretation",
+        "speaker": "",
+        "learn": "",
+        "visualQuery": "New Orleans neighborhood street",
+        "visualBrief": {
+          "subject": "New Orleans neighborhood street",
+          "context": "Real source imagery related to the named place or object. Read captions for date and exact subject.",
+          "role": "subject",
+          "avoid": "Generated portraits, generic substitute skylines or a modern photograph presented as historical evidence."
+        },
+        "coordinates": {
+          "x": null,
+          "y": null,
+          "z": null
+        },
+        "placementReason": "A named case within the city context or its stated broader point.",
+        "parent": 0,
+        "next": -1
+      }
+    ],
+    "edges": [
+      {
+        "from": "us250-new-orleans-p01",
+        "to": "us250-new-orleans-p02",
+        "relation": "contains",
+        "reason": "A specific case within this city’s layered place history.",
+        "basis": "interpretation"
+      },
+      {
+        "from": "us250-new-orleans-p02",
+        "to": "us250-new-orleans-p03",
+        "relation": "contains",
+        "reason": "A deeper case within the broader reading.",
+        "basis": "interpretation"
+      },
+      {
+        "from": "us250-new-orleans-p02",
+        "to": "us250-new-orleans-p04",
+        "relation": "contains",
+        "reason": "A deeper case within the broader reading.",
+        "basis": "interpretation"
+      },
+      {
+        "from": "us250-new-orleans-p03",
+        "to": "us250-new-orleans-p05",
+        "relation": "contains",
+        "reason": "A deeper case within the broader reading.",
+        "basis": "interpretation"
+      },
+      {
+        "from": "us250-new-orleans-p05",
+        "to": "us250-new-orleans-p06",
+        "relation": "contains",
+        "reason": "A deeper case within the broader reading.",
+        "basis": "interpretation"
+      },
+      {
+        "from": "us250-new-orleans-p01",
+        "to": "us250-new-orleans-p07",
+        "relation": "contains",
+        "reason": "A specific case within this city’s layered place history.",
+        "basis": "interpretation"
+      },
+      {
+        "from": "us250-new-orleans-p01",
+        "to": "us250-new-orleans-p08",
+        "relation": "contains",
+        "reason": "A specific case within this city’s layered place history.",
+        "basis": "interpretation"
+      }
+    ],
+    "speakers": [],
+    "seam": {
+      "title": "",
+      "text": "",
+      "readings": []
+    },
+    "theme": {
+      "accent": "mist",
+      "atmosphere": "The shared Orbiversity pale blue studio."
+    },
+    "courseOrder": [],
+    "neighbors": [],
+    "sources": [
+      {
+        "title": "New Orleans: 300 // Bulbancha: 3000",
+        "url": "https://tripodnola.hnoc.org/episodes/new-orleans-300-bulbancha-3000/",
+        "publisher": "WWNO / Historic New Orleans Collection / University of New Orleans",
+        "readings": [
+          0,
+          7
+        ]
+      },
+      {
+        "title": "Louisiana Purchase Treaty (1803)",
+        "url": "https://www.archives.gov/milestone-documents/louisiana-purchase-treaty",
+        "publisher": "National Archives",
+        "readings": [
+          1
+        ]
+      },
+      {
+        "title": "Jazz Origins in New Orleans",
+        "url": "https://www.nps.gov/jazz/learn/historyculture/history_early.htm",
+        "publisher": "National Park Service",
+        "readings": [
+          2
+        ]
+      },
+      {
+        "title": "New Orleans, Slave Market of the South",
+        "url": "https://hnoc.org/virtual-exhibitions/purchased-lives/new-orleans-slave-market-south",
+        "publisher": "Historic New Orleans Collection",
+        "readings": [
+          3
+        ]
+      },
+      {
+        "title": "Banking in the Antebellum South",
+        "url": "https://hnoc.org/virtual-exhibitions/money-money-money/banking-antebellum-south",
+        "publisher": "Historic New Orleans Collection",
+        "readings": [
+          3
+        ]
+      },
+      {
+        "title": "Jazz Map",
+        "url": "https://www.nps.gov/jazz/learn/historyculture/jazz-map.htm",
+        "publisher": "National Park Service",
+        "readings": [
+          4,
+          7
+        ]
+      },
+      {
+        "title": "The 100th Anniversary of Louis Armstrong’s Arrival in Chicago",
+        "url": "https://virtualexhibits.louisarmstronghouse.org/2022/07/08/ill-never-forget-it-the-100th-anniversary-of-louis-armstrongs-arrival-in-chicago/",
+        "publisher": "Louis Armstrong House Museum",
+        "readings": [
+          5
+        ]
+      },
+      {
+        "title": "Living with Hurricanes: Katrina and Beyond",
+        "url": "https://louisianastatemuseum.org/exhibit/living-hurricanes-katrina-and-beyond",
+        "publisher": "Louisiana State Museum",
+        "readings": [
+          6
+        ]
+      }
+    ]
+  },
+  "language": "en",
+  "museum": {
+    "attribution": "anonymous",
+    "category": "History & Culture",
+    "tags": [
+      "United States",
+      "America at 250",
+      "new-orleans"
+    ],
+    "library": [
+      {
+        "title": "New Orleans: 300 // Bulbancha: 3000",
+        "url": "https://tripodnola.hnoc.org/episodes/new-orleans-300-bulbancha-3000/",
+        "type": "Historical source",
+        "publisher": "WWNO / Historic New Orleans Collection / University of New Orleans",
+        "nodes": [
+          "us250-new-orleans-p01",
+          "us250-new-orleans-p08"
+        ]
+      },
+      {
+        "title": "Louisiana Purchase Treaty (1803)",
+        "url": "https://www.archives.gov/milestone-documents/louisiana-purchase-treaty",
+        "type": "Historical source",
+        "publisher": "National Archives",
+        "nodes": [
+          "us250-new-orleans-p02"
+        ]
+      },
+      {
+        "title": "Jazz Origins in New Orleans",
+        "url": "https://www.nps.gov/jazz/learn/historyculture/history_early.htm",
+        "type": "Historical source",
+        "publisher": "National Park Service",
+        "nodes": [
+          "us250-new-orleans-p03"
+        ]
+      },
+      {
+        "title": "New Orleans, Slave Market of the South",
+        "url": "https://hnoc.org/virtual-exhibitions/purchased-lives/new-orleans-slave-market-south",
+        "type": "Historical source",
+        "publisher": "Historic New Orleans Collection",
+        "nodes": [
+          "us250-new-orleans-p04"
+        ]
+      },
+      {
+        "title": "Banking in the Antebellum South",
+        "url": "https://hnoc.org/virtual-exhibitions/money-money-money/banking-antebellum-south",
+        "type": "Historical source",
+        "publisher": "Historic New Orleans Collection",
+        "nodes": [
+          "us250-new-orleans-p04"
+        ]
+      },
+      {
+        "title": "Jazz Map",
+        "url": "https://www.nps.gov/jazz/learn/historyculture/jazz-map.htm",
+        "type": "Historical source",
+        "publisher": "National Park Service",
+        "nodes": [
+          "us250-new-orleans-p05",
+          "us250-new-orleans-p08"
+        ]
+      },
+      {
+        "title": "The 100th Anniversary of Louis Armstrong’s Arrival in Chicago",
+        "url": "https://virtualexhibits.louisarmstronghouse.org/2022/07/08/ill-never-forget-it-the-100th-anniversary-of-louis-armstrongs-arrival-in-chicago/",
+        "type": "Historical source",
+        "publisher": "Louis Armstrong House Museum",
+        "nodes": [
+          "us250-new-orleans-p06"
+        ]
+      },
+      {
+        "title": "Living with Hurricanes: Katrina and Beyond",
+        "url": "https://louisianastatemuseum.org/exhibit/living-hurricanes-katrina-and-beyond",
+        "type": "Historical source",
+        "publisher": "Louisiana State Museum",
+        "nodes": [
+          "us250-new-orleans-p07"
+        ]
+      }
+    ],
+    "audio": []
+  },
+  "reaches": [
+    {
+      "sourcePoint": {
+        "id": "us250-new-orleans-p06",
+        "title": "How a local sound travels"
+      },
+      "target": {
+        "id": "us250-detroit",
+        "url": "https://orbiversity.com/us250-detroit/",
+        "topic": "Detroit — Making things, making music, remaking a city"
+      },
+      "relation": "comparison",
+      "reason": "Follow two different ways music traveled: Armstrong’s move from New Orleans to Chicago, and Motown’s recording business in Detroit. This comparison does not claim that one caused the other.",
+      "evidence": [
+        {
+          "url": "https://virtualexhibits.louisarmstronghouse.org/2022/07/08/ill-never-forget-it-the-100th-anniversary-of-louis-armstrongs-arrival-in-chicago/",
+          "title": "The 100th Anniversary of Louis Armstrong’s Arrival in Chicago"
+        },
+        {
+          "url": "https://www.motownmuseum.org/about/esther-gordy/",
+          "title": "Esther Gordy Edwards"
+        }
+      ]
+    },
+    {
+      "sourcePoint": {
+        "id": "us250-new-orleans-p07",
+        "title": "Water, disaster and care"
+      },
+      "target": {
+        "id": "us250-los-angeles",
+        "url": "https://orbiversity.com/us250-los-angeles/",
+        "topic": "Los Angeles — Many beginnings, Pacific futures"
+      },
+      "relation": "contrast",
+      "reason": "Contrast flood protection and Hurricane Katrina with the geography of Los Angeles water supply. The mechanisms and affected communities are different.",
+      "evidence": [
+        {
+          "url": "https://louisianastatemuseum.org/exhibit/living-hurricanes-katrina-and-beyond",
+          "title": "Living with Hurricanes: Katrina and Beyond"
+        },
+        {
+          "url": "https://www.ladwp.com/who-we-are/our-history/water-system-past-and-present",
+          "title": "Water System — Past and Present"
+        },
+        {
+          "url": "https://www.oviwc.org/water-land-history",
+          "title": "Water & Land History"
+        }
+      ]
+    }
+  ],
+  "readingImages": [
+    {
+      "node": "us250-new-orleans-p01",
+      "title": "The Mississippi curves through New Orleans",
+      "caption": "Aerial view of New Orleans and the Mississippi River, April 2007. Geographic context for Bulbancha’s longer history, not an image of the place before colonization.",
+      "source": "https://commons.wikimedia.org/wiki/File:Nouvelle-Orl%C3%A9ans_vue_a%C3%A9rienne.JPG",
+      "credit": "Ianaré T. Sévi",
+      "license": "Public domain",
+      "licenseURL": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "generated": false,
+      "src": "https://orbiversity.com/orb-archive/point-media-us250-new-orleans-p01.jpg"
+    },
+    {
+      "node": "us250-new-orleans-p02",
+      "title": "The Port of New Orleans",
+      "caption": "A container ship at the Napoleon Avenue terminal, April 2007. A modern view illustrating the port’s continuing function; the Louisiana Purchase occurred in 1803.",
+      "source": "https://commons.wikimedia.org/wiki/File:MSC_Marina_docked_at_Port_of_New_Orleans.jpg",
+      "credit": "Gnovick at English Wikipedia",
+      "license": "CC BY 3.0",
+      "licenseURL": "https://creativecommons.org/licenses/by/3.0",
+      "generated": false,
+      "src": "https://orbiversity.com/orb-archive/point-media-us250-new-orleans-p02.jpg"
+    },
+    {
+      "node": "us250-new-orleans-p03",
+      "title": "Congo Square — modern view",
+      "caption": "A modern photograph of Congo Square. It shows the place, not a reconstruction of its early gatherings.",
+      "source": "https://commons.wikimedia.org/wiki/File:Congosquare-today.jpg",
+      "credit": "Falcanary at English Wikipedia",
+      "license": "Public domain",
+      "licenseURL": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "generated": false,
+      "src": "https://orbiversity.com/orb-archive/point-media-us250-new-orleans-p03.jpg"
+    },
+    {
+      "node": "us250-new-orleans-p04",
+      "title": "A slave-auction advertisement, 1856",
+      "caption": "A New Orleans auction broadside dated February 23, 1856, naming people offered for sale. Primary-source evidence of slavery and the city’s trade in human beings; its dehumanizing language is historical evidence.",
+      "source": "https://commons.wikimedia.org/wiki/File:Slave_Auction_New_Orleans_Beard_%26_May_-_23_Feb_1856.jpg",
+      "credit": "J.A. Beard & May, New Orleans, slave auctioneers. Bulletin Print, 35 Gravier St., New Orleans",
+      "license": "Public domain",
+      "licenseURL": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "generated": false,
+      "src": "https://orbiversity.com/orb-archive/point-media-us250-new-orleans-p04.jpg"
+    },
+    {
+      "node": "us250-new-orleans-p05",
+      "title": "Mardi Gras morning in Tremé",
+      "caption": "A Tremé neighborhood street on Mardi Gras morning, February 13, 2018. Contemporary place and cultural context rather than a scene from the beginnings of jazz.",
+      "source": "https://commons.wikimedia.org/wiki/File:Mardi_Gras_Morning_in_Treme_2018_14.jpg",
+      "credit": "Infrogmation of New Orleans",
+      "license": "CC BY-SA 4.0",
+      "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+      "generated": false,
+      "src": "https://orbiversity.com/orb-archive/point-media-us250-new-orleans-p05.jpg"
+    },
+    {
+      "node": "us250-new-orleans-p06",
+      "title": "King Oliver, circa 1915",
+      "caption": "Historical portrait of jazz musician King Oliver, circa 1915. Oliver’s work connects the New Orleans story to the movement of jazz and Louis Armstrong’s career.",
+      "source": "https://commons.wikimedia.org/wiki/File:King_Oliver_(1915_portrait).jpg",
+      "credit": "Photographer unknown.",
+      "license": "Public domain",
+      "licenseURL": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "generated": false,
+      "src": "https://orbiversity.com/orb-archive/point-media-us250-new-orleans-p06.jpg"
+    },
+    {
+      "node": "us250-new-orleans-p07",
+      "title": "Hurricane Katrina from space",
+      "caption": "NASA satellite image of Hurricane Katrina on August 28, 2005. A view of the storm itself, not a photograph of damage or recovery in New Orleans.",
+      "source": "https://commons.wikimedia.org/wiki/File:Katrina_2005-08-28_1700Z.jpg",
+      "credit": "NASA",
+      "license": "Public domain",
+      "licenseURL": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "generated": false,
+      "src": "https://orbiversity.com/orb-archive/point-media-us250-new-orleans-p07.jpg"
+    },
+    {
+      "node": "us250-new-orleans-p08",
+      "title": "A living parade tradition",
+      "caption": "Participants in the Big 9 parade on St. Claude Avenue, New Orleans, December 21, 2008. A specific example of the city’s continuing public musical culture.",
+      "source": "https://commons.wikimedia.org/wiki/File:Low9InThe8thGreengals.jpg",
+      "credit": "Infrogmation of New Orleans",
+      "license": "CC BY-SA 3.0",
+      "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0",
+      "generated": false,
+      "src": "https://orbiversity.com/orb-archive/point-media-us250-new-orleans-p08.jpg"
+    }
+  ]
+}

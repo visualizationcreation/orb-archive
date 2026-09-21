@@ -102,7 +102,7 @@ async function open(){
       else link.remove();
     }
     const footer=document.querySelector('footer');if(footer)footer.replaceChildren(make('p',label('Published ORB · Readings and navigation are ready to explore. External sources and recordings may need a connection.','ORB publicado · Explora sus lecturas y conexiones. Las fuentes y grabaciones externas pueden necesitar conexión.')));
-    const header=document.querySelector('header');if(header){const museumLink=make('a',label('Back to the Museum','Volver al Museo'));museumLink.href=MUSEUM_HOME+'?orb='+id;header.append(museumLink);}
+    const header=document.querySelector('header');if(header){const museumLink=make('a',label('Back to the Museum','Volver al Museo'));museumLink.href=MUSEUM_HOME+'?orb='+id;header.append(museumLink);const updatedLink=make('a',label('Updated reader · September 21 preview','Lector actualizado · Vista previa del 21 de septiembre'));updatedLink.href='./updates/2026-09-21/edition-museum.html?publication='+id;header.append(updatedLink);}
     const publishedDate=new Date(publication.publishedAt),meta=make('p','','publication-edition');meta.textContent=label('Published edition','Edición publicada')+(Number.isFinite(publishedDate.getTime())?' · '+publishedDate.toLocaleDateString(es?'es':'en',{dateStyle:'medium'}):'');document.querySelector('h1')?.after(meta);
     if(publication.parentId&&publicationURL(publication.parentId)){const previous=make('a',label('Earlier edition','Edición anterior'));previous.href=publicationURL(publication.parentId);meta.append(document.createTextNode(' · '),previous);}
     await attachMediaDesk(publication);
