@@ -1,0 +1,1 @@
+for(const mode of ['desktop','phone'])document.getElementById(mode).onclick=()=>{document.body.classList.toggle('phone',mode==='phone');for(const id of ['desktop','phone'])document.getElementById(id).setAttribute('aria-pressed',String(id===mode));};
