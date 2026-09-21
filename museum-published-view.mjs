@@ -85,7 +85,7 @@ async function open(){
     // Only the trusted static runtime is executable. Submitted HTML is never read.
     const data=make('script');data.type='application/json';data.id='orb-data';data.textContent=JSON.stringify(publication.record).replaceAll('<','\\u003c');document.body.append(data);
     await new Promise((resolve,reject)=>{
-      const script=make('script');script.src='museum-reader-runtime.js?v=reality-gallery-20260920';
+      const script=make('script');script.src='museum-reader-runtime.js?v=orb-sizes-20260921';
       const runtimeError=event=>{if(String(event.filename).includes('museum-reader-runtime.js')){window.removeEventListener('error',runtimeError);reject(new Error(label('This edition contains unsupported ORB data.','Esta edición contiene datos ORB no compatibles.')));}};
       window.addEventListener('error',runtimeError);script.onload=()=>{window.removeEventListener('error',runtimeError);resolve();};script.onerror=()=>{window.removeEventListener('error',runtimeError);reject(new Error(label('The reader could not load. Please try again.','No se pudo cargar el lector. Inténtalo de nuevo.')));};document.body.append(script);
     });
