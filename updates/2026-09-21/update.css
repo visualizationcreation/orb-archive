@@ -33,4 +33,5 @@ dialog{border:1px solid #c0d4e2;border-radius:15px;padding:24px;width:min(640px,
 .course-playing .edition-heading{color:#fff2db}.course-playing .edition-heading .muted,.course-playing .edition-heading .text-button{color:#edd4b2}.course-playing .scene-caption{background:#1e1b27e8;color:#fff2db}.course-playing .scene-caption span{color:#edd4b2}.course-playing .point-label{background:#2f2736;color:#ffebc8;border-color:#977450}
 .shared-feed-feedback{position:sticky;top:0;z-index:1;padding:12px 14px;background:#e9f3f8;color:#203b4d;border-radius:10px;line-height:1.5}
 #reader-gallery-hint{font-size:.86rem;line-height:1.5;margin:0 0 18px}
+.discovery .channel h3{padding:10px 14px;background:#ffe58a;color:#203b4d;border-radius:6px}
 .point-label.center-topic{z-index:2}
