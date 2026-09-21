@@ -1,0 +1,30 @@
+/* Orbiversity collection-only phone controls; desktop and reader templates retain their layout. */
+@media (max-width:800px){
+ .vault-header nav{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;width:100%;min-width:0;margin:10px 0 0;overflow:visible}
+ .vault-header nav a,.vault-header nav a[href="about.html"],.vault-header nav .app-link{display:flex;align-items:center;justify-content:center;min-width:0;min-height:48px;margin:0;padding:9px 10px;border:1px solid #4f7690;border-radius:6px;background:#edf5fa;color:#173f59;font-size:14px;line-height:1.35;text-align:center;white-space:normal;overflow-wrap:anywhere}
+ .vault-header nav a[aria-current="page"]{background:#236e96;border-color:#236e96;color:#fff}
+ .vault-header .language-menu>summary{min-height:48px;padding:0 10px;border:1px solid #4f7690;border-radius:6px;background:#edf5fa;color:#173f59;font-size:14px}
+ .vault-header .language-options a{display:flex;align-items:center;min-height:48px;font-size:14px}
+ .orb-update-menu__views a{min-height:48px;border-color:#4f7690;color:#173f59;font-size:14px}
+ .orb-update-menu .orb-update-menu__options{gap:8px}
+ .orb-update-menu__options a{justify-content:center;min-width:0;min-height:48px;padding:9px 10px;border:1px solid #4f7690;border-radius:6px;background:#edf5fa;color:#173f59;font-size:14px;line-height:1.35;text-align:center;overflow-wrap:anywhere}
+ .vault-overview .edition-link,.vault-overview .overview-listen a{display:flex;align-items:center;justify-content:center;min-height:48px;padding:9px 10px;border:1px solid #4f7690;border-radius:6px;background:#edf5fa;color:#173f59;font-size:14px;line-height:1.5;text-align:center;overflow-wrap:anywhere}
+ .vault-overview .overview-listen ul{gap:10px}
+ .vault-overview .overview-listen a{height:100%}
+ .vault-overview .primary-link{min-height:48px}
+ #content .universe-workspace .vault-studio{display:flex;flex-direction:column;height:auto;min-height:0}
+ #content .universe-workspace .studio-heading{position:relative;inset:auto;margin:22px 22px 0;order:0}
+ #content .universe-nav{position:relative;inset:auto;display:flex;flex-wrap:wrap;gap:8px;margin:18px 16px 0;padding:0;overflow:visible;order:1}
+ #content .universe-nav button{flex:1 1 auto;min-width:48px;min-height:48px;padding:9px 10px;border-color:#4f7690;background:#edf5fa;color:#173f59;font-size:14px;line-height:1.35;white-space:normal}
+ #content .universe-nav .universe-call{background:#236e96;border-color:#236e96;color:#fff}
+ #content .universe-breadcrumb{flex:0 0 100%;max-width:100%;white-space:normal;line-height:1.5;font-size:13px}
+ #content .universe-field{position:relative;inset:auto;flex:none;height:360px;min-height:360px;margin:18px 8px 0;order:2}
+ #content .universe-pages,#content .universe-status{position:relative;inset:auto;margin:10px 22px;max-height:none;overflow:visible;font-size:12px}
+ #content .universe-pages{order:3}
+ #content .universe-status{order:4;margin-top:0;margin-bottom:18px}
+ #content .universe-paths{gap:8px}
+ #content .universe-paths li{padding:0;border:0}
+ #content .universe-paths button{min-height:48px;padding:9px 10px;border:1px solid #4f7690;border-radius:6px;background:#edf5fa;color:#173f59}
+ .vault-header nav a:hover,.vault-header .language-menu>summary:hover,.orb-update-menu__options a:hover,.vault-overview .edition-link:hover,.vault-overview .overview-listen a:hover{background:#dcebf4;color:#173f59;text-decoration:underline;text-underline-offset:3px}
+ .vault-header nav a:focus-visible,.vault-header .language-menu>summary:focus-visible,.orb-update-menu a:focus-visible,.vault-overview a:focus-visible{outline:3px solid #236e96;outline-offset:3px}
+}
