@@ -15,6 +15,7 @@
 .orb-discovery-lead{padding:24px;background:#eaf3f8;border:1px solid #bfd3df;border-radius:16px}
 .orb-discovery-lead:nth-child(2){background:#f0f4fa}
 .orb-discovery-lead h3{font-size:25px;margin-bottom:18px}
+#orb-home-discovery .orb-discovery-channel h3{padding:10px 14px;background:#ffe58a;color:#203b4d;border-radius:6px}
 .orb-discovery-question+.orb-discovery-question{border-top:1px solid #c2d4df;padding-top:18px;margin-top:18px}
 .orb-discovery-question-link{display:block;min-height:44px;color:#174f70;font-size:18px;font-weight:600;line-height:1.35;text-decoration:none;text-underline-offset:4px;padding:3px 0}
 .orb-discovery-question-link:hover{text-decoration:underline}
