@@ -92,6 +92,7 @@ dialog{border:1px solid #c0d4e2;border-radius:15px;padding:24px;width:min(640px,
  body.future-mode #time-settings-fields{max-height:32dvh}
  body.future-mode .time-machine-action a{min-height:44px;padding:8px 12px;font-size:.9rem}
  body.future-mode .scene-caption{display:none}
+ body.future-mode .point-label{max-width:150px}
  body.future-mode #reader,body.future-mode.has-reader #reader,body.future-mode.has-reader.playing #reader{position:fixed;inset:auto 9px 51px;min-height:0;height:auto;max-height:55dvh;width:auto;margin:0;flex:none;pointer-events:auto}
  body.future-mode #expand-time-reading{display:block;margin-left:auto;min-height:44px}
  body.future-mode .reader-top{padding:6px 10px;gap:8px;border:0;flex-shrink:0}
