@@ -62,3 +62,26 @@ html.world-interface.orb-discovery-ready body.world-gateway #notice{position:rel
  html.world-interface.orb-discovery-ready body.world-gateway #world-entry-note{font-size:13px;color:#486779}
  html.world-interface.orb-discovery-ready body.world-gateway #orb-home-discovery{padding:24px 0;border-radius:0;background:#fafdff}
 }
+/* Political research lenses share the existing blue controls and yellow headings. */
+.orb-political-views p{max-width:72ch;margin:0 0 14px;color:#486779;font-size:14px;line-height:1.5}
+.orb-political-lenses,.orb-political-country-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.orb-political-views a{display:flex;align-items:center;justify-content:center;min-width:0;min-height:48px;padding:10px 14px;border:1px solid #6b8fa7;border-radius:6px;background:#f4f9fc;color:#203b4d;font-size:16px;font-weight:600;line-height:1.35;text-align:center;text-decoration:none;overflow-wrap:anywhere}
+.orb-political-views a:hover{background:#e3f0f7;text-decoration:underline;text-underline-offset:4px}
+.orb-political-views a:focus-visible,.orb-political-views summary:focus-visible,.orb-political-context summary:focus-visible{outline:3px solid #8f3b61;outline-offset:3px}
+.orb-political-countries{margin-top:12px}
+.orb-political-views summary,.orb-political-context summary{min-height:48px;padding:12px 0;cursor:pointer;color:#236d94;font-size:15px;font-weight:600}
+.orb-political-countries>p{margin:2px 0 14px}
+.orb-political-context{margin-top:8px}
+.orb-political-context>summary{font-weight:400}
+.orb-disclosure-open{display:none}
+details[open]>summary>.orb-disclosure-open{display:inline}
+details[open]>summary>.orb-disclosure-closed{display:none}
+@media(max-width:700px){.orb-political-country-list{grid-template-columns:repeat(2,minmax(0,1fr))}.orb-political-lenses{gap:8px}.orb-political-lenses a{padding:10px 6px}.orb-political-views a{font-size:15px}}
+#orb-home-discovery>.orb-discovery-categories{padding-bottom:0}
+.orb-discovery-directory{margin:0 0 22px}
+.orb-discovery-directory>summary{display:list-item;min-height:48px;padding:12px 0;color:#236d94;font-size:15px;font-weight:600;cursor:pointer}
+.orb-discovery-directory[open]>.orb-discovery-categories{padding-top:8px;padding-bottom:0}
+.orb-discovery-politics{margin-top:30px;padding-top:24px;border-top:1px solid #c2d4df}
+.orb-discovery-politics h3{margin-bottom:16px}
+.orb-discovery-more{border-top:1px solid #c2d4df;padding-top:10px;margin-top:24px}
+.orb-discovery-more>.orb-discovery-primary{margin-top:14px}
