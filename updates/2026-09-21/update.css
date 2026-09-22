@@ -110,7 +110,7 @@ dialog{border:1px solid #c0d4e2;border-radius:15px;padding:24px;width:min(640px,
  body.future-mode.time-reading-expanded #reader{max-height:min(75dvh,calc(100dvh - 70px))}
  body.future-mode.time-reading-expanded .reader-actions{display:flex;padding:6px 12px;flex-shrink:0}
  body.future-mode #reader-gallery-hint{display:none}
- body.future-mode .scene-tools{bottom:57px}
+ body.future-mode .scene-tools{bottom:57px;pointer-events:auto}
  body.future-mode.has-reader .scene-tools{visibility:hidden}
  body.future-mode.has-reader.playing #reader{bottom:calc(51px + 130px)}
  body.future-mode.has-reader .player{position:fixed;inset:auto 9px 51px;width:auto;margin:0}
