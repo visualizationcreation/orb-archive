@@ -128,3 +128,28 @@ dialog{border:1px solid #c0d4e2;border-radius:15px;padding:24px;width:min(640px,
  body.future-mode .time-machine-action a{font-size:.82rem}
  body.future-mode #reader,body.future-mode.has-reader #reader,body.future-mode.has-reader.playing #reader{bottom:38px;left:9px;right:9px;max-height:55dvh}
 }
+
+/* Travel direction stays available while the date and reading panels are folded. */
+body.future-mode #future-controls{display:grid;grid-template-columns:124px minmax(0,1fr);width:clamp(340px,43vw,560px);max-width:100%;align-items:start;gap:7px}
+#time-direction{display:flex;gap:3px;align-items:stretch}
+#time-direction button{flex:1;min-width:0;min-height:44px;padding:8px 10px;border-color:#8c79a5;background:#332944;color:#f3eef9}
+#time-direction button:hover{background:#514261}
+#time-direction button[aria-pressed=true]{background:#f4cf58;color:#302842;border-color:#f4cf58}
+body.future-mode .time-machine-action{grid-column:1/-1}
+#time-settings{position:relative;min-width:0}
+#time-settings>summary{gap:6px}
+#time-settings>summary>span:first-child{display:none}
+#time-settings-summary{margin:0;white-space:nowrap}
+#time-settings[open] #time-settings-fields{position:absolute;top:100%;right:0;z-index:15;width:min(480px,calc(100vw - 34px));padding:12px;background:#332944;border:1px solid #8c79a5;border-radius:8px;box-shadow:0 12px 24px #120f2240}
+@media(max-width:650px){
+ body.future-mode #future-controls{grid-template-columns:112px minmax(0,1fr);width:100%;gap:5px}
+ #time-direction button{padding:7px 6px}
+ #time-settings-summary{font-size:.72rem}
+ #time-settings>summary{padding:8px}
+}
+@media(max-width:360px){#time-settings-summary{max-width:112px;white-space:normal;line-height:1.3}}
+@media(max-height:550px) and (orientation:landscape){
+ body.future-mode #future-controls{grid-template-columns:106px minmax(0,1fr);width:100%}
+ body.future-mode #time-settings[open] #time-settings-fields{width:min(480px,calc(100vw - 34px))}
+ body.future-mode .time-machine-action a{min-height:38px;padding:5px 10px}
+}
