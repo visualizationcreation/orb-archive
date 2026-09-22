@@ -29,6 +29,7 @@ dialog{border:1px solid #c0d4e2;border-radius:15px;padding:24px;width:min(640px,
 }
 /* Keep the selector on an opaque compositing surface above the live canvas. */
 .mode-switch{isolation:isolate;transform:translateZ(0)}
+.mode-switch button{min-width:44px}
 .mode-switch button[aria-pressed=false]{background:#f8fcff;color:#203b4d}
 .course-playing .edition-heading{color:#fff2db}.course-playing .edition-heading .muted,.course-playing .edition-heading .text-button{color:#edd4b2}.course-playing .scene-caption{background:#1e1b27e8;color:#fff2db}.course-playing .scene-caption span{color:#edd4b2}.course-playing .point-label{background:#2f2736;color:#ffebc8;border-color:#977450}
 .shared-feed-feedback{position:sticky;top:0;z-index:1;padding:12px 14px;background:#e9f3f8;color:#203b4d;border-radius:10px;line-height:1.5}
@@ -42,7 +43,7 @@ dialog{border:1px solid #c0d4e2;border-radius:15px;padding:24px;width:min(640px,
  .notice{position:relative;inset:auto;transform:none;width:auto;max-width:none;margin:10px 17px;flex:0 0 auto;pointer-events:auto}
  .home>.notice{margin:0 0 18px}
  body.has-reader #exploration{position:fixed;z-index:4;inset:68px 0 calc(49px + env(safe-area-inset-bottom,0px));display:flex;flex-direction:column;overflow-y:auto;pointer-events:none;scroll-padding:8px}
- body.has-reader .exploration-head{flex:0 0 auto;background:#f5f9fc}
+ body.has-reader .exploration-head{position:sticky;top:0;z-index:9;flex:0 0 auto;background:#f5f9fc}
  body.has-reader.solar .exploration-head{background:#183e5e}
  body.has-reader.future-mode .exploration-head{background:#332944}
  body.has-reader #reader,body.has-reader.future-mode #reader,body.has-reader.playing #reader{position:relative;inset:auto;flex:1 0 180px;min-height:180px;width:calc(100% - 18px);margin:0 9px;pointer-events:auto}
@@ -87,7 +88,7 @@ dialog{border:1px solid #c0d4e2;border-radius:15px;padding:24px;width:min(640px,
 @media(max-width:650px), (max-height:550px) and (orientation:landscape){
  body.future-mode{background:#332944}
  body.future-mode #exploration,body.future-mode.has-reader #exploration{position:static;display:block;overflow:visible;pointer-events:none}
- body.future-mode .exploration-head,body.future-mode.has-reader .exploration-head{padding:5px 12px 8px;display:flex;flex-direction:column;gap:5px;background:#332944;pointer-events:none}
+ body.future-mode .exploration-head,body.future-mode.has-reader .exploration-head{position:sticky;top:0;z-index:9;padding:5px 12px 8px;display:flex;flex-direction:column;gap:5px;background:#332944;pointer-events:none}
  body.future-mode .edition-heading{display:flex;align-items:center;gap:12px;max-width:100%;min-width:0}
  body.future-mode .edition-heading h1{font-size:1rem;margin:0;white-space:nowrap;text-overflow:ellipsis;overflow:hidden;max-width:none}
  body.future-mode .edition-heading .text-button{padding:0;min-height:32px;flex-shrink:0}
@@ -107,7 +108,9 @@ dialog{border:1px solid #c0d4e2;border-radius:15px;padding:24px;width:min(640px,
  body.future-mode:not(.time-reading-expanded) #reader-scroll,body.future-mode:not(.time-reading-expanded) .reader-actions{display:none}
  body.future-mode:not(.time-reading-expanded) #section-build-bar{display:none}
  body.future-mode.time-reading-expanded #reader-scroll{display:block;padding:12px 18px;flex:1;min-height:0}
- body.future-mode.time-reading-expanded #reader{max-height:min(75dvh,calc(100dvh - 70px))}
+ /* Reading and date setup take turns using the space below persistent modes. */
+ body.future-mode.time-reading-expanded #future-controls{display:none}
+ body.future-mode.has-reader.time-reading-expanded #reader{top:calc(var(--time-head-bottom,164px) + 8px);max-height:none}
  body.future-mode.time-reading-expanded .reader-actions{display:flex;padding:6px 12px;flex-shrink:0}
  body.future-mode #reader-gallery-hint{display:none}
  body.future-mode .scene-tools{bottom:57px;pointer-events:auto}
@@ -127,6 +130,9 @@ dialog{border:1px solid #c0d4e2;border-radius:15px;padding:24px;width:min(640px,
  body.future-mode #time-settings>summary>span:first-child{display:none}
  body.future-mode .time-machine-action a{font-size:.82rem}
  body.future-mode #reader,body.future-mode.has-reader #reader,body.future-mode.has-reader.playing #reader{bottom:38px;left:9px;right:9px;max-height:55dvh}
+ /* In landscape the reading sits beside the modes, leaving room for its text. */
+ body.future-mode.has-reader.time-reading-expanded .exploration-head{background:transparent}
+ body.future-mode.has-reader.time-reading-expanded #reader{top:66px;left:max(246px,calc(36vw + 14px));right:9px;max-height:none}
 }
 
 /* Travel direction stays available while the date and reading panels are folded. */
