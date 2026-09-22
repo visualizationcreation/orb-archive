@@ -63,3 +63,59 @@ dialog{border:1px solid #c0d4e2;border-radius:15px;padding:24px;width:min(640px,
 @media(min-width:651px) and (min-height:551px){.future-mode #reader{top:calc(var(--time-head-bottom,310px) + 8px)}}
 @media(max-width:650px){.time-machine-action{justify-content:flex-start}.time-machine-action a{width:100%}.time-machine-action p{text-align:left}#future-controls select,#future-controls input,#future-controls button{min-height:44px}}
 @media(max-height:550px) and (orientation:landscape){body.has-reader.future-mode #exploration{position:fixed;z-index:4;inset:58px 0 38px;display:flex;flex-direction:column;overflow-y:auto;pointer-events:none}body.has-reader.future-mode .exploration-head{flex:0 0 auto;background:#332944}body.has-reader.future-mode #reader{position:relative;inset:auto;flex:1 0 180px;min-height:180px;width:calc(100% - 18px);margin:0 9px;pointer-events:auto}.time-machine-action p{font-size:.75rem}}
+
+/* Compact Time Machine keeps the map visible until reading is requested. */
+.time-machine-action{width:100%;flex:0 0 auto}
+#future-controls{display:flex;flex-direction:column;flex-wrap:nowrap;align-items:stretch;width:100%}
+#time-settings{width:100%;border:1px solid #8c79a5;border-radius:8px;background:#332944;color:#f3eef9}
+#time-settings>summary{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:8px 12px;min-height:44px;list-style:none}
+#time-settings>summary::-webkit-details-marker{display:none}
+#time-settings>summary::after{content:'+';font-size:20px;line-height:1}
+#time-settings[open]>summary::after{content:'−'}
+#time-settings-summary{margin-left:auto;font-size:.8rem;font-variant-numeric:tabular-nums}
+#time-settings-fields{display:flex;flex-wrap:wrap;align-items:center;gap:8px;padding:0 12px 12px;max-height:40dvh;overflow-y:auto}
+#time-settings-fields #time-action-note{width:100%;margin:0;color:#f3eef9;font-size:.82rem}
+#expand-time-reading{display:none}
+.time-machine-action a{width:100%}
+@media(max-width:650px), (max-height:550px) and (orientation:landscape){
+ body.future-mode{background:#332944}
+ body.future-mode #exploration,body.future-mode.has-reader #exploration{position:static;display:block;overflow:visible;pointer-events:none}
+ body.future-mode .exploration-head,body.future-mode.has-reader .exploration-head{padding:5px 12px 8px;display:flex;flex-direction:column;gap:5px;background:#332944;pointer-events:none}
+ body.future-mode .edition-heading{display:flex;align-items:center;gap:12px;max-width:100%;min-width:0}
+ body.future-mode .edition-heading h1{font-size:1rem;margin:0;white-space:nowrap;text-overflow:ellipsis;overflow:hidden;max-width:none}
+ body.future-mode .edition-heading .text-button{padding:0;min-height:32px;flex-shrink:0}
+ body.future-mode .edition-heading p{display:none}
+ body.future-mode .view-controls,body.future-mode.has-reader .view-controls{position:static;width:100%;max-width:none;gap:5px;align-items:stretch;pointer-events:auto}
+ body.future-mode .mode-switch{width:100%;padding:2px}
+ body.future-mode .mode-switch button{flex:1;min-height:44px;padding:7px 4px;font-size:.85rem}
+ body.future-mode #future-controls{gap:5px;font-size:.82rem}
+ body.future-mode #time-settings-fields{max-height:32dvh}
+ body.future-mode .time-machine-action a{min-height:44px;padding:8px 12px;font-size:.9rem}
+ body.future-mode .scene-caption{display:none}
+ body.future-mode .point-label{max-width:150px}
+ body.future-mode #reader,body.future-mode.has-reader #reader,body.future-mode.has-reader.playing #reader{position:fixed;inset:auto 9px 51px;min-height:0;height:auto;max-height:55dvh;width:auto;margin:0;flex:none;pointer-events:auto}
+ body.future-mode #expand-time-reading{display:block;margin-left:auto;min-height:44px}
+ body.future-mode .reader-top{padding:6px 10px;gap:8px;border:0;flex-shrink:0}
+ body.future-mode #reading-position{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:.78rem}
+ body.future-mode:not(.time-reading-expanded) #reader-scroll,body.future-mode:not(.time-reading-expanded) .reader-actions{display:none}
+ body.future-mode.time-reading-expanded #reader-scroll{display:block;padding:12px 18px;flex:1;min-height:0}
+ body.future-mode.time-reading-expanded .reader-actions{display:flex;padding:6px 12px;flex-shrink:0}
+ body.future-mode #reader-gallery-hint{display:none}
+ body.future-mode .scene-tools{bottom:57px}
+ body.future-mode.has-reader .scene-tools{visibility:hidden}
+ body.future-mode.has-reader.playing #reader{bottom:calc(51px + 130px)}
+ body.future-mode.has-reader .player{position:fixed;inset:auto 9px 51px;width:auto;margin:0}
+}
+@media(max-height:550px) and (orientation:landscape){
+ body.future-mode .exploration-head,body.future-mode.has-reader .exploration-head{display:grid;grid-template-columns:minmax(220px,36%) minmax(0,1fr);align-items:start;gap:8px}
+ body.future-mode .edition-heading{display:none}
+ body.future-mode .view-controls,body.future-mode.has-reader .view-controls{display:contents}
+ body.future-mode .mode-switch{grid-column:1}
+ body.future-mode #future-controls{grid-column:2;display:grid;grid-template-columns:1fr 1fr;align-items:start}
+ body.future-mode #time-settings{position:relative}
+ body.future-mode #time-settings[open] #time-settings-fields{position:absolute;top:100%;right:0;width:calc(200% + 5px);z-index:15;background:#332944;border:1px solid #8c79a5;border-radius:8px;padding:10px;max-height:45dvh}
+ body.future-mode #time-settings-summary{font-size:.73rem}
+ body.future-mode #time-settings>summary>span:first-child{display:none}
+ body.future-mode .time-machine-action a{font-size:.82rem}
+ body.future-mode #reader,body.future-mode.has-reader #reader,body.future-mode.has-reader.playing #reader{bottom:38px;left:9px;right:9px;max-height:55dvh}
+}
