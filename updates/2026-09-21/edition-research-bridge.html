@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <title>Build a section · ORB</title>
+  <link rel="stylesheet" href="./edition-research-bridge.css">
+  <script type="module" src="./edition-research-bridge.mjs"></script>
+</head>
+<body>
+  <main>
+    <header><a class="wordmark" href="https://www.orbforma.com/" target="_blank" rel="noopener">ORB</a><span>Section research</span></header>
+    <h1 id="bridge-subject">Build this section</h1>
+    <p id="bridge-context">Keep this window open while your selected section is researched.</p>
+    <p id="bridge-status" role="status" aria-live="polite">Connecting to your ORB…</p>
+    <button id="bridge-return" type="button">Return to your ORB</button>
+    <section id="bridge-result" hidden aria-label="Completed section">
+      <div id="bridge-reading"></div>
+      <h2>Sources</h2>
+      <ul id="bridge-sources"></ul>
+      <button id="bridge-copy" type="button">Copy reading and sources</button>
+    </section>
+    <p class="note">This window builds one selected section. Your original ORB saves the returned reading. If that tab closes, the reading remains here for you to copy.</p>
+  </main>
+</body>
+</html>
