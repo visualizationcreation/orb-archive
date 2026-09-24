@@ -10,12 +10,13 @@
         "ocean science",
         "hydrothermal vents",
         "Orbforma",
-        "English"
+        "English",
+        "Español"
       ],
       "category": "Science",
       "format": "Interactive ORB",
       "pointCount": 12,
-      "displayMeta": "12 science readings · 20-minute documentary · English",
+      "displayMeta": "12 science readings · documentary · English / Español",
       "firstPublished": "2026-09-23",
       "updated": "2026-09-23",
       "revision": "4c55560ee59e8292bee659c2f04384d733bc9a5c",
@@ -35,6 +36,21 @@
           "displayMeta": "12 readings · sources · new research questions",
           "sourceUrl": "https://github.com/visualizationcreation/life-beyond-the-sunlight/tree/4c55560ee59e8292bee659c2f04384d733bc9a5c",
           "verified": "2026-09-23"
+        },
+        {
+          "id": "atlantic-vents-spanish",
+          "label": "Aventura científica del Atlántico · Español",
+          "url": "https://orbiversity.com/life-beyond-the-sunlight/es.html",
+          "published": "2026-09-23",
+          "generation": "authored",
+          "modelLabel": "Authored with Codex",
+          "modelId": null,
+          "orbSkillVersion": null,
+          "interface": "Interactive science ORB",
+          "displayMeta": "12 lecturas · documental de 20 minutos · Español",
+          "sourceUrl": "https://github.com/visualizationcreation/life-beyond-the-sunlight/blob/main/es.html",
+          "verified": "2026-09-23",
+          "videoUrl": "https://youtu.be/hSltDxIXi58"
         }
       ],
       "reaches": [],
