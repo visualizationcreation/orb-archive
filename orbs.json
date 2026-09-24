@@ -1,6 +1,45 @@
 {
   "orbs": [
     {
+      "id": "life-beyond-the-sunlight",
+      "title": "Life Beyond the Sunlight",
+      "description": "An Atlantic hydrothermal vent science adventure: mechanisms, connections, discovery history and unanswered questions.",
+      "url": "https://orbiversity.com/life-beyond-the-sunlight/",
+      "repository": "https://github.com/visualizationcreation/life-beyond-the-sunlight",
+      "tags": [
+        "ocean science",
+        "hydrothermal vents",
+        "Orbforma",
+        "English"
+      ],
+      "category": "Science",
+      "format": "Interactive ORB",
+      "pointCount": 12,
+      "displayMeta": "12 science readings · Atlantic vents · English",
+      "firstPublished": "2026-09-23",
+      "updated": "2026-09-23",
+      "revision": "4c55560ee59e8292bee659c2f04384d733bc9a5c",
+      "featuredEdition": "atlantic-vents-english",
+      "availableJourneys": [],
+      "editions": [
+        {
+          "id": "atlantic-vents-english",
+          "label": "Atlantic science adventure · English",
+          "url": "https://orbiversity.com/life-beyond-the-sunlight/",
+          "published": "2026-09-23",
+          "generation": "authored",
+          "modelLabel": "Authored with Codex",
+          "modelId": null,
+          "orbSkillVersion": null,
+          "interface": "Interactive science ORB",
+          "displayMeta": "12 readings · sources · new research questions",
+          "sourceUrl": "https://github.com/visualizationcreation/life-beyond-the-sunlight/tree/4c55560ee59e8292bee659c2f04384d733bc9a5c",
+          "verified": "2026-09-23"
+        }
+      ],
+      "reaches": []
+    },
+    {
       "id": "quinault",
       "title": "Quinault",
       "description": "Rain, forest, water, and the Quinault people in an eight-point narrated spiral.",
