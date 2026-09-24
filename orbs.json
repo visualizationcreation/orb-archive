@@ -15,7 +15,7 @@
       "category": "Science",
       "format": "Interactive ORB",
       "pointCount": 12,
-      "displayMeta": "12 science readings · Atlantic vents · English",
+      "displayMeta": "12 science readings · 20-minute documentary · English",
       "firstPublished": "2026-09-23",
       "updated": "2026-09-23",
       "revision": "4c55560ee59e8292bee659c2f04384d733bc9a5c",
@@ -37,7 +37,8 @@
           "verified": "2026-09-23"
         }
       ],
-      "reaches": []
+      "reaches": [],
+      "videoUrl": "https://youtu.be/D8DuMg1LPek"
     },
     {
       "id": "quinault",
