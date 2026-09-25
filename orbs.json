@@ -1,6 +1,51 @@
 {
   "orbs": [
     {
+      "id": "what-would-change-your-mind",
+      "title": "What would change your mind?",
+      "description": "A Socratic exploration of conversations that can change a life, inspired by Agnes Callard’s Open Socrates (2025). Historical art, modern photographs, and fourteen connected readings.",
+      "url": "https://orbiversity.com/what-would-change-your-mind/",
+      "repository": "https://github.com/visualizationcreation/what-would-change-your-mind",
+      "tags": [
+        "philosophy",
+        "Socrates",
+        "Agnes Callard",
+        "Orbforma",
+        "English"
+      ],
+      "category": "Philosophy",
+      "format": "Interactive ORB",
+      "pointCount": 14,
+      "displayMeta": "14 readings · illustrated philosophy · English",
+      "firstPublished": "2026-09-24",
+      "updated": "2026-09-24",
+      "revision": "2dbd2c1d80c176a6eee8cba70c7b7a4a34d5c2e3",
+      "featuredEdition": "socratic-english-v1",
+      "availableJourneys": [],
+      "editions": [
+        {
+          "id": "socratic-english-v1",
+          "label": "Socratic questioning · English",
+          "url": "https://orbiversity.com/what-would-change-your-mind/",
+          "published": "2026-09-24",
+          "generation": "authored",
+          "modelLabel": "Authored with Codex",
+          "interface": "Illustrated interactive ORB",
+          "displayMeta": "14 readings · original episode · sources and artwork",
+          "sourceUrl": "https://github.com/visualizationcreation/what-would-change-your-mind/tree/2dbd2c1d80c176a6eee8cba70c7b7a4a34d5c2e3",
+          "verified": "2026-09-24",
+          "videoUrl": "https://youtu.be/vxddNvsgMkE"
+        }
+      ],
+      "reaches": [
+        {
+          "targetId": "the-beliefs-we-live-by",
+          "relation": "application"
+        }
+      ],
+      "videoUrl": "https://youtu.be/vxddNvsgMkE"
+    },
+    {
       "id": "life-beyond-the-sunlight",
       "title": "Life Beyond the Sunlight",
       "description": "An Atlantic hydrothermal vent science adventure: mechanisms, connections, discovery history and unanswered questions.",
