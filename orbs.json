@@ -11,14 +11,15 @@
         "Socrates",
         "Agnes Callard",
         "Orbforma",
-        "English"
+        "English",
+        "Español"
       ],
       "category": "Philosophy",
       "format": "Interactive ORB",
       "pointCount": 14,
-      "displayMeta": "14 readings · illustrated philosophy · English",
+      "displayMeta": "14 readings · illustrated philosophy · English / Español",
       "firstPublished": "2026-09-24",
-      "updated": "2026-09-24",
+      "updated": "2026-09-25",
       "revision": "2dbd2c1d80c176a6eee8cba70c7b7a4a34d5c2e3",
       "featuredEdition": "socratic-english-v1",
       "availableJourneys": [],
@@ -35,6 +36,19 @@
           "sourceUrl": "https://github.com/visualizationcreation/what-would-change-your-mind/tree/2dbd2c1d80c176a6eee8cba70c7b7a4a34d5c2e3",
           "verified": "2026-09-24",
           "videoUrl": "https://youtu.be/vxddNvsgMkE"
+        },
+        {
+          "id": "socratic-spanish-v1",
+          "label": "Cuestionamiento socrático · Español",
+          "url": "https://orbiversity.com/what-would-change-your-mind/es.html",
+          "published": "2026-09-25",
+          "generation": "authored",
+          "modelLabel": "Authored with Codex",
+          "interface": "ORB ilustrado e interactivo",
+          "displayMeta": "14 lecturas · narración y mapas en español · arte y fuentes",
+          "sourceUrl": "https://github.com/visualizationcreation/what-would-change-your-mind/blob/e8bc721ef980d25a27d9fc8f950e2f25b175ed8b/es.html",
+          "verified": "2026-09-25",
+          "videoUrl": "https://youtu.be/k_Mma64bKME"
         }
       ],
       "reaches": [
