@@ -11,8 +11,8 @@ function renderArrivals(){if(!arrivalBody||!window.ORBToday)return;const result=
 
 const original=JSON.parse(document.getElementById('orb-catalog').textContent).orbs;
 let catalog=[...original],request=0,selectedId=new URLSearchParams(location.search).get('orb');
-const controls={topic:document.getElementById('topic'),format:document.getElementById('format'),sort:document.getElementById('sort')},form=document.querySelector('.vault-filters'),entries=document.getElementById('entries'),overview=document.getElementById('orb-overview'),feedStatus=document.getElementById('publication-status'),retry=document.getElementById('publication-retry');
-const state=()=>Object.fromEntries(Object.entries(controls).map(([key,value])=>[key,value.value]));
+const controls={query:document.getElementById('query'),topic:document.getElementById('topic'),format:document.getElementById('format'),sort:document.getElementById('sort')},form=document.querySelector('.vault-filters'),entries=document.getElementById('entries'),overview=document.getElementById('orb-overview'),feedStatus=document.getElementById('publication-status'),retry=document.getElementById('publication-retry');
+const state=()=>Object.fromEntries(Object.entries(controls).map(([key,value])=>[key,key==='query'?value.value.trim():value.value]));
 const es=()=>document.documentElement.lang==='es',tr=(en,sp)=>es()?sp:en;
 const e=escapeHtml;
 function connectionMarkup(orb){
@@ -33,11 +33,11 @@ function render({preserveURL=false}={}){
   document.getElementById('empty').hidden=!!rows.length;
   document.getElementById('count').textContent=rows.length===catalog.length?catalog.length+' ORBs':rows.length+tr(' of ',' de ')+catalog.length+' ORBs';
   document.querySelector('.edition-total').textContent=' · '+catalog.reduce((total,orb)=>total+editionList(orb).length,0)+tr(' editions',' ediciones');
-  if(!preserveURL){const url=new URL(location.href);for(const [key,value]of Object.entries(current))value==='all'||key==='sort'&&value==='updated'?url.searchParams.delete(key):url.searchParams.set(key,value);history.replaceState(null,'',url);}
+  if(!preserveURL){const url=new URL(location.href);for(const [key,value]of Object.entries(current))!value||value==='all'||key==='sort'&&value==='updated'?url.searchParams.delete(key):url.searchParams.set(key,value);history.replaceState(null,'',url);}
 }
-const reset=()=>{controls.topic.value=controls.format.value='all';controls.sort.value='updated';render();};
-function restore(){const p=new URLSearchParams(location.search);for(const [key,el]of Object.entries(controls)){const value=p.get(key);el.value=[...el.options].some(o=>o.value===value)?value:key==='sort'?'updated':'all';}}
-function topics(){const selected=controls.topic.value;const values=[...new Set(catalog.map(orb=>orb.category).filter(Boolean))].sort();controls.topic.replaceChildren(new Option(tr('All topics','Todos los temas'),'all'),...values.map(value=>new Option(value,value)));controls.topic.value=values.includes(selected)?selected:'all';restore();}
+const reset=()=>{clearTimeout(searchTimer);controls.query.value='';controls.topic.value=controls.format.value='all';controls.sort.value='updated';render();};
+function restore(){const p=new URLSearchParams(location.search);for(const [key,el]of Object.entries(controls)){const value=p.get(key);if(key==='query'){el.value=(value||'').slice(0,200);continue;}el.value=[...el.options].some(o=>o.value===value)?value:key==='sort'?'updated':'all';}}
+function topics(){const query=controls.query.value,selected=controls.topic.value;const values=[...new Set(catalog.map(orb=>orb.category).filter(Boolean))].sort();controls.topic.replaceChildren(new Option(tr('All topics','Todos los temas'),'all'),...values.map(value=>new Option(value,value)));controls.topic.value=values.includes(selected)?selected:'all';restore();controls.query.value=query;}
 function preview(id){if(universe)return;const orb=catalog.find(orb=>orb.id===id);if(!orb)return;selectedId=id;overview.setAttribute('aria-label',orb.title);overview.innerHTML=ORBMuseum.overview(orb)+connectionMarkup(orb);document.querySelectorAll('.vault-orb').forEach(el=>el.classList.toggle('is-featured',el.dataset.orb===id));}
 function renderScene(){if(universe)universe.update(catalog);else universe=mountUniverse({catalog,overview});}
 async function loadPublications(){
@@ -55,7 +55,11 @@ async function loadPublications(){
     if(requested&&catalog.some(o=>o.id===requested)){preview(requested);overview.classList.add('publication-selected');}
   }catch{if(serial!==request)return;if(arrivalStatus)arrivalStatus.textContent=tr("Community additions could not refresh. Saved entries remain available; try Refresh additions.","No se actualizaron las adiciones de la comunidad. Las entradas guardadas siguen disponibles; intenta actualizar.");feedStatus.textContent=tr('Community orbs are temporarily unavailable. The original collection is ready below.','Los orbs de la comunidad no están disponibles temporalmente. La colección original está lista a continuación.');retry.hidden=false;}finally{if(serial===request&&arrivalRefresh)arrivalRefresh.disabled=false;}
 }
-form.hidden=false;form.addEventListener('submit',event=>event.preventDefault());Object.values(controls).forEach(control=>control.addEventListener('change',render));document.getElementById('clear').addEventListener('click',reset);document.getElementById('empty-reset').addEventListener('click',reset);retry.addEventListener('click',loadPublications);
+let searchTimer;
+form.hidden=false;form.addEventListener('submit',event=>{event.preventDefault();clearTimeout(searchTimer);render();});
+controls.query.addEventListener('input',event=>{clearTimeout(searchTimer);if(event.isComposing)return;searchTimer=setTimeout(render,160);});
+controls.query.addEventListener('compositionend',()=>{clearTimeout(searchTimer);searchTimer=setTimeout(render,160);});
+Object.entries(controls).filter(([key])=>key!=='query').forEach(([,control])=>control.addEventListener('change',render));document.getElementById('clear').addEventListener('click',reset);document.getElementById('empty-reset').addEventListener('click',reset);retry.addEventListener('click',loadPublications);
 window.addEventListener('popstate',()=>{selectedId=new URLSearchParams(location.search).get('orb');restore();render();if(selectedId)preview(selectedId);});restore();render({preserveURL:true});
 for(const eventName of ['pointerover','focusin'])document.addEventListener(eventName,event=>{if(eventName==='pointerover'&&event.pointerType!=='mouse')return;const item=event.target.closest('[data-orb],article[data-orb-id]');if(item&&!item.contains(event.relatedTarget))preview(item.dataset.orb||item.dataset.orbId);});
 overview.addEventListener('click',event=>{const link=event.target.closest('.edition-link');if(!link||event.button!==0||event.metaKey||event.ctrlKey||event.shiftKey||event.altKey)return;const id=new URL(link.href).hash.slice(1);event.preventDefault();if(!document.getElementById(id))reset();const target=document.getElementById(id);if(target){const url=new URL(location.href);url.hash=id;history.pushState(null,'',url);target.scrollIntoView({block:'start'});}});
