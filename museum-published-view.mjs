@@ -37,7 +37,11 @@ async function attachMediaDesk(publication){
       if(!Number.isInteger(index)||index<0||index>=readings.length)return;
       [...points.querySelectorAll('button[data-point]')].find(button=>Number(button.dataset.point)===index)?.click();
     }});
-    article.prepend(panel.element);
+    // Keep the selected reading visible before its matching media.
+    const readingBody=article.querySelector(':scope>.reading');
+    if(readingBody)readingBody.after(panel.element);
+    else if(readingHeading)readingHeading.after(panel.element);
+    else article.append(panel.element);
     const listing=listingFromPublication(publication);
     const update=async()=>{
       const point=currentPoint();if(point===lastPoint)return;lastPoint=point;
