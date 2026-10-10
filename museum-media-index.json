@@ -2904,6 +2904,13 @@
           "license": "Original Orbforma explanatory artwork",
           "generated": false
         }
+      ],
+      "imageReplacements": [
+        {
+          "node": "isaias261009-05",
+          "to": "https://orbiversity.com/orb-archive/isaias-2026-10-09-dated-evidence.jpg",
+          "from": "https://orb-astra--star-navigator-informational-dimensions.netlify.app/api/museum-asset?id=f9edbb3799d4ea67c420c82936ac60ceb41810008ec42f5c815940255ef88128"
+        }
       ]
     }
   }
