@@ -2891,6 +2891,20 @@
       "museum": {
         "audio": []
       }
+    },
+    "f8e13ea442e269273677767beb2c1ab2f3e695ad9aad93af46268d9b10aaf31f": {
+      "readingImages": [
+        {
+          "node": "isaias261009-05",
+          "src": "https://orbiversity.com/orb-archive/isaias-2026-10-09-dated-evidence.jpg",
+          "title": "Time separates evidence from forecast",
+          "caption": "Original explanatory timeline. Observed and estimated facts are separated from the forecast issued at 10 p.m. CDT October 9, 2026.",
+          "source": "https://www.nhc.noaa.gov/mobile/text/refresh/MIATCDAT4%2Bhtml/062039.shtml",
+          "credit": "Original diagram by Orbforma, based on NOAA / National Hurricane Center",
+          "license": "Original Orbforma explanatory artwork",
+          "generated": false
+        }
+      ]
     }
   }
 }
