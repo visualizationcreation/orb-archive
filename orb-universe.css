@@ -23,3 +23,17 @@
 /* Give saved photographs and film the same full frame as the Orbforma desk. */
 @media(min-width:801px){.universe-workspace{grid-template-columns:minmax(0,1fr) clamp(350px,35vw,540px)}.universe-workspace .vault-overview{padding:26px 28px}.universe-workspace .vault-overview>*{flex-shrink:0}.universe-workspace .vault-overview .museum-media{width:100%}}
 .universe-workspace .vault-overview .museum-media{align-self:stretch}.universe-workspace .vault-overview:has(.museum-media:not([hidden])) .universe-kind{display:none}
+
+/* Keep every map action visible on phones without sideways scrolling. */
+@media (max-width: 600px) {
+  .universe-nav { grid-auto-flow: row; grid-template-columns: repeat(6, minmax(0, 1fr)); grid-template-rows: none; grid-auto-rows: minmax(24px, auto); gap: 6px; overflow: visible; }
+  .universe-nav button { grid-row: auto; grid-column: span 2; min-width: 0; min-height: 44px; padding: 6px 4px; white-space: normal; line-height: 1.3; }
+  .universe-nav button:nth-last-of-type(-n + 2) { grid-column: span 1; }
+  .universe-breadcrumb { grid-row: auto; grid-column: 1 / -1; }
+  .universe-workspace .vault-studio { height: 658px; }
+  .universe-field { top: 263px; }
+  .universe-workspace .vault-studio:has(.universe-nav button:nth-of-type(8)) { height: 712px; }
+  .vault-studio:has(.universe-nav button:nth-of-type(8)) .universe-field { top: 317px; }
+}
+
+@media (max-width: 360px) { .universe-nav { left: 8px; right: 8px; gap: 4px; } }

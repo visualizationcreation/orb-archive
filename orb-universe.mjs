@@ -85,6 +85,30 @@ export function mountUniverse({catalog,overview}){
    el.append(make('span','','universe-sphere'),make('span',text,'universe-label orb-content'));
    el.setAttribute('aria-expanded',String(view.expanded.includes(item.key)));el.title=text+' · '+tr('Click to unfold','Haz clic para desplegar');
    el.append(make('small',isCenter?tr('Current center','Centro actual'):tr('Layer ','Capa ')+item.depth,'universe-node-count'));plane.append(el);
+  }
+  // Labels and 44px targets do not shrink with the map. Reserve their measured
+  // pixel bounds before fitting node positions, including translated/zoomed text.
+  const pointElements=[...plane.querySelectorAll('.universe-orb')];
+  if(fit&&getComputedStyle(pointElements[0].querySelector('.universe-label')).position==='absolute'){
+   let fittedZoom=zoom;
+   for(const el of pointElements){
+    const item=positions.get(el.dataset.key),text=el.querySelector('.universe-label');
+    const radius=sphereSize(item.depth)*Math.sqrt(zoom)/2+10;
+    const side=Math.max(22,radius,text.offsetWidth/2);
+    const bottom=Math.max(22,radius,text.offsetHeight?text.offsetTop-22+text.offsetHeight:0);
+    for(const [coordinate,space] of [[item.x,width/2-side-8],[item.y,height/2-(item.y>0?bottom:Math.max(22,radius))-8]]){
+     if(coordinate)fittedZoom=Math.min(fittedZoom,Math.max(0,space)/Math.abs(coordinate));
+    }
+   }
+   zoom=Math.max(.01,fittedZoom);
+   for(const [index,edge] of visibleEdges(graph,view).entries()){
+    const line=svg.children[index];line.setAttribute('d',branchCurve(positions.get(edge.from),positions.get(edge.to),1/Math.sqrt(zoom)));
+    line.setAttribute('transform',`translate(${dx},${dy}) scale(${zoom})`);
+   }
+  }
+  for(const el of pointElements){
+   const item=positions.get(el.dataset.key);
+   el.style.setProperty('--x',(item.x*zoom+dx)+'px');el.style.setProperty('--y',(item.y*zoom+dy)+'px');el.style.setProperty('--sphere-size',sphereSize(item.depth)*Math.sqrt(zoom)+'px');
    if(arriving.has(item.key)&&!matchMedia('(prefers-reduced-motion:reduce)').matches){const parent=positions.get(item.parent);el.animate([{transform:`translate(-50%,-50%) translate(${(parent.x-item.x)*zoom}px,${(parent.y-item.y)*zoom}px) scale(.15)`,opacity:0},{transform:'translate(-50%,-50%) translate(0,0) scale(1)',opacity:1}],{duration:600,easing:'cubic-bezier(.16,1,.3,1)'});}
   }
   const guidance=blocked?tr('Four layers on this branch. Refocus it to continue deeper; other branches can still unfold.','Cuatro capas en esta rama. Recéntrala para continuar; las otras ramas aún pueden desplegarse.'):depth>=3?tr('Click a child to unfold its next layer. Refocus any branch for a closer view.','Haz clic en un hijo para desplegar su próxima capa. Recentra cualquier rama para verla de cerca.'):tr('Click a branch to unfold the next layer. Each orb has one place in the tree.','Haz clic en una rama para desplegar la siguiente capa. Cada orb tiene un lugar en el árbol.');
@@ -94,7 +118,7 @@ export function mountUniverse({catalog,overview}){
   if(fit||recenter||!field.dataset.positioned){const center=positions.get('root');field.scrollLeft=dx-field.clientWidth/2;field.scrollTop=dy-field.clientHeight/2;field.dataset.positioned='true';}else{field.scrollLeft=scroll.left+dx-origin.x;field.scrollTop=scroll.top+dy-origin.y;}origin={x:dx,y:dy};arriving.clear();
  }
  window.addEventListener('popstate',event=>{const saved=event.state?.orbBrowsing;if(saved?.view.version===3&&saved.view.nodes.every(n=>n.id==='universe'||graph.nodes.has(n.id))){view=saved.view;trail=saved.trail;}else readLocation();message='';render(true);});
- new ResizeObserver(()=>render()).observe(studio);
+ const layoutObserver=new ResizeObserver(()=>render());layoutObserver.observe(studio);layoutObserver.observe(field);
  new MutationObserver(()=>render()).observe(document.documentElement,{attributes:true,attributeFilter:['lang']});
  update(catalog);remember();return {update,select:id=>{if(graph.nodes.has(id)){const node=view.nodes.find(n=>n.id===id);if(node)choose(node.key);else{trail.push(structuredClone(view));view=startView(graph,id);route();render(true);}}},current:()=>view.nodes.find(n=>n.key===view.selected)?.id};
 }
