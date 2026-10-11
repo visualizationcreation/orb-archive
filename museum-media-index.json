@@ -2912,6 +2912,65 @@
           "from": "https://orb-astra--star-navigator-informational-dimensions.netlify.app/api/museum-asset?id=f9edbb3799d4ea67c420c82936ac60ceb41810008ec42f5c815940255ef88128"
         }
       ]
+    },
+    "2b2da66c6dd9f6129d30e3dff05963a9036f88f5b7c719ae747b45d3fbc96e5e": {
+      "readingImages": [
+        {
+          "node": "translation-town-00",
+          "src": "https://orbiversity.com/orb-archive/kinosaki-2026-10-11-town.jpg",
+          "title": "Hospitality through translation",
+          "caption": "A dated Kinosaki riverside view provides context for the town-wide hospitality interpretation. Image resized; original composition retained.",
+          "source": "https://commons.wikimedia.org/wiki/File:161029_Kinosaki_Onsen_Toyooka_Hyogo_pref_Japan01s.jpg",
+          "credit": "663highland / 2016-10-29",
+          "license": "CC BY 2.5",
+          "licenseURL": "https://creativecommons.org/licenses/by/2.5/",
+          "generated": false
+        },
+        {
+          "node": "translation-town-01",
+          "src": "https://orbiversity.com/orb-archive/kinosaki-2026-10-11-river.jpg",
+          "title": "When landscape becomes infrastructure",
+          "caption": "Otani River walls and streetscape, photographed October 29, 2016. The geopark documents regional basalt use; this image does not identify every stone. Image resized; original composition retained.",
+          "source": "https://commons.wikimedia.org/wiki/File:161029_Kinosaki_Onsen_Toyooka_Hyogo_pref_Japan02s.jpg",
+          "credit": "663highland / 2016-10-29",
+          "license": "CC BY 2.5",
+          "licenseURL": "https://creativecommons.org/licenses/by/2.5/",
+          "generated": false
+        },
+        {
+          "node": "translation-town-02",
+          "src": "https://orbiversity.com/orb-archive/kinosaki-2026-10-11-jizo.jpg",
+          "title": "When geology becomes a design reference",
+          "caption": "Jizo-yu exterior, photographed June 11, 2006. The official tourism source links its hexagonal windows to Genbudo formations. Image resized; original composition retained.",
+          "source": "https://commons.wikimedia.org/wiki/File:Kinosaki_jizoyu2048.jpg",
+          "credit": "663highland / 2006-06-11",
+          "license": "CC BY 2.5",
+          "licenseURL": "https://creativecommons.org/licenses/by/2.5/",
+          "generated": false
+        },
+        {
+          "node": "translation-town-03",
+          "src": "https://orbiversity.com/orb-archive/kinosaki-2026-10-11-river.jpg",
+          "title": "Try a three-step noticing walk",
+          "caption": "A dated setting for the interpretive noticing exercise, not an official route or a guarantee of current access. Image resized; original composition retained.",
+          "source": "https://commons.wikimedia.org/wiki/File:161029_Kinosaki_Onsen_Toyooka_Hyogo_pref_Japan02s.jpg",
+          "credit": "663highland / 2016-10-29",
+          "license": "CC BY 2.5",
+          "licenseURL": "https://creativecommons.org/licenses/by/2.5/",
+          "generated": false
+        },
+        {
+          "node": "translation-town-04",
+          "src": "https://orbiversity.com/orb-archive/kinosaki-2026-10-11-town.jpg",
+          "title": "Coherence without sameness",
+          "caption": "Distinct buildings and connecting public space; one inn is a hospitality metaphor, not common ownership. Image resized; original composition retained.",
+          "source": "https://commons.wikimedia.org/wiki/File:161029_Kinosaki_Onsen_Toyooka_Hyogo_pref_Japan01s.jpg",
+          "credit": "663highland / 2016-10-29",
+          "license": "CC BY 2.5",
+          "licenseURL": "https://creativecommons.org/licenses/by/2.5/",
+          "generated": false
+        }
+      ]
     }
   }
 }
