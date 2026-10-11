@@ -1,6 +1,45 @@
 {
   "orbs": [
     {
+      "id": "rainbow-viewing-geometry",
+      "title": "Why can’t you reach the end of a rainbow?",
+      "description": "Four illustrated readings connect a moving rainbow endpoint, its possible full circle, and a garden-spray observation. Exact Orbforma return preserved with a separate geometric clarification.",
+      "url": "https://orbiversity.com/rainbow-viewing-geometry/",
+      "repository": "https://github.com/visualizationcreation/rainbow-viewing-geometry",
+      "tags": [
+        "science",
+        "light",
+        "rainbows",
+        "optics",
+        "Orbforma"
+      ],
+      "category": "Science",
+      "format": "Interactive ORB",
+      "pointCount": 4,
+      "displayMeta": "4 illustrated readings · optics · sources",
+      "firstPublished": "2026-10-11",
+      "updated": "2026-10-11",
+      "revision": "19c3b0349af56568033ec29e0e870508cd584f6e",
+      "featuredEdition": "rainbow-geometry-en-20261011",
+      "availableJourneys": [],
+      "editions": [
+        {
+          "id": "rainbow-geometry-en-20261011",
+          "label": "Rainbow viewing geometry · English",
+          "url": "https://orbiversity.com/rainbow-viewing-geometry/",
+          "published": "2026-10-11",
+          "generation": "app-return",
+          "modelId": "gpt-5.6-sol",
+          "modelLabel": "Orbforma Explore return · editorial clarification separate",
+          "orbSkillVersion": null,
+          "interface": "Illustrated Spiral ORB",
+          "displayMeta": "4 readings · original return · credited artwork",
+          "sourceUrl": "https://github.com/visualizationcreation/rainbow-viewing-geometry/tree/19c3b0349af56568033ec29e0e870508cd584f6e",
+          "verified": "2026-10-11"
+        }
+      ]
+    },
+    {
       "id": "what-would-change-your-mind",
       "title": "What would change your mind?",
       "description": "A Socratic exploration of conversations that can change a life, inspired by Agnes Callard’s Open Socrates (2025). Historical art, modern photographs, and fourteen connected readings.",
