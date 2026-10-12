@@ -2971,6 +2971,98 @@
           "generated": false
         }
       ]
+    },
+    "f661914be538e17dc11690c5fc1b9c5223673ee1907760c7aa53d5ed6699b2ee": {
+      "readingImages": [
+        {
+          "node": "food261012-00",
+          "src": "https://orbiversity.com/orb-archive/food-2026-10-12-pizza-tomato.jpg",
+          "title": "Dinner has a history",
+          "caption": "Contemporary food photograph, not a historical reconstruction. Douglaspperkins, Wikimedia Commons, CC0",
+          "credit": "Douglaspperkins, Wikimedia Commons, CC0",
+          "license": "CC0 1.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Margarita_Pizza.jpg",
+          "generated": false,
+          "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/"
+        },
+        {
+          "node": "food261012-01",
+          "src": "https://orbiversity.com/orb-archive/food-2026-10-12-tomato.jpg",
+          "title": "Indigenous cultivation came first",
+          "caption": "Contemporary food photograph, not a historical reconstruction. Alabama Extension, Wikimedia Commons, CC0",
+          "credit": "Alabama Extension, Wikimedia Commons, CC0",
+          "license": "CC0 1.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Cluster_of_Tomatoes_on_Vine.jpg",
+          "generated": false,
+          "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/"
+        },
+        {
+          "node": "food261012-02",
+          "src": "https://orbiversity.com/orb-archive/food-2026-10-12-tomato.jpg",
+          "title": "The tomato traveled",
+          "caption": "Contemporary food photograph, not a historical reconstruction. Alabama Extension, Wikimedia Commons, CC0",
+          "credit": "Alabama Extension, Wikimedia Commons, CC0",
+          "license": "CC0 1.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Cluster_of_Tomatoes_on_Vine.jpg",
+          "generated": false,
+          "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/"
+        },
+        {
+          "node": "food261012-03",
+          "src": "https://orbiversity.com/orb-archive/food-2026-10-12-pepper.jpg",
+          "title": "Chili peppers crossed kitchens",
+          "caption": "Sweet Capsicum peppers; an example of the broader pepper family, not a claim about heat. Wilfredor, Wikimedia Commons, CC0",
+          "credit": "Wilfredor, Wikimedia Commons, CC0",
+          "license": "CC0 1.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Capsicum_..jpg",
+          "generated": false,
+          "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/"
+        },
+        {
+          "node": "food261012-04",
+          "src": "https://orbiversity.com/orb-archive/food-2026-10-12-potato-close.jpg",
+          "title": "A potato is accumulated knowledge",
+          "caption": "Contemporary Puikula potato plants; illustrative crop photograph, not an Andean location. Ordercrazy, Wikimedia Commons, CC0",
+          "credit": "Ordercrazy, Wikimedia Commons, CC0",
+          "license": "CC0 1.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Solanum_tuberosum_Puikula.jpg",
+          "generated": false,
+          "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/"
+        },
+        {
+          "node": "food261012-05",
+          "src": "https://orbiversity.com/orb-archive/food-2026-10-12-pizza-tomato.jpg",
+          "title": "Origin is not the same as cuisine",
+          "caption": "Contemporary food photograph, not a historical reconstruction. Douglaspperkins, Wikimedia Commons, CC0",
+          "credit": "Douglaspperkins, Wikimedia Commons, CC0",
+          "license": "CC0 1.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Margarita_Pizza.jpg",
+          "generated": false,
+          "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/"
+        },
+        {
+          "node": "food261012-06",
+          "src": "https://orbiversity.com/orb-archive/food-2026-10-12-potato-close.jpg",
+          "title": "Living traditions, living diversity",
+          "caption": "Contemporary Puikula potato plants; illustrative crop photograph, not an Andean location. Ordercrazy, Wikimedia Commons, CC0",
+          "credit": "Ordercrazy, Wikimedia Commons, CC0",
+          "license": "CC0 1.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Solanum_tuberosum_Puikula.jpg",
+          "generated": false,
+          "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/"
+        },
+        {
+          "node": "food261012-07",
+          "src": "https://orbiversity.com/orb-archive/food-2026-10-12-tomato.jpg",
+          "title": "A meal is not the whole history",
+          "caption": "Contemporary food photograph, not a historical reconstruction. Alabama Extension, Wikimedia Commons, CC0",
+          "credit": "Alabama Extension, Wikimedia Commons, CC0",
+          "license": "CC0 1.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Cluster_of_Tomatoes_on_Vine.jpg",
+          "generated": false,
+          "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/"
+        }
+      ]
     }
   }
 }
